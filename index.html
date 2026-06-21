@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1C7FA8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Weekend Finder">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22Weekend%20Finder%22%2C%20%22short_name%22%3A%20%22Weekend%22%2C%20%22start_url%22%3A%20%22.%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22background_color%22%3A%20%22%23FAF7F0%22%2C%20%22theme_color%22%3A%20%22%231C7FA8%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAOa0lEQVR4nO3du5ddZR3H4T2ss7wUSIAOAsEOEddCO%2BWmlioIgZh/RAGXykwsJAn8ISKIVhYqxiSAnbIWIWIlKA1gJgEK0cpi4qyTuZ45t/fyfZ5KC82effb%2Bfebd7%2ByZlcOrPx8AyHNd6QMAoAwBAAglAAChBAAg1Gil9BEAUIQVAEAoAQAINRo8AwKIZAUAEGq0YgkAEMkKACCUAACEEgCAUF4EAwhlBQAQynsAAKGsAABCCQBAKJvAAKFGg00AgEgeAQGEEgCAUPYAAEJ5DwAglEdAAKEEACCUAACEsgkMEMoKACCUN4EBQlkBAITyHgBAKJvAAKE8AgIIJQAAoQQAIJQ9AIBQVgAAofwYKEAobwIDhPIICCCUTWCAUFYAAKEEACCUAACEsgcAEMp7AAChPAICCCUAAKG8CQwQyiYwQCiPgABCCQBAKAEACOU9AIBQNoEBQnkEBBBKAABCCQBAqNGKXWCASFYAAKEEACCU9wAAQlkBAITyIhhAKCsAgFACABBKAABC2QMACDUaViQAmMafPv/cQf8nX/379xdxJExnVPoAgDZMMe4n%2BT%2BRhIIEANjVXIb%2B5P%2BEGCyZAABbLWHu7/3vKsFy2AQGrnqt0NzfbrMEX1OCRbICgHT1zP3tXlOCRRIAyFXz6N9i41BlYL4EABI1NPrHycB8%2BXXQkOW1O5oc/eOuZuBtGZiVTWBI8Wr7o3/cRsnulYEZjAZLAAjw6h3Plj6EhXj1jufuffsHpY%2BiVfYAoHO9jv5NG1%2BgDEzBbwOFnnU//TflfKVzZA8A%2BvRK3kDcaMB9lgITswKADgVO/03JX/tBCQD0xgR0BibkPQDoxytHDL6rNhpw3zseB%2B3FCgA6Yfpv55zszSYw9OC8SbeLV448e791wC6sAKB5pv/enJ/deBMY2nb%2ByOnSh9CA80eevf%2BdJ0ofRXWsAKBhpv/knKvt7AFAq86ZaAd0/sjpB6wDxlgBQJNM/%2Bk4b%2BO8BwDtOXe7KTa9c0dOP/AP64BhsAKA5pj%2Bs3MONwgAQCibwNCSs751nZNzt59%2BMP5BkBUANMP0ny/nUwCgDabVIoSfVW8CA%2BFyZ6AfA4UGnL3tVOlD6NbZ2089%2BM8nSx9FGTaBoXZ/NP0X7Oxtp74e2QB7AAChBACq5tv/5cg8zwIA9cqcSqUEnm17AABXpc1DKwCo1Jm8b0iLSzvnAgAQynsAUKMzh7O%2BFa3HmdtOfePdlB8J9SYwwBYpU9EmMFTnD4dPlj6EaGcOn/zmu0%2BVPoplsAcAEEoAoC6%2B/a9ByKcgAACh7AEA7CBhNloBQEVeznjy0ISEz8J7AAC76H08WgEAhBIAqMXLt/b/zKEt3X8io5XuFzkA0%2Bp7QloBAIQSAKjC7299pvQhsIO%2BPxcBAAglAAChRis973AAzKrjIWkFAOX97paeHzS3ruNPRwAAQgkAQCi/DRRgH73OSX8TGGBffc5Jj4AAQgkAFPbbW35W%2BhDYR6%2Bfkb8HADCBHkelTWCA/XU5Kj0CAgglAAChBAAglD0AgP11OSqtAABCjXr%2BVacA89LjqLQCAAglAAChbAID7K/LUWkFABBKAABCCQBAKAEACDXq8WdbAeasy1FpBQCFfeu9H5U%2BBPbR62fkbwID7KvPOWkFABDKi2AA%2B%2Bh1TloBAIQSAIBQAgDlffu9H5c%2BBHbV8acz6vbhFsBc9DskbQID7KXjIekREEAoAYAqfOf9bh80N63vz8WbwAB76HlC2gMA2FXfE9IjIKjFQ%2B//pPQhcI3uPxEBAAjlPQCAXfQ%2BHq0AoCIPfdD5M4eGJHwWNoEBdpAwG60AAEIJANTl4YAnD/UL%2BRS8CAawXcRgtAKA6jz8wdOlDyFazvkfrUR0DmBSOVPRCgBq9N1/pXwTWpuoMy8AAKEEACoV9a1oJdLOuRfBAK5Km4dWAFCvR8K%2BIS0r8GwLAFQtcCoVkXmeBQAg1CjoR16hTY9cWv31zSdKH0XPHrm0Gvf4fxgGm8DQhEcvrf5KAxbj0UursWPQIyCAUAIAbXj00mrpQ%2BhQ%2BFkVAGhG%2BLSaO%2BfTHgC05Oil1ZdsBszD0eBH/5usAABCCQA05mj8g4vZOYcbRpk//QpNO7q%2B%2BtJNHgRN6eh66E/9b2cFAE06uu572Gk4b%2BNGK1IIbXpsfe2XN62VPoqWPLa%2BZt6NswKAhj22vlb6EJrhXG0nANA2c20SztKOBACaZ7rtzfnZjQBAD8y43Tgze/AmMHTi8fW1F29aK30UdXncru%2BevAcA/Xj88towDC/euFb4OCqwcSrMt715BAS9uTr7gjkDExIA6FDyBEz%2B2g/KHgD06djltWEYXkh6HLTxJZtpkxs5XdCxY5dPvHBjxC8/OHbZL0c6sFHpAwAWa2MydpwBo39q9gAgQq9Tstevazn8GCikOHblxDAMLxzqZCmw8eWYYLOwCQxZvnflxDAMv2g5Axtfgtk1O3sAkKjRDGwcNvMiAJCroQwY/YsgAJBuc7ZWWAJzf6HsAQBXHf//tH2%2BdAk2j8SAWigrAGCrUiU47vv95fImMLCr41d%2Buvmfnz/09KL/CZbMewDARI5/uHVSP3/DgZOw/f/ECCrIIyBgSjtMc5piExgglN8FBBBKAABCCQBAKAEACGUTGCCU9wAAQnkTGCCUPQCAUPYAAEJZAQCEEgCAUAIAEEoAAEKNVuwCA0SyAgAIJQAAobwJDBDKi2AAoTwCAgglAAChBAAglL8HABDKJjBAKI%2BAAEIJAEAoAQAI5U1ggFA2gQFC%2BTFQgFD2AABCCQBAKHsAAKGsAABCCQBAKAEACCUAAKFGKyu2gQESWQEAhBIAgFACABDKi2AAoawAAEIJAEAoAQAI5e8BAISyCQwQyt8EBghlDwAglAAAhBIAgFA2gQFCWQEAhPIeAEAoKwCAUPYAAEKNSh8AdXnr4/8e9H9y5/WfWsSRAAd10PvXm8Cde%2Bvj/yz%2BnzjYNXfn9Z9e0JFAZxZ9/1oB9GYJE39Gux2hMBCr1G0rAG2rf9xPThjoXm037GjFE6Cm/PWjui6gJRi/Z77wOTGgJZXfsFYADaj8Glqm8VMhBtSmuVtVACrV3JW0fGJAca3fpwJQkdYvpoLEgGXq5lb1IlhhF3u5kuoxfnPeJQbMT393qxVAAf1dRtW6KAbMpu%2B7VQCWpO/LqAliwORCblhvAi/QxY8%2BKX0I7OzaGHym4JFQlbR71q%2BDnrOLH2ZdQB0Yv%2BfvukEMsoTfsKOLH37yRRf9bN7MvoZ6Mj4O3Bf9catuYQ9gSq6k7r0pBu1zn%2B5NAA7AxRRLDBriPp2cAOzDxcQWYlAh9%2Bl0BGAHLiYmJAYFuU9nNxr8HOgwDMNwwcXEbMbn0d1isBju0/mKXgG4mFiQC2IwP%2B7TxRkNQ9YS4MIVFxNLdU0MDonBRNyny7GxAui5ABeu/Lv0IcBV43Pt7kOfLXgkFXKrLl9vewBvuIZoxPi8%2B1JqDNywZTW/B%2BACogNvxMTADVuVZgLguiHEbpd6i2Fw21ZuNFR2wbliYEdV3ae7cf%2B2Za8VgM8S6uc%2BZWrXlT4AAMoQAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoVY%2B%2BNtvNv/LE3%2B%2BseChsHynv3K59CFQKdMgwTUB2PTEX25a/qGwHKe/vF76EGiJadCxnQMwzsffB3OfGRkF3dicBvsHYJOPv0XmPnNnFDRq%2BzQ4QAA2Penjr9spQ59lMQ0qt/c0mCYA43z8lTD0KcsoqMqEA2HWAIxzBSyZoU%2BFzIGCDjoT5hmAcS6CBTH0aYg5sASzzIRFBWCci2B25j6tMwfmaF4DYRkBGPfU6y6CAzh5j7lPh8yBKSxiGiw7AOOeev3mUv90zU7ec6n0IcDymAN7WPQ0KBmAcS4Ccx/MgWG5o6CWAIyLugjMfdiRObAENQZgi86uAxMfDqqzIbChhlHQQAC2%2B2E7V8MzFXzG0JOGbv/tahsITQZgi6ouiNo%2BYAhhDkyhhwAAMAV/EQwglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACDU/wBDq7W4Wq9RsQAAAABJRU5ErkJggg%3D%3D%22%2C%20%22sizes%22%3A%20%22512x512%22%2C%20%22type%22%3A%20%22image/png%22%2C%20%22purpose%22%3A%20%22any%20maskable%22%7D%5D%7D">
+<title>Weekend Finder — central Jersey, from Princeton Junction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF7F0;
+    --ink:#21302A;
+    --ink-soft:#5B6B61;
+    --line:#E3DCCD;
+    --card:#FFFFFF;
+    --accent:#1C7FA8;     /* set per season by JS */
+    --accent-2:#F2A93B;   /* set per season by JS */
+    --accent-soft:#E7F1F6;/* set per season by JS */
+    --shadow:0 1px 0 rgba(33,48,42,.04), 0 8px 24px -16px rgba(33,48,42,.35);
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:22px 18px 64px}
+
+  /* Header / season strip */
+  header{margin-bottom:18px}
+  .eyebrow{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:600;margin:0 0 6px
+  }
+  h1{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:clamp(30px,5vw,46px);line-height:1.04;
+    margin:0 0 4px;letter-spacing:-.01em
+  }
+  h1 .from{display:block;font-size:.42em;font-weight:500;color:var(--ink-soft);letter-spacing:0;margin-top:8px}
+  .nowstrip{
+    margin-top:16px;border:1px solid var(--line);border-left:5px solid var(--accent);
+    background:linear-gradient(180deg,var(--accent-soft),var(--card));
+    border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)
+  }
+  .nowstrip .season{
+    font-family:'Fraunces',serif;font-size:20px;font-weight:600;color:var(--accent);
+    display:flex;align-items:center;gap:9px
+  }
+  .nowstrip .season .dot{width:11px;height:11px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 4px var(--accent-soft)}
+  .nowstrip p{margin:5px 0 0;color:var(--ink-soft);font-size:14.5px}
+  .nowstrip .stamp{margin-top:11px;display:inline-block;font-size:12px;font-weight:600;
+    letter-spacing:.03em;color:var(--accent);background:#fff;border:1px solid var(--line);
+    border-radius:999px;padding:4px 11px}
+  .wcnote{margin-top:12px;border:1px solid var(--line);border-left:5px solid #C0492B;
+    background:#FBEEE9;border-radius:var(--radius);padding:11px 14px;font-size:13px;color:#7A2E1C}
+  .wcnote b{color:#5E2316}
+  .booknote{margin-top:10px;border:1px solid var(--line);border-left:5px solid #B8862F;
+    background:#FBF4E2;border-radius:var(--radius);padding:11px 14px;font-size:13px;color:#6B5413}
+  .booknote b{color:#4A3A0C}
+
+  /* Controls */
+  .controls{
+    display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;
+    margin:20px 0 8px;padding:14px;border:1px solid var(--line);
+    border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow)
+  }
+  .ctl{display:flex;flex-direction:column;gap:7px}
+  .ctl label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{
+    border:1px solid var(--line);background:#fff;color:var(--ink-soft);
+    font-family:inherit;font-size:13px;font-weight:500;padding:6px 11px;border-radius:999px;
+    cursor:pointer;transition:all .12s ease
+  }
+  .chip:hover{border-color:var(--accent)}
+  .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .toggle{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink);cursor:pointer;user-select:none}
+  .toggle input{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}
+  .surprise{
+    margin-left:auto;font-family:'Fraunces',serif;font-weight:600;font-size:15px;
+    background:var(--accent-2);color:#23180a;border:none;border-radius:999px;
+    padding:10px 18px;cursor:pointer;box-shadow:var(--shadow);transition:transform .1s ease
+  }
+  .surprise:hover{transform:translateY(-1px)}
+  .surprise:active{transform:translateY(0)}
+
+  .meta{display:flex;justify-content:space-between;align-items:baseline;margin:18px 2px 12px;gap:12px;flex-wrap:wrap}
+  .count{font-size:13px;color:var(--ink-soft)}
+  .count b{color:var(--ink)}
+
+  /* Grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:15px 15px 13px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px;
+    position:relative;transition:border-color .15s ease, box-shadow .15s ease
+  }
+  .card:hover{border-color:var(--accent)}
+  .card.done{opacity:.62}
+  .card.spot{outline:3px solid var(--accent-2);outline-offset:1px}
+  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .card h3{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin:0;line-height:1.12}
+  .card .town{font-size:12.5px;color:var(--ink-soft);margin-top:2px}
+  .drive{
+    flex:none;text-align:center;background:var(--accent-soft);color:var(--accent);
+    border-radius:10px;padding:6px 9px;min-width:60px;line-height:1.05;
+    text-decoration:none;cursor:pointer;transition:background .12s ease, color .12s ease
+  }
+  a.drive:hover{background:var(--accent);color:#fff}
+  .drive b{font-family:'Fraunces',serif;font-size:18px;font-weight:600;display:block}
+  .drive span{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+  .blurb{font-size:13.5px;color:var(--ink-soft);margin:0;flex:1}
+  .logi{font-size:12px;color:var(--ink);margin:0;background:#F4EFE3;border:1px solid var(--line);border-radius:9px;padding:7px 9px}
+  .logi-k{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:2px}
+  .tags{display:flex;flex-wrap:wrap;gap:5px}
+  .tag{font-size:11px;color:var(--ink-soft);background:#F1ECE0;border-radius:6px;padding:2px 7px}
+  .tag.season{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .card .actions{display:flex;align-items:center;gap:8px;margin-top:2px;border-top:1px solid var(--line);padding-top:10px}
+  .go{
+    font-family:'Inter',sans-serif;font-weight:600;font-size:13px;text-decoration:none;
+    color:#fff;background:var(--accent);border-radius:9px;padding:7px 13px;flex:1;text-align:center;
+    transition:opacity .12s ease
+  }
+  .go:hover{opacity:.9}
+  .mark{
+    border:1px solid var(--line);background:#fff;border-radius:9px;width:38px;height:34px;
+    font-size:16px;cursor:pointer;line-height:1;transition:all .12s ease;display:grid;place-items:center
+  }
+  .mark:hover{border-color:var(--accent)}
+  .mark.on-love{background:#FDE9EF;border-color:#E8638C}
+  .mark.on-done{background:#EAF0EC;border-color:#6FA86B}
+
+  .empty{text-align:center;color:var(--ink-soft);padding:48px 20px;border:1px dashed var(--line);border-radius:var(--radius);font-size:14.5px}
+
+  /* Launchpad */
+  .launch{margin-top:30px;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow)}
+  .launch h2{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin:0 0 4px}
+  .launch p{margin:0 0 12px;font-size:13px;color:var(--ink-soft)}
+  .launch .links{display:flex;flex-wrap:wrap;gap:8px}
+  .launch a{
+    text-decoration:none;font-size:13px;font-weight:500;color:var(--ink);
+    border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:#fff;transition:all .12s ease
+  }
+  .launch a:hover{border-color:var(--accent);color:var(--accent)}
+
+  footer{margin-top:22px;text-align:center;font-size:12px;color:var(--ink-soft)}
+
+  @media (max-width:560px){
+    .surprise{margin-left:0;width:100%}
+    .controls{gap:12px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Weekend planner</p>
+    <h1>What should we do this weekend?
+      <span class="from">Pre-filtered by drive time from Princeton Junction, NJ</span>
+    </h1>
+    <div class="nowstrip">
+      <div class="season"><span class="dot"></span><span id="seasonName">Loading season</span></div>
+      <p id="seasonNote"></p>
+      <p class="stamp">Refreshed for the weekend of June 20 to 21, 2026</p>
+    </div>
+    <div class="wcnote">Heading into NYC? The World Cup runs at MetLife through July 19. Easiest city days are weekends with no match: skip <b>June 22, 26, 27, 30</b>, <b>July 5</b>, and the <b>July 17 to 19</b> final weekend.</div>
+    <div class="booknote"><b>Book now, before it sells out:</b> THE POLAR EXPRESS in Phillipsburg (~1 hr) has 2026 tickets ON SALE for the Nov to Dec season and they go fast. Peach picking opens at Terhune in early July. Holland Ridge sunflower-festival tickets usually drop in late summer, I will flag the date when it lands.</div>
+  </header>
+
+  <section class="controls" aria-label="Filters">
+    <div class="ctl">
+      <label>Max drive</label>
+      <div class="chips" id="driveChips">
+        <button class="chip" data-drive="20">≤ 20 min</button>
+        <button class="chip" data-drive="45">≤ 45 min</button>
+        <button class="chip" data-drive="60">≤ 60 min</button>
+        <button class="chip" data-drive="90" aria-pressed="true">≤ 90 min</button>
+      </div>
+    </div>
+    <div class="ctl">
+      <label>Type</label>
+      <div class="chips" id="catChips">
+        <button class="chip" data-cat="pyo" aria-pressed="true">Pick your own</button>
+        <button class="chip" data-cat="beach" aria-pressed="true">Beach</button>
+        <button class="chip" data-cat="outdoor" aria-pressed="true">Outdoor</button>
+        <button class="chip" data-cat="indoor" aria-pressed="true">Indoor / rainy</button>
+        <button class="chip" data-cat="active" aria-pressed="true">Active / book</button>
+      </div>
+    </div>
+    <label class="toggle"><input type="checkbox" id="hideDone"> Hide places we've done</label>
+    <button class="surprise" id="surpriseBtn">Surprise me</button>
+  </section>
+
+  <div class="meta">
+    <div class="count" id="count"></div>
+    <div class="count">Tap <b>♡</b> to save a favorite, <b>✓</b> to mark a place done so it stops repeating.</div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <section class="launch">
+    <h2>Still want to browse fresh deals?</h2>
+    <p>Your usual scouting spots, in one place, so you are not hunting around.</p>
+    <div class="links">
+      <a href="https://njmom.com/things-to-do-in-nj-this-weekend/" target="_blank" rel="noopener">NJ Mom: this weekend</a>
+      <a href="https://www.groupon.com/local/new-jersey/things-to-do/activities" target="_blank" rel="noopener">Groupon: NJ activities</a>
+      <a href="https://www.groupon.com/local/new-jersey/kids" target="_blank" rel="noopener">Groupon: kids deals</a>
+      <a href="https://www.pickyourown.org/NJcentral.htm" target="_blank" rel="noopener">PickYourOwn: crop calendar</a>
+      <a href="https://www.terhuneorchards.com/pick-your-own-schedule/" target="_blank" rel="noopener">Terhune PYO schedule</a>
+    </div>
+  </section>
+
+  <footer>Drive times are approximate from Princeton Junction. Always call ahead for crop status and beach badge details on the day.</footer>
+</div>
+
+<script>
+/* ---------- season setup ---------- */
+const SEASONS = {
+  spring:{ label:"Spring", accent:"#5C9A57", accent2:"#E8638C", soft:"#EAF3E8",
+    note:"Strawberries and asparagus open the picking season, tulips bloom at Holland Ridge, and the trails are at their best before the heat. Prime outdoor months." },
+  summer:{ label:"Summer", accent:"#1C7FA8", accent2:"#F2A93B", soft:"#E7F1F6",
+    note:"Blueberries are just starting at local farms, peaches come in July, and the shore is open. Best stretch of the year for a beach day." },
+  fall:{ label:"Fall", accent:"#C25A2B", accent2:"#B8862F", soft:"#F6EBE2",
+    note:"Apples, pumpkins, sunflowers, and corn mazes. Crisp air makes this the other great outdoor window before things move indoors." },
+  winter:{ label:"Winter", accent:"#3E6E8E", accent2:"#7FA8C4", soft:"#E9F0F5",
+    note:"Indoor season. Science centers, museums, and indoor play, with the occasional clear-day walk when everyone needs to move." }
+};
+function currentSeason(){
+  const m = new Date().getMonth(); // 0=Jan
+  if(m>=2 && m<=4) return "spring";
+  if(m>=5 && m<=7) return "summer";
+  if(m>=8 && m<=10) return "fall";
+  return "winter";
+}
+
+/* ---------- data: every place pre-tagged with drive time from Princeton Junction ---------- */
+const PLACES = [
+  // PICK YOUR OWN
+  {id:"terhune", name:"Terhune Orchards", town:"Princeton", drive:15, cat:"pyo", seasons:["spring","summer","fall"],
+   blurb:"This weekend: no cherries this year (the spring freeze killed the crop). Blueberries and pick-your-own flowers open any day now for late June but may not be ready yet, so call 609-924-2310 first. Store and donuts open 9 to 6, no pets.",
+   logistics:"Free on-site parking. Picking is pay-by-the-container or by weight at the stand; farm store, donuts, and wagon rides are extra.",
+   tags:["festivals","animals","close"], url:"https://www.terhuneorchards.com/pick-your-own-schedule/"},
+  {id:"vonthun", name:"VonThun Farms", town:"Monmouth Junction", drive:18, cat:"pyo", seasons:["spring","summer","fall"],
+   blurb:"This weekend: strawberry season is over (it ended 6/7) and blueberries are still 'coming soon,' not open yet at the South Brunswick fields. Call 732-329-8656 first. Farm market and donuts open daily.",
+   logistics:"Free parking. You prepay for picking containers at check-in; festival weekends add a separate activity-area ticket.",
+   tags:["festivals","close"], url:"https://www.vonthunfarms.com/sb/sb-u-pick/"},
+  {id:"hickory", name:"Hickory Corner Farm (formerly Lee Turkey Farm)", town:"East Windsor", drive:15, cat:"pyo", seasons:["summer","fall"],
+   blurb:"This weekend: small local farm in its early-summer window. Cherries and the last strawberries are the likely picks. Call 609-448-0629 for the day's crop before driving over.",
+   logistics:"Free on-site parking. Pay by weight for what you pick at the stand.",
+   tags:["low-key","close"], url:"https://www.google.com/maps/search/?api=1&query=Hickory+Corner+Farm+East+Windsor+NJ"},
+  {id:"hollandridge", name:"Holland Ridge Farms", town:"Cream Ridge", drive:28, cat:"pyo", seasons:["spring","fall"],
+   blurb:"Nothing to pick this weekend. Tulip u-pick runs in April and the sunflower u-pick returns late summer into fall. Worth saving for September.",
+   logistics:"Timed event tickets are required and include parking; flowers are priced per stem or per bucket, wagon rides extra.",
+   tags:["flowers","photos","reserve"], url:"https://www.hollandridgefarms.com/"},
+  {id:"locusthall", name:"Johnson's Locust Hall Farm", town:"Jobstown", drive:35, cat:"pyo", seasons:["spring","summer","fall"],
+   blurb:"This weekend: strawberry season has wrapped (it runs through mid-June). Check their site for the next reservation crop before planning a trip.",
+   logistics:"Free parking. Picking is reservation-based and prepaid; food and festival activities cost extra.",
+   tags:["festivals","reserve"], url:"https://www.johnsonslocusthallfarm.com/"},
+  {id:"johnsonscorner", name:"Johnson's Corner Farm", town:"Medford", drive:40, cat:"pyo", seasons:["spring","summer","fall"],
+   blurb:"This weekend: between berry and summer crops, with blueberries starting soon. The farm, animals, and soft-serve are open, but call for exactly what's pickable.",
+   logistics:"Free parking. Picking priced at the stand; hayride, play area, and soft-serve are separate paid add-ons.",
+   tags:["play area","hayride","food"], url:"https://www.johnsonsfarm.com/"},
+  {id:"battleview", name:"Battleview Orchards", town:"Freehold", drive:35, cat:"pyo", seasons:["summer","fall"],
+   blurb:"This weekend: the spring freeze wiped out their cherries, peaches, nectarines and apples this year, so likely no stone-fruit picking. Call 732-462-0756 first. Bakery and store stay open.",
+   logistics:"Free parking. Pay by weight for picking; the bakery is a separate purchase.",
+   tags:["historic","bakery","call ahead"], url:"https://www.battlevieworchards.com/pick-your-own/dates/"},
+  {id:"norzhill", name:"Norz Hill Farm", town:"Hillsborough", drive:35, cat:"pyo", seasons:["summer","fall"],
+   blurb:"This weekend: early summer, limited picking. The real draw here is the fall corn maze and harvest barn from September. Call for any current u-pick.",
+   logistics:"Free parking. Pay per activity; the fall maze and play barn are ticketed.",
+   tags:["animals","fall maze"], url:"https://www.norzhillfarm.com/"},
+  {id:"alstede", name:"Alstede Farms", town:"Chester", drive:60, cat:"pyo", seasons:["spring","summer","fall"],
+   blurb:"This weekend: blueberries and early summer crops starting, plus animals and hayrides. A 60-minute drive, so check their daily picking list before heading out.",
+   logistics:"Free parking. Picking prepaid by container; wagon rides, animals, and festival entry are extra on weekends.",
+   tags:["destination","festivals","animals"], url:"https://www.alstedefarms.com/"},
+
+  // BEACH (summer)
+  {id:"pointpleasant", name:"Point Pleasant Beach + Jenkinson's", town:"Point Pleasant", drive:60, cat:"beach", seasons:["summer"],
+   blurb:"Open for the season. Lifeguarded swimming beach plus the Jenkinson's boardwalk, aquarium, and rides. Buy beach badges online to skip the line; the aquarium is your rain backup.",
+   logistics:"Paid lots and metered streets near the boardwalk fill by late morning. Beach badges required (buy online), young kids free; Jenkinson's rides and aquarium are separate tickets.",
+   tags:["boardwalk","aquarium","rides"], url:"https://www.jenkinsons.com/"},
+  {id:"belmar", name:"Belmar Beach", town:"Belmar", drive:55, cat:"beach", seasons:["summer"],
+   blurb:"Open for the season, lifeguards on duty. Beach playgrounds every few blocks and badges free for kids 15 and under. The easiest low-stress beach day of the bunch.",
+   logistics:"Metered streets and paid lots; badges required for ages 16+ (buy online), kids free. Bring the parking app or quarters.",
+   tags:["playgrounds","kids free"], url:"https://www.google.com/maps/search/?api=1&query=Belmar+Beach+NJ"},
+  {id:"springlake", name:"Spring Lake Beach", town:"Spring Lake", drive:62, cat:"beach", seasons:["summer"],
+   blurb:"Open for the season. The quiet, pretty option: calm boardwalk, clean sand, no arcades. Badges needed for ages 12 and up.",
+   logistics:"Limited free street parking, go early; daily or season badges required for ages 12+, sold at the beach pavilions.",
+   tags:["quiet","relaxed"], url:"https://www.google.com/maps/search/?api=1&query=Spring+Lake+Beach+NJ"},
+  {id:"asburypark", name:"Asbury Park Beach", town:"Asbury Park", drive:55, cat:"beach", seasons:["summer"],
+   blurb:"Open for the season. Beach plus a lively boardwalk with food and the Silverball pinball museum as an indoor break when the kids overheat.",
+   logistics:"Paid garages and metered streets; weekend beach badges required (buy online); boardwalk rides and pinball are separate.",
+   tags:["boardwalk","food","pinball"], url:"https://www.google.com/maps/search/?api=1&query=Asbury+Park+Beach+NJ"},
+  {id:"islandbeach", name:"Island Beach State Park", town:"Seaside Park", drive:75, cat:"beach", seasons:["summer"],
+   blurb:"Open for the season. Natural barrier-island beach with dunes and calmer water. Go early on weekends; the lots fill and the gate closes when full.",
+   logistics:"State park with an in-season vehicle entry fee (about $10 weekday, $20 weekend). The gate closes once lots fill, so arrive before 10am.",
+   tags:["natural","calmer","space"], url:"https://www.google.com/maps/search/?api=1&query=Island+Beach+State+Park+NJ"},
+  {id:"sandyhook", name:"Sandy Hook", town:"Gateway NRA", drive:75, cat:"beach", seasons:["summer"],
+   blurb:"Open for the season. Wide ocean and bay beaches, a lighthouse, and bike paths. Go early; the lots can fill by late morning on a nice weekend.",
+   logistics:"Beach parking is $20/day or $100/season per car, cashless (card only), 8am to 6pm; free if you bike or take transit. Lots fill and close on hot weekends, so buy a timed permit on recreation.gov.",
+   tags:["bikes","lighthouse"], url:"https://www.google.com/maps/search/?api=1&query=Sandy+Hook+Gateway+NJ"},
+
+  // OUTDOOR (non-picking)
+  {id:"groundsforsculpture", name:"Grounds for Sculpture", town:"Hamilton", drive:15, cat:"outdoor", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend, gardens in full summer bloom. Book timed tickets online before you go, and bring plenty of water since most of it is outdoors.",
+   logistics:"Free on-site parking. Admission is timed and ticketed (buy online); the tram tour and Rat's restaurant are extra.",
+   tags:["art","wander","close"], url:"https://www.groundsforsculpture.org/"},
+  {id:"dukefarms", name:"Duke Farms", town:"Hillsborough", drive:40, cat:"outdoor", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend, free. Green trails and meadows, good for biking. Check site hours before you go; some loops close seasonally.",
+   logistics:"Free, but a free parking pass is required for Saturday visits and it sells out, so reserve ahead. Main lot fills on weekends (overflow by the community gardens). On-site bike rentals (adult and kid bikes, helmets) are pay-on-site and can sell out; cafe on site. Closed Mondays.",
+   tags:["free","bikes","trails"], url:"https://www.dukefarms.org/"},
+  {id:"sourland", name:"Sourland Mountain Preserve", town:"Hillsborough", drive:38, cat:"outdoor", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend, free. Shaded boulder-scramble hike that holds up on a hot day. Wear real shoes; the rocks get slick.",
+   logistics:"Free gravel trailhead lot off East Mountain Rd; it fills on nice weekends, so arrive early. No facilities, bring water.",
+   tags:["hike","boulders","free"], url:"https://www.google.com/maps/search/?api=1&query=Sourland+Mountain+Preserve+NJ"},
+  {id:"howell", name:"Howell Living History Farm", town:"Lambertville", drive:30, cat:"outdoor", seasons:["spring","summer","fall"],
+   blurb:"This Saturday Jun 20: Dairy Day, 10 to 4, free. Milking demos with their cow Blizzard, plus churn-and-taste butter and cheese. Closed Sunday. Next Sat: Ice Cream Party and Wheat Harvest.",
+   logistics:"Free parking and free admission. Small items like cheese or crafts may be sold, so bring a few dollars cash.",
+   tags:["free","animals","hands-on"], url:"https://howellfarm.org/calendar"},
+  {id:"washingtoncrossing", name:"Washington Crossing State Park", town:"Titusville", drive:25, cat:"outdoor", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend. Trails, nature center, and river views. Pair it with the canal towpath for a longer, flat walk or bike.",
+   logistics:"State park with a small summer-weekend vehicle entry fee (Memorial Day to Labor Day); free off-season. Nature center is free.",
+   tags:["history","trails","river"], url:"https://www.google.com/maps/search/?api=1&query=Washington+Crossing+State+Park+NJ"},
+  {id:"sixflags", name:"Six Flags Great Adventure + Safari", town:"Jackson", drive:30, cat:"outdoor", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend on a full summer schedule, including Hurricane Harbor water park and the drive-through safari. Buy tickets online; weekends are busiest.",
+   logistics:"Parking runs about $35 to 40 (cheaper prepaid online). Inside, the Flash Pass to skip lines, lockers, and Safari off-road tours cost extra; bring a refillable bottle.",
+   tags:["rides","safari","water park"], url:"https://www.sixflags.com/greatadventure"},
+
+  // INDOOR / RAINY / WINTER
+  {id:"libertyscience", name:"Liberty Science Center", town:"Jersey City", drive:60, cat:"indoor", seasons:["spring","summer","fall","winter"],
+   blurb:"Open this weekend. Big indoor science day with the planetarium, ideal if the weather turns. Buy timed tickets ahead.",
+   logistics:"Paid on-site garage (about $10 to 15). Admission is timed (buy online); the planetarium and some exhibits are add-ons.",
+   tags:["science","planetarium","all weather"], url:"https://lsc.org/"},
+  {id:"iplay", name:"iPlay America", town:"Freehold", drive:30, cat:"indoor", seasons:["spring","summer","fall","winter"],
+   blurb:"Open this weekend, indoor and rain-proof. A discounted unlimited-ride band and game-card deal is live on Groupon right now.",
+   logistics:"Free parking. You load a game card or buy a ride wristband inside, pay-as-you-go, so set a budget with the kids.",
+   tags:["rides","arcade","all weather"], url:"https://www.groupon.com/deals/iplay-america-2-10"},
+  {id:"diggerland", name:"Diggerland USA", town:"West Berlin", drive:50, cat:"indoor", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend. Their new outdoor water park, The Water Main, is open for summer, so plan a full day. A Groupon deal is live.",
+   logistics:"Free parking. General admission covers most attractions and the summer water park; a few premium rides need extra tickets.",
+   tags:["unique","ride machines","water"], url:"https://www.groupon.com/deals/goldstar-diggerland-usa"},
+  {id:"princetonart", name:"Princeton University Art Museum", town:"Princeton", drive:15, cat:"indoor", seasons:["winter","spring","summer","fall"],
+   blurb:"Open this weekend, free. A quick hour in the new building, then food in town. Closed Mondays. Good gray-day stop close to home.",
+   logistics:"Free admission, but parking is metered street and paid garages in town (Spring St garage is closest). Closed Mondays.",
+   tags:["free","short","close"], url:"https://artmuseum.princeton.edu/"},
+  {id:"insectropolis", name:"Insectropolis", town:"Toms River", drive:60, cat:"indoor", seasons:["winter","spring","fall"],
+   blurb:"Open Tue to Sat this weekend. Small, quirky, low-cost bug museum (tarantulas, a termite tower to crawl through). A solid rain backup.",
+   logistics:"Free parking and free admission (donations welcome). Small gift shop inside.",
+   tags:["bugs","hands-on","quirky"], url:"https://www.google.com/maps/search/?api=1&query=Insectropolis+Toms+River+NJ"},
+
+  // ACTIVE / BOOK AHEAD
+  {id:"princetoncanoe", name:"Princeton Canoe & Kayak", town:"Princeton", drive:12, cat:"active", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend, Sat to Sun 10 to 8, weather permitting (call 609-452-2403 first). About $20 to 22 per hour per boat, kids ride with a parent, vests included. Paddle Carnegie Lake and the canal.",
+   logistics:"Free on-site parking at 483 Alexander St. Pay per boat by the hour at the dock (cash or card). Weather-dependent, so call first.",
+   tags:["water","close","call ahead"], url:"https://www.princetoncanoe.com/"},
+  {id:"griggstown", name:"Griggstown Canoe & Kayak Rental", town:"Princeton (Franklin Twp)", drive:20, cat:"active", seasons:["spring","summer","fall"],
+   blurb:"Open this weekend, your nearest kayak option after Princeton Canoe. Quiet paddling on the D&R Canal and Millstone River, with a portage over to Carnegie Lake. Kids ride with a parent; reserve online or just walk up, and call 908-359-5970 on busy Saturdays.",
+   logistics:"Free on-site parking at 1076 Canal Rd. Pay per boat by the hour (cash or card), life vests included. Weather-dependent, so call ahead.",
+   tags:["water","close","call ahead"], url:"http://griggstowncanoe.com/"},
+  {id:"topgolf", name:"Topgolf Edison", town:"Edison", drive:25, cat:"active", seasons:["spring","summer","fall","winter"],
+   blurb:"Open this weekend, all-weather bays. Reserve online ahead; weekends fill fast. Weekdays before 4pm are half price. Up to 6 per bay, kids welcome with an adult, and there's a KidZone.",
+   logistics:"Free parking. Reserve a bay online (deposit applies); you pay per hour per bay plus a one-time $5 to 6 player card, and food and drinks.",
+   tags:["book ahead","all weather"], url:"https://topgolf.com/us/edison/plan-a-visit/"},
+  {id:"whalewatch", name:"Jersey Shore Whale Watch (Belmar)", town:"Belmar", drive:55, cat:"active", seasons:["spring","summer","fall"],
+   blurb:"Running now into fall. Bill McKim's 3-hour Belmar trip has a 90%+ sighting rate and a free re-cruise if you miss. Book online ahead; weekends sell out. SS Miss Belmar is the sighting-guaranteed alternative.",
+   logistics:"Paid parking at Belmar Marina (lot or meters). Buy boat tickets online ahead; snacks and drinks sold on board.",
+   tags:["book ahead","water","wow factor"], url:"https://jerseyshorewhalewatch.com/"},
+  {id:"nycferry", name:"NYC Ferry East River ride", town:"NYC", drive:80, cat:"active", seasons:["spring","summer","fall"],
+   blurb:"The easiest East River boating: hop the NYC Ferry East River route for about $4.50, no reservation, big skyline views with the kids. NJ Transit to the city is often simpler than driving. NYC trip: avoid the World Cup dates noted up top.",
+   logistics:"Skip driving, take NJ Transit in. The ferry is about $4.50 per ride (tap or app), no reservation; piers have little or no parking.",
+   tags:["NYC","cheap","no reservation"], url:"https://www.ferry.nyc/routes-and-schedules/route/east-river/"},
+
+  // SEASONAL / BOOK-AHEAD & NOVEL
+  {id:"polarexpress", name:"THE POLAR EXPRESS (Delaware River Railroad)", town:"Phillipsburg", drive:60, cat:"active", seasons:["fall","winter"],
+   blurb:"Book-now alert: 2026 tickets are ON SALE and sell out by fall. Runs Nov 28 to Dec 21, a 90-minute ride to meet Santa with hot cocoa and a keepsake sleigh bell. Grab summer dates while pajama-car seats last.",
+   logistics:"Parking at the Phillipsburg waterfront lot. Tickets are timed and tiered (coach up to first class); buy online well ahead. Concessions on board.",
+   tags:["book ahead","holiday","wow factor"], url:"https://www.877trainride.com/"},
+  {id:"otherworld", name:"Otherworld Philadelphia (immersive art)", town:"NE Philadelphia, PA", drive:52, cat:"indoor", seasons:["spring","summer","fall","winter"],
+   blurb:"Novel and worth-it-once: 55 walk-through rooms of glowing interactive art, mazes, puzzles, and crawl tubes. Open year-round, all weather, closed Tuesdays. Plan 1 to 2 hours.",
+   logistics:"Free parking at the warehouse site. Timed tickets required (buy online), about $35 adult and $30 kid, under 3 free. The add-on glasses are skippable.",
+   tags:["novel","rainy ok","timed tickets"], url:"https://otherworldphila.com/"},
+  {id:"crayola", name:"Crayola Experience", town:"Easton, PA", drive:60, cat:"indoor", seasons:["spring","summer","fall","winter"],
+   blurb:"All-weather kids' day: hands-on color and art stations, name-your-own crayon, melt-and-mold, and big indoor play. Best for the under-12 crowd, open year-round.",
+   logistics:"Paid parking in the Easton garage next door. Buy timed tickets online to beat the gate price; some stations use refillable tokens inside.",
+   tags:["kids","rainy ok","timed tickets"], url:"https://www.crayolaexperience.com/easton"}
+];
+
+/* ---------- state + storage ---------- */
+const STORE_KEY = "ww_weekend_status_v1";
+const mem = {}; // fallback if window.storage is unavailable
+let status = {}; // {id: 'love' | 'done'}
+
+async function storeGet(key){
+  try{ const r = await window.storage.get(key); return r ? r.value : (mem[key] ?? null); }
+  catch(e){ return mem[key] ?? null; }
+}
+async function storeSet(key,val){
+  mem[key]=val;
+  try{ await window.storage.set(key,val); }catch(e){ /* keep in-memory */ }
+}
+
+const filters = { drive:90, season:currentSeason(), cats:new Set(["pyo","beach","outdoor","indoor","active"]), hideDone:false };
+
+/* ---------- render ---------- */
+const grid = document.getElementById("grid");
+const countEl = document.getElementById("count");
+
+function visible(){
+  return PLACES.filter(p=>{
+    if(p.drive > filters.drive) return false;
+    if(!p.seasons.includes(filters.season)) return false;
+    if(!filters.cats.has(p.cat)) return false;
+    if(filters.hideDone && status[p.id]==="done") return false;
+    return true;
+  }).sort((a,b)=>a.drive-b.drive);
+}
+
+const SEASON_LABEL = {spring:"Spring",summer:"Summer",fall:"Fall",winter:"Winter"};
+
+function card(p){
+  const st = status[p.id];
+  const el = document.createElement("div");
+  el.className = "card" + (st==="done"?" done":"");
+  el.dataset.id = p.id;
+  const otherTags = p.tags.map(t=>`<span class="tag">${t}</span>`).join("");
+  el.innerHTML = `
+    <div class="top">
+      <div>
+        <h3>${p.name}</h3>
+        <div class="town">${p.town}</div>
+      </div>
+      <a class="drive" href="https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent('Princeton Junction, NJ')}&destination=${encodeURIComponent(p.name + ', ' + p.town + ', NJ')}" target="_blank" rel="noopener" title="Exact drive time and directions"><b>~${p.drive}</b><span>min</span></a>
+    </div>
+    <p class="blurb">${p.blurb}</p>
+    <p class="logi"><span class="logi-k">Parking & on-site $</span>${p.logistics || 'Check the site for parking before you go.'}</p>
+    <div class="tags">${otherTags}</div>
+    <div class="actions">
+      <a class="go" href="${p.url}" target="_blank" rel="noopener">Open / directions</a>
+      <button class="mark ${st==="love"?"on-love":""}" data-act="love" title="Save favorite" aria-label="Save favorite">${st==="love"?"❤":"♡"}</button>
+      <button class="mark ${st==="done"?"on-done":""}" data-act="done" title="Mark done so it stops repeating" aria-label="Mark done">✓</button>
+    </div>`;
+  return el;
+}
+
+function render(){
+  const list = visible();
+  grid.innerHTML = "";
+  if(list.length===0){
+    grid.innerHTML = `<div class="empty">Nothing matches yet. Widen the drive radius, add a type, or switch the season to see more.</div>`;
+  }else{
+    list.forEach(p=>grid.appendChild(card(p)));
+  }
+  const total = PLACES.filter(p=>p.seasons.includes(filters.season)).length;
+  countEl.innerHTML = `<b>${list.length}</b> places within ~${filters.drive} min &middot; ${SEASON_LABEL[filters.season]}`;
+}
+
+/* ---------- season header ---------- */
+function applySeasonTheme(season){
+  const s = SEASONS[season];
+  document.documentElement.style.setProperty("--accent", s.accent);
+  document.documentElement.style.setProperty("--accent-2", s.accent2);
+  document.documentElement.style.setProperty("--accent-soft", s.soft);
+}
+function setSeasonHeader(){
+  const cur = currentSeason();
+  document.getElementById("seasonName").textContent = `Right now: ${SEASONS[cur].label} in central Jersey`;
+  document.getElementById("seasonNote").textContent = SEASONS[cur].note;
+}
+
+/* ---------- events ---------- */
+document.getElementById("driveChips").addEventListener("click",e=>{
+  const b = e.target.closest(".chip"); if(!b) return;
+  [...e.currentTarget.children].forEach(c=>c.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true");
+  filters.drive = +b.dataset.drive; render();
+});
+document.getElementById("catChips").addEventListener("click",e=>{
+  const b = e.target.closest(".chip"); if(!b) return;
+  const cat = b.dataset.cat;
+  const on = b.getAttribute("aria-pressed")==="true";
+  b.setAttribute("aria-pressed", on?"false":"true");
+  if(on) filters.cats.delete(cat); else filters.cats.add(cat);
+  render();
+});
+document.getElementById("hideDone").addEventListener("change",e=>{
+  filters.hideDone = e.target.checked; render();
+});
+grid.addEventListener("click", async e=>{
+  const btn = e.target.closest(".mark"); if(!btn) return;
+  const id = btn.closest(".card").dataset.id;
+  const act = btn.dataset.act;
+  status[id] = (status[id]===act) ? undefined : act;
+  if(status[id]===undefined) delete status[id];
+  await storeSet(STORE_KEY, JSON.stringify(status));
+  render();
+});
+document.getElementById("surpriseBtn").addEventListener("click",()=>{
+  const pool = visible().filter(p=>status[p.id]!=="done");
+  if(pool.length===0){ return; }
+  const pick = pool[Math.floor(Math.random()*pool.length)];
+  // clear previous spotlight, then highlight + scroll
+  document.querySelectorAll(".card.spot").forEach(c=>c.classList.remove("spot"));
+  const target = [...grid.children].find(c=>c.dataset.id===pick.id);
+  if(target){ target.classList.add("spot"); target.scrollIntoView({behavior:"smooth",block:"center"}); }
+});
+
+/* ---------- init ---------- */
+(async function init(){
+  const cur = currentSeason();
+  filters.season = cur;
+  applySeasonTheme(cur);
+  setSeasonHeader();
+  // load saved status
+  try{
+    const raw = await storeGet(STORE_KEY);
+    if(raw) status = JSON.parse(raw) || {};
+  }catch(e){ status = {}; }
+  render();
+})();
+</script>
+</body>
+</html>
