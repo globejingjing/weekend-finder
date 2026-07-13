@@ -62,9 +62,18 @@
   }
   .nowstrip .season .dot{width:11px;height:11px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 4px var(--accent-soft)}
   .nowstrip p{margin:5px 0 0;color:var(--ink-soft);font-size:14.5px}
-  .nowstrip .stamp{margin-top:11px;display:inline-block;font-size:12px;font-weight:600;
+  .stamprow{margin-top:11px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+  .nowstrip .stamp{display:inline-block;font-size:12px;font-weight:600;
     letter-spacing:.03em;color:var(--accent);background:#fff;border:1px solid var(--line);
     border-radius:999px;padding:4px 11px}
+  .updbtn{font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer;
+    color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:999px;
+    padding:4px 12px;transition:opacity .12s ease}
+  .updbtn:hover{opacity:.9}
+  .updbtn:disabled{opacity:.55;cursor:default}
+  .updmsg{font-size:12px;color:var(--ink-soft)}
+  .stalenote{margin-top:10px;border:1px solid var(--line);border-left:5px solid #B8862F;
+    background:#FBF4E2;border-radius:var(--radius);padding:9px 13px;font-size:12.5px;color:#6B5413;display:none}
   .wcnote{margin-top:12px;border:1px solid var(--line);border-left:5px solid #C0492B;
     background:#FBEEE9;border-radius:var(--radius);padding:11px 14px;font-size:13px;color:#7A2E1C}
   .wcnote b{color:#5E2316}
@@ -176,10 +185,14 @@
     <div class="nowstrip">
       <div class="season"><span class="dot"></span><span id="seasonName">Loading season</span></div>
       <p id="seasonNote"></p>
-      <p class="stamp">Refreshed for the weekend of June 20 to 21, 2026</p>
+      <div class="stamprow">
+        <p class="stamp" id="stamp">Loading this week's picks…</p>
+        <button class="updbtn" id="updateBtn" title="Fetch the latest picks and app version">↻ Update</button>
+        <span class="updmsg" id="updateMsg"></span>
+      </div>
     </div>
-    <div class="wcnote">Heading into NYC? The World Cup runs at MetLife through July 19. Easiest city days are weekends with no match: skip <b>June 22, 26, 27, 30</b>, <b>July 5</b>, and the <b>July 17 to 19</b> final weekend.</div>
-    <div class="booknote"><b>Book now, before it sells out:</b> THE POLAR EXPRESS in Phillipsburg (~1 hr) has 2026 tickets ON SALE for the Nov to Dec season and they go fast. Peach picking opens at Terhune in early July. Holland Ridge sunflower-festival tickets usually drop in late summer, I will flag the date when it lands.</div>
+    <div class="stalenote" id="staleNote"></div>
+    <div id="notices"></div>
   </header>
 
   <section class="controls" aria-label="Filters">
@@ -401,16 +414,88 @@ const PLACES = [
 
 /* ---------- state + storage ---------- */
 const STORE_KEY = "ww_weekend_status_v1";
-const mem = {}; // fallback if window.storage is unavailable
+const mem = {}; // fallback if localStorage is unavailable (private mode)
 let status = {}; // {id: 'love' | 'done'}
 
 async function storeGet(key){
-  try{ const r = await window.storage.get(key); return r ? r.value : (mem[key] ?? null); }
+  try{ const v = localStorage.getItem(key); return v !== null ? v : (mem[key] ?? null); }
   catch(e){ return mem[key] ?? null; }
 }
 async function storeSet(key,val){
   mem[key]=val;
-  try{ await window.storage.set(key,val); }catch(e){ /* keep in-memory */ }
+  try{ localStorage.setItem(key,val); }catch(e){ /* keep in-memory */ }
+}
+
+/* ---------- weekly content (fetched fresh from weekly.json) ---------- */
+const APP_VERSION = 2;
+let WEEKLY = null; // {updated, app, notices:[{style,html}], blurbs:{id:text}}
+
+function upcomingWeekend(from){
+  // Sat+Sun of the current week; on Sat/Sun that's this weekend, otherwise the one ahead.
+  const d = new Date(from); d.setHours(0,0,0,0);
+  const sat = new Date(d); sat.setDate(d.getDate() + ((6 - d.getDay()) % 7));
+  const sun = new Date(sat); sun.setDate(sat.getDate() + (d.getDay()===0 ? 0 : 1));
+  if(d.getDay()===0){ sun.setTime(d.getTime()); sat.setTime(d.getTime()-864e5); }
+  const mo = dt=>dt.toLocaleDateString("en-US",{month:"long"});
+  const label = mo(sat)===mo(sun)
+    ? `${mo(sat)} ${sat.getDate()} to ${sun.getDate()}, ${sun.getFullYear()}`
+    : `${mo(sat)} ${sat.getDate()} to ${mo(sun)} ${sun.getDate()}, ${sun.getFullYear()}`;
+  return label;
+}
+
+function applyWeekly(){
+  const stampEl = document.getElementById("stamp");
+  stampEl.textContent = `Picks for the weekend of ${upcomingWeekend(new Date())}`;
+  const staleEl = document.getElementById("staleNote");
+  const noticesEl = document.getElementById("notices");
+  if(!WEEKLY){
+    staleEl.style.display = "block";
+    staleEl.innerHTML = "<b>Heads up:</b> couldn't load this week's refreshed picks (offline?). Details below may be out of date; tap Update when you're back online.";
+    return;
+  }
+  const updated = new Date(WEEKLY.updated);
+  const ageDays = (Date.now() - updated.getTime()) / 864e5;
+  if(ageDays > 8){
+    staleEl.style.display = "block";
+    staleEl.innerHTML = `<b>Heads up:</b> the "this weekend" details were last refreshed ${updated.toLocaleDateString("en-US",{month:"long",day:"numeric"})} and may be out of date.`;
+  }else{
+    staleEl.style.display = "none";
+  }
+  const styleClass = {alert:"wcnote", book:"booknote"};
+  noticesEl.innerHTML = (WEEKLY.notices||[]).map(n=>
+    `<div class="${styleClass[n.style]||"booknote"}">${n.html}</div>`).join("");
+  render();
+}
+
+async function fetchWeekly(){
+  const res = await fetch(`weekly.json?ts=${Date.now()}`, {cache:"no-store"});
+  if(!res.ok) throw new Error("HTTP "+res.status);
+  return res.json();
+}
+
+async function refreshWeekly(manual){
+  const msg = document.getElementById("updateMsg");
+  const btn = document.getElementById("updateBtn");
+  if(manual){ btn.disabled = true; msg.textContent = "Checking…"; }
+  try{
+    const fresh = await fetchWeekly();
+    const changed = !WEEKLY || fresh.updated !== WEEKLY.updated;
+    WEEKLY = fresh;
+    applyWeekly();
+    // New app shell published? Hard-reload once to pick it up (cache-busting query).
+    if((fresh.app||0) > APP_VERSION && !sessionStorage.getItem("ww_reloaded_"+fresh.app)){
+      sessionStorage.setItem("ww_reloaded_"+fresh.app, "1");
+      if(manual) msg.textContent = "New version, reloading…";
+      location.replace(location.pathname + "?v=" + fresh.app);
+      return;
+    }
+    if(manual) msg.textContent = changed ? "Updated ✓" : "Already up to date ✓";
+  }catch(e){
+    if(manual) msg.textContent = "Couldn't reach the server — try again on Wi-Fi.";
+    if(!WEEKLY) applyWeekly();
+  }finally{
+    if(manual){ btn.disabled = false; setTimeout(()=>{ msg.textContent=""; }, 4000); }
+  }
 }
 
 const filters = { drive:90, season:currentSeason(), cats:new Set(["pyo","beach","outdoor","indoor","active"]), hideDone:false };
@@ -445,7 +530,7 @@ function card(p){
       </div>
       <a class="drive" href="https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent('Princeton Junction, NJ')}&destination=${encodeURIComponent(p.name + ', ' + p.town + ', NJ')}" target="_blank" rel="noopener" title="Exact drive time and directions"><b>~${p.drive}</b><span>min</span></a>
     </div>
-    <p class="blurb">${p.blurb}</p>
+    <p class="blurb">${(WEEKLY && WEEKLY.blurbs && WEEKLY.blurbs[p.id]) || p.blurb}</p>
     <p class="logi"><span class="logi-k">Parking & on-site $</span>${p.logistics || 'Check the site for parking before you go.'}</p>
     <div class="tags">${otherTags}</div>
     <div class="actions">
@@ -518,6 +603,11 @@ document.getElementById("surpriseBtn").addEventListener("click",()=>{
   if(target){ target.classList.add("spot"); target.scrollIntoView({behavior:"smooth",block:"center"}); }
 });
 
+/* ---------- update button + auto-refresh on open/resume ---------- */
+document.getElementById("updateBtn").addEventListener("click", ()=>refreshWeekly(true));
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) refreshWeekly(false); });
+window.addEventListener("pageshow", e=>{ if(e.persisted) refreshWeekly(false); });
+
 /* ---------- init ---------- */
 (async function init(){
   const cur = currentSeason();
@@ -530,6 +620,7 @@ document.getElementById("surpriseBtn").addEventListener("click",()=>{
     if(raw) status = JSON.parse(raw) || {};
   }catch(e){ status = {}; }
   render();
+  refreshWeekly(false);
 })();
 </script>
 </body>
