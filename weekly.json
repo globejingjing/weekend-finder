@@ -1,28 +1,33 @@
 {
-  "updated": "2026-07-13T15:41:00Z",
+  "updated": "2026-07-13T16:08:02Z",
   "app": 3,
   "notices": [
     {
       "style": "alert",
-      "html": "<b>World Cup FINAL is Sunday:</b> kickoff 3pm at MetLife Stadium. Expect heavy traffic on Route 3, Route 120 and the NJ Turnpike near the Meadowlands from midday on, so avoid that direction Sunday afternoon if you can."
+      "html": "<b>World Cup FINAL is Sunday:</b> kickoff 3pm at MetLife Stadium. Heavy congestion is expected on Route 3, Route 120 and the NJ Turnpike near the Meadowlands starting a few hours before kickoff, so avoid that direction Sunday afternoon if you can."
     },
     {
       "style": "book",
-      "html": "<b>Peak blueberry season</b> at several pick-your-own farms this weekend, call ahead for the day's crop. Holland Ridge's fall Sunflower Festival tickets go on sale online September 7 at 10am and tend to sell out fast."
+      "html": "<b>Terhune's first-ever Flower Festival</b> is this Saturday and Sunday, book timed tickets online ahead. Holland Ridge's fall Sunflower Festival (Sept 10 to Oct 12) tickets are already on sale online, $17 per person."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: an April freeze wiped out peaches, cherries and most apples this year, but blueberries and blackberries are picking (in smaller quantities), along with pick-your-own flowers. Call 609-924-2310 for the day's crop. Store and donuts open 9 to 6, no pets.",
-    "vonthun": "This weekend: the South Brunswick u-pick blueberry season typically wraps up by mid-July, right after last weekend's Blueberry Festival, so picking may be done for the year. Call 732-329-8656 before driving over. Farm market and donuts open daily.",
-    "hickory": "This weekend: no 2026 crop update found online for this small local farm. Mid-July usually means blueberries or early peaches, but call 609-448-0629 for the day's crop before heading over.",
-    "hollandridge": "Nothing to pick this weekend. The fall Sunflower Festival runs September 10 to October 12, with tickets going on sale online September 7 at 10am, worth marking your calendar.",
-    "locusthall": "This weekend: peaches, blackberries, sunflowers and field flowers are picking as part of their Park and Pick, walk the farm at your own pace with a host check-in. Open Thursday to Sunday, 9 to 5. Book online first since picking times can fill up.",
-    "johnsonscorner": "This weekend: blueberries and peaches are both picking, plus blackberries, new this year. Hayrides out to the fields, animals, and soft-serve too. Open daily 8 to 7, call to confirm before you go.",
-    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples again this year, so there is little to nothing to pick. Call 732-462-0756 first. Bakery and store stay open.",
-    "norzhill": "This weekend: no current pick-your-own update found for this farm; they are best known for the fall corn maze and harvest barn from September. Call ahead for any summer picking.",
-    "alstede": "This weekend: blueberries are picking as part of their Very Berry Festival, along with strawberries, raspberries, gooseberries and currants, plus animals and hayrides. A 60-minute drive, so check their daily picking list before heading out.",
-    "howell": "This Saturday: Evening Animal Chores, 5 to 8pm, free. Help out as the animals settle in for the night. Closed Sunday. Check howellfarm.org/calendar to confirm before you go."
+    "terhune": "This weekend: blueberries and pick-your-own flowers are the main picks. The spring freeze hit stone fruit hard statewide, so expect little to no peaches or cherries. Call 609-924-2310 for the day's crop. Store and donuts open 9 to 6, no pets.",
+    "vonthun": "This weekend: blueberries are still picking at the South Brunswick fields, open 10 to 5 daily, field admission $3pp plus your container. Call 732-329-8656 to confirm before driving over, since a festival weekend can change the setup.",
+    "hickory": "This weekend: no specific 2026 crop update found online for this small, diversified farm. Mid-July usually means early peaches and summer vegetables. Call 609-448-0629 for the day's pick. Open 9 to 6, Sundays 2 to 6.",
+    "hollandridge": "Nothing to pick this weekend. The fall Sunflower Festival runs September 10 to October 12, $17 general admission, tickets already on sale online, worth booking ahead since it tends to sell out.",
+    "locusthall": "This weekend: blackberries (started July 2), sun-ripened peaches, and sunflowers and field flowers are picking as part of their Park and Pick, self-guided with a host check-in. Check their site for this weekend's hours, book online since picking times can fill up.",
+    "johnsonscorner": "This weekend: blueberries are still picking (their season runs mid-June through July), plus blackberries, new this year. Hayrides, animals and soft-serve on site. Call 609-654-8643 to confirm, since picking dates can shift a week or more.",
+    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so no stone-fruit picking. Sweet corn and tomatoes are just starting though. Call 732-462-0756 first. Bakery and store stay open.",
+    "norzhill": "This weekend: no u-pick crop currently, their picking season is really fall (corn maze and pumpkins from September). A sunflower trail is planned for later this summer. Call ahead for current farm-market produce.",
+    "alstede": "This weekend: their Very Berry Festival already wrapped (it ran June 27), but blueberries and other berries should still be pick-your-own at regular rates. A 60-minute drive, so check their daily picking list or call before heading out.",
+    "howell": "This Saturday: Evening Animal Chores, starting 5pm, free. Help out as the animals settle in for the night. Closed Sunday. Check howellfarm.org/calendar to confirm the end time before you go."
   },
-  "events": [],
+  "events": [
+    {"day": "Sat+Sun", "title": "Flower Festival at Terhune Orchards", "time": "10am, live music 12 to 4pm", "place": "Terhune Orchards, Princeton", "drive": 15, "url": "https://www.terhuneorchards.com/flower-festival/", "note": "tickets required"},
+    {"day": "Sat+Sun", "title": "LuminoCity Dino Safari (70+ light-up dinosaurs)", "time": "5 to 10pm Sat, 5 to 9:30pm Sun", "place": "Freehold Raceway Mall, Freehold", "drive": 30, "url": "https://www.luminocityfestival.com/events/new-jersey-dino-safari", "note": "tickets required"},
+    {"day": "Sat+Sun", "title": "Puerto Rican Parade and Festival", "time": "2 to 9pm", "place": "Veterans Memorial Waterfront Park, Elizabeth", "drive": 46, "url": "https://www.goelizabethnj.com/events/festivals/puerto-rican-parade-and-festival/", "note": "free"},
+    {"day": "Fri", "title": "Mercer County Summer Concert Series", "time": "gates 5:30pm, music 6:30pm", "place": "Mercer County Park Festival Grounds, West Windsor", "drive": 15, "url": "https://www.mercercounty.org/departments/mercer-county-park-commission/recreation-events/mercer-county-concert-series", "note": "$5, kids 10 and under free"}
+  ],
   "extraPlaces": []
 }
