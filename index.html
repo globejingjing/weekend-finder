@@ -74,6 +74,52 @@
   .updmsg{font-size:12px;color:var(--ink-soft)}
   .stalenote{margin-top:10px;border:1px solid var(--line);border-left:5px solid #B8862F;
     background:#FBF4E2;border-radius:var(--radius);padding:9px 13px;font-size:12.5px;color:#6B5413;display:none}
+
+  /* Weather chips */
+  .wxchips{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap;align-items:center}
+  .wx{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 11px;font-size:12.5px;color:var(--ink)}
+  .wx .emoji{font-size:17px;line-height:1}
+  .wx b{font-family:'Fraunces',serif;font-size:15px;font-weight:600}
+  .wx .pop{color:var(--ink-soft);font-size:11px}
+  .wxhint{font-size:12.5px;color:var(--ink-soft)}
+
+  /* Happening this weekend */
+  .events{margin:16px 0 0;padding:15px 16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow)}
+  .events h2{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin:0 0 4px}
+  .events .sub{margin:0 0 8px;font-size:12.5px;color:var(--ink-soft)}
+  .evt{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+  .evt:first-of-type{border-top:none}
+  .evt .day{flex:none;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--accent);background:var(--accent-soft);border-radius:8px;padding:4px 8px;margin-top:1px;white-space:nowrap}
+  .evt .body{flex:1}
+  .evt .t{font-weight:600;font-size:14px;color:var(--ink)}
+  .evt .w{font-size:12.5px;color:var(--ink-soft);margin-top:1px}
+  .evt a.more{color:var(--accent);font-weight:600;font-size:12.5px;text-decoration:none;white-space:nowrap;margin-top:2px}
+
+  /* NEW place badge */
+  .card{overflow:visible}
+  .newbadge{position:absolute;top:-10px;right:12px;background:var(--accent-2);color:#23180a;font-size:10.5px;font-weight:700;letter-spacing:.05em;border-radius:999px;padding:3px 10px;box-shadow:var(--shadow)}
+
+  /* Weekend plan */
+  .mark.on-plan{background:#FBF4E2;border-color:#B8862F}
+  .planbar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:50;
+    background:var(--ink);color:#fff;border:none;border-radius:999px;padding:11px 20px;
+    font-family:'Inter',sans-serif;font-size:14px;font-weight:600;box-shadow:0 10px 28px -8px rgba(0,0,0,.45);cursor:pointer;display:none}
+  .sheetveil{position:fixed;inset:0;z-index:59;background:rgba(33,48,42,.35);display:none}
+  .plansheet{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--card);
+    border-radius:20px 20px 0 0;box-shadow:0 -12px 40px -12px rgba(0,0,0,.4);
+    padding:18px 18px calc(24px + env(safe-area-inset-bottom));display:none;max-height:72vh;overflow:auto}
+  .plansheet h2{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin:0 0 2px}
+  .plansheet .sub{margin:0 0 8px;font-size:12.5px;color:var(--ink-soft)}
+  .pitem{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+  .pitem:first-of-type{border-top:none}
+  .pitem .nm{flex:1;font-size:14px;font-weight:600}
+  .pitem .nm span{display:block;font-size:11.5px;font-weight:400;color:var(--ink-soft)}
+  .pitem .dayt{border:1px solid var(--line);background:var(--accent-soft);color:var(--accent);
+    font-family:inherit;font-size:12px;font-weight:700;border-radius:8px;padding:6px 10px;cursor:pointer;min-width:52px}
+  .pitem .rm{border:1px solid var(--line);background:#fff;border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:14px;color:var(--ink-soft)}
+  .sheetbtns{display:flex;gap:8px;margin-top:14px}
+  .sheetbtns button{flex:1;font-family:'Inter',sans-serif;font-weight:600;font-size:13.5px;border-radius:10px;padding:11px 6px;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink)}
+  .sheetbtns .primary{background:var(--accent);border-color:var(--accent);color:#fff}
   .wcnote{margin-top:12px;border:1px solid var(--line);border-left:5px solid #C0492B;
     background:#FBEEE9;border-radius:var(--radius);padding:11px 14px;font-size:13px;color:#7A2E1C}
   .wcnote b{color:#5E2316}
@@ -188,11 +234,14 @@
       <div class="stamprow">
         <p class="stamp" id="stamp">Loading this week's picks…</p>
         <button class="updbtn" id="updateBtn" title="Fetch the latest picks and app version">↻ Update</button>
+        <button class="updbtn" id="notifyBtn" style="display:none" title="Get a notification when Monday's new picks are ready">🔔 Notify me Mondays</button>
         <span class="updmsg" id="updateMsg"></span>
       </div>
+      <div class="wxchips" id="wxchips" style="display:none"></div>
     </div>
     <div class="stalenote" id="staleNote"></div>
     <div id="notices"></div>
+    <section class="events" id="events" style="display:none"></section>
   </header>
 
   <section class="controls" aria-label="Filters">
@@ -239,6 +288,19 @@
   </section>
 
   <footer>Drive times are approximate from Princeton Junction. Always call ahead for crop status and beach badge details on the day.</footer>
+</div>
+
+<button class="planbar" id="planBar"></button>
+<div class="sheetveil" id="sheetVeil"></div>
+<div class="plansheet" id="planSheet">
+  <h2>This weekend's plan</h2>
+  <p class="sub">Tap the day to switch Sat / Sun. Share it or drop it on the calendar.</p>
+  <div id="planItems"></div>
+  <div class="sheetbtns">
+    <button id="planShare">Share</button>
+    <button id="planIcs">Add to Calendar</button>
+    <button class="primary" id="planClose">Done</button>
+  </div>
 </div>
 
 <script>
@@ -427,20 +489,41 @@ async function storeSet(key,val){
 }
 
 /* ---------- weekly content (fetched fresh from weekly.json) ---------- */
-const APP_VERSION = 2;
-let WEEKLY = null; // {updated, app, notices:[{style,html}], blurbs:{id:text}}
+const APP_VERSION = 3;
+let WEEKLY = null; // {updated, app, notices:[{style,html}], blurbs:{id:text}, events:[...], extraPlaces:[...]}
 
-function upcomingWeekend(from){
+function weekendDates(from){
   // Sat+Sun of the current week; on Sat/Sun that's this weekend, otherwise the one ahead.
   const d = new Date(from); d.setHours(0,0,0,0);
   const sat = new Date(d); sat.setDate(d.getDate() + ((6 - d.getDay()) % 7));
-  const sun = new Date(sat); sun.setDate(sat.getDate() + (d.getDay()===0 ? 0 : 1));
+  const sun = new Date(sat); sun.setDate(sat.getDate() + 1);
   if(d.getDay()===0){ sun.setTime(d.getTime()); sat.setTime(d.getTime()-864e5); }
+  return {sat, sun};
+}
+function upcomingWeekend(from){
+  const {sat, sun} = weekendDates(from);
   const mo = dt=>dt.toLocaleDateString("en-US",{month:"long"});
-  const label = mo(sat)===mo(sun)
+  return mo(sat)===mo(sun)
     ? `${mo(sat)} ${sat.getDate()} to ${sun.getDate()}, ${sun.getFullYear()}`
     : `${mo(sat)} ${sat.getDate()} to ${mo(sun)} ${sun.getDate()}, ${sun.getFullYear()}`;
-  return label;
+}
+
+function renderEvents(){
+  const box = document.getElementById("events");
+  const evts = (WEEKLY && WEEKLY.events) || [];
+  if(!evts.length){ box.style.display = "none"; box.innerHTML = ""; return; }
+  box.innerHTML = `<h2>🎪 Happening this weekend</h2>
+    <p class="sub">One-off events worth planning around, found fresh this week.</p>` +
+    evts.map(e=>`
+      <div class="evt">
+        <span class="day">${e.day||""}</span>
+        <div class="body">
+          <div class="t">${e.title}</div>
+          <div class="w">${[e.time, e.place, e.drive?`~${e.drive} min drive`:null, e.note].filter(Boolean).join(" · ")}</div>
+        </div>
+        ${e.url?`<a class="more" href="${e.url}" target="_blank" rel="noopener">Details ›</a>`:""}
+      </div>`).join("");
+  box.style.display = "block";
 }
 
 function applyWeekly(){
@@ -464,7 +547,43 @@ function applyWeekly(){
   const styleClass = {alert:"wcnote", book:"booknote"};
   noticesEl.innerHTML = (WEEKLY.notices||[]).map(n=>
     `<div class="${styleClass[n.style]||"booknote"}">${n.html}</div>`).join("");
+  renderEvents();
   render();
+}
+
+/* ---------- weather (Open-Meteo, no key) ---------- */
+let WX = null, wxFetchedAt = 0; // {sat:{hi,pop,code}, sun:{...}}
+const WX_EMOJI = c =>
+  c===0 ? "☀️" : c<=2 ? "🌤" : c===3 ? "☁️" : c<=48 ? "🌫" :
+  c<=57 ? "🌦" : c<=67 ? "🌧" : c<=77 ? "🌨" : c<=82 ? "🌧" : c<=86 ? "🌨" : "⛈";
+const isRainy = d => d && (d.pop >= 55 || d.code >= 61 && d.code <= 67 || d.code >= 80);
+
+async function refreshWeather(){
+  if(Date.now() - wxFetchedAt < 30*60*1000) return; // at most every 30 min
+  const {sat, sun} = weekendDates(new Date());
+  const iso = dt => `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,"0")}-${String(dt.getDate()).padStart(2,"0")}`;
+  try{
+    const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=40.3169&longitude=-74.6174&daily=temperature_2m_max,precipitation_probability_max,weathercode&temperature_unit=fahrenheit&timezone=America%2FNew_York&start_date=${iso(sat)}&end_date=${iso(sun)}`);
+    if(!res.ok) throw new Error(res.status);
+    const j = await res.json();
+    const day = i => ({ hi: Math.round(j.daily.temperature_2m_max[i]), pop: j.daily.precipitation_probability_max[i] ?? 0, code: j.daily.weathercode[i] ?? 0 });
+    WX = { sat: day(0), sun: day(1) };
+    wxFetchedAt = Date.now();
+  }catch(e){ WX = null; }
+  renderWeather();
+  render(); // rainy weekends re-sort the grid
+}
+function renderWeather(){
+  const box = document.getElementById("wxchips");
+  if(!WX){ box.style.display = "none"; return; }
+  const chip = (label,d)=>`<span class="wx"><span class="emoji">${WX_EMOJI(d.code)}</span>${label} <b>${d.hi}°</b><span class="pop">${d.pop}% rain</span></span>`;
+  let hint = "";
+  const rs = isRainy(WX.sat), ru = isRainy(WX.sun);
+  if(rs && ru) hint = "Wet weekend ahead: indoor picks are sorted first below.";
+  else if(rs) hint = "Saturday looks wet; save the outdoor stuff for Sunday.";
+  else if(ru) hint = "Sunday looks wet; get outside on Saturday.";
+  box.innerHTML = chip("Sat", WX.sat) + chip("Sun", WX.sun) + (hint?`<span class="wxhint">${hint}</span>`:"");
+  box.style.display = "flex";
 }
 
 async function fetchWeekly(){
@@ -504,14 +623,23 @@ const filters = { drive:90, season:currentSeason(), cats:new Set(["pyo","beach",
 const grid = document.getElementById("grid");
 const countEl = document.getElementById("count");
 
+function allPlaces(){
+  const extras = ((WEEKLY && WEEKLY.extraPlaces) || []).map(p=>({...p, isNew:true}));
+  return PLACES.concat(extras.filter(x=>!PLACES.some(p=>p.id===x.id)));
+}
 function visible(){
-  return PLACES.filter(p=>{
+  const wet = WX && isRainy(WX.sat) && isRainy(WX.sun);
+  return allPlaces().filter(p=>{
     if(p.drive > filters.drive) return false;
     if(!p.seasons.includes(filters.season)) return false;
     if(!filters.cats.has(p.cat)) return false;
     if(filters.hideDone && status[p.id]==="done") return false;
     return true;
-  }).sort((a,b)=>a.drive-b.drive);
+  }).sort((a,b)=>{
+    if(wet && (a.cat==="indoor") !== (b.cat==="indoor")) return a.cat==="indoor" ? -1 : 1;
+    if(a.isNew !== b.isNew) return a.isNew ? -1 : 1;
+    return a.drive-b.drive;
+  });
 }
 
 const SEASON_LABEL = {spring:"Spring",summer:"Summer",fall:"Fall",winter:"Winter"};
@@ -521,8 +649,10 @@ function card(p){
   const el = document.createElement("div");
   el.className = "card" + (st==="done"?" done":"");
   el.dataset.id = p.id;
-  const otherTags = p.tags.map(t=>`<span class="tag">${t}</span>`).join("");
+  const otherTags = (p.tags||[]).map(t=>`<span class="tag">${t}</span>`).join("");
+  const inPlan = plan[p.id];
   el.innerHTML = `
+    ${p.isNew?'<span class="newbadge">NEW THIS WEEK</span>':''}
     <div class="top">
       <div>
         <h3>${p.name}</h3>
@@ -535,6 +665,7 @@ function card(p){
     <div class="tags">${otherTags}</div>
     <div class="actions">
       <a class="go" href="${p.url}" target="_blank" rel="noopener">Open / directions</a>
+      <button class="mark ${inPlan?"on-plan":""}" data-act="plan" title="Add to this weekend's plan" aria-label="Add to weekend plan">${inPlan?"🗓":"＋"}</button>
       <button class="mark ${st==="love"?"on-love":""}" data-act="love" title="Save favorite" aria-label="Save favorite">${st==="love"?"❤":"♡"}</button>
       <button class="mark ${st==="done"?"on-done":""}" data-act="done" title="Mark done so it stops repeating" aria-label="Mark done">✓</button>
     </div>`;
@@ -588,11 +719,126 @@ grid.addEventListener("click", async e=>{
   const btn = e.target.closest(".mark"); if(!btn) return;
   const id = btn.closest(".card").dataset.id;
   const act = btn.dataset.act;
+  if(act==="plan"){
+    if(plan[id]) delete plan[id]; else plan[id] = "Sat";
+    await storeSet(PLAN_KEY, JSON.stringify(plan));
+    render(); renderPlanBar();
+    return;
+  }
   status[id] = (status[id]===act) ? undefined : act;
   if(status[id]===undefined) delete status[id];
   await storeSet(STORE_KEY, JSON.stringify(status));
   render();
 });
+
+/* ---------- weekend plan (share + calendar) ---------- */
+const PLAN_KEY = "ww_weekend_plan_v1";
+let plan = {}; // {placeId: "Sat"|"Sun"}
+
+function planEntries(){
+  const all = allPlaces();
+  return Object.entries(plan)
+    .map(([id,day])=>({p: all.find(x=>x.id===id), day}))
+    .filter(x=>x.p);
+}
+function renderPlanBar(){
+  const bar = document.getElementById("planBar");
+  const n = planEntries().length;
+  bar.textContent = `🗓 Weekend plan (${n})`;
+  bar.style.display = n ? "block" : "none";
+  if(!n) closeSheet();
+}
+function renderSheet(){
+  const box = document.getElementById("planItems");
+  box.innerHTML = planEntries().map(({p,day})=>`
+    <div class="pitem" data-id="${p.id}">
+      <div class="nm">${p.name}<span>${p.town} · ~${p.drive} min</span></div>
+      <button class="dayt">${day}</button>
+      <button class="rm" title="Remove">✕</button>
+    </div>`).join("") || '<p class="sub">Nothing planned yet. Tap ＋ on a place below.</p>';
+}
+function openSheet(){ renderSheet(); document.getElementById("planSheet").style.display="block"; document.getElementById("sheetVeil").style.display="block"; }
+function closeSheet(){ document.getElementById("planSheet").style.display="none"; document.getElementById("sheetVeil").style.display="none"; }
+
+document.getElementById("planBar").addEventListener("click", openSheet);
+document.getElementById("sheetVeil").addEventListener("click", closeSheet);
+document.getElementById("planClose").addEventListener("click", closeSheet);
+document.getElementById("planItems").addEventListener("click", async e=>{
+  const row = e.target.closest(".pitem"); if(!row) return;
+  const id = row.dataset.id;
+  if(e.target.classList.contains("dayt")) plan[id] = plan[id]==="Sat" ? "Sun" : "Sat";
+  else if(e.target.classList.contains("rm")) delete plan[id];
+  else return;
+  await storeSet(PLAN_KEY, JSON.stringify(plan));
+  renderSheet(); renderPlanBar(); render();
+});
+
+function planText(){
+  const {sat, sun} = weekendDates(new Date());
+  const fmt = d=>d.toLocaleDateString("en-US",{weekday:"long", month:"short", day:"numeric"});
+  const lines = [`Our weekend plan (${upcomingWeekend(new Date())}):`];
+  for(const dayName of ["Sat","Sun"]){
+    const items = planEntries().filter(x=>x.day===dayName);
+    if(!items.length) continue;
+    lines.push(`\n${fmt(dayName==="Sat"?sat:sun)}:`);
+    items.forEach(({p})=>lines.push(`• ${p.name} (${p.town}, ~${p.drive} min)`));
+  }
+  return lines.join("\n");
+}
+document.getElementById("planShare").addEventListener("click", async ()=>{
+  const text = planText();
+  if(navigator.share){ try{ await navigator.share({text}); }catch(e){} }
+  else{ try{ await navigator.clipboard.writeText(text); alert("Copied to clipboard"); }catch(e){} }
+});
+document.getElementById("planIcs").addEventListener("click", ()=>{
+  const {sat, sun} = weekendDates(new Date());
+  const ymd = d=>`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,"0")}${String(d.getDate()).padStart(2,"0")}`;
+  const esc = s=>s.replace(/([,;\\])/g,"\\$1");
+  let ics = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//WeekendFinder//EN\r\n";
+  for(const dayName of ["Sat","Sun"]){
+    const items = planEntries().filter(x=>x.day===dayName);
+    if(!items.length) continue;
+    const d = dayName==="Sat"?sat:sun;
+    const next = new Date(d); next.setDate(d.getDate()+1);
+    ics += "BEGIN:VEVENT\r\n"
+      + `UID:wf-${ymd(d)}@weekend-finder\r\n`
+      + `DTSTART;VALUE=DATE:${ymd(d)}\r\n`
+      + `DTEND;VALUE=DATE:${ymd(next)}\r\n`
+      + `SUMMARY:${esc("Weekend plan: " + items.map(x=>x.p.name).join(" + "))}\r\n`
+      + `DESCRIPTION:${esc(items.map(x=>`${x.p.name} (${x.p.town}, ~${x.p.drive} min)`).join("\\n"))}\r\n`
+      + "END:VEVENT\r\n";
+  }
+  ics += "END:VCALENDAR\r\n";
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar"}));
+  a.download = "weekend-plan.ics";
+  document.body.appendChild(a); a.click(); a.remove();
+});
+
+/* ---------- Monday push notifications (needs PUSH config + server) ---------- */
+const PUSH = { publicKey: "", subscribeUrl: "" }; // filled in once the push server exists
+async function setupNotifyButton(){
+  const btn = document.getElementById("notifyBtn");
+  if(!PUSH.publicKey || !PUSH.subscribeUrl || !("serviceWorker" in navigator) || !("PushManager" in window)) return;
+  const reg = await navigator.serviceWorker.ready;
+  const existing = await reg.pushManager.getSubscription();
+  if(existing){ return; } // already subscribed, keep the button hidden
+  btn.style.display = "inline-block";
+  btn.addEventListener("click", async ()=>{
+    try{
+      const perm = await Notification.requestPermission();
+      if(perm !== "granted"){ btn.textContent = "🔕 Notifications blocked"; return; }
+      const sub = await reg.pushManager.subscribe({ userVisibleOnly:true, applicationServerKey: urlB64(PUSH.publicKey) });
+      await fetch(PUSH.subscribeUrl, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(sub)});
+      btn.textContent = "🔔 You're set for Mondays"; setTimeout(()=>{ btn.style.display="none"; }, 2500);
+    }catch(e){ btn.textContent = "🔕 Couldn't subscribe"; }
+  });
+}
+function urlB64(s){
+  const pad = "=".repeat((4 - s.length % 4) % 4);
+  const raw = atob((s + pad).replace(/-/g, "+").replace(/_/g, "/"));
+  return Uint8Array.from([...raw].map(c=>c.charCodeAt(0)));
+}
 document.getElementById("surpriseBtn").addEventListener("click",()=>{
   const pool = visible().filter(p=>status[p.id]!=="done");
   if(pool.length===0){ return; }
@@ -604,9 +850,9 @@ document.getElementById("surpriseBtn").addEventListener("click",()=>{
 });
 
 /* ---------- update button + auto-refresh on open/resume ---------- */
-document.getElementById("updateBtn").addEventListener("click", ()=>refreshWeekly(true));
-document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) refreshWeekly(false); });
-window.addEventListener("pageshow", e=>{ if(e.persisted) refreshWeekly(false); });
+document.getElementById("updateBtn").addEventListener("click", ()=>{ refreshWeekly(true); wxFetchedAt = 0; refreshWeather(); });
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden){ refreshWeekly(false); refreshWeather(); } });
+window.addEventListener("pageshow", e=>{ if(e.persisted){ refreshWeekly(false); refreshWeather(); } });
 
 /* ---------- init ---------- */
 (async function init(){
@@ -614,13 +860,22 @@ window.addEventListener("pageshow", e=>{ if(e.persisted) refreshWeekly(false); }
   filters.season = cur;
   applySeasonTheme(cur);
   setSeasonHeader();
-  // load saved status
+  // load saved status + plan
   try{
     const raw = await storeGet(STORE_KEY);
     if(raw) status = JSON.parse(raw) || {};
   }catch(e){ status = {}; }
+  try{
+    const rawp = await storeGet(PLAN_KEY);
+    if(rawp) plan = JSON.parse(rawp) || {};
+  }catch(e){ plan = {}; }
   render();
+  renderPlanBar();
   refreshWeekly(false);
+  refreshWeather();
+  if("serviceWorker" in navigator){
+    try{ await navigator.serviceWorker.register("sw.js"); setupNotifyButton(); }catch(e){}
+  }
 })();
 </script>
 </body>
