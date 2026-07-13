@@ -1,9 +1,15 @@
 {
   "updated": "2026-07-13T15:41:00Z",
-  "app": 2,
+  "app": 3,
   "notices": [
-    {"style": "alert", "html": "<b>World Cup FINAL is Sunday:</b> kickoff 3pm at MetLife Stadium. Expect heavy traffic on Route 3, Route 120 and the NJ Turnpike near the Meadowlands from midday on, so avoid that direction Sunday afternoon if you can."},
-    {"style": "book", "html": "<b>Peak blueberry season</b> at several pick-your-own farms this weekend, call ahead for the day's crop. Holland Ridge's fall Sunflower Festival tickets go on sale online September 7 at 10am and tend to sell out fast."}
+    {
+      "style": "alert",
+      "html": "<b>World Cup FINAL is Sunday:</b> kickoff 3pm at MetLife Stadium. Expect heavy traffic on Route 3, Route 120 and the NJ Turnpike near the Meadowlands from midday on, so avoid that direction Sunday afternoon if you can."
+    },
+    {
+      "style": "book",
+      "html": "<b>Peak blueberry season</b> at several pick-your-own farms this weekend, call ahead for the day's crop. Holland Ridge's fall Sunflower Festival tickets go on sale online September 7 at 10am and tend to sell out fast."
+    }
   ],
   "blurbs": {
     "terhune": "This weekend: an April freeze wiped out peaches, cherries and most apples this year, but blueberries and blackberries are picking (in smaller quantities), along with pick-your-own flowers. Call 609-924-2310 for the day's crop. Store and donuts open 9 to 6, no pets.",
@@ -16,5 +22,7 @@
     "norzhill": "This weekend: no current pick-your-own update found for this farm; they are best known for the fall corn maze and harvest barn from September. Call ahead for any summer picking.",
     "alstede": "This weekend: blueberries are picking as part of their Very Berry Festival, along with strawberries, raspberries, gooseberries and currants, plus animals and hayrides. A 60-minute drive, so check their daily picking list before heading out.",
     "howell": "This Saturday: Evening Animal Chores, 5 to 8pm, free. Help out as the animals settle in for the night. Closed Sunday. Check howellfarm.org/calendar to confirm before you go."
-  }
+  },
+  "events": [],
+  "extraPlaces": []
 }
