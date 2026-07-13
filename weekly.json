@@ -1,20 +1,20 @@
 {
-  "updated": "2026-07-06T09:05:00Z",
+  "updated": "2026-07-13T15:41:00Z",
   "app": 2,
   "notices": [
-    {"style": "alert", "html": "World Cup FINAL weekend: the final is Sunday July 19 at MetLife. Expect heavy traffic and transit crowds toward north Jersey and NYC all weekend — keep city plans for another week."},
-    {"style": "book", "html": "<b>Peak summer picking:</b> blueberries are in full swing and early peaches are starting at local farms — call ahead for the day's crop. THE POLAR EXPRESS Nov–Dec tickets are on sale and sell out by fall. Holland Ridge sunflower tickets usually drop in late summer."}
+    {"style": "alert", "html": "<b>World Cup FINAL is Sunday:</b> kickoff 3pm at MetLife Stadium. Expect heavy traffic on Route 3, Route 120 and the NJ Turnpike near the Meadowlands from midday on, so avoid that direction Sunday afternoon if you can."},
+    {"style": "book", "html": "<b>Peak blueberry season</b> at several pick-your-own farms this weekend, call ahead for the day's crop. Holland Ridge's fall Sunflower Festival tickets go on sale online September 7 at 10am and tend to sell out fast."}
   ],
   "blurbs": {
-    "terhune": "This weekend: blueberry picking should be in full swing and pick-your-own flowers open; early peaches may be starting. Call 609-924-2310 for the day's crop. Store and donuts open 9 to 6, no pets.",
-    "vonthun": "This weekend: blueberry season at the South Brunswick fields — check their crop page or call 732-329-8656 before driving over. Farm market and donuts open daily.",
-    "hickory": "This weekend: mid-summer window — blueberries and possibly early peaches. Small local farm, so call 609-448-0629 for the day's crop before heading over.",
-    "hollandridge": "Nothing to pick this weekend. The sunflower u-pick returns late summer into fall — worth saving for September.",
-    "locusthall": "This weekend: summer crops are reservation-based — check their site for what's bookable (blueberries or early stone fruit) before planning a trip.",
-    "johnsonscorner": "This weekend: blueberry season, with hayrides out to the fields, animals, and soft-serve. Call or check the site for exactly what's pickable today.",
-    "battleview": "This weekend: the spring freeze wiped out most of their stone fruit this year, so likely no picking. Call 732-462-0756 first. Bakery and store stay open.",
-    "norzhill": "This weekend: mid-summer, limited picking. The real draw here is the fall corn maze and harvest barn from September. Call for any current u-pick.",
-    "alstede": "This weekend: blueberries plus summer vegetables and flowers, with animals and hayrides. A 60-minute drive, so check their daily picking list before heading out.",
-    "howell": "Check howellfarm.org/calendar for this Saturday's free program (summer events run most Saturdays, 10 to 4). Closed Sundays."
+    "terhune": "This weekend: an April freeze wiped out peaches, cherries and most apples this year, but blueberries and blackberries are picking (in smaller quantities), along with pick-your-own flowers. Call 609-924-2310 for the day's crop. Store and donuts open 9 to 6, no pets.",
+    "vonthun": "This weekend: the South Brunswick u-pick blueberry season typically wraps up by mid-July, right after last weekend's Blueberry Festival, so picking may be done for the year. Call 732-329-8656 before driving over. Farm market and donuts open daily.",
+    "hickory": "This weekend: no 2026 crop update found online for this small local farm. Mid-July usually means blueberries or early peaches, but call 609-448-0629 for the day's crop before heading over.",
+    "hollandridge": "Nothing to pick this weekend. The fall Sunflower Festival runs September 10 to October 12, with tickets going on sale online September 7 at 10am, worth marking your calendar.",
+    "locusthall": "This weekend: peaches, blackberries, sunflowers and field flowers are picking as part of their Park and Pick, walk the farm at your own pace with a host check-in. Open Thursday to Sunday, 9 to 5. Book online first since picking times can fill up.",
+    "johnsonscorner": "This weekend: blueberries and peaches are both picking, plus blackberries, new this year. Hayrides out to the fields, animals, and soft-serve too. Open daily 8 to 7, call to confirm before you go.",
+    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples again this year, so there is little to nothing to pick. Call 732-462-0756 first. Bakery and store stay open.",
+    "norzhill": "This weekend: no current pick-your-own update found for this farm; they are best known for the fall corn maze and harvest barn from September. Call ahead for any summer picking.",
+    "alstede": "This weekend: blueberries are picking as part of their Very Berry Festival, along with strawberries, raspberries, gooseberries and currants, plus animals and hayrides. A 60-minute drive, so check their daily picking list before heading out.",
+    "howell": "This Saturday: Evening Animal Chores, 5 to 8pm, free. Help out as the animals settle in for the night. Closed Sunday. Check howellfarm.org/calendar to confirm before you go."
   }
 }
