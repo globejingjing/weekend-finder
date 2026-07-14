@@ -83,17 +83,22 @@
   .wx .pop{color:var(--ink-soft);font-size:11px}
   .wxhint{font-size:12.5px;color:var(--ink-soft)}
 
-  /* Happening this weekend */
-  .events{margin:16px 0 0;padding:15px 16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow)}
-  .events h2{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin:0 0 4px}
+  /* Happening this weekend: swipeable photo story cards */
+  .events{margin:16px 0 0}
+  .events h2{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin:0 0 2px}
   .events .sub{margin:0 0 8px;font-size:12.5px;color:var(--ink-soft)}
-  .evt{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
-  .evt:first-of-type{border-top:none}
-  .evt .day{flex:none;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--accent);background:var(--accent-soft);border-radius:8px;padding:4px 8px;margin-top:1px;white-space:nowrap}
-  .evt .body{flex:1}
-  .evt .t{font-weight:600;font-size:14px;color:var(--ink)}
-  .evt .w{font-size:12.5px;color:var(--ink-soft);margin-top:1px}
-  .evt a.more{color:var(--accent);font-weight:600;font-size:12.5px;text-decoration:none;white-space:nowrap;margin-top:2px}
+  .stories{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -18px;padding:6px 18px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .stories::-webkit-scrollbar{display:none}
+  .story{flex:none;width:min(80%,360px);scroll-snap-align:center;border-radius:20px;box-shadow:var(--shadow);
+    color:#fff;padding:20px 17px;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+  .story .emoji{position:absolute;top:16px;right:14px;font-size:60px;transform:rotate(8deg);opacity:.92}
+  .story .tagline{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.9;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+  .story h3{font-family:'Fraunces',serif;font-size:23px;font-weight:600;margin:4px 0 6px;line-height:1.12;text-shadow:0 1px 4px rgba(0,0,0,.45)}
+  .story p{font-size:13.5px;margin:0 0 12px;opacity:.96;line-height:1.45;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+  .story .cta{align-self:flex-start;background:#fff;color:var(--ink);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:700;border:none;cursor:pointer;text-decoration:none}
+  .dots{display:flex;gap:5px;justify-content:center;margin-top:2px}
+  .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+  .dots i.on{background:var(--accent)}
 
   /* NEW place badge */
   .card{overflow:visible}
@@ -489,7 +494,7 @@ async function storeSet(key,val){
 }
 
 /* ---------- weekly content (fetched fresh from weekly.json) ---------- */
-const APP_VERSION = 3;
+const APP_VERSION = 4;
 let WEEKLY = null; // {updated, app, notices:[{style,html}], blurbs:{id:text}, events:[...], extraPlaces:[...]}
 
 function weekendDates(from){
@@ -508,22 +513,40 @@ function upcomingWeekend(from){
     : `${mo(sat)} ${sat.getDate()} to ${mo(sun)} ${sun.getDate()}, ${sun.getFullYear()}`;
 }
 
+const STORY_GRADS = [
+  "linear-gradient(160deg,#1C7FA8,#12587A)",
+  "linear-gradient(160deg,#C25A2B,#8F3E1B)",
+  "linear-gradient(160deg,#5C9A57,#3D6C3A)",
+  "linear-gradient(160deg,#3E6E8E,#25455C)"
+];
 function renderEvents(){
   const box = document.getElementById("events");
   const evts = (WEEKLY && WEEKLY.events) || [];
   if(!evts.length){ box.style.display = "none"; box.innerHTML = ""; return; }
   box.innerHTML = `<h2>🎪 Happening this weekend</h2>
-    <p class="sub">One-off events worth planning around, found fresh this week.</p>` +
-    evts.map(e=>`
-      <div class="evt">
-        <span class="day">${e.day||""}</span>
-        <div class="body">
-          <div class="t">${e.title}</div>
-          <div class="w">${[e.time, e.place, e.drive?`~${e.drive} min drive`:null, e.note].filter(Boolean).join(" · ")}</div>
-        </div>
-        ${e.url?`<a class="more" href="${e.url}" target="_blank" rel="noopener">Details ›</a>`:""}
-      </div>`).join("");
+    <p class="sub">Found fresh this week · swipe sideways</p>
+    <div class="stories" id="storyRow">` +
+    evts.map((e,i)=>{
+      const bg = e.img
+        ? `linear-gradient(180deg,rgba(18,24,28,.05) 30%,rgba(18,24,28,.8) 85%),url('${e.img}') center/cover no-repeat`
+        : STORY_GRADS[i % STORY_GRADS.length];
+      const meta = [e.day, e.place, e.drive?`~${e.drive} min`:null, e.note].filter(Boolean).join(" · ");
+      return `<div class="story" style="background:${bg}">
+        ${!e.img && e.emoji ? `<span class="emoji">${e.emoji}</span>` : ""}
+        <span class="tagline">${meta}</span>
+        <h3>${e.title}</h3>
+        <p>${[e.desc, e.time].filter(Boolean).join(" · ")}</p>
+        ${e.url?`<a class="cta" href="${e.url}" target="_blank" rel="noopener">Details ›</a>`:""}
+      </div>`;
+    }).join("") +
+    `</div><div class="dots" id="storyDots">${evts.map((_,i)=>`<i class="${i===0?"on":""}"></i>`).join("")}</div>`;
   box.style.display = "block";
+  const row = document.getElementById("storyRow");
+  row.addEventListener("scroll", ()=>{
+    const w = row.firstElementChild ? row.firstElementChild.offsetWidth + 12 : 1;
+    const i = Math.min(Math.round(row.scrollLeft / w), evts.length - 1);
+    document.querySelectorAll("#storyDots i").forEach((d,j)=>d.classList.toggle("on", j===i));
+  }, {passive:true});
 }
 
 function applyWeekly(){
