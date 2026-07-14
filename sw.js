@@ -1,5 +1,5 @@
 /* Weekend Finder service worker: instant launch, offline fallback, push. */
-const CACHE = "wf-v3";
+const CACHE = "wf-v4";
 
 self.addEventListener("install", e => { self.skipWaiting(); });
 self.addEventListener("activate", e => {
@@ -32,8 +32,8 @@ self.addEventListener("fetch", e => {
     return;
   }
 
-  // Fonts and other static third-party assets: cache first.
-  if (url.hostname.endsWith("gstatic.com") || url.hostname.endsWith("googleapis.com") && url.pathname.includes("css")) {
+  // Event photos, fonts, and other static assets: cache first.
+  if (url.pathname.includes("/img/") || url.hostname.endsWith("gstatic.com") || url.hostname.endsWith("googleapis.com") && url.pathname.includes("css")) {
     e.respondWith((async () => {
       const c = await caches.open(CACHE);
       const hit = await c.match(e.request);
