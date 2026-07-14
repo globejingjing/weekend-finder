@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-13T16:08:02Z",
-  "app": 3,
+  "app": 4,
   "notices": [
     {
       "style": "alert",
@@ -24,10 +24,50 @@
     "howell": "This Saturday: Evening Animal Chores, starting 5pm, free. Help out as the animals settle in for the night. Closed Sunday. Check howellfarm.org/calendar to confirm the end time before you go."
   },
   "events": [
-    {"day": "Sat+Sun", "title": "Flower Festival at Terhune Orchards", "time": "10am, live music 12 to 4pm", "place": "Terhune Orchards, Princeton", "drive": 15, "url": "https://www.terhuneorchards.com/flower-festival/", "note": "tickets required"},
-    {"day": "Sat+Sun", "title": "LuminoCity Dino Safari (70+ light-up dinosaurs)", "time": "5 to 10pm Sat, 5 to 9:30pm Sun", "place": "Freehold Raceway Mall, Freehold", "drive": 30, "url": "https://www.luminocityfestival.com/events/new-jersey-dino-safari", "note": "tickets required"},
-    {"day": "Sat+Sun", "title": "Puerto Rican Parade and Festival", "time": "2 to 9pm", "place": "Veterans Memorial Waterfront Park, Elizabeth", "drive": 46, "url": "https://www.goelizabethnj.com/events/festivals/puerto-rican-parade-and-festival/", "note": "free"},
-    {"day": "Fri", "title": "Mercer County Summer Concert Series", "time": "gates 5:30pm, music 6:30pm", "place": "Mercer County Park Festival Grounds, West Windsor", "drive": 15, "url": "https://www.mercercounty.org/departments/mercer-county-park-commission/recreation-events/mercer-county-concert-series", "note": "$5, kids 10 and under free"}
+    {
+      "day": "Sat+Sun",
+      "title": "Flower Festival at Terhune Orchards",
+      "time": "10am, live music 12 to 4pm",
+      "place": "Terhune Orchards, Princeton",
+      "drive": 15,
+      "url": "https://www.terhuneorchards.com/flower-festival/",
+      "note": "tickets required",
+      "emoji": "🌻",
+      "desc": "A farm weekend built around the pick-your-own flower field"
+    },
+    {
+      "day": "Sat+Sun",
+      "title": "LuminoCity Dino Safari (70+ light-up dinosaurs)",
+      "time": "5 to 10pm Sat, 5 to 9:30pm Sun",
+      "place": "Freehold Raceway Mall, Freehold",
+      "drive": 30,
+      "url": "https://www.luminocityfestival.com/events/new-jersey-dino-safari",
+      "note": "tickets required",
+      "img": "img/evt-dino.jpg",
+      "desc": "70+ glowing dinosaurs after dark"
+    },
+    {
+      "day": "Sat+Sun",
+      "title": "Puerto Rican Parade and Festival",
+      "time": "2 to 9pm",
+      "place": "Veterans Memorial Waterfront Park, Elizabeth",
+      "drive": 46,
+      "url": "https://www.goelizabethnj.com/events/festivals/puerto-rican-parade-and-festival/",
+      "note": "free",
+      "img": "img/evt-parade.jpg",
+      "desc": "Parade and festival on the Elizabeth waterfront"
+    },
+    {
+      "day": "Fri",
+      "title": "Mercer County Summer Concert Series",
+      "time": "gates 5:30pm, music 6:30pm",
+      "place": "Mercer County Park Festival Grounds, West Windsor",
+      "drive": 15,
+      "url": "https://www.mercercounty.org/departments/mercer-county-park-commission/recreation-events/mercer-county-concert-series",
+      "note": "$5, kids 10 and under free",
+      "emoji": "🎶",
+      "desc": "Lawn concert at the Festival Grounds, bring chairs"
+    }
   ],
   "extraPlaces": []
 }
