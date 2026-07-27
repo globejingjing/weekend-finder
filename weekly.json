@@ -1,68 +1,79 @@
 {
-  "updated": "2026-07-20T09:08:47Z",
+  "updated": "2026-07-27T09:10:23Z",
   "app": 4,
   "notices": [
     {
-      "style": "book",
-      "html": "<b>Holland Ridge Sunflower Festival</b> (Sept 10 to Oct 12) tickets go on sale <b>Wednesday, Sept 9 at 10am</b>, online only at hollandridgefarms.com. Nothing to pick there this weekend."
+      "style": "alert",
+      "html": "<b>Hot weekend ahead:</b> heat index near 100°F is expected Saturday. Plan outdoor picking and festivals for the morning, bring extra water, and take shade breaks."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: last weekend's first-ever Flower Festival has wrapped. Blueberries and pick-your-own peaches may be starting in the 2-acre patch, but call 609-924-2310 to confirm before you go, the spring freeze wiped out cherries. Store and donuts open 9 to 6, no pets.",
-    "vonthun": "This weekend: the Blueberry Festival wrapped July 13 to 14, and u-pick blueberries typically finish here by mid-July, so call 732-329-8656 to check if any fields are still open before driving over. Farm market and donuts open daily.",
-    "hickory": "This weekend: no specific 2026 crop update found online for this small, diversified farm. Mid to late July usually brings peaches, corn, tomatoes and other summer vegetables. Call 609-448-0629 for the day's pick. Open 9 to 6, Sundays 2 to 6, arrive by 5:15pm to enter the fields.",
-    "hollandridge": "Nothing to pick this weekend. The fall Sunflower Festival runs September 10 to October 12; tickets go on sale Wednesday, September 9 at 10am online only.",
-    "locusthall": "This weekend: blackberries ($8/qt) and peaches are self-serve picking Thursday to Sunday, 9am to 5pm, no entrance fee. A hayride carries you out to the fields; pay by QR code or cash on your way out.",
-    "johnsonscorner": "This weekend: blueberries are still picking (season runs mid-June through July), plus blackberries, new this year. Hayrides, animals and soft-serve on site. Picking dates can shift by a week or more, so call the Pick Your Own Hotline 609-654-5894 to confirm.",
-    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so likely no stone-fruit picking. The store may have corn and tomatoes; call 732-462-0756 first to confirm what's on hand.",
-    "norzhill": "This weekend: no confirmed u-pick crop yet. Their Sunflower Path opens Thursday, July 30 ($10pp, kids under 36in free, stems $2), not open yet this weekend. Call 908-371-2697 to confirm before heading over.",
-    "alstede": "This weekend: blueberries are in peak season and pick-your-own, along with other berries. Field admission runs $5.99 to $6.99pp depending on the day (free Mon to Thu before 11am). A 60-minute drive, so check their daily picking list or call before heading out.",
-    "howell": "This Saturday and Sunday: the farm is taken over by the free Mercer County 4-H Fair and Wheat Threshing, 10am to 8pm Saturday and 10am to 4pm Sunday. Animal shows, hayrides, pony rides, homemade ice cream and magic shows, free admission and parking, a canned good donation is welcomed."
+    "terhune": "This weekend: blueberries are pick-your-own through the summer, but there's still no cherries or peaches (the spring freeze wiped out the stone fruit). Terhune's Summer Fest takes over the farm Aug 1 and 2, 10am to 5pm, with pony rides, a traveling zoo, giant bubble shows and a new craft fair, so expect a crowd. Store and donuts open 9 to 6, no pets; call 609-924-2310 to confirm the day's picking.",
+    "vonthun": "This weekend: blueberry season has wrapped at the South Brunswick fields, but blackberries are now pick-your-own. Call 732-329-8656 to confirm before you drive over. Farm market and donuts open daily.",
+    "hickory": "This weekend: no confirmed 2026 crop update found online for this small, diversified farm. Early August usually brings blackberries, nectarines, corn and tomatoes. Call 609-448-0629 for the day's pick, open 9 to 6, Sundays 2 to 6, arrive by 5:15pm to enter the fields.",
+    "hollandridge": "Nothing to pick this weekend. The fall Sunflower Festival runs September 10 to October 12, timed tickets around $17 on weekends; keep an eye on hollandridgefarms.com for the on-sale date.",
+    "locusthall": "This weekend: blackberries are self-serve picking (the season runs into mid-August), along with flowers. A hayride carries you out to the fields; open Thursday to Sunday, 9am to 5pm. Call 609-353-9000 to confirm before heading over.",
+    "johnsonscorner": "This weekend: blueberries are wrapping up for the season while blackberries, new this year, are pickable. Hayrides, animals and soft-serve stay open. Picking dates can shift by a week or more, so call the Pick Your Own Hotline 609-654-5894 to confirm.",
+    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so no stone-fruit or apple picking is expected all season. Bakery and store stay open; call 732-462-0756 to confirm what's on hand.",
+    "norzhill": "This weekend: no confirmed u-pick crop found online, but the 5-acre Sunflower Path is open for peak bloom, about $10pp with kids under 36in free. Call 908-371-2697 to confirm hours before heading over.",
+    "alstede": "This weekend: blueberries are in their last stretch of the season alongside other summer crops. Field admission runs about $5.99 to $6.99pp depending on the day (free Mon to Thu before 11am) and includes wagon rides and the sunflower trail. A 60-minute drive, so check their site's daily picking list or call first.",
+    "howell": "This Saturday: Honey Harvest, 11am hive opening and 1pm honey extraction, free. Closed Sunday as usual."
   },
   "events": [
     {
       "day": "Sat+Sun",
-      "title": "Mercer County 4-H Fair & Wheat Threshing",
-      "time": "10am to 8pm Sat, 10am to 4pm Sun",
+      "title": "Summer Fest at Terhune Orchards",
+      "time": "10am to 5pm",
+      "place": "Terhune Orchards, Princeton",
+      "drive": 15,
+      "url": "https://www.terhuneorchards.com/summer-fest/",
+      "note": "tickets required",
+      "emoji": "🎪",
+      "desc": "Pony rides, a traveling zoo, giant bubble shows and a new craft vendor fair fill the orchard all weekend."
+    },
+    {
+      "day": "Sat",
+      "title": "Honey Harvest at Howell Living History Farm",
+      "time": "hive opening 11am, honey extraction 1pm",
       "place": "Howell Living History Farm, Lambertville",
       "drive": 30,
-      "url": "https://howellfarm.org/mercer-county-4-h-fair",
+      "url": "https://howellfarm.org/honey-harvest/",
       "note": "free",
-      "emoji": "🐄",
-      "desc": "A full farm fair with animal shows, hayrides, pony rides, homemade ice cream and magic shows"
+      "emoji": "🐝",
+      "desc": "Watch beekeepers open a hive and extract fresh honey, hands-on and free for the whole family."
     },
     {
       "day": "Sat+Sun",
+      "title": "LuminoCity Dino Safari",
+      "time": "5 to 10pm Sat, 5 to 9:30pm Sun",
+      "place": "Freehold Raceway Mall, Freehold",
+      "drive": 35,
+      "url": "https://www.luminocityfestival.com/events/new-jersey-dino-safari",
+      "note": "from $20, ages 3 and under free",
+      "emoji": "🦕",
+      "desc": "An outdoor evening trail of 70-plus glowing, roaring dinosaurs with a bounce zone and playground."
+    },
+    {
+      "day": "Fri",
+      "title": "Family Open Studios: Blacklight Drawing & Movement",
+      "time": "5 to 9pm",
+      "place": "Grounds for Sculpture, Hamilton",
+      "drive": 15,
+      "url": "https://www.groundsforsculpture.org/events/family-open-studios-3/",
+      "note": "$5, free for members",
+      "emoji": "🎨",
+      "desc": "A family studio night mixing glow-in-the-dark drawing and movement inside the galleries."
+    },
+    {
+      "day": "Sat",
       "title": "Warren County Farmers' Fair & Hot Air Balloon Festival",
-      "time": "gates 11am, fair noon to 10pm, balloon launch ~6:30pm",
+      "time": "gates 11am, fair to 10pm, balloon launch ~6:30pm weather permitting",
       "place": "Warren County Fairgrounds, Harmony Twp (Phillipsburg)",
       "drive": 66,
       "url": "https://www.warrencountyfarmersfair.org/",
       "note": "$10 adult, $5 ages 6-12, under 6 free",
       "emoji": "🎈",
-      "desc": "A week-long county fair with a mass hot air balloon launch nearly every evening, weather permitting"
-    },
-    {
-      "day": "Sun",
-      "title": "Butterfly Day at DeKorte Park",
-      "time": "10am to 3pm",
-      "place": "DeKorte Park, Lyndhurst",
-      "drive": 60,
-      "url": "https://njgateway.wildones.org/calendar/?wo_event_id=6138",
-      "note": "free",
-      "emoji": "🦋",
-      "desc": "Guided butterfly walks, a costume contest, games and crafts in the Meadowlands"
-    },
-    {
-      "day": "Fri",
-      "title": "Mercer County Summer Concert Series",
-      "time": "gates 5:30pm, music 6:30pm",
-      "place": "Mercer County Park Festival Grounds, West Windsor",
-      "drive": 15,
-      "url": "https://www.mercercounty.org/departments/mercer-county-park-commission/recreation-events/mercer-county-concert-series",
-      "note": "$5, kids 10 and under free",
-      "emoji": "🎶",
-      "desc": "Lawn concert at the Festival Grounds, bring chairs"
+      "desc": "Last day of the weeklong county fair, capped by a mass hot air balloon launch at dusk."
     }
   ],
   "extraPlaces": []
