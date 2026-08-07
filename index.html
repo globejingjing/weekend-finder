@@ -156,7 +156,9 @@ footer a{color:var(--accent)}
 .story .tagline{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.9;text-shadow:0 1px 3px rgba(0,0,0,.4)}
 .story h4{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:22px;font-weight:800;margin:4px 0 6px;line-height:1.1;text-shadow:0 1px 4px rgba(0,0,0,.45);letter-spacing:-.01em}
 .story p{font-size:13.5px;margin:0 0 12px;opacity:.96;line-height:1.45;text-shadow:0 1px 3px rgba(0,0,0,.4)}
-.story .cta{align-self:flex-start;background:#fff;color:var(--ink);border-radius:99px;padding:8px 16px;font-size:13px;font-weight:700;text-decoration:none}
+.story .cta{background:#fff;color:var(--ink);border-radius:99px;padding:8px 16px;font-size:13px;font-weight:700;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
+.story .cta.share{background:rgba(255,255,255,.22);color:#fff;border:1px solid rgba(255,255,255,.55)}
+.story-ctas{display:flex;gap:8px;align-items:center}
 .dots{display:flex;gap:5px;justify-content:center;margin-top:2px}
 .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
 .dots i.on{background:var(--accent)}
@@ -651,17 +653,31 @@ function renderEvents(){
         <span class="tagline">${meta}</span>
         <h4>${e.title}</h4>
         <p>${[e.desc,e.time].filter(Boolean).join(" · ")}</p>
-        ${e.url?`<a class="cta" href="${e.url}" target="_blank" rel="noopener">Details ›</a>`:""}
+        <div class="story-ctas">
+          ${e.url?`<a class="cta" href="${e.url}" target="_blank" rel="noopener">Details ›</a>`:""}
+          <button class="cta share" data-shareidx="${i}">Share</button>
+        </div>
       </div>`;
     }).join("")+
     `</div><div class="dots" id="storyDots">${evts.map((_,i)=>`<i class="${i===0?"on":""}"></i>`).join("")}</div>`;
   box.style.display="block";
+  box.querySelectorAll("[data-shareidx]").forEach(b=>b.onclick=()=>shareEvent(evts[+b.dataset.shareidx]));
   const row=document.getElementById("storyRow");
   row.addEventListener("scroll",()=>{
     const w=row.firstElementChild?row.firstElementChild.offsetWidth+12:1;
     const i=Math.min(Math.round(row.scrollLeft/w),evts.length-1);
     document.querySelectorAll("#storyDots i").forEach((d,j)=>d.classList.toggle("on",j===i));
   },{passive:true});
+}
+
+async function shareEvent(e){
+  const bits=[e.title, [e.day,e.time].filter(Boolean).join(" "), e.place, e.note].filter(Boolean).join(" · ");
+  const text=`${bits}${e.desc?`\n${e.desc}`:""}`;
+  if(navigator.share){
+    try{ await navigator.share({title:e.title, text, url:e.url||location.href}); }catch(err){}
+  }else{
+    try{ await navigator.clipboard.writeText(text+(e.url?`\n${e.url}`:"")); alert("Copied, paste it anywhere"); }catch(err){}
+  }
 }
 
 /* ---- weekend weather (Open-Meteo, no key) ---- */
@@ -772,7 +788,6 @@ function pickForWeek(offset=0){
 /* ===================== filters ===================== */
 const PRICE_FILTERS=[
   {k:"free",label:"Free",cls:"c-free"},
-  {k:"pass",label:"Free with library pass",cls:"c-pass"},
   {k:"paid",label:"Paid",cls:"c-paid"},
   {k:"deal",label:"Has a deal",cls:"c-deal"}
 ];
@@ -787,7 +802,10 @@ function matches(p){
   if(state.only) return p.id===state.only;
   if(p.event&&!nextOccurrence(p.event)) return false;      // out of season, hide
   if(state.prices.size){
-    const ok=[...state.prices].some(k=>k==="deal"?!!(dealsFor(p)||[]).length:p.price===k);
+    const ok=[...state.prices].some(k=>
+      k==="deal"?!!(dealsFor(p)||[]).length:
+      k==="free"?(p.price==="free"||p.price==="pass"):
+      p.price===k);
     if(!ok) return false;
   }
   if(state.drive&&p.drive>state.drive) return false;
@@ -800,7 +818,7 @@ function matches(p){
 function priceTag(p){
   if(p.cats.includes("local")&&p.price==="free") return '<span class="tag t-local">Local &amp; free</span>';
   if(p.price==="free") return '<span class="tag t-free">Free</span>';
-  if(p.price==="pass") return '<span class="tag t-pass">Library pass</span>';
+  if(p.price==="pass") return '<span class="tag t-pass">Free with library pass</span>';
   return '<span class="tag t-paid">Paid</span>';
 }
 function dealBox(p){
@@ -921,7 +939,7 @@ function renderGrid(){
   count.textContent=state.only?"Showing one place. Clear filters to see everything.":
     `${list.length} place${list.length===1?"":"s"} match`;
   if(!list.length){
-    grid.innerHTML=`<div class="empty">Nothing matches those filters yet.<br>Try widening the drive time, or turn on <strong>Free with library pass</strong> to see what your card already covers.</div>`;
+    grid.innerHTML=`<div class="empty">Nothing matches those filters yet.<br>Try widening the drive time, or turn on <strong>Free</strong> to see everything that costs nothing, library passes included.</div>`;
     return;
   }
   grid.innerHTML=list.map(p=>{
