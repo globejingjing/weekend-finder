@@ -1,5 +1,5 @@
 /* Weekend Finder service worker: instant launch, offline fallback, push. */
-const CACHE = "wf-v4";
+const CACHE = "wf-v5";
 
 self.addEventListener("install", e => { self.skipWaiting(); });
 self.addEventListener("activate", e => {
