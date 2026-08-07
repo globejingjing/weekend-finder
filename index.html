@@ -787,7 +787,7 @@ function matches(p){
   if(state.only) return p.id===state.only;
   if(p.event&&!nextOccurrence(p.event)) return false;      // out of season, hide
   if(state.prices.size){
-    const ok=[...state.prices].some(k=>k==="deal"?!!dealsFor(p):p.price===k);
+    const ok=[...state.prices].some(k=>k==="deal"?!!(dealsFor(p)||[]).length:p.price===k);
     if(!ok) return false;
   }
   if(state.drive&&p.drive>state.drive) return false;
@@ -805,7 +805,7 @@ function priceTag(p){
 }
 function dealBox(p){
   const ds=dealsFor(p);
-  if(!ds) return "";
+  if(!ds||!ds.length) return "";
   return `<div class="box deal"><strong>Deals</strong><br>${
     ds.map(d=>`${d.label}. <a href="${d.url}" target="_blank" rel="noopener">Open</a>`).join("<br>")
   }<span class="stamp">Checked ${dealStampText()}. Verify before buying.</span></div>`;
@@ -930,7 +930,7 @@ function renderGrid(){
     return `<article class="card ${wentRecently(p.id)?"recent":""}">
       <h3>${p.name}</h3>
       <div class="tags">${p.isNew?'<span class="tag t-new">New this week</span>':""}${priceTag(p)}<span class="tag">${p.drive} min</span>${
-        dealsFor(p)?'<span class="tag t-visit" style="background:var(--deal)">Deal</span>':""}${visitTag}</div>
+        (dealsFor(p)||[]).length?'<span class="tag t-visit" style="background:var(--deal)">Deal</span>':""}${visitTag}</div>
       <p class="blurb">${ovBlurb(p)}</p>
       <p class="meta">${p.meta}</p>
       ${passBox(p)}${dealBox(p)}
