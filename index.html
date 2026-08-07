@@ -112,7 +112,7 @@ h1{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;
 .box.deal{background:rgba(192,57,43,.05);border:1px solid rgba(192,57,43,.2);color:#7d2b21}
 .box.deal a{color:var(--deal);font-weight:600}
 .box .stamp{display:block;margin-top:5px;font-size:11px;opacity:.75}
-.card-foot{display:flex;gap:7px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.card-foot{display:flex;gap:7px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);flex-wrap:wrap}
 .card-foot a.site{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;margin-right:auto}
 .card-foot a.site:hover{text-decoration:underline}
 .icon{font:inherit;font-size:15px;line-height:1;border:1px solid var(--line);background:transparent;
@@ -696,6 +696,20 @@ function renderEvents(){
   },{passive:true});
 }
 
+async function sharePlace(p){
+  const price=p.price==="pass"?"free with our library pass":p.price==="free"?"free":"paid";
+  const ds=dealsFor(p)||[];
+  const lines=[`${p.name}, about ${p.drive} min from Princeton Junction (${price})`, ovBlurb(p)];
+  if(p.pass) lines.push(`Library pass: ${p.pass.terms}`);
+  if(ds.length) lines.push(`Deal: ${ds[0].label}`);
+  const text=lines.join("\n");
+  if(navigator.share){
+    try{ await navigator.share({title:p.name, text, url:p.url}); }catch(err){}
+  }else{
+    try{ await navigator.clipboard.writeText(text+"\n"+p.url); alert("Copied, paste it anywhere"); }catch(err){}
+  }
+}
+
 async function shareEvent(e){
   const bits=[e.title, [e.day,e.time].filter(Boolean).join(" "), e.place, e.note].filter(Boolean).join(" · ");
   const text=`${bits}${e.desc?`\n${e.desc}`:""}`;
@@ -883,11 +897,12 @@ function renderPick(){
     ${passBox(p)}${dealBox(p)}
     <div class="card-foot" style="border:0;padding:0;margin-top:12px">
       <a class="site" href="${p.url}" target="_blank" rel="noopener">Let's go ›</a>
+      <button class="icon" data-shareplace="${p.id}" title="Share" aria-label="Share ${p.name}">⤴</button>
       <button class="icon went" data-went="${p.id}" aria-pressed="${!!VISITS[p.id]}">${visitLabel(p.id)}</button>
       <button class="btn ghost" id="pickShow">Show only this</button>
     </div>
     <p class="pick-next">Rotates every Monday and skips anywhere you've been in the last ${RECENT_WEEKS} weeks. Up next: ${next?next.name:"—"}.</p>`;
-  wireVisits(pick);
+  wireVisits(pick);wireShares(pick);
   document.getElementById("pickShow").onclick=()=>{
     state.only=state.only===p.id?null:p.id;render();showTab("explore");
     window.scrollTo({top:document.querySelector(".controls").offsetTop-20,behavior:"smooth"});
@@ -939,6 +954,12 @@ function renderChips(){
   hideRecent.textContent=state.hideRecent?"Show recent visits":"Hide recent visits";
 }
 
+function wireShares(root){
+  root.querySelectorAll("[data-shareplace]").forEach(b=>b.onclick=()=>{
+    const p=allPlaces().find(x=>x.id===b.dataset.shareplace);
+    if(p) sharePlace(p);
+  });
+}
 function wireVisits(root){
   root.querySelectorAll("[data-went]").forEach(b=>b.onclick=async()=>{
     const id=b.dataset.went;
@@ -980,6 +1001,7 @@ function renderGrid(){
       ${passBox(p)}${dealBox(p)}
       <div class="card-foot">
         <a class="site" href="${p.url}" target="_blank" rel="noopener">Let's go ›</a>
+        <button class="icon" data-shareplace="${p.id}" title="Share" aria-label="Share ${p.name}">⤴</button>
         <button class="icon" data-plan="${p.id}" aria-pressed="${!!plan[p.id]}" title="Add to this weekend's plan">${plan[p.id]?"🗓":"＋"}</button>
         <button class="icon" data-love="${p.id}" aria-pressed="${state.loved.has(p.id)}" aria-label="Love ${p.name}">${state.loved.has(p.id)?"♥":"♡"}</button>
         <button class="icon went" data-went="${p.id}" aria-pressed="${!!VISITS[p.id]}" title="${visitLabel(p.id)}">${VISITS[p.id]?"✓ Went":"Went this week"}</button>
@@ -997,7 +1019,7 @@ function renderGrid(){
     await store.set("wf.plan",JSON.stringify(plan));
     renderGrid();renderPlanBar();
   });
-  wireVisits(grid);
+  wireVisits(grid);wireShares(grid);
 }
 
 function render(){renderChips();renderGrid()}
