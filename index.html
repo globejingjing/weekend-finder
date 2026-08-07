@@ -121,6 +121,22 @@ h1{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;
 .icon.went{font-size:12px;font-weight:600}
 .empty{border:1px dashed var(--line);border-radius:var(--radius);padding:26px 18px;text-align:center;
   color:var(--ink-soft);font-size:14px;line-height:1.6}
+.tabbar{position:sticky;top:0;z-index:40;background:var(--paper);display:flex;gap:7px;padding:12px 0 10px;margin:14px 0 2px}
+.tabbtn{flex:1;font:inherit;font-size:14px;font-weight:700;padding:11px 8px;border-radius:13px;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .12s}
+.tabbtn:active{transform:scale(.97)}
+.tabbtn[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.tabpane{display:none}
+.tabpane.on{display:block;animation:paneIn .32s ease both}
+@keyframes paneIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .wrap{animation:heroIn .5s ease both}
+@keyframes heroIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+.pick{animation:popIn .45s cubic-bezier(.34,1.4,.64,1) both;animation-delay:.08s}
+@keyframes popIn{from{opacity:0;transform:scale(.96) translateY(12px)}to{opacity:1;transform:none}}
+.story{animation:storyIn .45s ease both}
+@keyframes storyIn{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
+.wxchips .wx{animation:rise .4s ease both}
+.wxchips .wx:nth-child(2){animation-delay:.09s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
 footer{margin:30px 0 0;font-size:11.5px;color:var(--ink-soft);line-height:1.7}
 footer a{color:var(--accent)}
 
@@ -205,12 +221,20 @@ footer a{color:var(--accent)}
     <span class="updmsg" id="updateMsg"></span>
   </div>
   <div class="wxchips" id="wxchips" style="display:none"></div>
+  <div class="tabbar" role="tablist">
+    <button class="tabbtn" id="tabBtnWeekend" role="tab" aria-selected="true">🎪 This weekend</button>
+    <button class="tabbtn" id="tabBtnExplore" role="tab" aria-selected="false">🔍 Explore all</button>
+  </div>
+
+  <div class="tabpane on" id="paneWeekend" role="tabpanel">
   <div class="stalenote" id="staleNote"></div>
   <div class="notices" id="notices"></div>
   <section class="pick" id="pick" aria-live="polite"></section>
   <section class="events" id="events" style="display:none"></section>
   <section class="local" id="localBox"></section>
+  </div>
 
+  <div class="tabpane" id="paneExplore" role="tabpanel">
   <section class="controls">
     <div class="ctl-row"><div class="ctl-label">Cost</div><div class="chips" id="priceChips"></div></div>
     <div class="ctl-row"><div class="ctl-label">Drive time</div><div class="chips" id="driveChips"></div></div>
@@ -224,6 +248,7 @@ footer a{color:var(--accent)}
 
   <p class="count" id="count"></p>
   <div class="grid" id="grid"></div>
+  </div>
 
   <footer>
     Drive times are approximate from Princeton Junction. Museum passes are Mercer County Library System, free with a West Windsor Branch card.
@@ -661,6 +686,7 @@ function renderEvents(){
     }).join("")+
     `</div><div class="dots" id="storyDots">${evts.map((_,i)=>`<i class="${i===0?"on":""}"></i>`).join("")}</div>`;
   box.style.display="block";
+  box.querySelectorAll(".story").forEach((c,i)=>c.style.animationDelay=(i*90)+"ms");
   box.querySelectorAll("[data-shareidx]").forEach(b=>b.onclick=()=>shareEvent(evts[+b.dataset.shareidx]));
   const row=document.getElementById("storyRow");
   row.addEventListener("scroll",()=>{
@@ -856,14 +882,14 @@ function renderPick(){
     <div class="pick-meta"><span>${p.drive} min drive</span><span>${p.meta}</span></div>
     ${passBox(p)}${dealBox(p)}
     <div class="card-foot" style="border:0;padding:0;margin-top:12px">
-      <a class="site" href="${p.url}" target="_blank" rel="noopener">Open site</a>
+      <a class="site" href="${p.url}" target="_blank" rel="noopener">Let's go ›</a>
       <button class="icon went" data-went="${p.id}" aria-pressed="${!!VISITS[p.id]}">${visitLabel(p.id)}</button>
       <button class="btn ghost" id="pickShow">Show only this</button>
     </div>
     <p class="pick-next">Rotates every Monday and skips anywhere you've been in the last ${RECENT_WEEKS} weeks. Up next: ${next?next.name:"—"}.</p>`;
   wireVisits(pick);
   document.getElementById("pickShow").onclick=()=>{
-    state.only=state.only===p.id?null:p.id;render();
+    state.only=state.only===p.id?null:p.id;render();showTab("explore");
     window.scrollTo({top:document.querySelector(".controls").offsetTop-20,behavior:"smooth"});
   };
 }
@@ -953,13 +979,14 @@ function renderGrid(){
       <p class="meta">${p.meta}</p>
       ${passBox(p)}${dealBox(p)}
       <div class="card-foot">
-        <a class="site" href="${p.url}" target="_blank" rel="noopener">Open site</a>
+        <a class="site" href="${p.url}" target="_blank" rel="noopener">Let's go ›</a>
         <button class="icon" data-plan="${p.id}" aria-pressed="${!!plan[p.id]}" title="Add to this weekend's plan">${plan[p.id]?"🗓":"＋"}</button>
         <button class="icon" data-love="${p.id}" aria-pressed="${state.loved.has(p.id)}" aria-label="Love ${p.name}">${state.loved.has(p.id)?"♥":"♡"}</button>
         <button class="icon went" data-went="${p.id}" aria-pressed="${!!VISITS[p.id]}" title="${visitLabel(p.id)}">${VISITS[p.id]?"✓ Went":"Went this week"}</button>
       </div>
     </article>`;
   }).join("");
+  [...grid.children].forEach((c,i)=>c.style.animationDelay=Math.min(i*40,420)+"ms");
   grid.querySelectorAll("[data-love]").forEach(b=>b.onclick=async()=>{
     const id=b.dataset.love;state.loved.has(id)?state.loved.delete(id):state.loved.add(id);
     await store.set("wf.loved",JSON.stringify([...state.loved]));renderGrid();
@@ -1088,6 +1115,17 @@ async function setupNotifyButton(){
     }catch(e){btn.textContent="🔕 Couldn't subscribe";}
   };
 }
+
+/* ===================== tabs ===================== */
+function showTab(which){
+  const wk=which==="weekend";
+  paneWeekend.classList.toggle("on",wk);
+  paneExplore.classList.toggle("on",!wk);
+  tabBtnWeekend.setAttribute("aria-selected",String(wk));
+  tabBtnExplore.setAttribute("aria-selected",String(!wk));
+}
+tabBtnWeekend.onclick=()=>showTab("weekend");
+tabBtnExplore.onclick=()=>showTab("explore");
 
 /* ===================== update button + auto refresh ===================== */
 document.getElementById("updateBtn").onclick=()=>{refreshWeekly(true);wxFetchedAt=0;refreshWeather();};
