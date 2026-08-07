@@ -1121,7 +1121,7 @@ document.getElementById("planIcs").onclick=()=>{
 };
 
 /* ===================== Monday push (dormant until server exists) ===================== */
-const PUSH={publicKey:"",subscribeUrl:""};
+const PUSH={publicKey:"BHb2WhuBx0n2rNfdSe7vsHDj9MNkvZXfsM98vMeMwmf57iaZt1UAVEZ9iTGLS0fqowo9RtwYXRGHbknYH-rmwQg",subscribeUrl:"https://weekend-finder-push.weekend-finder-push.workers.dev/subscribe"};
 async function setupNotifyButton(){
   const btn=document.getElementById("notifyBtn");
   if(!PUSH.publicKey||!PUSH.subscribeUrl||!("serviceWorker" in navigator)||!("PushManager" in window)) return;
