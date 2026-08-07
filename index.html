@@ -1,304 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#1C7FA8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Weekend Finder">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f2a2e">
 <link rel="apple-touch-icon" href="data:image/png;base64,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">
 <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAOa0lEQVR4nO3du5ddZR3H4T2ss7wUSIAOAsEOEddCO+WmlioIgZh/RAGXykwsJAn8ISKIVhYqxiSAnbIWIWIlKA1gJgEK0cpi4qyTuZ45t/fyfZ5KC82effb+febd7+yZlcOrPx8AyHNd6QMAoAwBAAglAAChBAAg1Gil9BEAUIQVAEAoAQAINRo8AwKIZAUAEGq0YgkAEMkKACCUAACEEgCAUF4EAwhlBQAQynsAAKGsAABCCQBAKJvAAKFGg00AgEgeAQGEEgCAUPYAAEJ5DwAglEdAAKEEACCUAACEsgkMEMoKACCUN4EBQlkBAITyHgBAKJvAAKE8AgIIJQAAoQQAIJQ9AIBQVgAAofwYKEAobwIDhPIICCCUTWCAUFYAAKEEACCUAACEsgcAEMp7AAChPAICCCUAAKG8CQwQyiYwQCiPgABCCQBAKAEACOU9AIBQNoEBQnkEBBBKAABCCQBAqNGKXWCASFYAAKEEACCU9wAAQlkBAITyIhhAKCsAgFACABBKAABC2QMACDUaViQAmMafPv/cQf8nX/379xdxJExnVPoAgDZMMe4n+T+RhIIEANjVXIb+5P+EGCyZAABbLWHu7/3vKsFy2AQGrnqt0NzfbrMEX1OCRbICgHT1zP3tXlOCRRIAyFXz6N9i41BlYL4EABI1NPrHycB8+XXQkOW1O5oc/eOuZuBtGZiVTWBI8Wr7o3/cRsnulYEZjAZLAAjw6h3Plj6EhXj1jufuffsHpY+iVfYAoHO9jv5NG1+gDEzBbwOFnnU//TflfKVzZA8A+vRK3kDcaMB9lgITswKADgVO/03JX/tBCQD0xgR0BibkPQDoxytHDL6rNhpw3zseB+3FCgA6Yfpv55zszSYw9OC8SbeLV448e791wC6sAKB5pv/enJ/deBMY2nb+yOnSh9CA80eevf+dJ0ofRXWsAKBhpv/knKvt7AFAq86ZaAd0/sjpB6wDxlgBQJNM/+k4b+O8BwDtOXe7KTa9c0dOP/AP64BhsAKA5pj+s3MONwgAQCibwNCSs751nZNzt59+MP5BkBUANMP0ny/nUwCgDabVIoSfVW8CA+FyZ6AfA4UGnL3tVOlD6NbZ2089+M8nSx9FGTaBoXZ/NP0X7Oxtp74e2QB7AAChBACq5tv/5cg8zwIA9cqcSqUEnm17AABXpc1DKwCo1Jm8b0iLSzvnAgAQynsAUKMzh7O+Fa3HmdtOfePdlB8J9SYwwBYpU9EmMFTnD4dPlj6EaGcOn/zmu0+VPoplsAcAEEoAoC6+/a9ByKcgAACh7AEA7CBhNloBQEVeznjy0ISEz8J7AAC76H08WgEAhBIAqMXLt/b/zKEt3X8io5XuFzkA0+p7QloBAIQSAKjC7299pvQhsIO+PxcBAAglAAChRis973AAzKrjIWkFAOX97paeHzS3ruNPRwAAQgkAQCi/DRRgH73OSX8TGGBffc5Jj4AAQgkAFPbbW35W+hDYR6+fkb8HADCBHkelTWCA/XU5Kj0CAgglAAChBAAglD0AgP11OSqtAABCjXr+VacA89LjqLQCAAglAAChbAID7K/LUWkFABBKAABCCQBAKAEACDXq8WdbAeasy1FpBQCFfeu9H5U+BPbR62fkbwID7KvPOWkFABDKi2AA++h1TloBAIQSAIBQAgDlffu9H5c+BHbV8acz6vbhFsBc9DskbQID7KXjIekREEAoAYAqfOf9bh80N63vz8WbwAB76HlC2gMA2FXfE9IjIKjFQ+//pPQhcI3uPxEBAAjlPQCAXfQ+Hq0AoCIPfdD5M4eGJHwWNoEBdpAwG60AAEIJANTl4YAnD/UL+RS8CAawXcRgtAKA6jz8wdOlDyFazvkfrUR0DmBSOVPRCgBq9N1/pXwTWpuoMy8AAKEEACoV9a1oJdLOuRfBAK5Km4dWAFCvR8K+IS0r8GwLAFQtcCoVkXmeBQAg1CjoR16hTY9cWv31zSdKH0XPHrm0Gvf4fxgGm8DQhEcvrf5KAxbj0UursWPQIyCAUAIAbXj00mrpQ+hQ+FkVAGhG+LSaO+fTHgC05Oil1ZdsBszD0eBH/5usAABCCQA05mj8g4vZOYcbRpk//QpNO7q++tJNHgRN6eh66E/9b2cFAE06uu572Gk4b+NGK1IIbXpsfe2XN62VPoqWPLa+Zt6NswKAhj22vlb6EJrhXG0nANA2c20SztKOBACaZ7rtzfnZjQBAD8y43Tgze/AmMHTi8fW1F29aK30UdXncru+evAcA/Xj88towDC/euFb4OCqwcSrMt715BAS9uTr7gjkDExIA6FDyBEz+2g/KHgD06djltWEYXkh6HLTxJZtpkxs5XdCxY5dPvHBjxC8/OHbZL0c6sFHpAwAWa2MydpwBo39q9gAgQq9Tstevazn8GCikOHblxDAMLxzqZCmw8eWYYLOwCQxZvnflxDAMv2g5Axtfgtk1O3sAkKjRDGwcNvMiAJCroQwY/YsgAJBuc7ZWWAJzf6HsAQBXHf//tH2+dAk2j8SAWigrAGCrUiU47vv95fImMLCr41d+uvmfnz/09KL/CZbMewDARI5/uHVSP3/DgZOw/f/ECCrIIyBgSjtMc5piExgglN8FBBBKAABCCQBAKAEACGUTGCCU9wAAQnkTGCCUPQCAUPYAAEJZAQCEEgCAUAIAEEoAAEKNVuwCA0SyAgAIJQAAobwJDBDKi2AAoTwCAgglAAChBAAglL8HABDKJjBAKI+AAEIJAEAoAQAI5U1ggFA2gQFC+TFQgFD2AABCCQBAKHsAAKGsAABCCQBAKAEACCUAAKFGKyu2gQESWQEAhBIAgFACABDKi2AAoawAAEIJAEAoAQAI5e8BAISyCQwQyt8EBghlDwAglAAAhBIAgFA2gQFCWQEAhPIeAEAoKwCAUPYAAEKNSh8AdXnr4/8e9H9y5/WfWsSRAAd10PvXm8Cde+vj/yz+nzjYNXfn9Z9e0JFAZxZ9/1oB9GYJE39Gux2hMBCr1G0rAG2rf9xPThjoXm037GjFE6Cm/PWjui6gJRi/Z77wOTGgJZXfsFYADaj8Glqm8VMhBtSmuVtVACrV3JW0fGJAca3fpwJQkdYvpoLEgGXq5lb1IlhhF3u5kuoxfnPeJQbMT393qxVAAf1dRtW6KAbMpu+7VQCWpO/LqAliwORCblhvAi/QxY8+KX0I7OzaGHym4JFQlbR71q+DnrOLH2ZdQB0Yv+fvukEMsoTfsKOLH37yRRf9bN7MvoZ6Mj4O3Bf9catuYQ9gSq6k7r0pBu1zn+5NAA7AxRRLDBriPp2cAOzDxcQWYlAh9+l0BGAHLiYmJAYFuU9nNxr8HOgwDMNwwcXEbMbn0d1isBju0/mKXgG4mFiQC2IwP+7TxRkNQ9YS4MIVFxNLdU0MDonBRNyny7GxAui5ABeu/Lv0IcBV43Pt7kOfLXgkFXKrLl9vewBvuIZoxPi8+1JqDNywZTW/B+ACogNvxMTADVuVZgLguiHEbpd6i2Fw21ZuNFR2wbliYEdV3ae7cf+2Za8VgM8S6uc+ZWrXlT4AAMoQAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoVY++NtvNv/LE3++seChsHynv3K59CFQKdMgwTUB2PTEX25a/qGwHKe/vF76EGiJadCxnQMwzsffB3OfGRkF3dicBvsHYJOPv0XmPnNnFDRq+zQ4QAA2Penjr9spQ59lMQ0qt/c0mCYA43z8lTD0KcsoqMqEA2HWAIxzBSyZoU+FzIGCDjoT5hmAcS6CBTH0aYg5sASzzIRFBWCci2B25j6tMwfmaF4DYRkBGPfU6y6CAzh5j7lPh8yBKSxiGiw7AOOeev3mUv90zU7ec6n0IcDymAN7WPQ0KBmAcS4Ccx/MgWG5o6CWAIyLugjMfdiRObAENQZgi86uAxMfDqqzIbChhlHQQAC2+2E7V8MzFXzG0JOGbv/tahsITQZgi6ouiNo+YAhhDkyhhwAAMAV/EQwglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACDU/wBDq7W4Wq9RsQAAAABJRU5ErkJggg==">
 <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22Weekend%20Finder%22%2C%20%22short_name%22%3A%20%22Weekend%22%2C%20%22start_url%22%3A%20%22.%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22background_color%22%3A%20%22%23FAF7F0%22%2C%20%22theme_color%22%3A%20%22%231C7FA8%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAOa0lEQVR4nO3du5ddZR3H4T2ss7wUSIAOAsEOEddCO%2BWmlioIgZh/RAGXykwsJAn8ISKIVhYqxiSAnbIWIWIlKA1gJgEK0cpi4qyTuZ45t/fyfZ5KC82effb%2Bfebd7%2ByZlcOrPx8AyHNd6QMAoAwBAAglAAChBAAg1Gil9BEAUIQVAEAoAQAINRo8AwKIZAUAEGq0YgkAEMkKACCUAACEEgCAUF4EAwhlBQAQynsAAKGsAABCCQBAKJvAAKFGg00AgEgeAQGEEgCAUPYAAEJ5DwAglEdAAKEEACCUAACEsgkMEMoKACCUN4EBQlkBAITyHgBAKJvAAKE8AgIIJQAAoQQAIJQ9AIBQVgAAofwYKEAobwIDhPIICCCUTWCAUFYAAKEEACCUAACEsgcAEMp7AAChPAICCCUAAKG8CQwQyiYwQCiPgABCCQBAKAEACOU9AIBQNoEBQnkEBBBKAABCCQBAqNGKXWCASFYAAKEEACCU9wAAQlkBAITyIhhAKCsAgFACABBKAABC2QMACDUaViQAmMafPv/cQf8nX/379xdxJExnVPoAgDZMMe4n%2BT%2BRhIIEANjVXIb%2B5P%2BEGCyZAABbLWHu7/3vKsFy2AQGrnqt0NzfbrMEX1OCRbICgHT1zP3tXlOCRRIAyFXz6N9i41BlYL4EABI1NPrHycB8%2BXXQkOW1O5oc/eOuZuBtGZiVTWBI8Wr7o3/cRsnulYEZjAZLAAjw6h3Plj6EhXj1jufuffsHpY%2BiVfYAoHO9jv5NG1%2BgDEzBbwOFnnU//TflfKVzZA8A%2BvRK3kDcaMB9lgITswKADgVO/03JX/tBCQD0xgR0BibkPQDoxytHDL6rNhpw3zseB%2B3FCgA6Yfpv55zszSYw9OC8SbeLV448e791wC6sAKB5pv/enJ/deBMY2nb%2ByOnSh9CA80eevf%2BdJ0ofRXWsAKBhpv/knKvt7AFAq86ZaAd0/sjpB6wDxlgBQJNM/%2Bk4b%2BO8BwDtOXe7KTa9c0dOP/AP64BhsAKA5pj%2Bs3MONwgAQCibwNCSs751nZNzt59%2BMP5BkBUANMP0ny/nUwCgDabVIoSfVW8CA%2BFyZ6AfA4UGnL3tVOlD6NbZ2089%2BM8nSx9FGTaBoXZ/NP0X7Oxtp74e2QB7AAChBACq5tv/5cg8zwIA9cqcSqUEnm17AABXpc1DKwCo1Jm8b0iLSzvnAgAQynsAUKMzh7O%2BFa3HmdtOfePdlB8J9SYwwBYpU9EmMFTnD4dPlj6EaGcOn/zmu0%2BVPoplsAcAEEoAoC6%2B/a9ByKcgAACh7AEA7CBhNloBQEVeznjy0ISEz8J7AAC76H08WgEAhBIAqMXLt/b/zKEt3X8io5XuFzkA0%2Bp7QloBAIQSAKjC7299pvQhsIO%2BPxcBAAglAAChRis973AAzKrjIWkFAOX97paeHzS3ruNPRwAAQgkAQCi/DRRgH73OSX8TGGBffc5Jj4AAQgkAFPbbW35W%2BhDYR6%2Bfkb8HADCBHkelTWCA/XU5Kj0CAgglAAChBAAglD0AgP11OSqtAABCjXr%2BVacA89LjqLQCAAglAAChbAID7K/LUWkFABBKAABCCQBAKAEACDXq8WdbAeasy1FpBQCFfeu9H5U%2BBPbR62fkbwID7KvPOWkFABDKi2AA%2B%2Bh1TloBAIQSAIBQAgDlffu9H5c%2BBHbV8acz6vbhFsBc9DskbQID7KXjIekREEAoAYAqfOf9bh80N63vz8WbwAB76HlC2gMA2FXfE9IjIKjFQ%2B//pPQhcI3uPxEBAAjlPQCAXfQ%2BHq0AoCIPfdD5M4eGJHwWNoEBdpAwG60AAEIJANTl4YAnD/UL%2BRS8CAawXcRgtAKA6jz8wdOlDyFazvkfrUR0DmBSOVPRCgBq9N1/pXwTWpuoMy8AAKEEACoV9a1oJdLOuRfBAK5Km4dWAFCvR8K%2BIS0r8GwLAFQtcCoVkXmeBQAg1CjoR16hTY9cWv31zSdKH0XPHrm0Gvf4fxgGm8DQhEcvrf5KAxbj0UursWPQIyCAUAIAbXj00mrpQ%2BhQ%2BFkVAGhG%2BLSaO%2BfTHgC05Oil1ZdsBszD0eBH/5usAABCCQA05mj8g4vZOYcbRpk//QpNO7q%2B%2BtJNHgRN6eh66E/9b2cFAE06uu572Gk4b%2BNGK1IIbXpsfe2XN62VPoqWPLa%2BZt6NswKAhj22vlb6EJrhXG0nANA2c20SztKOBACaZ7rtzfnZjQBAD8y43Tgze/AmMHTi8fW1F29aK30UdXncru%2BevAcA/Xj88towDC/euFb4OCqwcSrMt715BAS9uTr7gjkDExIA6FDyBEz%2B2g/KHgD06djltWEYXkh6HLTxJZtpkxs5XdCxY5dPvHBjxC8/OHbZL0c6sFHpAwAWa2MydpwBo39q9gAgQq9Tstevazn8GCikOHblxDAMLxzqZCmw8eWYYLOwCQxZvnflxDAMv2g5Axtfgtk1O3sAkKjRDGwcNvMiAJCroQwY/YsgAJBuc7ZWWAJzf6HsAQBXHf//tH2%2BdAk2j8SAWigrAGCrUiU47vv95fImMLCr41d%2Buvmfnz/09KL/CZbMewDARI5/uHVSP3/DgZOw/f/ECCrIIyBgSjtMc5piExgglN8FBBBKAABCCQBAKAEACGUTGCCU9wAAQnkTGCCUPQCAUPYAAEJZAQCEEgCAUAIAEEoAAEKNVuwCA0SyAgAIJQAAobwJDBDKi2AAoTwCAgglAAChBAAglL8HABDKJjBAKI%2BAAEIJAEAoAQAI5U1ggFA2gQFC%2BTFQgFD2AABCCQBAKHsAAKGsAABCCQBAKAEACCUAAKFGKyu2gQESWQEAhBIAgFACABDKi2AAoawAAEIJAEAoAQAI5e8BAISyCQwQyt8EBghlDwAglAAAhBIAgFA2gQFCWQEAhPIeAEAoKwCAUPYAAEKNSh8AdXnr4/8e9H9y5/WfWsSRAAd10PvXm8Cde%2Bvj/yz%2BnzjYNXfn9Z9e0JFAZxZ9/1oB9GYJE39Gux2hMBCr1G0rAG2rf9xPThjoXm037GjFE6Cm/PWjui6gJRi/Z77wOTGgJZXfsFYADaj8Glqm8VMhBtSmuVtVACrV3JW0fGJAca3fpwJQkdYvpoLEgGXq5lb1IlhhF3u5kuoxfnPeJQbMT393qxVAAf1dRtW6KAbMpu%2B7VQCWpO/LqAliwORCblhvAi/QxY8%2BKX0I7OzaGHym4JFQlbR71q%2BDnrOLH2ZdQB0Yv%2BfvukEMsoTfsKOLH37yRRf9bN7MvoZ6Mj4O3Bf9catuYQ9gSq6k7r0pBu1zn%2B5NAA7AxRRLDBriPp2cAOzDxcQWYlAh9%2Bl0BGAHLiYmJAYFuU9nNxr8HOgwDMNwwcXEbMbn0d1isBju0/mKXgG4mFiQC2IwP%2B7TxRkNQ9YS4MIVFxNLdU0MDonBRNyny7GxAui5ABeu/Lv0IcBV43Pt7kOfLXgkFXKrLl9vewBvuIZoxPi8%2B1JqDNywZTW/B%2BACogNvxMTADVuVZgLguiHEbpd6i2Fw21ZuNFR2wbliYEdV3ae7cf%2B2Za8VgM8S6uc%2BZWrXlT4AAMoQAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoVY%2B%2BNtvNv/LE3%2B%2BseChsHynv3K59CFQKdMgwTUB2PTEX25a/qGwHKe/vF76EGiJadCxnQMwzsffB3OfGRkF3dicBvsHYJOPv0XmPnNnFDRq%2BzQ4QAA2Penjr9spQ59lMQ0qt/c0mCYA43z8lTD0KcsoqMqEA2HWAIxzBSyZoU%2BFzIGCDjoT5hmAcS6CBTH0aYg5sASzzIRFBWCci2B25j6tMwfmaF4DYRkBGPfU6y6CAzh5j7lPh8yBKSxiGiw7AOOeev3mUv90zU7ec6n0IcDymAN7WPQ0KBmAcS4Ccx/MgWG5o6CWAIyLugjMfdiRObAENQZgi86uAxMfDqqzIbChhlHQQAC2%2B2E7V8MzFXzG0JOGbv/tahsITQZgi6ouiNo%2BYAhhDkyhhwAAMAV/EQwglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACDU/wBDq7W4Wq9RsQAAAABJRU5ErkJggg%3D%3D%22%2C%20%22sizes%22%3A%20%22512x512%22%2C%20%22type%22%3A%20%22image/png%22%2C%20%22purpose%22%3A%20%22any%20maskable%22%7D%5D%7D">
-<title>Weekend Finder — central Jersey, from Princeton Junction</title>
+<meta name="apple-mobile-web-app-title" content="Weekend Finder">
+<title>Weekend Finder</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#FAF7F0;
-    --ink:#21302A;
-    --ink-soft:#5B6B61;
-    --line:#E3DCCD;
-    --card:#FFFFFF;
-    --accent:#1C7FA8;     /* set per season by JS */
-    --accent-2:#F2A93B;   /* set per season by JS */
-    --accent-soft:#E7F1F6;/* set per season by JS */
-    --shadow:0 1px 0 rgba(33,48,42,.04), 0 8px 24px -16px rgba(33,48,42,.35);
-    --radius:14px;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0}
-  body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter',system-ui,sans-serif;
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:1080px;margin:0 auto;padding:22px 18px 64px}
+:root{
+  --ink:#12211f; --ink-soft:#4d5f5c; --line:#e2e0d8;
+  --paper:#f7f5ef; --card:#fff; --accent:#0f6b5c;
+  --pass:#7a3fa8; --free:#2f7a3d; --paid:#8a6a1f; --deal:#c0392b; --local:#1f5f8a;
+  --radius:18px; --hero-a:#0f2a2e; --hero-b:#1d5f52;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;padding-bottom:48px}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
 
-  /* Header / season strip */
-  header{margin-bottom:18px}
-  .eyebrow{
-    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--ink-soft);font-weight:600;margin:0 0 6px
-  }
-  h1{
-    font-family:'Fraunces',serif;font-weight:600;
-    font-size:clamp(30px,5vw,46px);line-height:1.04;
-    margin:0 0 4px;letter-spacing:-.01em
-  }
-  h1 .from{display:block;font-size:.42em;font-weight:500;color:var(--ink-soft);letter-spacing:0;margin-top:8px}
-  .nowstrip{
-    margin-top:16px;border:1px solid var(--line);border-left:5px solid var(--accent);
-    background:linear-gradient(180deg,var(--accent-soft),var(--card));
-    border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)
-  }
-  .nowstrip .season{
-    font-family:'Fraunces',serif;font-size:20px;font-weight:600;color:var(--accent);
-    display:flex;align-items:center;gap:9px
-  }
-  .nowstrip .season .dot{width:11px;height:11px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 4px var(--accent-soft)}
-  .nowstrip p{margin:5px 0 0;color:var(--ink-soft);font-size:14.5px}
-  .stamprow{margin-top:11px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
-  .nowstrip .stamp{display:inline-block;font-size:12px;font-weight:600;
-    letter-spacing:.03em;color:var(--accent);background:#fff;border:1px solid var(--line);
-    border-radius:999px;padding:4px 11px}
-  .updbtn{font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer;
-    color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:999px;
-    padding:4px 12px;transition:opacity .12s ease}
-  .updbtn:hover{opacity:.9}
-  .updbtn:disabled{opacity:.55;cursor:default}
-  .updmsg{font-size:12px;color:var(--ink-soft)}
-  .stalenote{margin-top:10px;border:1px solid var(--line);border-left:5px solid #B8862F;
-    background:#FBF4E2;border-radius:var(--radius);padding:9px 13px;font-size:12.5px;color:#6B5413;display:none}
+.hero{background:linear-gradient(150deg,var(--hero-a),var(--hero-b));color:#fff;
+  padding:calc(28px + env(safe-area-inset-top)) 0 26px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;
+  border-radius:50%;background:rgba(255,255,255,.07)}
+.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.72;margin:0 0 6px}
+h1{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;
+  font-size:clamp(30px,7vw,44px);line-height:1.02;margin:0;letter-spacing:-.02em}
+.hero-sub{margin:10px 0 0;font-size:14px;opacity:.85;max-width:46ch;line-height:1.5}
+.banner{margin:16px 0 0;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+  border-radius:14px;padding:12px 14px}
+.banner h3{margin:0 0 6px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.85}
+.banner ul{margin:0;padding-left:16px;font-size:13.5px;line-height:1.6}
+.banner a{color:#fff;text-decoration:underline;text-underline-offset:2px}
 
-  /* Weather chips */
-  .wxchips{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap;align-items:center}
-  .wx{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 11px;font-size:12.5px;color:var(--ink)}
-  .wx .emoji{font-size:17px;line-height:1}
-  .wx b{font-family:'Fraunces',serif;font-size:15px;font-weight:600}
-  .wx .pop{color:var(--ink-soft);font-size:11px}
-  .wxhint{font-size:12.5px;color:var(--ink-soft)}
+.pick{margin-top:-22px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:0 10px 30px rgba(18,33,31,.09)}
+.pick-tag{display:inline-block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  color:var(--accent);background:rgba(15,107,92,.09);padding:5px 9px;border-radius:99px}
+.pick h2{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:24px;margin:10px 0 4px;
+  letter-spacing:-.01em;line-height:1.15}
+.pick .why{font-size:14px;color:var(--ink-soft);line-height:1.55;margin:6px 0 12px}
+.pick-meta{font-size:12.5px;color:var(--ink-soft);display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.pick-next{font-size:11.5px;color:var(--ink-soft);opacity:.85;margin:12px 0 0;border-top:1px solid var(--line);padding-top:10px}
 
-  /* Happening this weekend: swipeable photo story cards */
-  .events{margin:16px 0 0}
-  .events h2{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin:0 0 2px}
-  .events .sub{margin:0 0 8px;font-size:12.5px;color:var(--ink-soft)}
-  .stories{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -18px;padding:6px 18px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-  .stories::-webkit-scrollbar{display:none}
-  .story{flex:none;width:min(80%,360px);scroll-snap-align:center;border-radius:20px;box-shadow:var(--shadow);
-    color:#fff;padding:20px 17px;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
-  .story .emoji{position:absolute;top:16px;right:14px;font-size:60px;transform:rotate(8deg);opacity:.92}
-  .story .tagline{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.9;text-shadow:0 1px 3px rgba(0,0,0,.4)}
-  .story h3{font-family:'Fraunces',serif;font-size:23px;font-weight:600;margin:4px 0 6px;line-height:1.12;text-shadow:0 1px 4px rgba(0,0,0,.45)}
-  .story p{font-size:13.5px;margin:0 0 12px;opacity:.96;line-height:1.45;text-shadow:0 1px 3px rgba(0,0,0,.4)}
-  .story .cta{align-self:flex-start;background:#fff;color:var(--ink);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:700;border:none;cursor:pointer;text-decoration:none}
-  .dots{display:flex;gap:5px;justify-content:center;margin-top:2px}
-  .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
-  .dots i.on{background:var(--accent)}
+/* local happening-now strip */
+.local{margin:22px 0 0;border:1px solid rgba(31,95,138,.28);background:rgba(31,95,138,.05);
+  border-radius:var(--radius);padding:16px}
+.local h3{margin:0 0 3px;font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:17px;color:#164a6d}
+.local .lead{margin:0 0 12px;font-size:12.5px;color:var(--ink-soft)}
+.ev{display:flex;gap:11px;padding:10px 0;border-top:1px solid rgba(31,95,138,.16)}
+.ev:first-of-type{border-top:0}
+.ev-when{flex:0 0 66px;font-size:11.5px;font-weight:700;color:var(--local);line-height:1.35;padding-top:1px}
+.ev-body{flex:1;min-width:0}
+.ev-body strong{font-size:14px;display:block;line-height:1.3}
+.ev-body span{font-size:12.5px;color:var(--ink-soft);line-height:1.5;display:block;margin-top:3px}
+.ev-body a{font-size:12.5px;color:var(--local);font-weight:600}
+.soon{background:var(--local);color:#fff;border-radius:5px;padding:2px 5px;display:inline-block}
+.sources{margin:13px 0 0;padding-top:11px;border-top:1px solid rgba(31,95,138,.16);
+  font-size:11.5px;color:var(--ink-soft);line-height:1.7}
+.sources a{color:var(--local)}
 
-  /* NEW place badge */
-  .card{overflow:visible}
-  .newbadge{position:absolute;top:-10px;right:12px;background:var(--accent-2);color:#23180a;font-size:10.5px;font-weight:700;letter-spacing:.05em;border-radius:999px;padding:3px 10px;box-shadow:var(--shadow)}
+.controls{margin:22px 0 6px}
+.ctl-row{margin-bottom:14px}
+.ctl-label{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--ink-soft);margin-bottom:7px}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{font:inherit;font-size:13px;font-weight:500;border:1px solid var(--line);background:var(--card);
+  color:var(--ink);padding:8px 13px;border-radius:99px;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.chip:hover{border-color:#c9c6bb}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip.c-free[aria-pressed="true"]{background:var(--free);border-color:var(--free)}
+.chip.c-pass[aria-pressed="true"]{background:var(--pass);border-color:var(--pass)}
+.chip.c-paid[aria-pressed="true"]{background:var(--paid);border-color:var(--paid)}
+.chip.c-deal[aria-pressed="true"]{background:var(--deal);border-color:var(--deal)}
+.chip:focus-visible,.btn:focus-visible,.icon:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.actions{display:flex;gap:8px;margin:16px 0 4px;flex-wrap:wrap}
+.btn{font:inherit;font-size:13.5px;font-weight:600;border-radius:11px;padding:10px 16px;
+  cursor:pointer;border:1px solid var(--ink);background:var(--ink);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink)}
+.count{font-size:12.5px;color:var(--ink-soft);margin:14px 0 10px}
 
-  /* Weekend plan */
-  .mark.on-plan{background:#FBF4E2;border-color:#B8862F}
-  .planbar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:50;
-    background:var(--ink);color:#fff;border:none;border-radius:999px;padding:11px 20px;
-    font-family:'Inter',sans-serif;font-size:14px;font-weight:600;box-shadow:0 10px 28px -8px rgba(0,0,0,.45);cursor:pointer;display:none}
-  .sheetveil{position:fixed;inset:0;z-index:59;background:rgba(33,48,42,.35);display:none}
-  .plansheet{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--card);
-    border-radius:20px 20px 0 0;box-shadow:0 -12px 40px -12px rgba(0,0,0,.4);
-    padding:18px 18px calc(24px + env(safe-area-inset-bottom));display:none;max-height:72vh;overflow:auto}
-  .plansheet h2{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin:0 0 2px}
-  .plansheet .sub{margin:0 0 8px;font-size:12.5px;color:var(--ink-soft)}
-  .pitem{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
-  .pitem:first-of-type{border-top:none}
-  .pitem .nm{flex:1;font-size:14px;font-weight:600}
-  .pitem .nm span{display:block;font-size:11.5px;font-weight:400;color:var(--ink-soft)}
-  .pitem .dayt{border:1px solid var(--line);background:var(--accent-soft);color:var(--accent);
-    font-family:inherit;font-size:12px;font-weight:700;border-radius:8px;padding:6px 10px;cursor:pointer;min-width:52px}
-  .pitem .rm{border:1px solid var(--line);background:#fff;border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:14px;color:var(--ink-soft)}
-  .sheetbtns{display:flex;gap:8px;margin-top:14px}
-  .sheetbtns button{flex:1;font-family:'Inter',sans-serif;font-weight:600;font-size:13.5px;border-radius:10px;padding:11px 6px;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink)}
-  .sheetbtns .primary{background:var(--accent);border-color:var(--accent);color:#fff}
-  .wcnote{margin-top:12px;border:1px solid var(--line);border-left:5px solid #C0492B;
-    background:#FBEEE9;border-radius:var(--radius);padding:11px 14px;font-size:13px;color:#7A2E1C}
-  .wcnote b{color:#5E2316}
-  .booknote{margin-top:10px;border:1px solid var(--line);border-left:5px solid #B8862F;
-    background:#FBF4E2;border-radius:var(--radius);padding:11px 14px;font-size:13px;color:#6B5413}
-  .booknote b{color:#4A3A0C}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+  display:flex;flex-direction:column;animation:rise .38s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.card{animation:none}}
+.card.recent{border-color:#cfd8d4;background:#fbfaf6}
+.card h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:17.5px;margin:0;line-height:1.2;letter-spacing:-.01em}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin:9px 0 0}
+.tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:4px 8px;border-radius:6px;background:#f0efe8;color:var(--ink-soft)}
+.tag.t-free{background:rgba(47,122,61,.11);color:var(--free)}
+.tag.t-pass{background:rgba(122,63,168,.11);color:var(--pass)}
+.tag.t-paid{background:rgba(138,106,31,.12);color:var(--paid)}
+.tag.t-local{background:rgba(31,95,138,.11);color:var(--local)}
+.tag.t-visit{background:var(--ink);color:#fff}
+.blurb{font-size:13.5px;color:var(--ink-soft);line-height:1.55;margin:10px 0 0}
+.meta{font-size:12.5px;color:var(--ink-soft);margin:10px 0 0;line-height:1.5}
+.box{margin:11px 0 0;padding:10px 11px;border-radius:11px;font-size:12.5px;line-height:1.5}
+.box.pass{background:rgba(122,63,168,.06);border:1px solid rgba(122,63,168,.18);color:#4a2a63}
+.box.pass a{color:var(--pass);font-weight:600}
+.box.deal{background:rgba(192,57,43,.05);border:1px solid rgba(192,57,43,.2);color:#7d2b21}
+.box.deal a{color:var(--deal);font-weight:600}
+.box .stamp{display:block;margin-top:5px;font-size:11px;opacity:.75}
+.card-foot{display:flex;gap:7px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.card-foot a.site{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;margin-right:auto}
+.card-foot a.site:hover{text-decoration:underline}
+.icon{font:inherit;font-size:15px;line-height:1;border:1px solid var(--line);background:transparent;
+  border-radius:9px;height:32px;min-width:36px;padding:0 9px;cursor:pointer;white-space:nowrap}
+.icon[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.icon.went{font-size:12px;font-weight:600}
+.empty{border:1px dashed var(--line);border-radius:var(--radius);padding:26px 18px;text-align:center;
+  color:var(--ink-soft);font-size:14px;line-height:1.6}
+footer{margin:30px 0 0;font-size:11.5px;color:var(--ink-soft);line-height:1.7}
+footer a{color:var(--accent)}
 
-  /* Controls */
-  .controls{
-    display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;
-    margin:20px 0 8px;padding:14px;border:1px solid var(--line);
-    border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow)
-  }
-  .ctl{display:flex;flex-direction:column;gap:7px}
-  .ctl label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
-  .chips{display:flex;flex-wrap:wrap;gap:6px}
-  .chip{
-    border:1px solid var(--line);background:#fff;color:var(--ink-soft);
-    font-family:inherit;font-size:13px;font-weight:500;padding:6px 11px;border-radius:999px;
-    cursor:pointer;transition:all .12s ease
-  }
-  .chip:hover{border-color:var(--accent)}
-  .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-  .toggle{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink);cursor:pointer;user-select:none}
-  .toggle input{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}
-  .surprise{
-    margin-left:auto;font-family:'Fraunces',serif;font-weight:600;font-size:15px;
-    background:var(--accent-2);color:#23180a;border:none;border-radius:999px;
-    padding:10px 18px;cursor:pointer;box-shadow:var(--shadow);transition:transform .1s ease
-  }
-  .surprise:hover{transform:translateY(-1px)}
-  .surprise:active{transform:translateY(0)}
+/* ---- fresh-content layer (weekly.json) ---- */
+.stamprow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0 0}
+.stamp{font-size:12px;font-weight:700;color:var(--accent);background:rgba(15,107,92,.08);border:1px solid rgba(15,107,92,.2);border-radius:99px;padding:5px 12px}
+.updbtn{font:inherit;font-size:12px;font-weight:700;cursor:pointer;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:99px;padding:5px 13px}
+.updbtn:disabled{opacity:.55;cursor:default}
+.updmsg{font-size:12px;color:var(--ink-soft)}
+.stalenote{margin:10px 0 0;border:1px solid rgba(138,106,31,.35);background:rgba(138,106,31,.07);border-radius:12px;padding:10px 13px;font-size:12.5px;color:#6b5413;display:none}
+.notices{margin:10px 0 0}
+.note{border-radius:12px;padding:11px 13px;font-size:13px;line-height:1.5;margin-top:8px}
+.note-alert{border:1px solid rgba(192,57,43,.3);background:rgba(192,57,43,.06);color:#7d2b21}
+.note-book{border:1px solid rgba(138,106,31,.35);background:rgba(138,106,31,.07);color:#6b5413}
 
-  .meta{display:flex;justify-content:space-between;align-items:baseline;margin:18px 2px 12px;gap:12px;flex-wrap:wrap}
-  .count{font-size:13px;color:var(--ink-soft)}
-  .count b{color:var(--ink)}
+/* weather chips */
+.wxchips{display:flex;gap:8px;margin:10px 0 0;flex-wrap:wrap;align-items:center}
+.wx{display:flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 11px;font-size:12.5px}
+.wx .emoji{font-size:17px;line-height:1}
+.wx b{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:14.5px}
+.wx .pop{color:var(--ink-soft);font-size:11px}
+.wxhint{font-size:12.5px;color:var(--ink-soft)}
 
-  /* Grid */
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-  .card{
-    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-    padding:15px 15px 13px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px;
-    position:relative;transition:border-color .15s ease, box-shadow .15s ease
-  }
-  .card:hover{border-color:var(--accent)}
-  .card.done{opacity:.62}
-  .card.spot{outline:3px solid var(--accent-2);outline-offset:1px}
-  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-  .card h3{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin:0;line-height:1.12}
-  .card .town{font-size:12.5px;color:var(--ink-soft);margin-top:2px}
-  .drive{
-    flex:none;text-align:center;background:var(--accent-soft);color:var(--accent);
-    border-radius:10px;padding:6px 9px;min-width:60px;line-height:1.05;
-    text-decoration:none;cursor:pointer;transition:background .12s ease, color .12s ease
-  }
-  a.drive:hover{background:var(--accent);color:#fff}
-  .drive b{font-family:'Fraunces',serif;font-size:18px;font-weight:600;display:block}
-  .drive span{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
-  .blurb{font-size:13.5px;color:var(--ink-soft);margin:0;flex:1}
-  .logi{font-size:12px;color:var(--ink);margin:0;background:#F4EFE3;border:1px solid var(--line);border-radius:9px;padding:7px 9px}
-  .logi-k{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:2px}
-  .tags{display:flex;flex-wrap:wrap;gap:5px}
-  .tag{font-size:11px;color:var(--ink-soft);background:#F1ECE0;border-radius:6px;padding:2px 7px}
-  .tag.season{background:var(--accent-soft);color:var(--accent);font-weight:600}
-  .card .actions{display:flex;align-items:center;gap:8px;margin-top:2px;border-top:1px solid var(--line);padding-top:10px}
-  .go{
-    font-family:'Inter',sans-serif;font-weight:600;font-size:13px;text-decoration:none;
-    color:#fff;background:var(--accent);border-radius:9px;padding:7px 13px;flex:1;text-align:center;
-    transition:opacity .12s ease
-  }
-  .go:hover{opacity:.9}
-  .mark{
-    border:1px solid var(--line);background:#fff;border-radius:9px;width:38px;height:34px;
-    font-size:16px;cursor:pointer;line-height:1;transition:all .12s ease;display:grid;place-items:center
-  }
-  .mark:hover{border-color:var(--accent)}
-  .mark.on-love{background:#FDE9EF;border-color:#E8638C}
-  .mark.on-done{background:#EAF0EC;border-color:#6FA86B}
+/* happening this weekend: photo story cards */
+.events{margin:22px 0 0}
+.events h3{margin:0 0 2px;font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:17px}
+.events .lead{margin:0 0 8px;font-size:12.5px;color:var(--ink-soft)}
+.stories{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:6px 16px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.stories::-webkit-scrollbar{display:none}
+.story{flex:none;width:min(80%,360px);scroll-snap-align:center;border-radius:var(--radius);
+  color:#fff;padding:20px 17px;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(18,33,31,.12)}
+.story .emoji{position:absolute;top:16px;right:14px;font-size:58px;transform:rotate(8deg);opacity:.92}
+.story .tagline{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.9;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+.story h4{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:22px;font-weight:800;margin:4px 0 6px;line-height:1.1;text-shadow:0 1px 4px rgba(0,0,0,.45);letter-spacing:-.01em}
+.story p{font-size:13.5px;margin:0 0 12px;opacity:.96;line-height:1.45;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+.story .cta{align-self:flex-start;background:#fff;color:var(--ink);border-radius:99px;padding:8px 16px;font-size:13px;font-weight:700;text-decoration:none}
+.dots{display:flex;gap:5px;justify-content:center;margin-top:2px}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--accent)}
 
-  .empty{text-align:center;color:var(--ink-soft);padding:48px 20px;border:1px dashed var(--line);border-radius:var(--radius);font-size:14.5px}
-
-  /* Launchpad */
-  .launch{margin-top:30px;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow)}
-  .launch h2{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin:0 0 4px}
-  .launch p{margin:0 0 12px;font-size:13px;color:var(--ink-soft)}
-  .launch .links{display:flex;flex-wrap:wrap;gap:8px}
-  .launch a{
-    text-decoration:none;font-size:13px;font-weight:500;color:var(--ink);
-    border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:#fff;transition:all .12s ease
-  }
-  .launch a:hover{border-color:var(--accent);color:var(--accent)}
-
-  footer{margin-top:22px;text-align:center;font-size:12px;color:var(--ink-soft)}
-
-  @media (max-width:560px){
-    .surprise{margin-left:0;width:100%}
-    .controls{gap:12px}
-  }
-  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* weekend plan */
+.planbar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:50;
+  background:var(--ink);color:#fff;border:none;border-radius:99px;padding:11px 20px;
+  font:inherit;font-size:14px;font-weight:600;box-shadow:0 10px 28px rgba(0,0,0,.35);cursor:pointer;display:none}
+.sheetveil{position:fixed;inset:0;z-index:59;background:rgba(18,33,31,.4);display:none}
+.plansheet{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--card);
+  border-radius:20px 20px 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.35);
+  padding:18px 18px calc(24px + env(safe-area-inset-bottom));display:none;max-height:72vh;overflow:auto}
+.plansheet h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:19px;margin:0 0 2px}
+.plansheet .sub{margin:0 0 8px;font-size:12.5px;color:var(--ink-soft)}
+.pitem{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.pitem:first-of-type{border-top:none}
+.pitem .nm{flex:1;font-size:14px;font-weight:600}
+.pitem .nm span{display:block;font-size:11.5px;font-weight:400;color:var(--ink-soft)}
+.pitem .dayt{border:1px solid var(--line);background:rgba(15,107,92,.08);color:var(--accent);
+  font:inherit;font-size:12px;font-weight:700;border-radius:8px;padding:6px 10px;cursor:pointer;min-width:52px}
+.pitem .rm{border:1px solid var(--line);background:#fff;border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:14px;color:var(--ink-soft)}
+.sheetbtns{display:flex;gap:8px;margin-top:14px}
+.sheetbtns button{flex:1;font:inherit;font-weight:600;font-size:13.5px;border-radius:11px;padding:11px 6px;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.sheetbtns .primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.tag.t-new{background:var(--accent);color:#fff}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <p class="eyebrow">Weekend planner</p>
-    <h1>What should we do this weekend?
-      <span class="from">Pre-filtered by drive time from Princeton Junction, NJ</span>
-    </h1>
-    <div class="nowstrip">
-      <div class="season"><span class="dot"></span><span id="seasonName">Loading season</span></div>
-      <p id="seasonNote"></p>
-      <div class="stamprow">
-        <p class="stamp" id="stamp">Loading this week's picks…</p>
-        <button class="updbtn" id="updateBtn" title="Fetch the latest picks and app version">↻ Update</button>
-        <button class="updbtn" id="notifyBtn" style="display:none" title="Get a notification when Monday's new picks are ready">🔔 Notify me Mondays</button>
-        <span class="updmsg" id="updateMsg"></span>
-      </div>
-      <div class="wxchips" id="wxchips" style="display:none"></div>
-    </div>
-    <div class="stalenote" id="staleNote"></div>
-    <div id="notices"></div>
-    <section class="events" id="events" style="display:none"></section>
-  </header>
 
-  <section class="controls" aria-label="Filters">
-    <div class="ctl">
-      <label>Max drive</label>
-      <div class="chips" id="driveChips">
-        <button class="chip" data-drive="20">≤ 20 min</button>
-        <button class="chip" data-drive="45">≤ 45 min</button>
-        <button class="chip" data-drive="60">≤ 60 min</button>
-        <button class="chip" data-drive="90" aria-pressed="true">≤ 90 min</button>
-      </div>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow" id="eyebrow">Loading</p>
+    <h1 id="headline">Weekend Finder</h1>
+    <p class="hero-sub" id="herosub"></p>
+    <div class="banner"><h3>Book ahead</h3><ul id="bookNow"></ul></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="stamprow">
+    <span class="stamp" id="stamp">Loading this week's picks…</span>
+    <button class="updbtn" id="updateBtn" title="Fetch the latest picks and app version">↻ Update</button>
+    <button class="updbtn" id="notifyBtn" style="display:none">🔔 Notify me Mondays</button>
+    <span class="updmsg" id="updateMsg"></span>
+  </div>
+  <div class="wxchips" id="wxchips" style="display:none"></div>
+  <div class="stalenote" id="staleNote"></div>
+  <div class="notices" id="notices"></div>
+  <section class="pick" id="pick" aria-live="polite"></section>
+  <section class="events" id="events" style="display:none"></section>
+  <section class="local" id="localBox"></section>
+
+  <section class="controls">
+    <div class="ctl-row"><div class="ctl-label">Cost</div><div class="chips" id="priceChips"></div></div>
+    <div class="ctl-row"><div class="ctl-label">Drive time</div><div class="chips" id="driveChips"></div></div>
+    <div class="ctl-row"><div class="ctl-label">Type</div><div class="chips" id="catChips"></div></div>
+    <div class="actions">
+      <button class="btn" id="surprise">Surprise me</button>
+      <button class="btn ghost" id="clear">Clear filters</button>
+      <button class="btn ghost" id="hideRecent">Hide recent visits</button>
     </div>
-    <div class="ctl">
-      <label>Type</label>
-      <div class="chips" id="catChips">
-        <button class="chip" data-cat="pyo" aria-pressed="true">Pick your own</button>
-        <button class="chip" data-cat="beach" aria-pressed="true">Beach</button>
-        <button class="chip" data-cat="outdoor" aria-pressed="true">Outdoor</button>
-        <button class="chip" data-cat="indoor" aria-pressed="true">Indoor / rainy</button>
-        <button class="chip" data-cat="active" aria-pressed="true">Active / book</button>
-      </div>
-    </div>
-    <label class="toggle"><input type="checkbox" id="hideDone"> Hide places we've done</label>
-    <button class="surprise" id="surpriseBtn">Surprise me</button>
   </section>
 
-  <div class="meta">
-    <div class="count" id="count"></div>
-    <div class="count">Tap <b>♡</b> to save a favorite, <b>✓</b> to mark a place done so it stops repeating.</div>
-  </div>
-
+  <p class="count" id="count"></p>
   <div class="grid" id="grid"></div>
 
-  <section class="launch">
-    <h2>Still want to browse fresh deals?</h2>
-    <p>Your usual scouting spots, in one place, so you are not hunting around.</p>
-    <div class="links">
-      <a href="https://njmom.com/things-to-do-in-nj-this-weekend/" target="_blank" rel="noopener">NJ Mom: this weekend</a>
-      <a href="https://www.groupon.com/local/new-jersey/things-to-do/activities" target="_blank" rel="noopener">Groupon: NJ activities</a>
-      <a href="https://www.groupon.com/local/new-jersey/kids" target="_blank" rel="noopener">Groupon: kids deals</a>
-      <a href="https://www.pickyourown.org/NJcentral.htm" target="_blank" rel="noopener">PickYourOwn: crop calendar</a>
-      <a href="https://www.terhuneorchards.com/pick-your-own-schedule/" target="_blank" rel="noopener">Terhune PYO schedule</a>
-    </div>
-  </section>
-
-  <footer>Drive times are approximate from Princeton Junction. Always call ahead for crop status and beach badge details on the day.</footer>
-</div>
+  <footer>
+    Drive times are approximate from Princeton Junction. Museum passes are Mercer County Library System, free with a West Windsor Branch card.
+    Deal prices were checked <span id="dealStamp"></span> and change constantly, so open the link before you count on it.
+  </footer>
+</main>
 
 <button class="planbar" id="planBar"></button>
 <div class="sheetveil" id="sheetVeil"></div>
 <div class="plansheet" id="planSheet">
-  <h2>This weekend's plan</h2>
+  <h3>This weekend's plan</h3>
   <p class="sub">Tap the day to switch Sat / Sun. Share it or drop it on the calendar.</p>
   <div id="planItems"></div>
   <div class="sheetbtns">
@@ -309,591 +243,847 @@
 </div>
 
 <script>
-/* ---------- season setup ---------- */
-const SEASONS = {
-  spring:{ label:"Spring", accent:"#5C9A57", accent2:"#E8638C", soft:"#EAF3E8",
-    note:"Strawberries and asparagus open the picking season, tulips bloom at Holland Ridge, and the trails are at their best before the heat. Prime outdoor months." },
-  summer:{ label:"Summer", accent:"#1C7FA8", accent2:"#F2A93B", soft:"#E7F1F6",
-    note:"Blueberries are just starting at local farms, peaches come in July, and the shore is open. Best stretch of the year for a beach day." },
-  fall:{ label:"Fall", accent:"#C25A2B", accent2:"#B8862F", soft:"#F6EBE2",
-    note:"Apples, pumpkins, sunflowers, and corn mazes. Crisp air makes this the other great outdoor window before things move indoors." },
-  winter:{ label:"Winter", accent:"#3E6E8E", accent2:"#7FA8C4", soft:"#E9F0F5",
-    note:"Indoor season. Science centers, museums, and indoor play, with the occasional clear-day walk when everyone needs to move." }
+/* ===================== storage ===================== */
+const mem={};
+const store={
+  async get(k){ try{const v=localStorage.getItem(k);return v!==null?v:(mem[k]??null);}catch(e){return mem[k]??null;} },
+  async set(k,v){ mem[k]=v; try{localStorage.setItem(k,v);}catch(e){} }
 };
-function currentSeason(){
-  const m = new Date().getMonth(); // 0=Jan
-  if(m>=2 && m<=4) return "spring";
-  if(m>=5 && m<=7) return "summer";
-  if(m>=8 && m<=10) return "fall";
-  return "winter";
-}
 
-/* ---------- data: every place pre-tagged with drive time from Princeton Junction ---------- */
-const PLACES = [
-  // PICK YOUR OWN
-  {id:"terhune", name:"Terhune Orchards", town:"Princeton", drive:15, cat:"pyo", seasons:["spring","summer","fall"],
-   blurb:"This weekend: no cherries this year (the spring freeze killed the crop). Blueberries and pick-your-own flowers open any day now for late June but may not be ready yet, so call 609-924-2310 first. Store and donuts open 9 to 6, no pets.",
-   logistics:"Free on-site parking. Picking is pay-by-the-container or by weight at the stand; farm store, donuts, and wagon rides are extra.",
-   tags:["festivals","animals","close"], url:"https://www.terhuneorchards.com/pick-your-own-schedule/"},
-  {id:"vonthun", name:"VonThun Farms", town:"Monmouth Junction", drive:18, cat:"pyo", seasons:["spring","summer","fall"],
-   blurb:"This weekend: strawberry season is over (it ended 6/7) and blueberries are still 'coming soon,' not open yet at the South Brunswick fields. Call 732-329-8656 first. Farm market and donuts open daily.",
-   logistics:"Free parking. You prepay for picking containers at check-in; festival weekends add a separate activity-area ticket.",
-   tags:["festivals","close"], url:"https://www.vonthunfarms.com/sb/sb-u-pick/"},
-  {id:"hickory", name:"Hickory Corner Farm (formerly Lee Turkey Farm)", town:"East Windsor", drive:15, cat:"pyo", seasons:["summer","fall"],
-   blurb:"This weekend: small local farm in its early-summer window. Cherries and the last strawberries are the likely picks. Call 609-448-0629 for the day's crop before driving over.",
-   logistics:"Free on-site parking. Pay by weight for what you pick at the stand.",
-   tags:["low-key","close"], url:"https://www.google.com/maps/search/?api=1&query=Hickory+Corner+Farm+East+Windsor+NJ"},
-  {id:"hollandridge", name:"Holland Ridge Farms", town:"Cream Ridge", drive:28, cat:"pyo", seasons:["spring","fall"],
-   blurb:"Nothing to pick this weekend. Tulip u-pick runs in April and the sunflower u-pick returns late summer into fall. Worth saving for September.",
-   logistics:"Timed event tickets are required and include parking; flowers are priced per stem or per bucket, wagon rides extra.",
-   tags:["flowers","photos","reserve"], url:"https://www.hollandridgefarms.com/"},
-  {id:"locusthall", name:"Johnson's Locust Hall Farm", town:"Jobstown", drive:35, cat:"pyo", seasons:["spring","summer","fall"],
-   blurb:"This weekend: strawberry season has wrapped (it runs through mid-June). Check their site for the next reservation crop before planning a trip.",
-   logistics:"Free parking. Picking is reservation-based and prepaid; food and festival activities cost extra.",
-   tags:["festivals","reserve"], url:"https://www.johnsonslocusthallfarm.com/"},
-  {id:"johnsonscorner", name:"Johnson's Corner Farm", town:"Medford", drive:40, cat:"pyo", seasons:["spring","summer","fall"],
-   blurb:"This weekend: between berry and summer crops, with blueberries starting soon. The farm, animals, and soft-serve are open, but call for exactly what's pickable.",
-   logistics:"Free parking. Picking priced at the stand; hayride, play area, and soft-serve are separate paid add-ons.",
-   tags:["play area","hayride","food"], url:"https://www.johnsonsfarm.com/"},
-  {id:"battleview", name:"Battleview Orchards", town:"Freehold", drive:35, cat:"pyo", seasons:["summer","fall"],
-   blurb:"This weekend: the spring freeze wiped out their cherries, peaches, nectarines and apples this year, so likely no stone-fruit picking. Call 732-462-0756 first. Bakery and store stay open.",
-   logistics:"Free parking. Pay by weight for picking; the bakery is a separate purchase.",
-   tags:["historic","bakery","call ahead"], url:"https://www.battlevieworchards.com/pick-your-own/dates/"},
-  {id:"norzhill", name:"Norz Hill Farm", town:"Hillsborough", drive:35, cat:"pyo", seasons:["summer","fall"],
-   blurb:"This weekend: early summer, limited picking. The real draw here is the fall corn maze and harvest barn from September. Call for any current u-pick.",
-   logistics:"Free parking. Pay per activity; the fall maze and play barn are ticketed.",
-   tags:["animals","fall maze"], url:"https://www.norzhillfarm.com/"},
-  {id:"alstede", name:"Alstede Farms", town:"Chester", drive:60, cat:"pyo", seasons:["spring","summer","fall"],
-   blurb:"This weekend: blueberries and early summer crops starting, plus animals and hayrides. A 60-minute drive, so check their daily picking list before heading out.",
-   logistics:"Free parking. Picking prepaid by container; wagon rides, animals, and festival entry are extra on weekends.",
-   tags:["destination","festivals","animals"], url:"https://www.alstedefarms.com/"},
+const DEAL_CHECKED="Aug 6, 2026";
+const MCLS="https://events.mcl.org/passes";
+const pass=(url,terms)=>({url,terms});
+const deal=(label,url)=>({label,url});
 
-  // BEACH (summer)
-  {id:"pointpleasant", name:"Point Pleasant Beach + Jenkinson's", town:"Point Pleasant", drive:60, cat:"beach", seasons:["summer"],
-   blurb:"Open for the season. Lifeguarded swimming beach plus the Jenkinson's boardwalk, aquarium, and rides. Buy beach badges online to skip the line; the aquarium is your rain backup.",
-   logistics:"Paid lots and metered streets near the boardwalk fill by late morning. Beach badges required (buy online), young kids free; Jenkinson's rides and aquarium are separate tickets.",
-   tags:["boardwalk","aquarium","rides"], url:"https://www.jenkinsons.com/"},
-  {id:"belmar", name:"Belmar Beach", town:"Belmar", drive:55, cat:"beach", seasons:["summer"],
-   blurb:"Open for the season, lifeguards on duty. Beach playgrounds every few blocks and badges free for kids 15 and under. The easiest low-stress beach day of the bunch.",
-   logistics:"Metered streets and paid lots; badges required for ages 16+ (buy online), kids free. Bring the parking app or quarters.",
-   tags:["playgrounds","kids free"], url:"https://www.google.com/maps/search/?api=1&query=Belmar+Beach+NJ"},
-  {id:"springlake", name:"Spring Lake Beach", town:"Spring Lake", drive:62, cat:"beach", seasons:["summer"],
-   blurb:"Open for the season. The quiet, pretty option: calm boardwalk, clean sand, no arcades. Badges needed for ages 12 and up.",
-   logistics:"Limited free street parking, go early; daily or season badges required for ages 12+, sold at the beach pavilions.",
-   tags:["quiet","relaxed"], url:"https://www.google.com/maps/search/?api=1&query=Spring+Lake+Beach+NJ"},
-  {id:"asburypark", name:"Asbury Park Beach", town:"Asbury Park", drive:55, cat:"beach", seasons:["summer"],
-   blurb:"Open for the season. Beach plus a lively boardwalk with food and the Silverball pinball museum as an indoor break when the kids overheat.",
-   logistics:"Paid garages and metered streets; weekend beach badges required (buy online); boardwalk rides and pinball are separate.",
-   tags:["boardwalk","food","pinball"], url:"https://www.google.com/maps/search/?api=1&query=Asbury+Park+Beach+NJ"},
-  {id:"islandbeach", name:"Island Beach State Park", town:"Seaside Park", drive:75, cat:"beach", seasons:["summer"],
-   blurb:"Open for the season. Natural barrier-island beach with dunes and calmer water. Go early on weekends; the lots fill and the gate closes when full.",
-   logistics:"State park with an in-season vehicle entry fee (about $10 weekday, $20 weekend). The gate closes once lots fill, so arrive before 10am.",
-   tags:["natural","calmer","space"], url:"https://www.google.com/maps/search/?api=1&query=Island+Beach+State+Park+NJ"},
-  {id:"sandyhook", name:"Sandy Hook", town:"Gateway NRA", drive:75, cat:"beach", seasons:["summer"],
-   blurb:"Open for the season. Wide ocean and bay beaches, a lighthouse, and bike paths. Go early; the lots can fill by late morning on a nice weekend.",
-   logistics:"Beach parking is $20/day or $100/season per car, cashless (card only), 8am to 6pm; free if you bike or take transit. Lots fill and close on hot weekends, so buy a timed permit on recreation.gov.",
-   tags:["bikes","lighthouse"], url:"https://www.google.com/maps/search/?api=1&query=Sandy+Hook+Gateway+NJ"},
+/* ===================== places ===================== */
+const PLACES=[
+/* ---------- local & free community events ---------- */
+{id:"nno", name:"National Night Out, West Windsor", drive:5, price:"free", cats:["local","outdoor"], seasons:["summer"],
+ blurb:"Township police and fire host inflatables, games, crafts, a dunk tank, giveaways, and K-9 and drone demos at Community Park.",
+ meta:"6 to 8pm at West Windsor Community Park. Free, no registration.",
+ url:"https://natw.org/",
+ event:{type:"nthWeekday",month:8,weekday:2,n:1,label:"First Tuesday of August"}},
 
-  // OUTDOOR (non-picking)
-  {id:"groundsforsculpture", name:"Grounds for Sculpture", town:"Hamilton", drive:15, cat:"outdoor", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend, gardens in full summer bloom. Book timed tickets online before you go, and bring plenty of water since most of it is outdoors.",
-   logistics:"Free on-site parking. Admission is timed and ticketed (buy online); the tram tour and Rat's restaurant are extra.",
-   tags:["art","wander","close"], url:"https://www.groundsforsculpture.org/"},
-  {id:"dukefarms", name:"Duke Farms", town:"Hillsborough", drive:40, cat:"outdoor", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend, free. Green trails and meadows, good for biking. Check site hours before you go; some loops close seasonally.",
-   logistics:"Free, but a free parking pass is required for Saturday visits and it sells out, so reserve ahead. Main lot fills on weekends (overflow by the community gardens). On-site bike rentals (adult and kid bikes, helmets) are pay-on-site and can sell out; cafe on site. Closed Mondays.",
-   tags:["free","bikes","trails"], url:"https://www.dukefarms.org/"},
-  {id:"sourland", name:"Sourland Mountain Preserve", town:"Hillsborough", drive:38, cat:"outdoor", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend, free. Shaded boulder-scramble hike that holds up on a hot day. Wear real shoes; the rocks get slick.",
-   logistics:"Free gravel trailhead lot off East Mountain Rd; it fills on nice weekends, so arrive early. No facilities, bring water.",
-   tags:["hike","boulders","free"], url:"https://www.google.com/maps/search/?api=1&query=Sourland+Mountain+Preserve+NJ"},
-  {id:"howell", name:"Howell Living History Farm", town:"Lambertville", drive:30, cat:"outdoor", seasons:["spring","summer","fall"],
-   blurb:"This Saturday Jun 20: Dairy Day, 10 to 4, free. Milking demos with their cow Blizzard, plus churn-and-taste butter and cheese. Closed Sunday. Next Sat: Ice Cream Party and Wheat Harvest.",
-   logistics:"Free parking and free admission. Small items like cheese or crafts may be sold, so bring a few dollars cash.",
-   tags:["free","animals","hands-on"], url:"https://howellfarm.org/calendar"},
-  {id:"washingtoncrossing", name:"Washington Crossing State Park", town:"Titusville", drive:25, cat:"outdoor", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend. Trails, nature center, and river views. Pair it with the canal towpath for a longer, flat walk or bike.",
-   logistics:"State park with a small summer-weekend vehicle entry fee (Memorial Day to Labor Day); free off-season. Nature center is free.",
-   tags:["history","trails","river"], url:"https://www.google.com/maps/search/?api=1&query=Washington+Crossing+State+Park+NJ"},
-  {id:"sixflags", name:"Six Flags Great Adventure + Safari", town:"Jackson", drive:30, cat:"outdoor", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend on a full summer schedule, including Hurricane Harbor water park and the drive-through safari. Buy tickets online; weekends are busiest.",
-   logistics:"Parking runs about $35 to 40 (cheaper prepaid online). Inside, the Flash Pass to skip lines, lockers, and Safari off-road tours cost extra; bring a refillable bottle.",
-   tags:["rides","safari","water park"], url:"https://www.sixflags.com/greatadventure"},
+{id:"wwfm", name:"West Windsor Community Farmers' Market", drive:5, price:"free", cats:["local","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Every Saturday at the Princeton Junction station lot, rain or shine. Music, prepared food, and the best local produce without driving to a farm.",
+ meta:"877 Alexander Road. Saturdays 9am to 1pm, May through Thanksgiving.",
+ url:"https://www.westwindsorfarmersmarket.org/",
+ event:{type:"weekly",day:6,from:"05-01",to:"11-26",label:"Saturdays"}},
 
-  // INDOOR / RAINY / WINTER
-  {id:"libertyscience", name:"Liberty Science Center", town:"Jersey City", drive:60, cat:"indoor", seasons:["spring","summer","fall","winter"],
-   blurb:"Open this weekend. Big indoor science day with the planetarium, ideal if the weather turns. Buy timed tickets ahead.",
-   logistics:"Paid on-site garage (about $10 to 15). Admission is timed (buy online); the planetarium and some exhibits are add-ons.",
-   tags:["science","planetarium","all weather"], url:"https://lsc.org/"},
-  {id:"iplay", name:"iPlay America", town:"Freehold", drive:30, cat:"indoor", seasons:["spring","summer","fall","winter"],
-   blurb:"Open this weekend, indoor and rain-proof. A discounted unlimited-ride band and game-card deal is live on Groupon right now.",
-   logistics:"Free parking. You load a game card or buy a ride wristband inside, pay-as-you-go, so set a budget with the kids.",
-   tags:["rides","arcade","all weather"], url:"https://www.groupon.com/deals/iplay-america-2-10"},
-  {id:"diggerland", name:"Diggerland USA", town:"West Berlin", drive:50, cat:"indoor", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend. Their new outdoor water park, The Water Main, is open for summer, so plan a full day. A Groupon deal is live.",
-   logistics:"Free parking. General admission covers most attractions and the summer water park; a few premium rides need extra tickets.",
-   tags:["unique","ride machines","water"], url:"https://www.groupon.com/deals/goldstar-diggerland-usa"},
-  {id:"princetonart", name:"Princeton University Art Museum", town:"Princeton", drive:15, cat:"indoor", seasons:["winter","spring","summer","fall"],
-   blurb:"Open this weekend, free. A quick hour in the new building, then food in town. Closed Mondays. Good gray-day stop close to home.",
-   logistics:"Free admission, but parking is metered street and paid garages in town (Spring St garage is closest). Closed Mondays.",
-   tags:["free","short","close"], url:"https://artmuseum.princeton.edu/"},
-  {id:"insectropolis", name:"Insectropolis", town:"Toms River", drive:60, cat:"indoor", seasons:["winter","spring","fall"],
-   blurb:"Open Tue to Sat this weekend. Small, quirky, low-cost bug museum (tarantulas, a termite tower to crawl through). A solid rain backup.",
-   logistics:"Free parking and free admission (donations welcome). Small gift shop inside.",
-   tags:["bugs","hands-on","quirky"], url:"https://www.google.com/maps/search/?api=1&query=Insectropolis+Toms+River+NJ"},
+{id:"wwarts", name:"West Windsor Arts Summer Music", drive:10, price:"free", cats:["local","outdoor"], seasons:["summer"],
+ blurb:"Free outdoor concerts at Nassau Park Pavilion behind Panera. Bring a chair, grab dinner from the shopping center.",
+ meta:"5pm. Free, no tickets.",
+ url:"https://www.njfamily.com/outdoor-summer-concerts-in-new-jersey/",
+ event:{type:"dates",list:["2026-08-08","2026-08-29"],label:"Select Saturdays"}},
 
-  // ACTIVE / BOOK AHEAD
-  {id:"princetoncanoe", name:"Princeton Canoe & Kayak", town:"Princeton", drive:12, cat:"active", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend, Sat to Sun 10 to 8, weather permitting (call 609-452-2403 first). About $20 to 22 per hour per boat, kids ride with a parent, vests included. Paddle Carnegie Lake and the canal.",
-   logistics:"Free on-site parking at 483 Alexander St. Pay per boat by the hour at the dock (cash or card). Weather-dependent, so call first.",
-   tags:["water","close","call ahead"], url:"https://www.princetoncanoe.com/"},
-  {id:"griggstown", name:"Griggstown Canoe & Kayak Rental", town:"Princeton (Franklin Twp)", drive:20, cat:"active", seasons:["spring","summer","fall"],
-   blurb:"Open this weekend, your nearest kayak option after Princeton Canoe. Quiet paddling on the D&R Canal and Millstone River, with a portage over to Carnegie Lake. Kids ride with a parent; reserve online or just walk up, and call 908-359-5970 on busy Saturdays.",
-   logistics:"Free on-site parking at 1076 Canal Rd. Pay per boat by the hour (cash or card), life vests included. Weather-dependent, so call ahead.",
-   tags:["water","close","call ahead"], url:"http://griggstowncanoe.com/"},
-  {id:"topgolf", name:"Topgolf Edison", town:"Edison", drive:25, cat:"active", seasons:["spring","summer","fall","winter"],
-   blurb:"Open this weekend, all-weather bays. Reserve online ahead; weekends fill fast. Weekdays before 4pm are half price. Up to 6 per bay, kids welcome with an adult, and there's a KidZone.",
-   logistics:"Free parking. Reserve a bay online (deposit applies); you pay per hour per bay plus a one-time $5 to 6 player card, and food and drinks.",
-   tags:["book ahead","all weather"], url:"https://topgolf.com/us/edison/plan-a-visit/"},
-  {id:"whalewatch", name:"Jersey Shore Whale Watch (Belmar)", town:"Belmar", drive:55, cat:"active", seasons:["spring","summer","fall"],
-   blurb:"Running now into fall. Bill McKim's 3-hour Belmar trip has a 90%+ sighting rate and a free re-cruise if you miss. Book online ahead; weekends sell out. SS Miss Belmar is the sighting-guaranteed alternative.",
-   logistics:"Paid parking at Belmar Marina (lot or meters). Buy boat tickets online ahead; snacks and drinks sold on board.",
-   tags:["book ahead","water","wow factor"], url:"https://jerseyshorewhalewatch.com/"},
-  {id:"nycferry", name:"NYC Ferry East River ride", town:"NYC", drive:80, cat:"active", seasons:["spring","summer","fall"],
-   blurb:"The easiest East River boating: hop the NYC Ferry East River route for about $4.50, no reservation, big skyline views with the kids. NJ Transit to the city is often simpler than driving. NYC trip: avoid the World Cup dates noted up top.",
-   logistics:"Skip driving, take NJ Transit in. The ferry is about $4.50 per ride (tap or app), no reservation; piers have little or no parking.",
-   tags:["NYC","cheap","no reservation"], url:"https://www.ferry.nyc/routes-and-schedules/route/east-river/"},
+{id:"mercerconcerts", name:"Mercer County Summer Concert Series", drive:10, price:"paid", cats:["local","outdoor"], seasons:["summer"],
+ blurb:"Friday night shows at the Festival Grounds in Mercer County Park. Kids ten and under get in free, so it is close to a free night out.",
+ meta:"$5 tickets, $30 season pass, kids 10 and under free. Gates 5:30pm, show 6:30pm. No outside food except sealed water.",
+ url:"https://wpst.com/mercer-county-2026-summer-concerts/",
+ event:{type:"weekly",day:5,from:"07-10",to:"08-31",label:"Fridays"}},
 
-  // SEASONAL / BOOK-AHEAD & NOVEL
-  {id:"polarexpress", name:"THE POLAR EXPRESS (Delaware River Railroad)", town:"Phillipsburg", drive:60, cat:"active", seasons:["fall","winter"],
-   blurb:"Book-now alert: 2026 tickets are ON SALE and sell out by fall. Runs Nov 28 to Dec 21, a 90-minute ride to meet Santa with hot cocoa and a keepsake sleigh bell. Grab summer dates while pajama-car seats last.",
-   logistics:"Parking at the Phillipsburg waterfront lot. Tickets are timed and tiered (coach up to first class); buy online well ahead. Concessions on board.",
-   tags:["book ahead","holiday","wow factor"], url:"https://www.877trainride.com/"},
-  {id:"otherworld", name:"Otherworld Philadelphia (immersive art)", town:"NE Philadelphia, PA", drive:52, cat:"indoor", seasons:["spring","summer","fall","winter"],
-   blurb:"Novel and worth-it-once: 55 walk-through rooms of glowing interactive art, mazes, puzzles, and crawl tubes. Open year-round, all weather, closed Tuesdays. Plan 1 to 2 hours.",
-   logistics:"Free parking at the warehouse site. Timed tickets required (buy online), about $35 adult and $30 kid, under 3 free. The add-on glasses are skippable.",
-   tags:["novel","rainy ok","timed tickets"], url:"https://otherworldphila.com/"},
-  {id:"crayola", name:"Crayola Experience", town:"Easton, PA", drive:60, cat:"indoor", seasons:["spring","summer","fall","winter"],
-   blurb:"All-weather kids' day: hands-on color and art stations, name-your-own crayon, melt-and-mold, and big indoor play. Best for the under-12 crowd, open year-round.",
-   logistics:"Paid parking in the Easton garage next door. Buy timed tickets online to beat the gate price; some stations use refillable tokens inside.",
-   tags:["kids","rainy ok","timed tickets"], url:"https://www.crayolaexperience.com/easton"}
+/* ---------- free, close, outdoor ---------- */
+{id:"plainsboro", name:"Plainsboro Preserve", drive:10, price:"free", cats:["outdoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Lake loop and a small nature center. Flat enough for a stroller, short enough for a restless kid.",
+ meta:"Free parking. No admission.", url:"https://njaudubon.org/centers/plainsboro-preserve/"},
+
+{id:"instwoods", name:"Institute Woods", drive:12, price:"free", cats:["outdoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Six miles of quiet trails behind the Institute for Advanced Study. Best in fall color and after a snow.",
+ meta:"Free lot on Olden Lane.", url:"https://www.ias.edu/campus/institute-woods"},
+
+{id:"towpath", name:"D&R Canal Towpath, Kingston", drive:15, price:"free", cats:["outdoor","active"], seasons:["spring","summer","fall","winter"],
+ blurb:"Flat crushed-gravel path along the canal. Good first real bike ride for a kid.",
+ meta:"Free lot at Kingston lock.", url:"https://dandrcanal.com/"},
+
+{id:"sourland", name:"Sourland Mountain Preserve", drive:30, price:"free", cats:["outdoor"], seasons:["spring","fall","winter"],
+ blurb:"Boulder field on the ridge trail that kids treat as a playground. Buggy and humid in July.",
+ meta:"Free parking. Wear real shoes.", url:"https://www.mercercounty.org/departments/park-commission/parks-facilities/sourland-mountain-preserve"},
+
+{id:"asbury", name:"Asbury Park Boardwalk", drive:55, price:"free", cats:["beach","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Boardwalk, arcade, and the Silverball pinball museum. Beach badges only if you actually go on the sand.",
+ meta:"Metered street parking. The boardwalk itself is free.", url:"https://www.cityofasburypark.com/"},
+
+/* ---------- pick your own ---------- */
+{id:"terhune", name:"Terhune Orchards", drive:12, price:"paid", cats:["pyo","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Closest PYO to home. Berries into summer, apples and the corn maze from September.",
+ meta:"Free entry, pay by the pound. Weekend wagon rides in fall.", url:"https://terhuneorchards.com/"},
+
+{id:"leeturkey", name:"Lee Turkey Farm", drive:10, price:"paid", cats:["pyo","outdoor"], seasons:["summer","fall"],
+ blurb:"Small, unfussy, and ten minutes away. Peaches and tomatoes midsummer, apples in fall.",
+ meta:"Check the picking list before driving over.", url:"https://leeturkeyfarm.com/"},
+
+{id:"vonthun", name:"Von Thun Farms, Monmouth Junction", drive:15, price:"paid", cats:["pyo","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Strawberries in June, sunflowers in August, a full fall festival with a corn maze.",
+ meta:"Fall weekends charge admission and sell out. Book online.", url:"https://vonthunfarms.com/monmouth-junction-nj/"},
+
+{id:"emerys", name:"Emery's Berry Farm, New Egypt", drive:30, price:"paid", cats:["pyo","outdoor"], seasons:["summer","fall"],
+ blurb:"Blueberries in July, then blackberries and cranberries. Their pie counter is the real reason to go.",
+ meta:"Call the picking hotline first.", url:"https://www.emerysfarm.com/"},
+
+{id:"battleview", name:"Battleview Orchards, Freehold", drive:35, price:"paid", cats:["pyo","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Big rotating PYO calendar, cherries through pumpkins, plus a serious cider donut operation.",
+ meta:"Gets crowded by 11am on fall weekends.", url:"https://www.battlevieworchards.com/"},
+
+{id:"johnsons", name:"Johnson's Corner Farm, Medford", drive:45, price:"paid", cats:["pyo","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"PYO plus a full play barn, so the kid who loses interest in picking still has somewhere to go.",
+ meta:"Wagon ride to the fields is ticketed separately.", url:"https://www.johnsonsfarm.com/"},
+
+/* ---------- beach ---------- */
+{id:"jenkinsons", name:"Jenkinson's Boardwalk, Point Pleasant", drive:60, price:"paid", cats:["beach","outdoor"], seasons:["summer"],
+ blurb:"Aquarium, arcade, rides, and beach in one stretch. The default summer Saturday.",
+ meta:"Beach badges plus paid lots. Leave by 9am on a hot weekend.", url:"https://www.jenkinsons.com/"},
+
+{id:"sandyhook", name:"Sandy Hook, Gateway NRA", drive:65, price:"paid", cats:["beach","outdoor"], seasons:["summer","fall"],
+ blurb:"Wide federal beach with the Manhattan skyline on the horizon and a lighthouse to climb.",
+ meta:"Per-vehicle fee in season. Lots close when full, often before noon.", url:"https://www.nps.gov/gate/planyourvisit/sandy-hook.htm"},
+
+{id:"islandbeach", name:"Island Beach State Park", drive:75, price:"paid", cats:["beach","outdoor"], seasons:["summer","fall"],
+ blurb:"Ten miles of undeveloped dune and ocean. No boardwalk, no arcade, which is the point.",
+ meta:"Per-vehicle entry fee. Park closes to cars when full.", url:"https://www.nj.gov/dep/parksandforests/parks/island.html"},
+
+{id:"springlake", name:"Spring Lake Beach", drive:55, price:"paid", cats:["beach","outdoor"], seasons:["summer"],
+ blurb:"Quiet, no boardwalk games, two miles of walkway. The calm alternative when Point Pleasant is a zoo.",
+ meta:"Badges at the beach houses. Street parking free but tight.", url:"https://springlakeboro.org/"},
+
+/* ---------- active / book ahead / deals ---------- */
+{id:"princetoncanoe", name:"Princeton Canoe & Kayak", drive:15, price:"paid", cats:["active","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Flat-water paddling on the canal, fifteen minutes from the house. No shuttle, no tide, no drama.",
+ meta:"Hourly rental. Reserve on summer weekends.", url:"https://www.canoenj.com/"},
+
+{id:"griggstown", name:"Griggstown Canoe & Kayak", drive:20, price:"paid", cats:["active","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Rent on the Millstone and paddle upstream as far as you feel like, then float back.",
+ meta:"Cash discount. Life jackets included.", url:"https://www.canoenj.com/"},
+
+{id:"tubing", name:"Delaware River Tubing, Frenchtown", drive:50, price:"paid", cats:["active","outdoor"], seasons:["summer"],
+ blurb:"Three to four hours downriver with a hot dog stop mid-float. Works for a mixed-age group.",
+ meta:"Age and height minimums. Book a morning slot to beat the crowd.", url:"https://www.delawarerivertubing.com/"},
+
+{id:"buckstubing", name:"Bucks County River Country, Point Pleasant PA", drive:55, price:"paid", cats:["active","outdoor"], seasons:["summer"],
+ blurb:"The Pennsylvania-side tubing outfit on the same stretch of Delaware. Usually the cheaper of the two.",
+ meta:"Shuttle included. Water level can cancel trips, so call the morning of.",
+ url:"https://www.rivercountry.net/",
+ deals:[deal("Groupon has run it near 46% off, around $25 down from $42","https://www.groupon.com/local/freehold-nj/tickets-and-events")]},
+
+{id:"topgolf", name:"Topgolf Mount Laurel", drive:45, price:"paid", cats:["active","indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Climate-controlled bays, food at the tee, and nobody needs to know how to golf.",
+ meta:"Hourly bay rate plus a one-time membership. Reserve for weekend evenings.", url:"https://topgolf.com/us/mount-laurel/"},
+
+{id:"iplay", name:"iPlay America, Freehold", drive:35, price:"paid", cats:["active","indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"All-indoor amusement park: go-karts, two-level laser tag, Freedom Rider coaster, Ballocity, and 250+ arcade games. The rainy-Saturday workhorse.",
+ meta:"Weather-proof. Gets loud and packed after 2pm on weekends.",
+ url:"https://www.iplayamerica.com/",
+ deals:[
+   deal("Unlimited ride band plus $5 game card, from $27.99, valid Sat and Sun","https://www.groupon.com/deals/iplay-america-2-10"),
+   deal("All current iPlay America Groupon offers","https://www.groupon.com/biz/west-freehold-nj/iplay-america-stonehurst-east")]},
+
+{id:"diggerland", name:"Diggerland USA, West Berlin", drive:50, price:"paid", cats:["active","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"A construction-equipment theme park where kids actually operate the machines. Nothing else like it nearby.",
+ meta:"Timed tickets. Water park is a separate add-on in summer.",
+ url:"https://www.diggerlandusa.com/",
+ deals:[deal("No live Groupon right now. Their own site runs season-pass and twilight pricing, worth checking first","https://www.diggerlandusa.com/")]},
+
+{id:"sixflags", name:"Six Flags Great Adventure, Jackson", drive:35, price:"paid", cats:["active","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Fourteen coasters plus the drive-through Wild Safari. Fright Fest takes over in October.",
+ meta:"Parking is extra. Buy online, never at the gate.",
+ url:"https://www.sixflags.com/greatadventure",
+ deals:[
+   deal("Groupon single-day tickets around 46% off, from about $48, app-only. Promo value expires Sep 7","https://www.groupon.com/deals/gl-six-flags-great-adventure-6"),
+   deal("Six Flags promo codes and stackable offers","https://www.groupon.com/coupons/six-flags")]},
+
+{id:"dinosafari", name:"Luminocity Dino Safari, Freehold", drive:35, price:"paid", cats:["active","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Drive or walk through animatronic dinosaurs. Short visit, big reaction from younger kids.",
+ meta:"Timed entry. Evening slots are the good ones.",
+ url:"https://www.groupon.com/local/freehold-nj/tickets-and-events",
+ deals:[deal("Around 50% off, roughly $26 down from $52","https://www.groupon.com/local/freehold-nj/tickets-and-events")]},
+
+{id:"whalewatch", name:"Miss Belmar Whale Watching", drive:60, price:"paid", cats:["active","outdoor"], seasons:["summer","fall"],
+ blurb:"Humpbacks feed off this stretch of coast all summer. Roughly four hours out of Belmar with a sighting guarantee on most trips.",
+ meta:"Book ahead, trips cancel for weather. Bring layers even in August.",
+ url:"https://www.groupon.com/local/freehold-nj/tickets-and-events",
+ deals:[deal("Groupon around 31% off, roughly $49 down from $64","https://www.groupon.com/local/freehold-nj/tickets-and-events")]},
+
+/* ---------- indoor ---------- */
+{id:"gfs", name:"Grounds For Sculpture, Hamilton", drive:20, price:"paid", cats:["outdoor","indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"42 acres of large-scale sculpture you walk right up to. Peacocks roam the grounds.",
+ meta:"Timed tickets required, including for members. Free parking.", url:"https://www.groundsforsculpture.org/"},
+
+{id:"lsc", name:"Liberty Science Center, Jersey City", drive:60, price:"paid", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Biggest planetarium in the hemisphere and enough hands-on floors to fill a rainy full day.",
+ meta:"Timed entry. Parking garage is extra.",
+ url:"https://lsc.org/",
+ deals:[deal("Discounted admission turns up regularly on Groupon","https://www.groupon.com/local/freehold-nj/tickets-and-events")]},
+
+{id:"sesame", name:"Sesame Place Philadelphia, Langhorne", drive:55, price:"paid", cats:["active","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Rides, parade, and a water park scaled to little kids. The single most discounted ticket in the region.",
+ meta:"Gate price is high, but almost nobody pays it. Check deals first.",
+ url:"https://sesameplace.com/philadelphia/",
+ deals:[deal("Groupon has run it 57% to 64% off, roughly $42 to $52 down from $120","https://www.groupon.com/local/freehold-nj/tickets-and-events")]},
+
+{id:"otherworld", name:"Otherworld Philadelphia", drive:55, price:"paid", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Immersive walk-through art rooms you're encouraged to touch and climb into. Roughly 90 minutes inside.",
+ meta:"Timed tickets, sells out on weekends.", url:"https://otherworld.fun/philadelphia"},
+
+{id:"crayola", name:"Crayola Experience, Easton PA", drive:75, price:"paid", cats:["indoor"], seasons:["fall","winter","spring"],
+ blurb:"Four floors of hands-on color stations. Aimed squarely at the under-10 crowd.",
+ meta:"Cheaper online than at the door. Attached to a good farmers market.", url:"https://www.crayolaexperience.com/easton"},
+
+/* ---------- library pass: close in ---------- */
+{id:"morven", name:"Morven Museum & Garden, Princeton", drive:10, price:"pass", cats:["indoor","outdoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Former governor's mansion on five acres in central Princeton. Short visit, easy add-on to a Nassau Street morning.",
+ meta:"Closed Mondays and Tuesdays.", url:"https://morven.org/",
+ pass:pass("https://events.mcl.org/passes/fc26552c6395","Admits four adults")},
+
+{id:"oldbarracks", name:"Old Barracks Museum, Trenton", drive:20, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Actual 1758 barracks with costumed interpreters. The Revolutionary War unit in school lands here.",
+ meta:"Guided tours run on the hour.", url:"https://barracks.org/",
+ pass:pass("https://events.mcl.org/passes/e015b3565f41","Free with pass")},
+
+{id:"washxpa", name:"Washington Crossing Historic Park, PA", drive:25, price:"pass", cats:["outdoor","indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"500 acres at the crossing site, with a visitor center, historic village, and river trails.",
+ meta:"Grounds are free; the pass covers buildings and tours.", url:"https://www.washingtoncrossingpark.org/",
+ pass:pass("https://events.mcl.org/passes/9719c82da36c","Free with pass")},
+
+{id:"roebling", name:"Roebling Museum", drive:25, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"The company town that made the cable for the Brooklyn Bridge. Small, specific, and genuinely interesting.",
+ meta:"Limited days open. Check before driving.", url:"https://roeblingmuseum.org/",
+ pass:pass("https://events.mcl.org/passes/de9f9ab4523f","Free with pass")},
+
+{id:"bowmans", name:"Bowman's Hill Wildflower Preserve, New Hope", drive:35, price:"pass", cats:["outdoor"], seasons:["spring","summer","fall"],
+ blurb:"4.5 miles of trails through 700+ native plant species. Peak is late April into May.",
+ meta:"Open daily 9 to 5 in season.", url:"https://bhwp.org/",
+ pass:pass("https://events.mcl.org/passes/c92191c5b211","Admits two adults and four children")},
+
+{id:"mercermuseum", name:"Mercer Museum, Doylestown", drive:45, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"A concrete castle hung floor to ceiling with 30,000 pre-industrial tools. Strange and great in the rain.",
+ meta:"Pair with Fonthill next door.", url:"https://www.mercermuseum.org/",
+ pass:pass("https://events.mcl.org/passes/6608a3fe5c2a","Free with pass")},
+
+/* ---------- library pass: Philadelphia ---------- */
+{id:"pleasetouch", name:"Please Touch Museum, Philadelphia", drive:55, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Built entirely around play, with a restored 1908 carousel. The best library-pass value for a younger kid.",
+ meta:"Free parking in the Memorial Hall lot.", url:"https://www.pleasetouchmuseum.org/",
+ pass:pass("https://events.mcl.org/passes/6817446251bf","Free with pass")},
+
+{id:"ansp", name:"Academy of Natural Sciences, Philadelphia", drive:50, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Dinosaur hall, live butterfly room, and dioramas from 1812 onward. Two solid hours indoors.",
+ meta:"Butterflies close 30 minutes before the museum.", url:"https://ansp.org/",
+ pass:pass("https://events.mcl.org/passes/6b57704541c4","Free with pass")},
+
+{id:"seaport", name:"Independence Seaport Museum, Philadelphia", drive:50, price:"pass", cats:["indoor","outdoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Board a WWII submarine and the oldest floating steel warship in the world, right on the Delaware.",
+ meta:"Ships are open seasonally. Check before you go.", url:"https://www.phillyseaport.org/",
+ pass:pass("https://events.mcl.org/passes/fdfccbf0266f","Admits two adults and four children")},
+
+{id:"easternstate", name:"Eastern State Penitentiary, Philadelphia", drive:55, price:"pass", cats:["indoor","outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Ruined 19th-century cellblocks with an excellent audio tour. Older kids only; it can be intense.",
+ meta:"Mostly unheated and open to the sky. Dress for the weather.", url:"https://www.easternstate.org/",
+ pass:pass("https://events.mcl.org/passes/6fa181ce196c","Admits six people")},
+
+{id:"simeone", name:"Simeone Automotive Museum, Philadelphia", drive:50, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"75+ historically significant racing cars. On demo days they start them and drive them out back.",
+ meta:"Demo days run roughly twice a month. Worth timing.", url:"https://simeonemuseum.org/",
+ pass:pass("https://events.mcl.org/passes/c217664b657c","Free with pass")},
+
+{id:"pafa", name:"Pennsylvania Academy of the Fine Arts", drive:55, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"American art in a Furness landmark building. Compact enough that kids don't burn out.",
+ meta:"Closed Mondays and Tuesdays.", url:"https://www.pafa.org/",
+ pass:pass("https://events.mcl.org/passes/891991cac042","Free with pass")},
+
+{id:"glencairn", name:"Glencairn Museum, Bryn Athyn PA", drive:55, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"A 1930s castle housing Egyptian, Greek, medieval, and Asian collections. Tower views over Bucks County.",
+ meta:"Tower access is by guided tour only.", url:"https://glencairnmuseum.org/",
+ pass:pass("https://events.mcl.org/passes/b396a7e9841d","Admits up to four")},
+
+/* ---------- library pass: animals ---------- */
+{id:"elmwood", name:"Elmwood Park Zoo, Norristown PA", drive:60, price:"pass", cats:["outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Giraffe feeding, jaguars, red pandas, and a treetop rope course. Small enough to finish in a morning.",
+ meta:"Giraffe encounters cost extra and sell out early.", url:"https://www.elmwoodparkzoo.org/",
+ pass:pass("https://events.mcl.org/passes/51f05960dcae","Free with pass")},
+
+{id:"popcornpark", name:"Popcorn Park, Forked River", drive:60, price:"pass", cats:["outdoor"], seasons:["spring","summer","fall"],
+ blurb:"Pine Barrens animal sanctuary for rescued exotics and farm animals. Gentle, low-key, no crowds.",
+ meta:"Outdoors throughout. Skip on a hot afternoon.", url:"https://popcornparkzoo.org/",
+ pass:pass("https://events.mcl.org/passes/7f0fa8ae7957","Free with pass")},
+
+/* ---------- library pass: NYC by train ---------- */
+{id:"nyhistorical", name:"The New York Historical", drive:75, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"400 years of American history plus the DiMenna children's history museum downstairs. Train day, not drive day.",
+ meta:"NJ Transit to Penn, then crosstown. Central Park is across the street.", url:"https://www.nyhistory.org/",
+ pass:pass("https://events.mcl.org/passes/226d66f691e3","Free with pass")},
+
+{id:"guggenheim", name:"Solomon R. Guggenheim Museum", drive:75, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Walk the spiral down from the top. The building holds a kid's attention as much as the art does.",
+ meta:"Train in. Closed Thursdays.", url:"https://www.guggenheim.org/",
+ pass:pass("https://events.mcl.org/passes/908854c987e6","Free with pass")},
+
+{id:"frick", name:"The Frick Collection", drive:75, price:"pass", cats:["indoor"], seasons:["spring","summer","fall","winter"],
+ blurb:"Old masters in a Fifth Avenue mansion, reopened in the restored original house. Better for adults and older kids.",
+ meta:"Check the age policy before you go.", url:"https://www.frick.org/",
+ pass:pass("https://events.mcl.org/passes/769a481396d5","Free with pass")}
 ];
 
-/* ---------- state + storage ---------- */
-const STORE_KEY = "ww_weekend_status_v1";
-const mem = {}; // fallback if localStorage is unavailable (private mode)
-let status = {}; // {id: 'love' | 'done'}
-
-async function storeGet(key){
-  try{ const v = localStorage.getItem(key); return v !== null ? v : (mem[key] ?? null); }
-  catch(e){ return mem[key] ?? null; }
+/* ===================== recurring event dates ===================== */
+const DAY=864e5;
+function ymd(d){return d.toISOString().slice(0,10)}
+function md(d){return ymd(d).slice(5)}
+function nextOccurrence(ev, from=new Date()){
+  const start=new Date(from.getFullYear(),from.getMonth(),from.getDate());
+  if(ev.type==="dates"){
+    const hit=ev.list.map(s=>new Date(s+"T12:00:00")).filter(d=>d>=start).sort((a,b)=>a-b)[0];
+    return hit||null;
+  }
+  if(ev.type==="weekly"){
+    for(let i=0;i<400;i++){
+      const d=new Date(start.getTime()+i*DAY);
+      if(d.getDay()!==ev.day) continue;
+      const m=md(d);
+      if(m>=ev.from&&m<=ev.to) return d;
+    }
+    return null;
+  }
+  if(ev.type==="nthWeekday"){
+    for(let y=start.getFullYear();y<=start.getFullYear()+1;y++){
+      const first=new Date(y,ev.month-1,1);
+      let off=(ev.weekday-first.getDay()+7)%7;
+      const d=new Date(y,ev.month-1,1+off+(ev.n-1)*7);
+      if(d>=start) return d;
+    }
+    return null;
+  }
+  return null;
 }
-async function storeSet(key,val){
-  mem[key]=val;
-  try{ localStorage.setItem(key,val); }catch(e){ /* keep in-memory */ }
+function dayDiff(d){
+  const a=new Date(d.getFullYear(),d.getMonth(),d.getDate());
+  const b=new Date(); b.setHours(0,0,0,0);
+  return Math.round((a-b)/DAY);
+}
+function fmtWhen(d){
+  const days=dayDiff(d);
+  if(days===0) return "Today";
+  if(days===1) return "Tomorrow";
+  if(days<=7) return d.toLocaleDateString(undefined,{weekday:"short"})+" "+d.getDate();
+  return d.toLocaleDateString(undefined,{month:"short",day:"numeric"});
 }
 
-/* ---------- weekly content (fetched fresh from weekly.json) ---------- */
-const APP_VERSION = 4;
-let WEEKLY = null; // {updated, app, notices:[{style,html}], blurbs:{id:text}, events:[...], extraPlaces:[...]}
+/* ===================== fresh weekly content (weekly.json) ===================== */
+const APP_VERSION = 5;
+let WEEKLY = null; // {updated, app, notices, blurbs, deals, dealsChecked, events, extraPlaces}
 
-function weekendDates(from){
-  // Sat+Sun of the current week; on Sat/Sun that's this weekend, otherwise the one ahead.
-  const d = new Date(from); d.setHours(0,0,0,0);
-  const sat = new Date(d); sat.setDate(d.getDate() + ((6 - d.getDay()) % 7));
-  const sun = new Date(sat); sun.setDate(sat.getDate() + 1);
-  if(d.getDay()===0){ sun.setTime(d.getTime()); sat.setTime(d.getTime()-864e5); }
-  return {sat, sun};
-}
-function upcomingWeekend(from){
-  const {sat, sun} = weekendDates(from);
-  const mo = dt=>dt.toLocaleDateString("en-US",{month:"long"});
+function upcomingWeekendLabel(){
+  const d=new Date(); d.setHours(0,0,0,0);
+  const sat=new Date(d); sat.setDate(d.getDate()+((6-d.getDay())%7));
+  const sun=new Date(sat); sun.setDate(sat.getDate()+1);
+  if(d.getDay()===0){ sun.setTime(d.getTime()); sat.setTime(d.getTime()-DAY); }
+  const mo=x=>x.toLocaleDateString("en-US",{month:"long"});
   return mo(sat)===mo(sun)
-    ? `${mo(sat)} ${sat.getDate()} to ${sun.getDate()}, ${sun.getFullYear()}`
-    : `${mo(sat)} ${sat.getDate()} to ${mo(sun)} ${sun.getDate()}, ${sun.getFullYear()}`;
+    ? `${mo(sat)} ${sat.getDate()} to ${sun.getDate()}`
+    : `${mo(sat)} ${sat.getDate()} to ${mo(sun)} ${sun.getDate()}`;
 }
-
-const STORY_GRADS = [
-  "linear-gradient(160deg,#1C7FA8,#12587A)",
-  "linear-gradient(160deg,#C25A2B,#8F3E1B)",
-  "linear-gradient(160deg,#5C9A57,#3D6C3A)",
-  "linear-gradient(160deg,#3E6E8E,#25455C)"
-];
-function renderEvents(){
-  const box = document.getElementById("events");
-  const evts = (WEEKLY && WEEKLY.events) || [];
-  if(!evts.length){ box.style.display = "none"; box.innerHTML = ""; return; }
-  box.innerHTML = `<h2>🎪 Happening this weekend</h2>
-    <p class="sub">Found fresh this week · swipe sideways</p>
-    <div class="stories" id="storyRow">` +
-    evts.map((e,i)=>{
-      const bg = e.img
-        ? `linear-gradient(180deg,rgba(18,24,28,.05) 30%,rgba(18,24,28,.8) 85%),url('${e.img}') center/cover no-repeat`
-        : STORY_GRADS[i % STORY_GRADS.length];
-      const meta = [e.day, e.place, e.drive?`~${e.drive} min`:null, e.note].filter(Boolean).join(" · ");
-      return `<div class="story" style="background:${bg}">
-        ${!e.img && e.emoji ? `<span class="emoji">${e.emoji}</span>` : ""}
-        <span class="tagline">${meta}</span>
-        <h3>${e.title}</h3>
-        <p>${[e.desc, e.time].filter(Boolean).join(" · ")}</p>
-        ${e.url?`<a class="cta" href="${e.url}" target="_blank" rel="noopener">Details ›</a>`:""}
-      </div>`;
-    }).join("") +
-    `</div><div class="dots" id="storyDots">${evts.map((_,i)=>`<i class="${i===0?"on":""}"></i>`).join("")}</div>`;
-  box.style.display = "block";
-  const row = document.getElementById("storyRow");
-  row.addEventListener("scroll", ()=>{
-    const w = row.firstElementChild ? row.firstElementChild.offsetWidth + 12 : 1;
-    const i = Math.min(Math.round(row.scrollLeft / w), evts.length - 1);
-    document.querySelectorAll("#storyDots i").forEach((d,j)=>d.classList.toggle("on", j===i));
-  }, {passive:true});
-}
+const ovBlurb = p => (WEEKLY && WEEKLY.blurbs && WEEKLY.blurbs[p.id]) || p.blurb;
+const dealsFor = p => (WEEKLY && WEEKLY.deals && WEEKLY.deals[p.id]) || p.deals;
+const dealStampText = () => (WEEKLY && WEEKLY.dealsChecked) || DEAL_CHECKED;
 
 function applyWeekly(){
-  const stampEl = document.getElementById("stamp");
-  stampEl.textContent = `Picks for the weekend of ${upcomingWeekend(new Date())}`;
-  const staleEl = document.getElementById("staleNote");
-  const noticesEl = document.getElementById("notices");
+  document.getElementById("stamp").textContent = `Picks for the weekend of ${upcomingWeekendLabel()}`;
+  const staleEl=document.getElementById("staleNote");
   if(!WEEKLY){
-    staleEl.style.display = "block";
-    staleEl.innerHTML = "<b>Heads up:</b> couldn't load this week's refreshed picks (offline?). Details below may be out of date; tap Update when you're back online.";
+    staleEl.style.display="block";
+    staleEl.innerHTML="<b>Heads up:</b> couldn't load this week's refreshed picks (offline?). Details below may be out of date; tap Update when you're back online.";
     return;
   }
-  const updated = new Date(WEEKLY.updated);
-  const ageDays = (Date.now() - updated.getTime()) / 864e5;
-  if(ageDays > 8){
-    staleEl.style.display = "block";
-    staleEl.innerHTML = `<b>Heads up:</b> the "this weekend" details were last refreshed ${updated.toLocaleDateString("en-US",{month:"long",day:"numeric"})} and may be out of date.`;
-  }else{
-    staleEl.style.display = "none";
-  }
-  const styleClass = {alert:"wcnote", book:"booknote"};
-  noticesEl.innerHTML = (WEEKLY.notices||[]).map(n=>
-    `<div class="${styleClass[n.style]||"booknote"}">${n.html}</div>`).join("");
+  const age=(Date.now()-new Date(WEEKLY.updated).getTime())/DAY;
+  if(age>8){
+    staleEl.style.display="block";
+    staleEl.innerHTML=`<b>Heads up:</b> the weekly details were last refreshed ${new Date(WEEKLY.updated).toLocaleDateString("en-US",{month:"long",day:"numeric"})} and may be out of date.`;
+  }else staleEl.style.display="none";
+  document.getElementById("notices").innerHTML=(WEEKLY.notices||[]).map(n=>
+    `<div class="note ${n.style==="alert"?"note-alert":"note-book"}">${n.html}</div>`).join("");
+  dealStamp.textContent=dealStampText();
   renderEvents();
-  render();
+  renderPick();renderLocal();render();
 }
-
-/* ---------- weather (Open-Meteo, no key) ---------- */
-let WX = null, wxFetchedAt = 0; // {sat:{hi,pop,code}, sun:{...}}
-const WX_EMOJI = c =>
-  c===0 ? "☀️" : c<=2 ? "🌤" : c===3 ? "☁️" : c<=48 ? "🌫" :
-  c<=57 ? "🌦" : c<=67 ? "🌧" : c<=77 ? "🌨" : c<=82 ? "🌧" : c<=86 ? "🌨" : "⛈";
-const isRainy = d => d && (d.pop >= 55 || d.code >= 61 && d.code <= 67 || d.code >= 80);
-
-async function refreshWeather(){
-  if(Date.now() - wxFetchedAt < 30*60*1000) return; // at most every 30 min
-  const {sat, sun} = weekendDates(new Date());
-  const iso = dt => `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,"0")}-${String(dt.getDate()).padStart(2,"0")}`;
-  try{
-    const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=40.3169&longitude=-74.6174&daily=temperature_2m_max,precipitation_probability_max,weathercode&temperature_unit=fahrenheit&timezone=America%2FNew_York&start_date=${iso(sat)}&end_date=${iso(sun)}`);
-    if(!res.ok) throw new Error(res.status);
-    const j = await res.json();
-    const day = i => ({ hi: Math.round(j.daily.temperature_2m_max[i]), pop: j.daily.precipitation_probability_max[i] ?? 0, code: j.daily.weathercode[i] ?? 0 });
-    WX = { sat: day(0), sun: day(1) };
-    wxFetchedAt = Date.now();
-  }catch(e){ WX = null; }
-  renderWeather();
-  render(); // rainy weekends re-sort the grid
-}
-function renderWeather(){
-  const box = document.getElementById("wxchips");
-  if(!WX){ box.style.display = "none"; return; }
-  const chip = (label,d)=>`<span class="wx"><span class="emoji">${WX_EMOJI(d.code)}</span>${label} <b>${d.hi}°</b><span class="pop">${d.pop}% rain</span></span>`;
-  let hint = "";
-  const rs = isRainy(WX.sat), ru = isRainy(WX.sun);
-  if(rs && ru) hint = "Wet weekend ahead: indoor picks are sorted first below.";
-  else if(rs) hint = "Saturday looks wet; save the outdoor stuff for Sunday.";
-  else if(ru) hint = "Sunday looks wet; get outside on Saturday.";
-  box.innerHTML = chip("Sat", WX.sat) + chip("Sun", WX.sun) + (hint?`<span class="wxhint">${hint}</span>`:"");
-  box.style.display = "flex";
-}
-
-async function fetchWeekly(){
-  const res = await fetch(`weekly.json?ts=${Date.now()}`, {cache:"no-store"});
-  if(!res.ok) throw new Error("HTTP "+res.status);
-  return res.json();
-}
-
 async function refreshWeekly(manual){
-  const msg = document.getElementById("updateMsg");
-  const btn = document.getElementById("updateBtn");
-  if(manual){ btn.disabled = true; msg.textContent = "Checking…"; }
+  const msg=document.getElementById("updateMsg"), btn=document.getElementById("updateBtn");
+  if(manual){ btn.disabled=true; msg.textContent="Checking…"; }
   try{
-    const fresh = await fetchWeekly();
-    const changed = !WEEKLY || fresh.updated !== WEEKLY.updated;
-    WEEKLY = fresh;
+    const res=await fetch(`weekly.json?ts=${Date.now()}`,{cache:"no-store"});
+    if(!res.ok) throw new Error(res.status);
+    const fresh=await res.json();
+    const changed=!WEEKLY||fresh.updated!==WEEKLY.updated;
+    WEEKLY=fresh;
     applyWeekly();
-    // New app shell published? Hard-reload once to pick it up (cache-busting query).
-    if((fresh.app||0) > APP_VERSION && !sessionStorage.getItem("ww_reloaded_"+fresh.app)){
-      sessionStorage.setItem("ww_reloaded_"+fresh.app, "1");
-      if(manual) msg.textContent = "New version, reloading…";
-      location.replace(location.pathname + "?v=" + fresh.app);
+    if((fresh.app||0)>APP_VERSION && !sessionStorage.getItem("wf_reloaded_"+fresh.app)){
+      sessionStorage.setItem("wf_reloaded_"+fresh.app,"1");
+      if(manual) msg.textContent="New version, reloading…";
+      location.replace(location.pathname+"?v="+fresh.app);
       return;
     }
-    if(manual) msg.textContent = changed ? "Updated ✓" : "Already up to date ✓";
+    if(manual) msg.textContent=changed?"Updated ✓":"Already up to date ✓";
   }catch(e){
-    if(manual) msg.textContent = "Couldn't reach the server — try again on Wi-Fi.";
+    if(manual) msg.textContent="Couldn't reach the server, try again on Wi-Fi.";
     if(!WEEKLY) applyWeekly();
   }finally{
-    if(manual){ btn.disabled = false; setTimeout(()=>{ msg.textContent=""; }, 4000); }
+    if(manual){ btn.disabled=false; setTimeout(()=>{msg.textContent="";},4000); }
   }
 }
 
-const filters = { drive:90, season:currentSeason(), cats:new Set(["pyo","beach","outdoor","indoor","active"]), hideDone:false };
-
-/* ---------- render ---------- */
-const grid = document.getElementById("grid");
-const countEl = document.getElementById("count");
-
-function allPlaces(){
-  const extras = ((WEEKLY && WEEKLY.extraPlaces) || []).map(p=>({...p, isNew:true}));
-  return PLACES.concat(extras.filter(x=>!PLACES.some(p=>p.id===x.id)));
+/* ---- happening this weekend: photo story cards ---- */
+const STORY_GRADS=[
+  "linear-gradient(160deg,#0f6b5c,#0b4a40)",
+  "linear-gradient(160deg,#1f5f8a,#123a56)",
+  "linear-gradient(160deg,#8a6a1f,#5e470f)",
+  "linear-gradient(160deg,#7a3fa8,#4e2570)"
+];
+function renderEvents(){
+  const box=document.getElementById("events");
+  const evts=(WEEKLY&&WEEKLY.events)||[];
+  if(!evts.length){ box.style.display="none"; box.innerHTML=""; return; }
+  box.innerHTML=`<h3>🎪 Happening this weekend</h3>
+    <p class="lead">Found fresh this week · swipe sideways</p>
+    <div class="stories" id="storyRow">`+
+    evts.map((e,i)=>{
+      const bg=e.img
+        ?`linear-gradient(180deg,rgba(18,24,28,.05) 30%,rgba(18,24,28,.8) 85%),url('${e.img}') center/cover no-repeat`
+        :STORY_GRADS[i%STORY_GRADS.length];
+      const meta=[e.day,e.place,e.drive?`~${e.drive} min`:null,e.note].filter(Boolean).join(" · ");
+      return `<div class="story" style="background:${bg}">
+        ${!e.img&&e.emoji?`<span class="emoji">${e.emoji}</span>`:""}
+        <span class="tagline">${meta}</span>
+        <h4>${e.title}</h4>
+        <p>${[e.desc,e.time].filter(Boolean).join(" · ")}</p>
+        ${e.url?`<a class="cta" href="${e.url}" target="_blank" rel="noopener">Details ›</a>`:""}
+      </div>`;
+    }).join("")+
+    `</div><div class="dots" id="storyDots">${evts.map((_,i)=>`<i class="${i===0?"on":""}"></i>`).join("")}</div>`;
+  box.style.display="block";
+  const row=document.getElementById("storyRow");
+  row.addEventListener("scroll",()=>{
+    const w=row.firstElementChild?row.firstElementChild.offsetWidth+12:1;
+    const i=Math.min(Math.round(row.scrollLeft/w),evts.length-1);
+    document.querySelectorAll("#storyDots i").forEach((d,j)=>d.classList.toggle("on",j===i));
+  },{passive:true});
 }
-function visible(){
-  const wet = WX && isRainy(WX.sat) && isRainy(WX.sun);
-  return allPlaces().filter(p=>{
-    if(p.drive > filters.drive) return false;
-    if(!p.seasons.includes(filters.season)) return false;
-    if(!filters.cats.has(p.cat)) return false;
-    if(filters.hideDone && status[p.id]==="done") return false;
-    return true;
-  }).sort((a,b)=>{
-    if(wet && (a.cat==="indoor") !== (b.cat==="indoor")) return a.cat==="indoor" ? -1 : 1;
-    if(a.isNew !== b.isNew) return a.isNew ? -1 : 1;
-    return a.drive-b.drive;
+
+/* ---- weekend weather (Open-Meteo, no key) ---- */
+let WX=null, wxFetchedAt=0;
+const WX_EMOJI=c=>c===0?"☀️":c<=2?"🌤":c===3?"☁️":c<=48?"🌫":c<=57?"🌦":c<=67?"🌧":c<=77?"🌨":c<=82?"🌧":c<=86?"🌨":"⛈";
+const isRainy=d=>d&&(d.pop>=55||d.code>=61&&d.code<=67||d.code>=80);
+const wetWeekend=()=>WX&&isRainy(WX.sat)&&isRainy(WX.sun);
+async function refreshWeather(){
+  if(Date.now()-wxFetchedAt<30*60*1000) return;
+  const d=new Date(); d.setHours(0,0,0,0);
+  const sat=new Date(d); sat.setDate(d.getDate()+((6-d.getDay())%7));
+  const sun=new Date(sat); sun.setDate(sat.getDate()+1);
+  if(d.getDay()===0){ sun.setTime(d.getTime()); sat.setTime(d.getTime()-DAY); }
+  const iso=x=>`${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,"0")}-${String(x.getDate()).padStart(2,"0")}`;
+  try{
+    const res=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=40.3169&longitude=-74.6174&daily=temperature_2m_max,precipitation_probability_max,weathercode&temperature_unit=fahrenheit&timezone=America%2FNew_York&start_date=${iso(sat)}&end_date=${iso(sun)}`);
+    if(!res.ok) throw 0;
+    const j=await res.json();
+    const day=i=>({hi:Math.round(j.daily.temperature_2m_max[i]),pop:j.daily.precipitation_probability_max[i]??0,code:j.daily.weathercode[i]??0});
+    WX={sat:day(0),sun:day(1)}; wxFetchedAt=Date.now();
+  }catch(e){ WX=null; }
+  renderWeather(); render();
+}
+function renderWeather(){
+  const box=document.getElementById("wxchips");
+  if(!WX){ box.style.display="none"; return; }
+  const chipw=(l,d)=>`<span class="wx"><span class="emoji">${WX_EMOJI(d.code)}</span>${l} <b>${d.hi}°</b><span class="pop">${d.pop}% rain</span></span>`;
+  let hint="";
+  const rs=isRainy(WX.sat), ru=isRainy(WX.sun);
+  if(rs&&ru) hint="Wet weekend ahead: indoor picks are sorted first below.";
+  else if(rs) hint="Saturday looks wet; save the outdoor stuff for Sunday.";
+  else if(ru) hint="Sunday looks wet; get outside on Saturday.";
+  box.innerHTML=chipw("Sat",WX.sat)+chipw("Sun",WX.sun)+(hint?`<span class="wxhint">${hint}</span>`:"");
+  box.style.display="flex";
+}
+
+/* ===================== season ===================== */
+function currentSeason(d=new Date()){
+  const m=d.getMonth();
+  if(m<=1||m===11) return "winter";
+  if(m<=4) return "spring";
+  if(m<=7) return "summer";
+  return "fall";
+}
+const SEASON_COPY={
+  spring:{a:"#1c3f2e",b:"#3f7a4a",eyebrow:"Spring weekend",head:"Everything is finally open again",
+    sub:"Strawberries start in June, the towpath is dry, and the museums are empty because everyone else is outside."},
+  summer:{a:"#0f2a2e",b:"#1d7f8f",eyebrow:"Summer weekend",head:"Beach early, or stay in the cold air",
+    sub:"Shore lots fill before noon. Blueberries are peaking. The library-pass museums are the free rainy-day backup."},
+  fall:{a:"#3a2410",b:"#a55a1e",eyebrow:"Fall weekend",head:"Apples, mazes, and the good light",
+    sub:"PYO farms charge weekend admission now and sell out. Book Friday night, not Saturday morning."},
+  winter:{a:"#131c33",b:"#3c5a8a",eyebrow:"Winter weekend",head:"Indoors, and make it count",
+    sub:"This is when the library passes earn their keep. Reserve up to 45 days ahead at the West Windsor branch."}
+};
+const BOOK_NOW=[
+  {t:"Library museum passes open 45 days ahead",u:MCLS,n:"Reserve now for holiday-week visits"},
+  {t:"Von Thun fall festival tickets",u:"https://vonthunfarms.com/monmouth-junction-nj/",n:"September weekends sell out"},
+  {t:"Polar Express, New Hope Railroad",u:"https://newhoperailroad.com/",n:"Tickets release in late summer"},
+  {t:"Otherworld Philadelphia timed entry",u:"https://otherworld.fun/philadelphia",n:"Weekend slots go first"}
+];
+const SOURCES=[
+  {t:"West Windsor Patch",u:"https://patch.com/new-jersey/west-windsor"},
+  {t:"Plainsboro Township",u:"https://www.plainsboronj.com/"},
+  {t:"Library events",u:"https://events.mcl.org"},
+  {t:"NJ Family events",u:"https://www.njfamily.com/"},
+  {t:"National Night Out",u:"https://natw.org/"}
+];
+
+/* ===================== visits ===================== */
+let VISITS={};                       // id -> ISO date string
+const WEEKS=id=>{
+  if(!VISITS[id]) return null;
+  return Math.floor((Date.now()-new Date(VISITS[id]+"T12:00:00"))/(7*DAY));
+};
+const RECENT_WEEKS=8;
+const wentRecently=id=>{const w=WEEKS(id);return w!==null&&w<RECENT_WEEKS};
+function visitLabel(id){
+  const w=WEEKS(id);
+  if(w===null) return "Went this week";
+  if(w<=0) return "Went this week ✓";
+  if(w===1) return "Went last week";
+  return "Went "+w+" weeks ago";
+}
+
+/* ===================== weekly pick ===================== */
+function weekIndex(d=new Date()){
+  return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/(7*DAY));
+}
+function seededShuffle(arr,seed){
+  const a=arr.slice();let s=seed;
+  const rnd=()=>{s=(s*1664525+1013904223)%4294967296;return s/4294967296};
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[a[i],a[j]]=[a[j],a[i]]}
+  return a;
+}
+function pickForWeek(offset=0){
+  const season=currentSeason();
+  const pool=PLACES.filter(p=>p.seasons.includes(season)&&(!p.event||nextOccurrence(p.event)));
+  if(!pool.length) return null;
+  const order=seededShuffle(pool,20260101);
+  const start=weekIndex()+offset;
+  for(let i=0;i<order.length;i++){                 // skip anywhere you've been lately
+    const p=order[((start+i)%order.length+order.length)%order.length];
+    if(!wentRecently(p.id)) return p;
+  }
+  return order[((start%order.length)+order.length)%order.length];
+}
+
+/* ===================== filters ===================== */
+const PRICE_FILTERS=[
+  {k:"free",label:"Free",cls:"c-free"},
+  {k:"pass",label:"Free with library pass",cls:"c-pass"},
+  {k:"paid",label:"Paid",cls:"c-paid"},
+  {k:"deal",label:"Has a deal",cls:"c-deal"}
+];
+const DRIVE_FILTERS=[{k:20,label:"Under 20 min"},{k:40,label:"Under 40 min"},{k:60,label:"Under 60 min"},{k:90,label:"Under 90 min"}];
+const CAT_FILTERS=[
+  {k:"local",label:"Local & free"},{k:"pyo",label:"Pick your own"},{k:"beach",label:"Beach"},
+  {k:"outdoor",label:"Outdoor"},{k:"indoor",label:"Indoor"},{k:"active",label:"Active / book ahead"}
+];
+const state={prices:new Set(),drive:null,cats:new Set(),hideRecent:false,loved:new Set(),only:null};
+
+function matches(p){
+  if(state.only) return p.id===state.only;
+  if(p.event&&!nextOccurrence(p.event)) return false;      // out of season, hide
+  if(state.prices.size){
+    const ok=[...state.prices].some(k=>k==="deal"?!!dealsFor(p):p.price===k);
+    if(!ok) return false;
+  }
+  if(state.drive&&p.drive>state.drive) return false;
+  if(state.cats.size&&!p.cats.some(c=>state.cats.has(c))) return false;
+  if(state.hideRecent&&wentRecently(p.id)) return false;
+  return true;
+}
+
+/* ===================== render ===================== */
+function priceTag(p){
+  if(p.cats.includes("local")&&p.price==="free") return '<span class="tag t-local">Local &amp; free</span>';
+  if(p.price==="free") return '<span class="tag t-free">Free</span>';
+  if(p.price==="pass") return '<span class="tag t-pass">Library pass</span>';
+  return '<span class="tag t-paid">Paid</span>';
+}
+function dealBox(p){
+  const ds=dealsFor(p);
+  if(!ds) return "";
+  return `<div class="box deal"><strong>Deals</strong><br>${
+    ds.map(d=>`${d.label}. <a href="${d.url}" target="_blank" rel="noopener">Open</a>`).join("<br>")
+  }<span class="stamp">Checked ${dealStampText()}. Verify before buying.</span></div>`;
+}
+function passBox(p){
+  if(!p.pass) return "";
+  return `<div class="box pass">Free with your MCLS card. ${p.pass.terms}. <a href="${p.pass.url}" target="_blank" rel="noopener">Reserve the pass</a></div>`;
+}
+
+function renderHero(){
+  const c=SEASON_COPY[currentSeason()];
+  document.documentElement.style.setProperty("--hero-a",c.a);
+  document.documentElement.style.setProperty("--hero-b",c.b);
+  eyebrow.textContent=c.eyebrow+" · Princeton Junction";
+  headline.textContent=c.head;
+  herosub.textContent=c.sub;
+  bookNow.innerHTML=BOOK_NOW.map(b=>`<li><a href="${b.u}" target="_blank" rel="noopener">${b.t}</a> — ${b.n}</li>`).join("");
+  dealStamp.textContent=dealStampText();
+}
+
+function renderPick(){
+  const p=pickForWeek();
+  let next=null;
+  for(let o=1;o<12&&!next;o++){const n=pickForWeek(o);if(n&&p&&n.id!==p.id)next=n;}
+  if(!p){pick.innerHTML="";return}
+  pick.innerHTML=`
+    <span class="pick-tag">This week's pick</span>
+    <h2>${p.name}</h2>
+    <p class="why">${ovBlurb(p)}</p>
+    <div class="pick-meta"><span>${p.drive} min drive</span><span>${p.meta}</span></div>
+    ${passBox(p)}${dealBox(p)}
+    <div class="card-foot" style="border:0;padding:0;margin-top:12px">
+      <a class="site" href="${p.url}" target="_blank" rel="noopener">Open site</a>
+      <button class="icon went" data-went="${p.id}" aria-pressed="${!!VISITS[p.id]}">${visitLabel(p.id)}</button>
+      <button class="btn ghost" id="pickShow">Show only this</button>
+    </div>
+    <p class="pick-next">Rotates every Monday and skips anywhere you've been in the last ${RECENT_WEEKS} weeks. Up next: ${next?next.name:"—"}.</p>`;
+  wireVisits(pick);
+  document.getElementById("pickShow").onclick=()=>{
+    state.only=state.only===p.id?null:p.id;render();
+    window.scrollTo({top:document.querySelector(".controls").offsetTop-20,behavior:"smooth"});
+  };
+}
+
+function renderLocal(){
+  const events=PLACES.filter(p=>p.event).map(p=>({p,d:nextOccurrence(p.event)}))
+    .filter(x=>x.d).sort((a,b)=>a.d-b.d);
+  const src=SOURCES.map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.t}</a>`).join(" · ");
+  if(!events.length){
+    localBox.innerHTML=`<h3>Close to home</h3>
+      <p class="lead">No township events on the calendar right now.</p>
+      <div class="sources">I only know what was loaded in. Check: ${src}</div>`;
+    return;
+  }
+  localBox.innerHTML=`<h3>Close to home</h3>
+    <p class="lead">Free and near-free things happening in West Windsor, Plainsboro, and Mercer County.</p>
+    ${events.map(({p,d})=>{
+      const when=dayDiff(d)<=7?`<span class="soon">${fmtWhen(d)}</span>`:fmtWhen(d);
+      return `<div class="ev">
+        <div class="ev-when">${when}</div>
+        <div class="ev-body">
+          <strong>${p.name}</strong>
+          <span>${p.meta}</span>
+          <a href="${p.url}" target="_blank" rel="noopener">Details</a>
+        </div></div>`;
+    }).join("")}
+    <div class="sources">These are the recurring ones I know about. For one-offs, check ${src}</div>`;
+}
+
+function chip(label,pressed,cls=""){return `<button class="chip ${cls}" aria-pressed="${pressed}">${label}</button>`}
+function renderChips(){
+  priceChips.innerHTML=PRICE_FILTERS.map(f=>chip(f.label,state.prices.has(f.k),f.cls)).join("");
+  [...priceChips.children].forEach((b,i)=>b.onclick=()=>{
+    const k=PRICE_FILTERS[i].k;state.prices.has(k)?state.prices.delete(k):state.prices.add(k);
+    state.only=null;render();
+  });
+  driveChips.innerHTML=DRIVE_FILTERS.map(f=>chip(f.label,state.drive===f.k)).join("");
+  [...driveChips.children].forEach((b,i)=>b.onclick=()=>{
+    const k=DRIVE_FILTERS[i].k;state.drive=state.drive===k?null:k;state.only=null;render();
+  });
+  catChips.innerHTML=CAT_FILTERS.map(f=>chip(f.label,state.cats.has(f.k))).join("");
+  [...catChips.children].forEach((b,i)=>b.onclick=()=>{
+    const k=CAT_FILTERS[i].k;state.cats.has(k)?state.cats.delete(k):state.cats.add(k);
+    state.only=null;render();
+  });
+  hideRecent.setAttribute("aria-pressed",state.hideRecent);
+  hideRecent.textContent=state.hideRecent?"Show recent visits":"Hide recent visits";
+}
+
+function wireVisits(root){
+  root.querySelectorAll("[data-went]").forEach(b=>b.onclick=async()=>{
+    const id=b.dataset.went;
+    if(VISITS[id]) delete VISITS[id];
+    else VISITS[id]=new Date().toISOString().slice(0,10);
+    await store.set("wf.visits",JSON.stringify(VISITS));
+    renderPick();renderGrid();
   });
 }
 
-const SEASON_LABEL = {spring:"Spring",summer:"Summer",fall:"Fall",winter:"Winter"};
-
-function card(p){
-  const st = status[p.id];
-  const el = document.createElement("div");
-  el.className = "card" + (st==="done"?" done":"");
-  el.dataset.id = p.id;
-  const otherTags = (p.tags||[]).map(t=>`<span class="tag">${t}</span>`).join("");
-  const inPlan = plan[p.id];
-  el.innerHTML = `
-    ${p.isNew?'<span class="newbadge">NEW THIS WEEK</span>':''}
-    <div class="top">
-      <div>
-        <h3>${p.name}</h3>
-        <div class="town">${p.town}</div>
-      </div>
-      <a class="drive" href="https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent('Princeton Junction, NJ')}&destination=${encodeURIComponent(p.name + ', ' + p.town + ', NJ')}" target="_blank" rel="noopener" title="Exact drive time and directions"><b>~${p.drive}</b><span>min</span></a>
-    </div>
-    <p class="blurb">${(WEEKLY && WEEKLY.blurbs && WEEKLY.blurbs[p.id]) || p.blurb}</p>
-    <p class="logi"><span class="logi-k">Parking & on-site $</span>${p.logistics || 'Check the site for parking before you go.'}</p>
-    <div class="tags">${otherTags}</div>
-    <div class="actions">
-      <a class="go" href="${p.url}" target="_blank" rel="noopener">Open / directions</a>
-      <button class="mark ${inPlan?"on-plan":""}" data-act="plan" title="Add to this weekend's plan" aria-label="Add to weekend plan">${inPlan?"🗓":"＋"}</button>
-      <button class="mark ${st==="love"?"on-love":""}" data-act="love" title="Save favorite" aria-label="Save favorite">${st==="love"?"❤":"♡"}</button>
-      <button class="mark ${st==="done"?"on-done":""}" data-act="done" title="Mark done so it stops repeating" aria-label="Mark done">✓</button>
-    </div>`;
-  return el;
+function allPlaces(){
+  const extras=((WEEKLY&&WEEKLY.extraPlaces)||[]).map(p=>({...p,isNew:true}))
+    .filter(x=>x.id&&x.name&&!PLACES.some(p=>p.id===x.id));
+  return PLACES.concat(extras);
 }
-
-function render(){
-  const list = visible();
-  grid.innerHTML = "";
-  if(list.length===0){
-    grid.innerHTML = `<div class="empty">Nothing matches yet. Widen the drive radius, add a type, or switch the season to see more.</div>`;
-  }else{
-    list.forEach(p=>grid.appendChild(card(p)));
-  }
-  const total = PLACES.filter(p=>p.seasons.includes(filters.season)).length;
-  countEl.innerHTML = `<b>${list.length}</b> places within ~${filters.drive} min &middot; ${SEASON_LABEL[filters.season]}`;
-}
-
-/* ---------- season header ---------- */
-function applySeasonTheme(season){
-  const s = SEASONS[season];
-  document.documentElement.style.setProperty("--accent", s.accent);
-  document.documentElement.style.setProperty("--accent-2", s.accent2);
-  document.documentElement.style.setProperty("--accent-soft", s.soft);
-}
-function setSeasonHeader(){
-  const cur = currentSeason();
-  document.getElementById("seasonName").textContent = `Right now: ${SEASONS[cur].label} in central Jersey`;
-  document.getElementById("seasonNote").textContent = SEASONS[cur].note;
-}
-
-/* ---------- events ---------- */
-document.getElementById("driveChips").addEventListener("click",e=>{
-  const b = e.target.closest(".chip"); if(!b) return;
-  [...e.currentTarget.children].forEach(c=>c.setAttribute("aria-pressed","false"));
-  b.setAttribute("aria-pressed","true");
-  filters.drive = +b.dataset.drive; render();
-});
-document.getElementById("catChips").addEventListener("click",e=>{
-  const b = e.target.closest(".chip"); if(!b) return;
-  const cat = b.dataset.cat;
-  const on = b.getAttribute("aria-pressed")==="true";
-  b.setAttribute("aria-pressed", on?"false":"true");
-  if(on) filters.cats.delete(cat); else filters.cats.add(cat);
-  render();
-});
-document.getElementById("hideDone").addEventListener("change",e=>{
-  filters.hideDone = e.target.checked; render();
-});
-grid.addEventListener("click", async e=>{
-  const btn = e.target.closest(".mark"); if(!btn) return;
-  const id = btn.closest(".card").dataset.id;
-  const act = btn.dataset.act;
-  if(act==="plan"){
-    if(plan[id]) delete plan[id]; else plan[id] = "Sat";
-    await storeSet(PLAN_KEY, JSON.stringify(plan));
-    render(); renderPlanBar();
+function renderGrid(){
+  const wet=wetWeekend();
+  const list=allPlaces().filter(matches).sort((a,b)=>{
+    const ai=a.cats.includes("indoor"), bi=b.cats.includes("indoor");
+    if(wet&&ai!==bi) return ai?-1:1;
+    if(!!a.isNew!==!!b.isNew) return a.isNew?-1:1;
+    return a.drive-b.drive;
+  });
+  count.textContent=state.only?"Showing one place. Clear filters to see everything.":
+    `${list.length} place${list.length===1?"":"s"} match`;
+  if(!list.length){
+    grid.innerHTML=`<div class="empty">Nothing matches those filters yet.<br>Try widening the drive time, or turn on <strong>Free with library pass</strong> to see what your card already covers.</div>`;
     return;
   }
-  status[id] = (status[id]===act) ? undefined : act;
-  if(status[id]===undefined) delete status[id];
-  await storeSet(STORE_KEY, JSON.stringify(status));
-  render();
-});
+  grid.innerHTML=list.map(p=>{
+    const w=WEEKS(p.id);
+    const visitTag=wentRecently(p.id)?`<span class="tag t-visit">${w<=0?"Went this week":"Went "+w+"w ago"}</span>`:"";
+    return `<article class="card ${wentRecently(p.id)?"recent":""}">
+      <h3>${p.name}</h3>
+      <div class="tags">${p.isNew?'<span class="tag t-new">New this week</span>':""}${priceTag(p)}<span class="tag">${p.drive} min</span>${
+        dealsFor(p)?'<span class="tag t-visit" style="background:var(--deal)">Deal</span>':""}${visitTag}</div>
+      <p class="blurb">${ovBlurb(p)}</p>
+      <p class="meta">${p.meta}</p>
+      ${passBox(p)}${dealBox(p)}
+      <div class="card-foot">
+        <a class="site" href="${p.url}" target="_blank" rel="noopener">Open site</a>
+        <button class="icon" data-plan="${p.id}" aria-pressed="${!!plan[p.id]}" title="Add to this weekend's plan">${plan[p.id]?"🗓":"＋"}</button>
+        <button class="icon" data-love="${p.id}" aria-pressed="${state.loved.has(p.id)}" aria-label="Love ${p.name}">${state.loved.has(p.id)?"♥":"♡"}</button>
+        <button class="icon went" data-went="${p.id}" aria-pressed="${!!VISITS[p.id]}" title="${visitLabel(p.id)}">${VISITS[p.id]?"✓ Went":"Went this week"}</button>
+      </div>
+    </article>`;
+  }).join("");
+  grid.querySelectorAll("[data-love]").forEach(b=>b.onclick=async()=>{
+    const id=b.dataset.love;state.loved.has(id)?state.loved.delete(id):state.loved.add(id);
+    await store.set("wf.loved",JSON.stringify([...state.loved]));renderGrid();
+  });
+  grid.querySelectorAll("[data-plan]").forEach(b=>b.onclick=async()=>{
+    const id=b.dataset.plan;
+    if(plan[id]) delete plan[id]; else plan[id]="Sat";
+    await store.set("wf.plan",JSON.stringify(plan));
+    renderGrid();renderPlanBar();
+  });
+  wireVisits(grid);
+}
 
-/* ---------- weekend plan (share + calendar) ---------- */
-const PLAN_KEY = "ww_weekend_plan_v1";
-let plan = {}; // {placeId: "Sat"|"Sun"}
+function render(){renderChips();renderGrid()}
 
+document.getElementById("surprise").onclick=()=>{
+  const pool=PLACES.filter(matches);if(!pool.length)return;
+  state.only=pool[Math.floor(Math.random()*pool.length)].id;render();
+  window.scrollTo({top:document.querySelector(".controls").offsetTop-20,behavior:"smooth"});
+};
+document.getElementById("clear").onclick=()=>{
+  state.prices.clear();state.cats.clear();state.drive=null;state.only=null;render();
+};
+hideRecent.onclick=()=>{state.hideRecent=!state.hideRecent;state.only=null;render()};
+
+/* ===================== weekend plan (share + calendar) ===================== */
+let plan={}; // id -> "Sat"|"Sun"
 function planEntries(){
-  const all = allPlaces();
-  return Object.entries(plan)
-    .map(([id,day])=>({p: all.find(x=>x.id===id), day}))
-    .filter(x=>x.p);
+  const all=allPlaces();
+  return Object.entries(plan).map(([id,day])=>({p:all.find(x=>x.id===id),day})).filter(x=>x.p);
 }
 function renderPlanBar(){
-  const bar = document.getElementById("planBar");
-  const n = planEntries().length;
-  bar.textContent = `🗓 Weekend plan (${n})`;
-  bar.style.display = n ? "block" : "none";
+  const bar=document.getElementById("planBar");
+  const n=planEntries().length;
+  bar.textContent=`🗓 Weekend plan (${n})`;
+  bar.style.display=n?"block":"none";
   if(!n) closeSheet();
 }
 function renderSheet(){
-  const box = document.getElementById("planItems");
-  box.innerHTML = planEntries().map(({p,day})=>`
+  document.getElementById("planItems").innerHTML=planEntries().map(({p,day})=>`
     <div class="pitem" data-id="${p.id}">
-      <div class="nm">${p.name}<span>${p.town} · ~${p.drive} min</span></div>
+      <div class="nm">${p.name}<span>~${p.drive} min drive</span></div>
       <button class="dayt">${day}</button>
       <button class="rm" title="Remove">✕</button>
-    </div>`).join("") || '<p class="sub">Nothing planned yet. Tap ＋ on a place below.</p>';
+    </div>`).join("")||'<p class="sub">Nothing planned yet. Tap ＋ on a place below.</p>';
 }
-function openSheet(){ renderSheet(); document.getElementById("planSheet").style.display="block"; document.getElementById("sheetVeil").style.display="block"; }
-function closeSheet(){ document.getElementById("planSheet").style.display="none"; document.getElementById("sheetVeil").style.display="none"; }
-
-document.getElementById("planBar").addEventListener("click", openSheet);
-document.getElementById("sheetVeil").addEventListener("click", closeSheet);
-document.getElementById("planClose").addEventListener("click", closeSheet);
-document.getElementById("planItems").addEventListener("click", async e=>{
-  const row = e.target.closest(".pitem"); if(!row) return;
-  const id = row.dataset.id;
-  if(e.target.classList.contains("dayt")) plan[id] = plan[id]==="Sat" ? "Sun" : "Sat";
+function openSheet(){renderSheet();planSheet.style.display="block";sheetVeil.style.display="block"}
+function closeSheet(){planSheet.style.display="none";sheetVeil.style.display="none"}
+planBar.onclick=openSheet; sheetVeil.onclick=closeSheet;
+document.getElementById("planClose").onclick=closeSheet;
+document.getElementById("planItems").onclick=async e=>{
+  const row=e.target.closest(".pitem"); if(!row) return;
+  const id=row.dataset.id;
+  if(e.target.classList.contains("dayt")) plan[id]=plan[id]==="Sat"?"Sun":"Sat";
   else if(e.target.classList.contains("rm")) delete plan[id];
   else return;
-  await storeSet(PLAN_KEY, JSON.stringify(plan));
-  renderSheet(); renderPlanBar(); render();
-});
-
+  await store.set("wf.plan",JSON.stringify(plan));
+  renderSheet();renderPlanBar();renderGrid();
+};
+function weekendSatSun(){
+  const d=new Date(); d.setHours(0,0,0,0);
+  const sat=new Date(d); sat.setDate(d.getDate()+((6-d.getDay())%7));
+  const sun=new Date(sat); sun.setDate(sat.getDate()+1);
+  if(d.getDay()===0){ sun.setTime(d.getTime()); sat.setTime(d.getTime()-DAY); }
+  return {sat,sun};
+}
 function planText(){
-  const {sat, sun} = weekendDates(new Date());
-  const fmt = d=>d.toLocaleDateString("en-US",{weekday:"long", month:"short", day:"numeric"});
-  const lines = [`Our weekend plan (${upcomingWeekend(new Date())}):`];
-  for(const dayName of ["Sat","Sun"]){
-    const items = planEntries().filter(x=>x.day===dayName);
+  const {sat,sun}=weekendSatSun();
+  const fmt=x=>x.toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"});
+  const lines=[`Our weekend plan (${upcomingWeekendLabel()}):`];
+  for(const dn of ["Sat","Sun"]){
+    const items=planEntries().filter(x=>x.day===dn);
     if(!items.length) continue;
-    lines.push(`\n${fmt(dayName==="Sat"?sat:sun)}:`);
-    items.forEach(({p})=>lines.push(`• ${p.name} (${p.town}, ~${p.drive} min)`));
+    lines.push(`\n${fmt(dn==="Sat"?sat:sun)}:`);
+    items.forEach(({p})=>lines.push(`• ${p.name} (~${p.drive} min)`));
   }
   return lines.join("\n");
 }
-document.getElementById("planShare").addEventListener("click", async ()=>{
-  const text = planText();
-  if(navigator.share){ try{ await navigator.share({text}); }catch(e){} }
-  else{ try{ await navigator.clipboard.writeText(text); alert("Copied to clipboard"); }catch(e){} }
-});
-document.getElementById("planIcs").addEventListener("click", ()=>{
-  const {sat, sun} = weekendDates(new Date());
-  const ymd = d=>`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,"0")}${String(d.getDate()).padStart(2,"0")}`;
-  const esc = s=>s.replace(/([,;\\])/g,"\\$1");
-  let ics = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//WeekendFinder//EN\r\n";
-  for(const dayName of ["Sat","Sun"]){
-    const items = planEntries().filter(x=>x.day===dayName);
+document.getElementById("planShare").onclick=async()=>{
+  const text=planText();
+  if(navigator.share){ try{await navigator.share({text});}catch(e){} }
+  else{ try{await navigator.clipboard.writeText(text);alert("Copied to clipboard");}catch(e){} }
+};
+document.getElementById("planIcs").onclick=()=>{
+  const {sat,sun}=weekendSatSun();
+  const ymd2=x=>`${x.getFullYear()}${String(x.getMonth()+1).padStart(2,"0")}${String(x.getDate()).padStart(2,"0")}`;
+  const esc=s=>s.replace(/([,;\\])/g,"\\$1");
+  let ics="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//WeekendFinder//EN\r\n";
+  for(const dn of ["Sat","Sun"]){
+    const items=planEntries().filter(x=>x.day===dn);
     if(!items.length) continue;
-    const d = dayName==="Sat"?sat:sun;
-    const next = new Date(d); next.setDate(d.getDate()+1);
-    ics += "BEGIN:VEVENT\r\n"
-      + `UID:wf-${ymd(d)}@weekend-finder\r\n`
-      + `DTSTART;VALUE=DATE:${ymd(d)}\r\n`
-      + `DTEND;VALUE=DATE:${ymd(next)}\r\n`
-      + `SUMMARY:${esc("Weekend plan: " + items.map(x=>x.p.name).join(" + "))}\r\n`
-      + `DESCRIPTION:${esc(items.map(x=>`${x.p.name} (${x.p.town}, ~${x.p.drive} min)`).join("\\n"))}\r\n`
-      + "END:VEVENT\r\n";
+    const d=dn==="Sat"?sat:sun;
+    const nx=new Date(d); nx.setDate(d.getDate()+1);
+    ics+="BEGIN:VEVENT\r\n"
+      +`UID:wf-${ymd2(d)}@weekend-finder\r\n`
+      +`DTSTART;VALUE=DATE:${ymd2(d)}\r\n`
+      +`DTEND;VALUE=DATE:${ymd2(nx)}\r\n`
+      +`SUMMARY:${esc("Weekend plan: "+items.map(x=>x.p.name).join(" + "))}\r\n`
+      +`DESCRIPTION:${esc(items.map(x=>`${x.p.name} (~${x.p.drive} min)`).join("\\n"))}\r\n`
+      +"END:VEVENT\r\n";
   }
-  ics += "END:VCALENDAR\r\n";
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar"}));
-  a.download = "weekend-plan.ics";
-  document.body.appendChild(a); a.click(); a.remove();
-});
+  ics+="END:VCALENDAR\r\n";
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));
+  a.download="weekend-plan.ics";
+  document.body.appendChild(a);a.click();a.remove();
+};
 
-/* ---------- Monday push notifications (needs PUSH config + server) ---------- */
-const PUSH = { publicKey: "", subscribeUrl: "" }; // filled in once the push server exists
+/* ===================== Monday push (dormant until server exists) ===================== */
+const PUSH={publicKey:"",subscribeUrl:""};
 async function setupNotifyButton(){
-  const btn = document.getElementById("notifyBtn");
-  if(!PUSH.publicKey || !PUSH.subscribeUrl || !("serviceWorker" in navigator) || !("PushManager" in window)) return;
-  const reg = await navigator.serviceWorker.ready;
-  const existing = await reg.pushManager.getSubscription();
-  if(existing){ return; } // already subscribed, keep the button hidden
-  btn.style.display = "inline-block";
-  btn.addEventListener("click", async ()=>{
+  const btn=document.getElementById("notifyBtn");
+  if(!PUSH.publicKey||!PUSH.subscribeUrl||!("serviceWorker" in navigator)||!("PushManager" in window)) return;
+  const reg=await navigator.serviceWorker.ready;
+  if(await reg.pushManager.getSubscription()) return;
+  btn.style.display="inline-block";
+  btn.onclick=async()=>{
     try{
-      const perm = await Notification.requestPermission();
-      if(perm !== "granted"){ btn.textContent = "🔕 Notifications blocked"; return; }
-      const sub = await reg.pushManager.subscribe({ userVisibleOnly:true, applicationServerKey: urlB64(PUSH.publicKey) });
-      await fetch(PUSH.subscribeUrl, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(sub)});
-      btn.textContent = "🔔 You're set for Mondays"; setTimeout(()=>{ btn.style.display="none"; }, 2500);
-    }catch(e){ btn.textContent = "🔕 Couldn't subscribe"; }
-  });
+      if(await Notification.requestPermission()!=="granted"){btn.textContent="🔕 Notifications blocked";return;}
+      const pad="=".repeat((4-PUSH.publicKey.length%4)%4);
+      const raw=atob((PUSH.publicKey+pad).replace(/-/g,"+").replace(/_/g,"/"));
+      const key=Uint8Array.from([...raw].map(c=>c.charCodeAt(0)));
+      const sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:key});
+      await fetch(PUSH.subscribeUrl,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(sub)});
+      btn.textContent="🔔 You're set for Mondays";setTimeout(()=>{btn.style.display="none";},2500);
+    }catch(e){btn.textContent="🔕 Couldn't subscribe";}
+  };
 }
-function urlB64(s){
-  const pad = "=".repeat((4 - s.length % 4) % 4);
-  const raw = atob((s + pad).replace(/-/g, "+").replace(/_/g, "/"));
-  return Uint8Array.from([...raw].map(c=>c.charCodeAt(0)));
-}
-document.getElementById("surpriseBtn").addEventListener("click",()=>{
-  const pool = visible().filter(p=>status[p.id]!=="done");
-  if(pool.length===0){ return; }
-  const pick = pool[Math.floor(Math.random()*pool.length)];
-  // clear previous spotlight, then highlight + scroll
-  document.querySelectorAll(".card.spot").forEach(c=>c.classList.remove("spot"));
-  const target = [...grid.children].find(c=>c.dataset.id===pick.id);
-  if(target){ target.classList.add("spot"); target.scrollIntoView({behavior:"smooth",block:"center"}); }
-});
 
-/* ---------- update button + auto-refresh on open/resume ---------- */
-document.getElementById("updateBtn").addEventListener("click", ()=>{ refreshWeekly(true); wxFetchedAt = 0; refreshWeather(); });
-document.addEventListener("visibilitychange", ()=>{ if(!document.hidden){ refreshWeekly(false); refreshWeather(); } });
-window.addEventListener("pageshow", e=>{ if(e.persisted){ refreshWeekly(false); refreshWeather(); } });
+/* ===================== update button + auto refresh ===================== */
+document.getElementById("updateBtn").onclick=()=>{refreshWeekly(true);wxFetchedAt=0;refreshWeather();};
+document.addEventListener("visibilitychange",()=>{if(!document.hidden){refreshWeekly(false);refreshWeather();}});
+window.addEventListener("pageshow",e=>{if(e.persisted){refreshWeekly(false);refreshWeather();}});
 
-/* ---------- init ---------- */
 (async function init(){
-  const cur = currentSeason();
-  filters.season = cur;
-  applySeasonTheme(cur);
-  setSeasonHeader();
-  // load saved status + plan
+  renderHero();
   try{
-    const raw = await storeGet(STORE_KEY);
-    if(raw) status = JSON.parse(raw) || {};
-  }catch(e){ status = {}; }
-  try{
-    const rawp = await storeGet(PLAN_KEY);
-    if(rawp) plan = JSON.parse(rawp) || {};
-  }catch(e){ plan = {}; }
-  render();
-  renderPlanBar();
+    const v=await store.get("wf.visits");if(v) VISITS=JSON.parse(v);
+    const l=await store.get("wf.loved");if(l) state.loved=new Set(JSON.parse(l));
+    const pl=await store.get("wf.plan");if(pl) plan=JSON.parse(pl)||{};
+  }catch(e){}
+  renderPick();renderLocal();render();renderPlanBar();
   refreshWeekly(false);
   refreshWeather();
   if("serviceWorker" in navigator){
