@@ -1,30 +1,59 @@
 {
-  "updated": "2026-08-03T09:10:41Z",
+  "updated": "2026-08-07T02:20:04Z",
   "app": 5,
   "notices": [
     {
       "style": "alert",
-      "html": "<b>Heat advisory Friday and Saturday:</b> heat index near 100 to 105°F is expected, with a chance of afternoon storms Saturday. Plan outdoor picking and festivals for the morning, bring extra water, and keep an indoor backup for Saturday afternoon."
+      "html": "<b>Heat advisory through Saturday evening:</b> heat index near 100 to 102°F is expected Saturday afternoon, easing by evening, with a chance of storms. Sunday looks milder (high near 88°F) but watch for pop-up storms before evening. Plan outdoor picking and festivals for the morning, bring extra water, and keep an indoor backup for Saturday afternoon."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: blackberries are pick-your-own (picking began Aug 4), along with green beans, peppers and tomatoes. Still no peaches this year, the spring freeze wiped out the stone fruit. Store and donuts open 9 to 6, no pets; call 609-924-2310 to confirm the day's picking.",
-    "vonthun": "This weekend: blackberries are pick-your-own at the South Brunswick fields ($3 field admission plus a container fee); blueberries have wrapped for the season. Call 732-329-8656 for a crop update. Farm market and donuts open daily.",
-    "leeturkey": "This weekend: no confirmed 2026 update found online for this small, diversified farm. Early August usually brings blackberries, nectarines, corn and tomatoes, though no peaches this year after the spring freeze. Call 609-448-0629 for the day's pick, open 9 to 6, Sundays 2 to 6, arrive by 5:15pm to enter the fields.",
-    "johnsons": "This weekend: blackberries are newly added for 2026 alongside the tail end of blueberry season. Hayrides, animals and soft-serve stay open. Call the Pick Your Own Hotline 609-654-5894 to confirm what's ready before you go.",
-    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so no stone-fruit or apple picking is expected all season. Bakery and store stay open; call 732-462-0756 to confirm what's on hand."
+    "terhune": "This weekend: blackberries are pick-your-own (picking began Aug 4), along with green beans, peppers and tomatoes. Still no peaches this year, the spring freeze wiped out the stone fruit crop. Store and donuts open 9 to 6, no pets; call 609-924-2310 to confirm the day's picking.",
+    "leeturkey": "This weekend: no confirmed 2026 update found for this small, diversified farm. Early August usually brings blackberries, corn and tomatoes, with peaches a toss-up after the spring freeze hit the region. Call 609-448-0629 to confirm the day's picking and hours before you go.",
+    "vonthun": "This weekend: blackberries should still be going at the Monmouth Junction fields, with apples starting and blueberries wrapped for the season. Note that Von Thun's Sunflower Festival is at their Washington Township location in Warren County, not here, so call 732-329-8656 to confirm what's ready to pick at Monmouth Junction.",
+    "emerys": "This weekend: Emery's main blueberry crop is generally winding down by early August, though sunflowers may be blooming for picking. Call the farm at 609-758-8514 to check what's actually out before you drive over.",
+    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so Battleview isn't much of a PYO stop right now. Bakery and store stay open for cider donuts and baked goods; call 732-462-0756 to confirm what's on hand.",
+    "johnsons": "This weekend: blackberries are newly added for 2026, and blueberries are likely in their last days. An Evening Sunflower Stroll runs Aug 6 to 8 (ticketed, golden-hour hours), so it overlaps Saturday but not Sunday. Call the Pick Your Own Hotline 609-654-5894 to confirm what's ready before you go."
   },
+  "deals": {
+    "sixflags": [
+      {"label": "Groupon single-day tickets around 46% off, from about $48.25, app-only, promo value valid through Sep 7", "url": "https://www.groupon.com/deals/gl-six-flags-great-adventure-6"},
+      {"label": "Groupon coupon code, about 12% off sitewide merch (not park tickets)", "url": "https://www.groupon.com/coupons/six-flags"}
+    ],
+    "iplay": [
+      {"label": "Unlimited ride band plus $5 game card, from $27.99, valid Saturday and Sunday", "url": "https://www.groupon.com/deals/iplay-america-2-10"},
+      {"label": "Browse all current iPlay America Groupon offers", "url": "https://www.groupon.com/biz/west-freehold-nj/iplay-america-stonehurst-east"}
+    ],
+    "sesame": [
+      {"label": "Groupon up to 72% off, tickets starting around $32", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"},
+      {"label": "Sesame Place's own Buy One Day Get Second Day Free, $79.99 plus tax for two visits within 6 months", "url": "https://sesameplace.com/philadelphia/special-offers/summer-deal/"}
+    ],
+    "dinosafari": [
+      {"label": "Groupon, 2 admission tickets for about $25.83 (50% off $51.66), valid through Aug 16", "url": "https://www.groupon.com/deals/local-flavor-luminocity-dino-safari-n-j-2026"}
+    ],
+    "whalewatch": [
+      {"label": "Groupon 3-hour trip from about $22.50, up to 50% off, includes a free hot dog and drink", "url": "https://www.groupon.com/deals/miss-belmar-whale-watching-on-jersey-shore-1-1"}
+    ],
+    "buckstubing": [
+      {"label": "Groupon tubing for one, two or four, up to 41 to 49% off, roughly $16 to $82 depending on group size and day", "url": "https://www.groupon.com/deals/bucks-county-river-country-canoe-and-tube-rentals-4-central-jersey"}
+    ],
+    "lsc": [
+      {"label": "Groupon admission around $26, down from $32 (about 19% off)", "url": "https://www.groupon.com/deals/liberty-science-center-13"}
+    ],
+    "diggerland": []
+  },
+  "dealsChecked": "Aug 7, 2026",
   "events": [
     {
       "day": "Sat+Sun",
       "title": "Middlesex County Fair",
-      "time": "11am to 11pm Sat, 11am to 10pm Sun, closing-night fireworks Sunday",
+      "time": "11am to 11pm Sat, 11am to 10pm Sun, fireworks closing night Sunday",
       "place": "Middlesex County Fairgrounds, East Brunswick",
       "drive": 30,
       "url": "https://middlesexcountyfair.com/",
-      "note": "$16 adult, $5 ages 6-12, under 6 free",
+      "note": "$10 adult, $4 kids 3-10 and seniors, under 2 free; rides separate ($2/ticket or $35 unlimited)",
       "emoji": "🎡",
-      "desc": "Carnival rides, live entertainment and 4-H exhibits all weekend, capped by fireworks on the fair's final night Sunday."
+      "desc": "Carnival rides, a K9s-in-Flight show and cowboy circus performances all weekend, capped by fireworks on the fair's closing night Sunday."
     },
     {
       "day": "Sat",
@@ -35,12 +64,34 @@
       "url": "https://www.newbrunswickarts.org/2026-new-brunswick-heart-festival/",
       "note": "free",
       "emoji": "🎨",
-      "desc": "A free afternoon of live music and dance downtown, with free kids' dance classes, face painting and craft activities."
+      "desc": "A free afternoon of live music and dance downtown, with free kids' dance workshops from Princeton Ballet School, face painting and craft activities."
+    },
+    {
+      "day": "Sat",
+      "title": "Palmer Square Summer Music Series",
+      "time": "1 to 3pm",
+      "place": "Palmer Square Green, Princeton",
+      "drive": 12,
+      "url": "https://palmersquare.com/series/summer-music-series/",
+      "note": "free",
+      "emoji": "🎶",
+      "desc": "A free outdoor concert on the green in downtown Princeton, easy to pair with ice cream and letting the kids run around on the grass."
+    },
+    {
+      "day": "Sat",
+      "title": "Open-Fire Cooking Competition",
+      "time": "10am to 4pm",
+      "place": "Howell Living History Farm, Hopewell Township",
+      "drive": 25,
+      "url": "https://howellfarm.org/calendar",
+      "note": "free",
+      "emoji": "🔥",
+      "desc": "Cooks at four historic farm sites compete using surprise ingredients over open fire, hearth and wood stove, a hands-on pick for kids who like farm chores and cooking shows."
     },
     {
       "day": "Sat",
       "title": "Disney's Aladdin KIDS",
-      "time": "11am and 1pm shows (also playing Fri Aug 7)",
+      "time": "11am and 1pm shows",
       "place": "Music Mountain Theatre, Lambertville",
       "drive": 30,
       "url": "https://www.musicmountaintheatre.org/young-audience-schedule-2026",
@@ -49,7 +100,5 @@
       "desc": "A high-energy 40-minute kid-cast musical version of Aladdin, a good indoor backup if Saturday's storms roll through."
     }
   ],
-  "extraPlaces": [],
-  "dealsChecked": "Aug 6, 2026",
-  "deals": {}
+  "extraPlaces": []
 }
