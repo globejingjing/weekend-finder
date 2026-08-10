@@ -289,12 +289,6 @@ const deal=(label,url)=>({label,url});
 /* ===================== places ===================== */
 const PLACES=[
 /* ---------- local & free community events ---------- */
-{id:"nno", name:"National Night Out, West Windsor", drive:5, price:"free", cats:["local","outdoor"], seasons:["summer"],
- blurb:"Township police and fire host inflatables, games, crafts, a dunk tank, giveaways, and K-9 and drone demos at Community Park.",
- meta:"6 to 8pm at West Windsor Community Park. Free, no registration.",
- url:"https://natw.org/",
- event:{type:"nthWeekday",month:8,weekday:2,n:1,label:"First Tuesday of August"}},
-
 {id:"wwfm", name:"West Windsor Community Farmers' Market", drive:5, price:"free", cats:["local","outdoor"], seasons:["spring","summer","fall"],
  blurb:"Every Saturday at the Princeton Junction station lot, rain or shine. Music, prepared food, and the best local produce without driving to a farm.",
  meta:"877 Alexander Road. Saturdays 9am to 1pm, May through Thanksgiving.",
@@ -786,8 +780,7 @@ const SOURCES=[
   {t:"West Windsor Patch",u:"https://patch.com/new-jersey/west-windsor"},
   {t:"Plainsboro Township",u:"https://www.plainsboronj.com/"},
   {t:"Library events",u:"https://events.mcl.org"},
-  {t:"NJ Family events",u:"https://www.njfamily.com/"},
-  {t:"National Night Out",u:"https://natw.org/"}
+  {t:"NJ Family events",u:"https://www.njfamily.com/"}
 ];
 
 /* ===================== visits ===================== */
@@ -1148,7 +1141,9 @@ function showTab(which){
   paneExplore.classList.toggle("on",!wk);
   tabBtnWeekend.setAttribute("aria-selected",String(wk));
   tabBtnExplore.setAttribute("aria-selected",String(!wk));
-  window.scrollTo({top:0,behavior:"instant" in window?"instant":"auto"});
+  const behavior="instant" in window?"instant":"auto";
+  const top=wk?0:Math.max(document.querySelector(".controls").offsetTop-20,0);
+  window.scrollTo({top,behavior});
 }
 tabBtnWeekend.onclick=()=>showTab("weekend");
 tabBtnExplore.onclick=()=>showTab("explore");
