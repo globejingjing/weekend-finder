@@ -1,19 +1,19 @@
 {
-  "updated": "2026-08-10T09:10:27Z",
+  "updated": "2026-08-17T09:15:00Z",
   "app": 5,
   "notices": [
     {
       "style": "book",
-      "html": "<b>Book ahead for Bellemont Farm's Sunflower Festival:</b> advance online tickets ($19 adult, $12 kids) are cheaper than at the door ($25, $15), and the festival runs weekends through mid-September if this one's booked up."
+      "html": "<b>Book ahead for Bellemont Farm's Sunflower Festival:</b> advance online tickets ($19 adult, $12 kids) are cheaper than at the door ($25, $15), and the festival runs weekends through September 13 if this one's booked up."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: blackberries continue pick-your-own, along with green beans, peppers and tomatoes. Still no peaches this year, the spring freeze wiped out the crop. Store and donuts open 9 to 6, no pets; call 609-924-2310 to confirm the day's picking.",
-    "leeturkey": "This weekend: no confirmed 2026 update posted online for this small, diversified farm, but the u-pick season runs June through October, and August typically brings blackberries, corn, tomatoes, cantaloupe and peppers. Call 609-448-0629 to confirm the day's picking and hours before you go.",
-    "vonthun": "This weekend: blackberries are pick-your-own at the Monmouth Junction fields ($3 field admission plus a container fee), blueberries have wrapped for the season, and apples won't ripen until mid-September. Von Thun's Sunflower Trail is at their Washington Township farm in Warren County, not here, so call 732-329-8656 to confirm what's ready to pick at Monmouth Junction.",
-    "emerys": "This weekend: Emery's blueberry season has wound down. Sunflowers are grown here but sold bunched at the farm market rather than pick-your-own. Call 609-758-8514 to check what's out before you drive over.",
-    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so there's no pick-your-own fruit at Battleview right now. The bakery and farm store stay open for cider donuts and baked goods; call 732-462-0756 to confirm what's on hand.",
-    "johnsons": "This weekend: blackberries are newly added for 2026 alongside late-summer tomatoes, zucchini and zinnias. The ticketed Evening Sunflower Strolls ran the first two weekends of August and have wrapped, so call the Pick Your Own Hotline 609-654-5894 to confirm what's ready before you go."
+    "terhune": "This weekend: blackberries and cut-your-own flowers are pick-your-own, but there's still no peach crop this year after the spring freeze. Store and market are open daily; call 609-924-2310 to confirm what's ripe before you drive over.",
+    "leeturkey": "This weekend: no confirmed 2026 update posted online for this small, family-run farm, but August typically brings peaches, tomatoes, cantaloupe and the season's first apples. Call 609-448-0629 to confirm the day's picking and hours before you go.",
+    "vonthun": "This weekend: blackberries are pick-your-own at the Monmouth Junction fields ($3 field admission plus a container fee), and apples aren't ripe yet. The Sunflower Trail is only at Von Thun's Washington Township farm, not here; Monmouth Junction's fall festival with corn maze and pumpkins starts September 19. Call 732-329-8656 to confirm what's ready to pick.",
+    "emerys": "This weekend: Emery's blueberry season has wrapped for the year. Sunflowers grow here but are sold bunched at the farm market rather than pick-your-own. Call 609-758-8514 to check what's out before you drive over.",
+    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so pick-your-own fruit stays limited at Battleview. The bakery and farm store are still open for cider donuts and baked goods; call 732-462-0756 to confirm what's on hand.",
+    "johnsons": "This weekend: the Sunflower Celebration (hayride to the fields, pick your own blossoms) is running now alongside late-summer peaches, tomatoes and zucchini. Picking dates can shift by a week or more, so call the Pick Your Own Hotline 609-654-5894 before you drive over."
   },
   "deals": {
     "sixflags": [
@@ -25,79 +25,66 @@
       {"label": "Browse all current iPlay America Groupon offers", "url": "https://www.groupon.com/biz/west-freehold-nj/iplay-america-stonehurst-east"}
     ],
     "sesame": [
-      {"label": "Groupon up to 72% off, tickets starting around $32", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"},
+      {"label": "Groupon end-of-summer sale, about 75% off, tickets from around $29.99", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"},
       {"label": "Sesame Place's own Buy One Day Get Second Day Free, $79.99 plus tax for two visits within 6 months", "url": "https://sesameplace.com/philadelphia/special-offers/summer-deal/"}
     ],
-    "dinosafari": [
-      {"label": "Groupon, 2 admission tickets for about $25.83 (50% off $51.66), valid through Aug 16, this exhibit's last weekend at Freehold Raceway Mall", "url": "https://www.groupon.com/deals/local-flavor-luminocity-dino-safari-n-j-2026"}
-    ],
+    "dinosafari": [],
     "whalewatch": [
       {"label": "Groupon 3-hour trip from about $22.50, up to 50% off, includes a free hot dog and drink", "url": "https://www.groupon.com/deals/miss-belmar-whale-watching-on-jersey-shore-1-1"}
     ],
     "buckstubing": [
-      {"label": "Groupon tubing for one, two or four, up to 41 to 49% off, roughly $16 to $82 depending on group size and day", "url": "https://www.groupon.com/deals/bucks-county-river-country-canoe-and-tube-rentals-4-central-jersey"}
+      {"label": "Groupon weekend tubing $22 for one, $42 for two, $82 for four (cheaper on weekdays); expires Aug 30", "url": "https://www.groupon.com/deals/bucks-county-river-country-canoe-and-tube-rentals-4-central-jersey"}
     ],
     "lsc": [
       {"label": "Groupon admission around $26, down from $32 (about 19% off)", "url": "https://www.groupon.com/deals/liberty-science-center-13"}
     ],
     "diggerland": []
   },
-  "dealsChecked": "Aug 10, 2026",
+  "dealsChecked": "Aug 17, 2026",
   "events": [
     {
-      "day": "Sat+Sun",
-      "title": "Bellemont Farm Sunflower Festival",
-      "time": "10am to 6pm both days",
-      "place": "Bellemont Farm, Lambertville",
-      "drive": 30,
-      "url": "https://bellemontfarmnj.com/lambertville-sunflower-festival/",
-      "note": "$19 adult, $12 kids 3-12 in advance (more at the door), under 3 free",
-      "emoji": "🌻",
-      "desc": "Acres of blooming sunflowers to stroll and cut your own bouquet from, plus food trucks, craft activities and a kids' play area, opening weekend of a run through mid-September."
+      "day": "Sat",
+      "title": "Chemistry Saturday",
+      "time": "2:30pm",
+      "place": "Princeton Public Library, Princeton",
+      "drive": 12,
+      "url": "https://princetonlibrary.org/kids-and-teens/events-for-kids/",
+      "note": "free, aimed at grades 3 to 5",
+      "emoji": "🧪",
+      "desc": "Hands-on chemistry experiments sized for third through fifth graders, a fun science-minded Saturday before school starts back up."
     },
     {
       "day": "Sat",
-      "title": "Canning Day and Pickling",
-      "time": "10am to 4pm, most activities 11am to 3pm",
+      "title": "Potato Harvest",
+      "time": "10am to 4pm",
       "place": "Howell Living History Farm, Hopewell Township",
       "drive": 25,
       "url": "https://howellfarm.org/calendar",
       "note": "free",
-      "emoji": "🥒",
-      "desc": "A hands-on look at how farm families preserved summer produce before refrigeration, with kids welcome to help can and pickle the day's harvest."
+      "emoji": "🥔",
+      "desc": "Kids help collect, clean and sort the farm's potato crop by hand, a hands-on look at harvest the way it worked before refrigeration."
     },
     {
       "day": "Sat",
-      "title": "Summer Reading Wrap-Up Celebration",
-      "time": "2pm",
-      "place": "Princeton Public Library, Princeton",
+      "title": "Summer Music Series",
+      "time": "1 to 3pm",
+      "place": "Palmer Square Green, Princeton",
       "drive": 12,
-      "url": "https://princetonlibrary.org/kids-and-teens/events-for-kids/",
+      "url": "https://palmersquare.com/events/",
       "note": "free",
-      "emoji": "🕺",
-      "desc": "A dance party finale for Summer Reading 2026 with DJ James Myricks, a fun free wind-down before school starts back up."
+      "emoji": "🎶",
+      "desc": "Free live music on the Green closing out the summer Saturday series, an easy pairing with lunch or ice cream in the Square."
     },
     {
       "day": "Sun",
-      "title": "Feelin' Stronger Every Day",
-      "time": "3 to 5pm",
-      "place": "Princeton Shopping Center, Princeton",
-      "drive": 12,
-      "url": "https://princetonol.com/events/2026-08-16/feelin-stronger-every-day-featuring-a-chicago-tribute-concert",
+      "title": "Carillon Concert",
+      "time": "1pm",
+      "place": "Graduate College tower, Princeton University",
+      "drive": 10,
+      "url": "https://princetonol.com/events/2026-08-23/",
       "note": "free",
-      "emoji": "🎶",
-      "desc": "A free community wellness afternoon with a 16-piece tribute band covering Chicago's greatest hits, local wellness activities, and a closing dance party."
-    },
-    {
-      "day": "Sat",
-      "title": "Disney's Aladdin KIDS, final performances",
-      "time": "11am and 1pm shows",
-      "place": "Music Mountain Theatre, Lambertville",
-      "drive": 30,
-      "url": "https://www.musicmountaintheatre.org/young-audience-schedule-2026",
-      "note": "$13/ticket",
-      "emoji": "🎭",
-      "desc": "Last chance to catch this high-energy 40-minute kid-cast musical version of Aladdin, an easy pairing with the Bellemont sunflower fields just down the road in Lambertville."
+      "emoji": "🔔",
+      "desc": "Doug Gefvert plays the Graduate College's 67-bell carillon while you picnic on the lawn below, rain or shine, an easy Sunday change of pace."
     }
   ],
   "extraPlaces": []
