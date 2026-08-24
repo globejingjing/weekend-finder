@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T09:15:00Z",
+  "updated": "2026-08-24T09:09:56Z",
   "app": 5,
   "notices": [
     {
@@ -8,12 +8,12 @@
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: blackberries and cut-your-own flowers are pick-your-own, but there's still no peach crop this year after the spring freeze. Store and market are open daily; call 609-924-2310 to confirm what's ripe before you drive over.",
-    "leeturkey": "This weekend: no confirmed 2026 update posted online for this small, family-run farm, but August typically brings peaches, tomatoes, cantaloupe and the season's first apples. Call 609-448-0629 to confirm the day's picking and hours before you go.",
-    "vonthun": "This weekend: blackberries are pick-your-own at the Monmouth Junction fields ($3 field admission plus a container fee), and apples aren't ripe yet. The Sunflower Trail is only at Von Thun's Washington Township farm, not here; Monmouth Junction's fall festival with corn maze and pumpkins starts September 19. Call 732-329-8656 to confirm what's ready to pick.",
-    "emerys": "This weekend: Emery's blueberry season has wrapped for the year. Sunflowers grow here but are sold bunched at the farm market rather than pick-your-own. Call 609-758-8514 to check what's out before you drive over.",
-    "battleview": "This weekend: the spring freeze wiped out cherries, peaches, nectarines and apples this year, so pick-your-own fruit stays limited at Battleview. The bakery and farm store are still open for cider donuts and baked goods; call 732-462-0756 to confirm what's on hand.",
-    "johnsons": "This weekend: the Sunflower Celebration (hayride to the fields, pick your own blossoms) is running now alongside late-summer peaches, tomatoes and zucchini. Picking dates can shift by a week or more, so call the Pick Your Own Hotline 609-654-5894 before you drive over."
+    "terhune": "This weekend: blackberries and cut-your-own flowers are still pick-your-own at Terhune, but there's no peach or apple picking this year after the spring freeze, so save the orchard trip for later in fall. Call 609-924-2310 to confirm what's ripe before you go.",
+    "leeturkey": "This weekend: no fresh dated update is posted for this small, family-run farm, but late August typically brings peaches, apples, nectarines, pears and cantaloupe for pick-your-own. Call 609-448-0629 to confirm the day's picking before you head over.",
+    "vonthun": "This weekend: blackberries are still pick-your-own at the Monmouth Junction fields, open daily 10 to 5, with a $3 per person field admission. Apples aren't ready and the fall festival with the corn maze doesn't open until mid-September. Call 732-329-8656 to confirm what's ready to pick.",
+    "emerys": "This weekend: Emery's u-pick blueberry season has wrapped for the year, though fresh and frozen berries are still sold in the farm market. No update was found on cut-your-own sunflowers, so call 609-758-8514 to check before a special trip.",
+    "battleview": "This weekend: the spring freeze wiped out this year's sour cherry, peach, nectarine and apple crops, so pick-your-own fruit isn't available at Battleview. The country store and bakery are still open for cider donuts. Call 732-462-0756 to confirm hours before you go.",
+    "johnsons": "This weekend: Johnson's still has peaches to pick along with tomatoes, zucchini and other late-summer vegetables, and the Sunflower Celebration hayride to the flower fields runs Thursday through Sunday, 4:30 to 6:30pm, stems $1.50 each. Call the Pick Your Own Hotline 609-654-5894 to confirm before you drive over."
   },
   "deals": {
     "sixflags": [
@@ -40,51 +40,50 @@
     ],
     "diggerland": []
   },
-  "dealsChecked": "Aug 17, 2026",
+  "dealsChecked": "Aug 24, 2026",
   "events": [
     {
       "day": "Sat",
-      "title": "Chemistry Saturday",
-      "time": "2:30pm",
-      "place": "Princeton Public Library, Princeton",
-      "drive": 12,
-      "url": "https://princetonlibrary.org/kids-and-teens/events-for-kids/",
-      "note": "free, aimed at grades 3 to 5",
-      "emoji": "🧪",
-      "desc": "Hands-on chemistry experiments sized for third through fifth graders, a fun science-minded Saturday before school starts back up."
+      "title": "51st NJ Folk Festival",
+      "time": "11am to 5pm",
+      "place": "Davidson's Mill Pond Park, South Brunswick",
+      "drive": 20,
+      "url": "https://njfolkfest.org/",
+      "note": "free",
+      "emoji": "🪕",
+      "desc": "Four stages of live music and dance, craft demos, food trucks and hands-on activities for kids at one of the state's longest-running folk festivals."
     },
     {
       "day": "Sat",
-      "title": "Potato Harvest",
-      "time": "10am to 4pm",
-      "place": "Howell Living History Farm, Hopewell Township",
-      "drive": 25,
-      "url": "https://howellfarm.org/calendar",
+      "title": "National Book Lovers Day",
+      "time": "2 to 4pm",
+      "place": "Historic Wicoff House Museum, Plainsboro",
+      "drive": 10,
+      "url": "https://middlesexcountyculture.com/event/national-book-lovers-day/",
       "note": "free",
-      "emoji": "🥔",
-      "desc": "Kids help collect, clean and sort the farm's potato crop by hand, a hands-on look at harvest the way it worked before refrigeration."
+      "emoji": "📚",
+      "desc": "A book exchange, bookmark crafts, book bingo, dress-as-your-favorite-character fun, a museum scavenger hunt and popcorn with a story, right in Plainsboro."
     },
     {
-      "day": "Sat",
-      "title": "Summer Music Series",
-      "time": "1 to 3pm",
-      "place": "Palmer Square Green, Princeton",
-      "drive": 12,
-      "url": "https://palmersquare.com/events/",
-      "note": "free",
-      "emoji": "🎶",
-      "desc": "Free live music on the Green closing out the summer Saturday series, an easy pairing with lunch or ice cream in the Square."
+      "day": "Sat & Sun",
+      "title": "DC Heroes and Villains Fest",
+      "place": "Six Flags Great Adventure, Jackson",
+      "drive": 35,
+      "url": "https://www.sixflags.com/greatadventure/events/dc-heroes-and-villains-fest",
+      "note": "included with park admission, final weekend",
+      "emoji": "🦸",
+      "desc": "Batman, Superman, Wonder Woman and more DC characters woven through the park's rides and shows, wrapping up its last weekend of the summer."
     },
     {
       "day": "Sun",
       "title": "Carillon Concert",
       "time": "1pm",
       "place": "Graduate College tower, Princeton University",
-      "drive": 10,
-      "url": "https://princetonol.com/events/2026-08-23/",
+      "drive": 12,
+      "url": "https://princetonol.com/events/2026-08-30/",
       "note": "free",
       "emoji": "🔔",
-      "desc": "Doug Gefvert plays the Graduate College's 67-bell carillon while you picnic on the lawn below, rain or shine, an easy Sunday change of pace."
+      "desc": "A free outdoor bell-tower concert you can picnic under on the Graduate College lawn, rain or shine, an easy way to close the weekend."
     }
   ],
   "extraPlaces": []
