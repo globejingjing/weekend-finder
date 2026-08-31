@@ -1,19 +1,24 @@
 {
-  "updated": "2026-08-24T09:09:56Z",
+  "updated": "2026-08-31T09:10:16Z",
   "app": 5,
   "notices": [
     {
+      "style": "alert",
+      "html": "<b>Luminocity Dino Safari has closed for the season:</b> the Freehold pop-up ran July 1 through August 16 only, so skip a special trip there until it returns next summer."
+    },
+    {
       "style": "book",
-      "html": "<b>Book ahead for Bellemont Farm's Sunflower Festival:</b> advance online tickets ($19 adult, $12 kids) are cheaper than at the door ($25, $15), and the festival runs weekends through September 13 if this one's booked up."
+      "html": "<b>Book ahead for Bellemont Farm's Sunflower Festival:</b> advance online tickets ($19 adult, $12 kids) beat the door price ($25, $15), and the festival runs weekends, plus Labor Day, through September 13."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: blackberries and cut-your-own flowers are still pick-your-own at Terhune, but there's no peach or apple picking this year after the spring freeze, so save the orchard trip for later in fall. Call 609-924-2310 to confirm what's ripe before you go.",
-    "leeturkey": "This weekend: no fresh dated update is posted for this small, family-run farm, but late August typically brings peaches, apples, nectarines, pears and cantaloupe for pick-your-own. Call 609-448-0629 to confirm the day's picking before you head over.",
-    "vonthun": "This weekend: blackberries are still pick-your-own at the Monmouth Junction fields, open daily 10 to 5, with a $3 per person field admission. Apples aren't ready and the fall festival with the corn maze doesn't open until mid-September. Call 732-329-8656 to confirm what's ready to pick.",
-    "emerys": "This weekend: Emery's u-pick blueberry season has wrapped for the year, though fresh and frozen berries are still sold in the farm market. No update was found on cut-your-own sunflowers, so call 609-758-8514 to check before a special trip.",
-    "battleview": "This weekend: the spring freeze wiped out this year's sour cherry, peach, nectarine and apple crops, so pick-your-own fruit isn't available at Battleview. The country store and bakery are still open for cider donuts. Call 732-462-0756 to confirm hours before you go.",
-    "johnsons": "This weekend: Johnson's still has peaches to pick along with tomatoes, zucchini and other late-summer vegetables, and the Sunflower Celebration hayride to the flower fields runs Thursday through Sunday, 4:30 to 6:30pm, stems $1.50 each. Call the Pick Your Own Hotline 609-654-5894 to confirm before you drive over."
+    "terhune": "This weekend: apple and peach picking are still out after the spring freeze, and blackberries have likely wrapped up too, so it's more of a farm market and flower visit than pick-your-own. The Winery Weekend Music Series still runs 2 to 5pm both days if you want live music with the trip. Call 609-924-2310 to confirm what, if anything, is ready to pick.",
+    "leeturkey": "This weekend: no fresh update is posted for this small, family-run farm, but early September usually means peaches, apples, nectarines, pears and cantaloupe for pick-your-own. Call 609-448-0629 to confirm before you head over, and note the fields close by 5:15pm.",
+    "vonthun": "This weekend: blackberry picking wrapped up on September 1 and apples aren't expected ready until mid-September, so the u-pick fields may be empty between crops right now. The fall festival and corn maze don't open until September 19. Call 732-329-8656 to see if anything is currently pickable.",
+    "emerys": "This weekend: no change from last week, u-pick blueberry season has wrapped, though fresh and frozen berries are still sold in the farm market. The corn maze and pumpkins don't open until September 26. Call 609-758-8514 to confirm before a special trip.",
+    "battleview": "This weekend: no change from last week, this year's spring freeze wiped out sour cherries, peaches, nectarines and apples, so there's no pick-your-own fruit right now, just the country store and bakery. Pumpkin picking and hayrides don't start until late September. Call 732-462-0756 to confirm before you go.",
+    "johnsons": "This weekend: peach picking may be winding down and apples probably haven't started yet, since fall harvest typically kicks off in mid-September. The Sunflower Celebration hayride is still likely running Thursday through Sunday, 4:30 to 6:30pm, at $1.50 a stem. Call the Pick Your Own Hotline 609-654-5894 to check what's ready before you drive over.",
+    "dinosafari": "This weekend: Luminocity Dino Safari has closed for the season, it only ran through August 16, so there's nothing to visit here right now. It typically returns next summer, so check back closer to then."
   },
   "deals": {
     "sixflags": [
@@ -32,58 +37,57 @@
     "whalewatch": [
       {"label": "Groupon 3-hour trip from about $22.50, up to 50% off, includes a free hot dog and drink", "url": "https://www.groupon.com/deals/miss-belmar-whale-watching-on-jersey-shore-1-1"}
     ],
-    "buckstubing": [
-      {"label": "Groupon weekend tubing $22 for one, $42 for two, $82 for four (cheaper on weekdays); expires Aug 30", "url": "https://www.groupon.com/deals/bucks-county-river-country-canoe-and-tube-rentals-4-central-jersey"}
-    ],
+    "buckstubing": [],
     "lsc": [
       {"label": "Groupon admission around $26, down from $32 (about 19% off)", "url": "https://www.groupon.com/deals/liberty-science-center-13"}
     ],
     "diggerland": []
   },
-  "dealsChecked": "Aug 24, 2026",
+  "dealsChecked": "Aug 31, 2026",
   "events": [
     {
       "day": "Sat",
-      "title": "51st NJ Folk Festival",
-      "time": "11am to 5pm",
-      "place": "Davidson's Mill Pond Park, South Brunswick",
-      "drive": 20,
-      "url": "https://njfolkfest.org/",
-      "note": "free",
-      "emoji": "🪕",
-      "desc": "Four stages of live music and dance, craft demos, food trucks and hands-on activities for kids at one of the state's longest-running folk festivals."
-    },
-    {
-      "day": "Sat",
-      "title": "National Book Lovers Day",
-      "time": "2 to 4pm",
-      "place": "Historic Wicoff House Museum, Plainsboro",
-      "drive": 10,
-      "url": "https://middlesexcountyculture.com/event/national-book-lovers-day/",
-      "note": "free",
-      "emoji": "📚",
-      "desc": "A book exchange, bookmark crafts, book bingo, dress-as-your-favorite-character fun, a museum scavenger hunt and popcorn with a story, right in Plainsboro."
+      "title": "Art for Families: Sculpture Forms",
+      "time": "10am to 1pm",
+      "place": "Princeton University Art Museum",
+      "drive": 12,
+      "url": "https://artmuseum.princeton.edu/exhibitions-events/events",
+      "note": "free, drop in, no registration",
+      "emoji": "🎨",
+      "desc": "A free drop-in art-making session inspired by sculptor George Segal's plaster-bandage technique, open to all ages with no ticket needed."
     },
     {
       "day": "Sat & Sun",
-      "title": "DC Heroes and Villains Fest",
-      "place": "Six Flags Great Adventure, Jackson",
-      "drive": 35,
-      "url": "https://www.sixflags.com/greatadventure/events/dc-heroes-and-villains-fest",
-      "note": "included with park admission, final weekend",
-      "emoji": "🦸",
-      "desc": "Batman, Superman, Wonder Woman and more DC characters woven through the park's rides and shows, wrapping up its last weekend of the summer."
+      "title": "Lambertville Sunflower Festival",
+      "time": "10am to 6pm",
+      "place": "Bellemont Farm, Lambertville",
+      "drive": 32,
+      "url": "https://bellemontfarmnj.com/lambertville-sunflower-festival/",
+      "note": "$19 adult / $12 kids in advance, more at the door",
+      "emoji": "🌻",
+      "desc": "Cut-your-own sunflower fields, a petting zoo, food trucks and live music from noon to 5:30, with just a few weekends left before it wraps up September 13."
     },
     {
-      "day": "Sun",
-      "title": "Carillon Concert",
-      "time": "1pm",
-      "place": "Graduate College tower, Princeton University",
+      "day": "Sat & Sun",
+      "title": "Winery Weekend Music Series",
+      "time": "2 to 5pm",
+      "place": "Terhune Orchards, Princeton",
       "drive": 12,
-      "url": "https://princetonol.com/events/2026-08-30/",
-      "note": "free",
-      "emoji": "🔔",
-      "desc": "A free outdoor bell-tower concert you can picnic under on the Graduate College lawn, rain or shine, an easy way to close the weekend."
+      "url": "https://www.terhuneorchards.com/festivals/",
+      "note": "free to walk the farm, wine and slushes for purchase",
+      "emoji": "🎶",
+      "desc": "Live local music in the orchard among 100-year-old apple trees, with farm animals and tractors for the kids to climb on while you sip a wine slush."
+    },
+    {
+      "day": "Sat & Sun",
+      "title": "Labor Day Weekend Celebration and Fireworks",
+      "time": "fireworks around 8pm",
+      "place": "Sesame Place Philadelphia, Langhorne PA",
+      "drive": 55,
+      "url": "https://sesameplace.com/philadelphia/events/labor-day-fireworks/",
+      "note": "included with park admission, runs through Labor Day Monday",
+      "emoji": "🎆",
+      "desc": "The park's season-closing celebration, with patriotic character meet-and-greets and a nightly fireworks finale."
     }
   ],
   "extraPlaces": []
