@@ -1,93 +1,116 @@
 {
-  "updated": "2026-08-31T09:10:16Z",
+  "updated": "2026-09-07T09:08:48Z",
   "app": 5,
   "notices": [
     {
       "style": "alert",
-      "html": "<b>Luminocity Dino Safari has closed for the season:</b> the Freehold pop-up ran July 1 through August 16 only, so skip a special trip there until it returns next summer."
+      "html": "<b>Luminocity Dino Safari is closed for the season:</b> the Freehold pop-up ran July 1 through August 16 only, so skip a special trip there until it returns, most likely next summer."
     },
     {
       "style": "book",
-      "html": "<b>Book ahead for Bellemont Farm's Sunflower Festival:</b> advance online tickets ($19 adult, $12 kids) beat the door price ($25, $15), and the festival runs weekends, plus Labor Day, through September 13."
+      "html": "<b>Last weekend for Bellemont Farm's Sunflower Festival:</b> it wraps up Sunday September 13, so advance online tickets ($19 adult, $12 kids) beat the door price ($25, $15) if you want to catch it."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: apple and peach picking are still out after the spring freeze, and blackberries have likely wrapped up too, so it's more of a farm market and flower visit than pick-your-own. The Winery Weekend Music Series still runs 2 to 5pm both days if you want live music with the trip. Call 609-924-2310 to confirm what, if anything, is ready to pick.",
-    "leeturkey": "This weekend: no fresh update is posted for this small, family-run farm, but early September usually means peaches, apples, nectarines, pears and cantaloupe for pick-your-own. Call 609-448-0629 to confirm before you head over, and note the fields close by 5:15pm.",
-    "vonthun": "This weekend: blackberry picking wrapped up on September 1 and apples aren't expected ready until mid-September, so the u-pick fields may be empty between crops right now. The fall festival and corn maze don't open until September 19. Call 732-329-8656 to see if anything is currently pickable.",
+    "terhune": "This weekend: Fall Family Fun Weekends opens for the season, Saturdays and Sundays 10am to 5pm through November 1, $10 per person age 3 and up, with the corn and hay maze, pony rides, pumpkin picking and live music. Apple and peach picking status after the spring freeze is still unclear, so call 609-924-2310 to check what fruit is actually ready before counting on it.",
+    "leeturkey": "This weekend: no fresh update is posted for this small, family-run farm, but with fall underway it typically means apples for pick-your-own alongside late tomatoes and other produce. Call 609-448-0629 to confirm before you head over, and note the fields close by 5:15pm.",
+    "vonthun": "This weekend: apples are ready to pick, Golden Delicious, Mutsu, Gala and Crimson Crisp, and blackberries are still going too. The full fall festival with corn maze and hayrides doesn't start until September 19, so for now it's just u-pick and the farm market. Call 732-329-8656 to confirm before you go.",
     "emerys": "This weekend: no change from last week, u-pick blueberry season has wrapped, though fresh and frozen berries are still sold in the farm market. The corn maze and pumpkins don't open until September 26. Call 609-758-8514 to confirm before a special trip.",
-    "battleview": "This weekend: no change from last week, this year's spring freeze wiped out sour cherries, peaches, nectarines and apples, so there's no pick-your-own fruit right now, just the country store and bakery. Pumpkin picking and hayrides don't start until late September. Call 732-462-0756 to confirm before you go.",
-    "johnsons": "This weekend: peach picking may be winding down and apples probably haven't started yet, since fall harvest typically kicks off in mid-September. The Sunflower Celebration hayride is still likely running Thursday through Sunday, 4:30 to 6:30pm, at $1.50 a stem. Call the Pick Your Own Hotline 609-654-5894 to check what's ready before you drive over.",
+    "battleview": "This weekend: no change from last week, this year's spring freeze wiped out sour cherries, peaches, nectarines and apples, so there's no pick-your-own fruit right now, just the country store and bakery. Pumpkin picking and hayrides usually start in late September but no exact date is posted yet. Call 732-462-0756 to confirm before you go.",
+    "johnsons": "This weekend: apple and pumpkin picking are in full swing after the Apple of My Eye Festival kicked off the season on September 6, with hayrides running continuously 10am to 5pm. Weekend admission is $11.99 per person and includes the hayride, paid at the Farm Stand. Call the Pick Your Own Hotline 609-654-5894 to check on the Sunflower Celebration, which may be winding down this late in the season.",
     "dinosafari": "This weekend: Luminocity Dino Safari has closed for the season, it only ran through August 16, so there's nothing to visit here right now. It typically returns next summer, so check back closer to then."
   },
   "deals": {
     "sixflags": [
-      {"label": "Groupon single-day tickets around 46% off, from about $48.25, app-only, promo value valid through Sep 7", "url": "https://www.groupon.com/deals/gl-six-flags-great-adventure-6"},
-      {"label": "Groupon coupon code, about 12% off sitewide merch (not park tickets)", "url": "https://www.groupon.com/coupons/six-flags"}
+      {"label": "Six Flags' own Bring-A-Friend tickets from $19.99 each, Military and First Responder tickets from $39", "url": "https://www.sixflags.com/greatadventure/special-offers"},
+      {"label": "Groupon promo codes for sitewide savings and merch, not park tickets", "url": "https://www.groupon.com/coupons/six-flags"}
     ],
     "iplay": [
       {"label": "Unlimited ride band plus $5 game card, from $27.99, valid Saturday and Sunday", "url": "https://www.groupon.com/deals/iplay-america-2-10"},
       {"label": "Browse all current iPlay America Groupon offers", "url": "https://www.groupon.com/biz/west-freehold-nj/iplay-america-stonehurst-east"}
     ],
     "sesame": [
-      {"label": "Groupon end-of-summer sale, about 75% off, tickets from around $29.99", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"},
-      {"label": "Sesame Place's own Buy One Day Get Second Day Free, $79.99 plus tax for two visits within 6 months", "url": "https://sesameplace.com/philadelphia/special-offers/summer-deal/"}
+      {"label": "Groupon tickets from about $51.54, up to 69% off across single-day, two-day and season pass options", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"}
     ],
     "dinosafari": [],
     "whalewatch": [
-      {"label": "Groupon 3-hour trip from about $22.50, up to 50% off, includes a free hot dog and drink", "url": "https://www.groupon.com/deals/miss-belmar-whale-watching-on-jersey-shore-1-1"}
+      {"label": "Groupon 3-hour trip from about $31.50, includes a complimentary hot dog or beverage", "url": "https://www.groupon.com/deals/miss-belmar-princess-42"}
     ],
-    "buckstubing": [],
+    "buckstubing": [
+      {"label": "Groupon tubing rental up to 49% off, from about $25 per person, not valid on holidays", "url": "https://www.groupon.com/deals/bucks-county-river-country-1"}
+    ],
     "lsc": [
       {"label": "Groupon admission around $26, down from $32 (about 19% off)", "url": "https://www.groupon.com/deals/liberty-science-center-13"}
     ],
     "diggerland": []
   },
-  "dealsChecked": "Aug 31, 2026",
+  "dealsChecked": "Sep 7, 2026",
   "events": [
     {
       "day": "Sat",
-      "title": "Art for Families: Sculpture Forms",
-      "time": "10am to 1pm",
-      "place": "Princeton University Art Museum",
-      "drive": 12,
-      "url": "https://artmuseum.princeton.edu/exhibitions-events/events",
-      "note": "free, drop in, no registration",
-      "emoji": "🎨",
-      "desc": "A free drop-in art-making session inspired by sculptor George Segal's plaster-bandage technique, open to all ages with no ticket needed."
+      "title": "Trenton RiverFest",
+      "time": "11am to 4pm",
+      "place": "Trenton Thunder Ballpark, Trenton",
+      "drive": 20,
+      "url": "https://thewatershed.org/trenton-river-days/",
+      "note": "free admission and parking",
+      "emoji": "🚣",
+      "desc": "A free Delaware River festival with canoe and boat rides, live music, hayrides and a fly-fishing demo, plus a pork roll eating championship."
     },
     {
       "day": "Sat & Sun",
-      "title": "Lambertville Sunflower Festival",
+      "title": "Fall Family Fun Weekends, Opening Weekend",
+      "time": "10am to 5pm",
+      "place": "Terhune Orchards, Princeton",
+      "drive": 12,
+      "url": "https://terhuneorchards.ticketspice.com/fall-2026",
+      "note": "$10 per person age 3 and up",
+      "emoji": "🌽",
+      "desc": "The corn and hay maze, pony rides, pumpkin picking and live music open for the season, ten minutes from home."
+    },
+    {
+      "day": "Sat",
+      "title": "Family Field Day",
+      "time": "11am to 3pm",
+      "place": "Grounds For Sculpture, Hamilton",
+      "drive": 20,
+      "url": "https://www.groundsforsculpture.org/calendar/",
+      "note": "free with admission",
+      "emoji": "🤸",
+      "desc": "Giant freeze dance, hopscotch and other family field-day games scattered around the sculpture park grounds."
+    },
+    {
+      "day": "Sun",
+      "title": "Fall Bird Migration Walk",
+      "time": "8 to 10am",
+      "place": "Washington Crossing State Park, Titusville",
+      "drive": 25,
+      "url": "https://www.wcpa-nj.com/wcpa-events",
+      "note": "free, bring binoculars if you have them",
+      "emoji": "🦅",
+      "desc": "A naturalist-led walk of 2 to 3 miles along the Delaware to spot migratory birds, good for any birding level."
+    },
+    {
+      "day": "Sat",
+      "title": "Star Trek 60th Anniversary Screening",
+      "time": "2pm",
+      "place": "Princeton Public Library",
+      "drive": 12,
+      "url": "https://princetonlibrary.org/events/",
+      "note": "free, all ages",
+      "emoji": "🖖",
+      "desc": "A free screening of the original 1966 Star Trek episode with trivia, a fun hour for sci-fi curious kids and parents."
+    },
+    {
+      "day": "Sat & Sun",
+      "title": "Lambertville Sunflower Festival, Final Weekend",
       "time": "10am to 6pm",
       "place": "Bellemont Farm, Lambertville",
       "drive": 32,
       "url": "https://bellemontfarmnj.com/lambertville-sunflower-festival/",
       "note": "$19 adult / $12 kids in advance, more at the door",
       "emoji": "🌻",
-      "desc": "Cut-your-own sunflower fields, a petting zoo, food trucks and live music from noon to 5:30, with just a few weekends left before it wraps up September 13."
-    },
-    {
-      "day": "Sat & Sun",
-      "title": "Winery Weekend Music Series",
-      "time": "2 to 5pm",
-      "place": "Terhune Orchards, Princeton",
-      "drive": 12,
-      "url": "https://www.terhuneorchards.com/festivals/",
-      "note": "free to walk the farm, wine and slushes for purchase",
-      "emoji": "🎶",
-      "desc": "Live local music in the orchard among 100-year-old apple trees, with farm animals and tractors for the kids to climb on while you sip a wine slush."
-    },
-    {
-      "day": "Sat & Sun",
-      "title": "Labor Day Weekend Celebration and Fireworks",
-      "time": "fireworks around 8pm",
-      "place": "Sesame Place Philadelphia, Langhorne PA",
-      "drive": 55,
-      "url": "https://sesameplace.com/philadelphia/events/labor-day-fireworks/",
-      "note": "included with park admission, runs through Labor Day Monday",
-      "emoji": "🎆",
-      "desc": "The park's season-closing celebration, with patriotic character meet-and-greets and a nightly fireworks finale."
+      "desc": "Last chance this season for the cut-your-own sunflower fields, petting zoo, food trucks and live music before it wraps up Sunday."
     }
   ],
   "extraPlaces": []
