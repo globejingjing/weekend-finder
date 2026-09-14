@@ -1,24 +1,28 @@
 {
-  "updated": "2026-09-07T09:08:48Z",
+  "updated": "2026-09-14T09:07:34Z",
   "app": 5,
   "notices": [
     {
-      "style": "alert",
-      "html": "<b>Luminocity Dino Safari is closed for the season:</b> the Freehold pop-up ran July 1 through August 16 only, so skip a special trip there until it returns, most likely next summer."
+      "style": "book",
+      "html": "<b>Von Thun Farms' Fall Festival opens this Saturday, September 19:</b> a Dogs and Dinos corn maze, hayrides, duck races and pumpkin picking, $17.99 per person, with one free grandparent this opening weekend."
     },
     {
       "style": "book",
-      "html": "<b>Last weekend for Bellemont Farm's Sunflower Festival:</b> it wraps up Sunday September 13, so advance online tickets ($19 adult, $12 kids) beat the door price ($25, $15) if you want to catch it."
+      "html": "<b>Terhune Orchards' Fall Family Fun Weekends need timed tickets:</b> book online for $19.95 per person to beat the $24.95 door price."
+    },
+    {
+      "style": "alert",
+      "html": "<b>Battleview Orchards' pumpkin season start date isn't confirmed yet:</b> apple, peach and cherry picking are already out for the year after the spring freeze, so call before heading over."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: Fall Family Fun Weekends opens for the season, Saturdays and Sundays 10am to 5pm through November 1, $10 per person age 3 and up, with the corn and hay maze, pony rides, pumpkin picking and live music. Apple and peach picking status after the spring freeze is still unclear, so call 609-924-2310 to check what fruit is actually ready before counting on it.",
-    "leeturkey": "This weekend: no fresh update is posted for this small, family-run farm, but with fall underway it typically means apples for pick-your-own alongside late tomatoes and other produce. Call 609-448-0629 to confirm before you head over, and note the fields close by 5:15pm.",
-    "vonthun": "This weekend: apples are ready to pick, Golden Delicious, Mutsu, Gala and Crimson Crisp, and blackberries are still going too. The full fall festival with corn maze and hayrides doesn't start until September 19, so for now it's just u-pick and the farm market. Call 732-329-8656 to confirm before you go.",
-    "emerys": "This weekend: no change from last week, u-pick blueberry season has wrapped, though fresh and frozen berries are still sold in the farm market. The corn maze and pumpkins don't open until September 26. Call 609-758-8514 to confirm before a special trip.",
-    "battleview": "This weekend: no change from last week, this year's spring freeze wiped out sour cherries, peaches, nectarines and apples, so there's no pick-your-own fruit right now, just the country store and bakery. Pumpkin picking and hayrides usually start in late September but no exact date is posted yet. Call 732-462-0756 to confirm before you go.",
-    "johnsons": "This weekend: apple and pumpkin picking are in full swing after the Apple of My Eye Festival kicked off the season on September 6, with hayrides running continuously 10am to 5pm. Weekend admission is $11.99 per person and includes the hayride, paid at the Farm Stand. Call the Pick Your Own Hotline 609-654-5894 to check on the Sunflower Celebration, which may be winding down this late in the season.",
-    "dinosafari": "This weekend: Luminocity Dino Safari has closed for the season, it only ran through August 16, so there's nothing to visit here right now. It typically returns next summer, so check back closer to then."
+    "terhune": "This weekend: Fall Family Fun Weekends continues Saturdays and Sundays through November 1, 10am to 5pm, with the corn and hay maze, pony rides, pumpkin picking and live music. Apple and peach picking are out for the season this year after the spring freeze, so it's veggies and flowers instead, and tickets run $19.95 per person in advance online or $24.95 at the door. Call 609-924-2310 to confirm before you go.",
+    "leeturkey": "This weekend: apples are ready to pick, Cortland, Empire, Fuji, Gala, Golden Delicious, Jonagold, Red Delicious and Stayman, plus tomatoes are still coming in. This is a simple, no-frills PYO farm with no festival extras, and the fields close for entry at 5:15pm. Call 609-448-0629 to confirm before you head over.",
+    "vonthun": "This weekend: the Fall Festival opens for the season on Saturday, with a Dogs and Dinos corn maze, hayrides, pedal karts, duck races and a pumpkin patch, running Saturdays and Sundays 10am to 5pm through November 8. Apples are ready in 8 varieties, blackberry season has ended, and admission is $17.99 per person with one free grandparent per paid admission this opening weekend. Call 732-329-8656 to confirm before you go.",
+    "emerys": "This weekend: no change from last week, the corn maze and pumpkins don't open until September 26, and u-pick blueberry season is long over, though fresh and frozen berries are still sold in the farm market. Call 609-758-8514 to confirm before making a special trip.",
+    "battleview": "This weekend: still no pick-your-own tree fruit after the spring freeze wiped out apples, cherries, peaches and nectarines, though a sunflower field is open for cutting your own this month. Pumpkin picking and hayrides may start around September 19, but that date isn't firmly confirmed yet, so call 732-462-0756 before you go.",
+    "johnsons": "This weekend: apples and pumpkins are in full swing as part of the Fall Harvest Festival, running through October 31 with hayrides, a corn maze, gem mining and duck races. Pricing seems to vary between hayride-only tickets and full admission, so call the Pick Your Own Hotline 609-654-5894 to confirm the current price before you go.",
+    "dinosafari": "This weekend: still closed for the season, since it only ran July 1 through August 16. It's expected to return next summer, so there's no need for a special trip until then."
   },
   "deals": {
     "sixflags": [
@@ -44,73 +48,51 @@
     ],
     "diggerland": []
   },
-  "dealsChecked": "Sep 7, 2026",
+  "dealsChecked": "Sep 14, 2026",
   "events": [
     {
       "day": "Sat",
-      "title": "Trenton RiverFest",
-      "time": "11am to 4pm",
-      "place": "Trenton Thunder Ballpark, Trenton",
-      "drive": 20,
-      "url": "https://thewatershed.org/trenton-river-days/",
-      "note": "free admission and parking",
-      "emoji": "🚣",
-      "desc": "A free Delaware River festival with canoe and boat rides, live music, hayrides and a fly-fishing demo, plus a pork roll eating championship."
+      "title": "West Windsor Community Day",
+      "time": "12 to 4pm",
+      "place": "Duck Pond Park, West Windsor",
+      "drive": 8,
+      "url": "https://westwindsornj.org/calendar/west-windsor-community-day-2",
+      "note": "free",
+      "emoji": "🎉",
+      "desc": "The township's own free festival right in West Windsor, with kids' rides, food, local vendors, fire trucks and live entertainment at Duck Pond Park."
     },
     {
       "day": "Sat & Sun",
-      "title": "Fall Family Fun Weekends, Opening Weekend",
-      "time": "10am to 5pm",
-      "place": "Terhune Orchards, Princeton",
+      "title": "Mercer County Italian American Festival",
+      "time": "noon to 10pm",
+      "place": "Mercer County Park, West Windsor",
       "drive": 12,
-      "url": "https://terhuneorchards.ticketspice.com/fall-2026",
-      "note": "$10 per person age 3 and up",
-      "emoji": "🌽",
-      "desc": "The corn and hay maze, pony rides, pumpkin picking and live music open for the season, ten minutes from home."
+      "url": "http://italianamericanfestival.com/festival.html",
+      "note": "kids 12 and under free, adults $5",
+      "emoji": "🎡",
+      "desc": "A big fairground-style weekend with carnival rides, Italian food, live music and vendors at Mercer County Park, minutes from home."
     },
     {
       "day": "Sat",
-      "title": "Family Field Day",
-      "time": "11am to 3pm",
-      "place": "Grounds For Sculpture, Hamilton",
-      "drive": 20,
-      "url": "https://www.groundsforsculpture.org/calendar/",
-      "note": "free with admission",
-      "emoji": "🤸",
-      "desc": "Giant freeze dance, hopscotch and other family field-day games scattered around the sculpture park grounds."
-    },
-    {
-      "day": "Sun",
-      "title": "Fall Bird Migration Walk",
-      "time": "8 to 10am",
-      "place": "Washington Crossing State Park, Titusville",
-      "drive": 25,
-      "url": "https://www.wcpa-nj.com/wcpa-events",
-      "note": "free, bring binoculars if you have them",
-      "emoji": "🦅",
-      "desc": "A naturalist-led walk of 2 to 3 miles along the Delaware to spot migratory birds, good for any birding level."
+      "title": "22nd Annual Insect Festival",
+      "time": "11am to 2pm",
+      "place": "Mercer Educational Gardens, Hopewell",
+      "drive": 22,
+      "url": "http://mgofmc.org/event/insect-fest-bug-us/",
+      "note": "free",
+      "emoji": "🐛",
+      "desc": "Hands-on bug catch and release, a build-a-bug craft, live insects and a scavenger hunt run by Rutgers Master Gardeners, a great fit for curious 8 to 11 year olds."
     },
     {
       "day": "Sat",
-      "title": "Star Trek 60th Anniversary Screening",
-      "time": "2pm",
-      "place": "Princeton Public Library",
-      "drive": 12,
-      "url": "https://princetonlibrary.org/events/",
-      "note": "free, all ages",
-      "emoji": "🖖",
-      "desc": "A free screening of the original 1966 Star Trek episode with trivia, a fun hour for sci-fi curious kids and parents."
-    },
-    {
-      "day": "Sat & Sun",
-      "title": "Lambertville Sunflower Festival, Final Weekend",
-      "time": "10am to 6pm",
-      "place": "Bellemont Farm, Lambertville",
-      "drive": 32,
-      "url": "https://bellemontfarmnj.com/lambertville-sunflower-festival/",
-      "note": "$19 adult / $12 kids in advance, more at the door",
-      "emoji": "🌻",
-      "desc": "Last chance this season for the cut-your-own sunflower fields, petting zoo, food trucks and live music before it wraps up Sunday."
+      "title": "Art for Families: Jade Inspired Pendants",
+      "time": "10am to 1pm",
+      "place": "Princeton University Art Museum",
+      "drive": 13,
+      "url": "https://artmuseum.princeton.edu/exhibitions-events/events/2026/art-families-jade-inspired-pendants-sept-2026-2026-09-19",
+      "note": "free, drop in, no registration",
+      "emoji": "🎨",
+      "desc": "Kids look at ancient jade pendants in the collection, then carve their own from soap, a quieter indoor option for the same day."
     }
   ],
   "extraPlaces": []
