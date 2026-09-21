@@ -1,40 +1,42 @@
 {
-  "updated": "2026-09-14T09:07:34Z",
+  "updated": "2026-09-21T09:20:00Z",
   "app": 5,
   "notices": [
     {
       "style": "book",
-      "html": "<b>Von Thun Farms' Fall Festival opens this Saturday, September 19:</b> a Dogs and Dinos corn maze, hayrides, duck races and pumpkin picking, $17.99 per person, with one free grandparent this opening weekend."
-    },
-    {
-      "style": "book",
-      "html": "<b>Terhune Orchards' Fall Family Fun Weekends need timed tickets:</b> book online for $19.95 per person to beat the $24.95 door price."
+      "html": "<b>Terhune Orchards' Fall Family Fun Weekends need timed tickets:</b> book online for $19.95 per person to beat the $24.95 door price. Runs Saturdays and Sundays through November 1."
     },
     {
       "style": "alert",
-      "html": "<b>Battleview Orchards' pumpkin season start date isn't confirmed yet:</b> apple, peach and cherry picking are already out for the year after the spring freeze, so call before heading over."
+      "html": "<b>Von Thun Farms' Fall Festival price is up now that opening weekend is over:</b> $21.99 per person online ($24.99 at the door) in September, and the one free grandparent per paid admission deal ended after last weekend."
+    },
+    {
+      "style": "book",
+      "html": "<b>Liberty Science Center's planetarium reopens this Saturday, September 26:</b> new laser projectors after weeks of upgrades, still the biggest planetarium in the hemisphere. Book timed tickets online first."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: Fall Family Fun Weekends continues Saturdays and Sundays through November 1, 10am to 5pm, with the corn and hay maze, pony rides, pumpkin picking and live music. Apple and peach picking are out for the season this year after the spring freeze, so it's veggies and flowers instead, and tickets run $19.95 per person in advance online or $24.95 at the door. Call 609-924-2310 to confirm before you go.",
-    "leeturkey": "This weekend: apples are ready to pick, Cortland, Empire, Fuji, Gala, Golden Delicious, Jonagold, Red Delicious and Stayman, plus tomatoes are still coming in. This is a simple, no-frills PYO farm with no festival extras, and the fields close for entry at 5:15pm. Call 609-448-0629 to confirm before you head over.",
-    "vonthun": "This weekend: the Fall Festival opens for the season on Saturday, with a Dogs and Dinos corn maze, hayrides, pedal karts, duck races and a pumpkin patch, running Saturdays and Sundays 10am to 5pm through November 8. Apples are ready in 8 varieties, blackberry season has ended, and admission is $17.99 per person with one free grandparent per paid admission this opening weekend. Call 732-329-8656 to confirm before you go.",
-    "emerys": "This weekend: no change from last week, the corn maze and pumpkins don't open until September 26, and u-pick blueberry season is long over, though fresh and frozen berries are still sold in the farm market. Call 609-758-8514 to confirm before making a special trip.",
-    "battleview": "This weekend: still no pick-your-own tree fruit after the spring freeze wiped out apples, cherries, peaches and nectarines, though a sunflower field is open for cutting your own this month. Pumpkin picking and hayrides may start around September 19, but that date isn't firmly confirmed yet, so call 732-462-0756 before you go.",
-    "johnsons": "This weekend: apples and pumpkins are in full swing as part of the Fall Harvest Festival, running through October 31 with hayrides, a corn maze, gem mining and duck races. Pricing seems to vary between hayride-only tickets and full admission, so call the Pick Your Own Hotline 609-654-5894 to confirm the current price before you go.",
-    "dinosafari": "This weekend: still closed for the season, since it only ran July 1 through August 16. It's expected to return next summer, so there's no need for a special trip until then."
+    "terhune": "This weekend: Fall Family Fun Weekends continues Saturdays and Sundays through November 1, 10am to 5pm, with wagon rides 10am to noon, a hay bale maze, corn maze, pumpkin patch and flower trails. Apple and peach picking are out for the season again this year after the spring freeze, so it's pumpkins and flowers instead. Tickets run $19.95 per person in advance online or $24.95 at the door, kids under 3 free. Call 609-924-2310 to confirm before you go.",
+    "leeturkey": "This weekend: apples are still ready to pick, Cortland, Empire, Fuji, Gala, Golden Delicious, Jonagold, Red Delicious and Stayman, plus tomatoes are still coming in. This is a simple, no-frills PYO farm with no festival extras, and the fields close for entry at 5:15pm. Call 609-448-0629 to confirm before you head over.",
+    "vonthun": "This weekend: the Fall Festival is in full swing with the Dogs and Dinos corn maze, hayrides, pedal karts, duck races and a pumpkin patch, Saturdays and Sundays 10am to 5pm through November 8, last ticket sold at 4pm. Now that opening weekend is over, admission is $21.99 per person online or $24.99 at the door, kids free until age 3, and the free-grandparent promo has ended. Call 732-329-8656 to confirm before you go.",
+    "emerys": "This weekend: the 2-acre Treasure Hunt corn maze, a straw-bale maze and the pumpkin display open for the season on Saturday, running daily 10am to 5pm through October 30, with hayrides on weekends. U-pick blueberry season is long over, but fresh and frozen berries are still sold in the farm market. Call 609-758-8514 to confirm before you go.",
+    "battleview": "This weekend: still no pick-your-own tree fruit after the spring freeze wiped out apples, cherries, peaches and nectarines, but pumpkin picking and weekend hayrides have started, along with a sunflower field for cutting your own. Call 732-462-0756 to confirm current hours and crop before you go.",
+    "johnsons": "This weekend: the Fall Harvest Festival continues through October 31 (plus Columbus Day) with apple and pumpkin picking, a family corn maze, gem mining, duck races and live music from noon to 4pm on weekends. Hayride tickets run $10 online or $12 at the door on weekends. Call the Pick Your Own Hotline 609-654-5894 to confirm before you go.",
+    "dinosafari": "This weekend: still closed for the season, since it only ran July 1 through August 16. It's expected to return next summer, so there's no need for a special trip until then.",
+    "gfs": "This weekend: a new indoor mural exhibit by artist Shantell Martin just opened on September 20 alongside the usual roaming peacocks and sculpture grounds, added reason for a visit if you haven't been in a while.",
+    "lsc": "This weekend: the Jennifer Chalsty Planetarium reopens Saturday, September 26, with new laser projectors after being closed for upgrades, still the biggest planetarium in the hemisphere. Book timed tickets online first."
   },
   "deals": {
     "sixflags": [
-      {"label": "Six Flags' own Bring-A-Friend tickets from $19.99 each, Military and First Responder tickets from $39", "url": "https://www.sixflags.com/greatadventure/special-offers"},
-      {"label": "Groupon promo codes for sitewide savings and merch, not park tickets", "url": "https://www.groupon.com/coupons/six-flags"}
+      {"label": "Six Flags' own Bring-A-Friend tickets from $9.99 weekday, $19.99 weekend (passholder-escorted)", "url": "https://www.sixflags.com/greatadventure/special-offers"},
+      {"label": "Military and First Responder discount tickets", "url": "https://www.sixflags.com/greatadventure/special-offers"}
     ],
     "iplay": [
       {"label": "Unlimited ride band plus $5 game card, from $27.99, valid Saturday and Sunday", "url": "https://www.groupon.com/deals/iplay-america-2-10"},
       {"label": "Browse all current iPlay America Groupon offers", "url": "https://www.groupon.com/biz/west-freehold-nj/iplay-america-stonehurst-east"}
     ],
     "sesame": [
-      {"label": "Groupon tickets from about $51.54, up to 69% off across single-day, two-day and season pass options", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"}
+      {"label": "Groupon tickets from about $51.54, up to 57% off", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"}
     ],
     "dinosafari": [],
     "whalewatch": [
@@ -46,53 +48,55 @@
     "lsc": [
       {"label": "Groupon admission around $26, down from $32 (about 19% off)", "url": "https://www.groupon.com/deals/liberty-science-center-13"}
     ],
-    "diggerland": []
+    "diggerland": [
+      {"label": "2026 Season Pass Tier 2 on their own site, $89.99", "url": "https://store.diggerlandusa.com/retail/passes/11019"}
+    ]
   },
-  "dealsChecked": "Sep 14, 2026",
+  "dealsChecked": "Sep 21, 2026",
   "events": [
     {
-      "day": "Sat",
-      "title": "West Windsor Community Day",
-      "time": "12 to 4pm",
-      "place": "Duck Pond Park, West Windsor",
-      "drive": 8,
-      "url": "https://westwindsornj.org/calendar/west-windsor-community-day-2",
-      "note": "free",
-      "emoji": "🎉",
-      "desc": "The township's own free festival right in West Windsor, with kids' rides, food, local vendors, fire trucks and live entertainment at Duck Pond Park."
-    },
-    {
       "day": "Sat & Sun",
-      "title": "Mercer County Italian American Festival",
-      "time": "noon to 10pm",
-      "place": "Mercer County Park, West Windsor",
-      "drive": 12,
-      "url": "http://italianamericanfestival.com/festival.html",
-      "note": "kids 12 and under free, adults $5",
-      "emoji": "🎡",
-      "desc": "A big fairground-style weekend with carnival rides, Italian food, live music and vendors at Mercer County Park, minutes from home."
-    },
-    {
-      "day": "Sat",
-      "title": "22nd Annual Insect Festival",
-      "time": "11am to 2pm",
-      "place": "Mercer Educational Gardens, Hopewell",
-      "drive": 22,
-      "url": "http://mgofmc.org/event/insect-fest-bug-us/",
-      "note": "free",
-      "emoji": "🐛",
-      "desc": "Hands-on bug catch and release, a build-a-bug craft, live insects and a scavenger hunt run by Rutgers Master Gardeners, a great fit for curious 8 to 11 year olds."
-    },
-    {
-      "day": "Sat",
-      "title": "Art for Families: Jade Inspired Pendants",
-      "time": "10am to 1pm",
-      "place": "Princeton University Art Museum",
-      "drive": 13,
-      "url": "https://artmuseum.princeton.edu/exhibitions-events/events/2026/art-families-jade-inspired-pendants-sept-2026-2026-09-19",
-      "note": "free, drop in, no registration",
+      "title": "Hopewell Tour Des Arts",
+      "time": "11am to 5pm",
+      "place": "Hopewell Borough",
+      "drive": 20,
+      "url": "https://hopewelltourdesarts.org/",
+      "note": "free, donations welcome",
       "emoji": "🎨",
-      "desc": "Kids look at ancient jade pendants in the collection, then carve their own from soap, a quieter indoor option for the same day."
+      "desc": "Stroll a small town full of open art studios and live bands at four stages, with the Sourland Mountains as a backdrop, a relaxed way to spend an afternoon outdoors."
+    },
+    {
+      "day": "Sat",
+      "title": "Princeton Porchfest",
+      "time": "noon to 6pm",
+      "place": "Porches around downtown Princeton",
+      "drive": 15,
+      "url": "https://community.princeton.edu/news-events/annual-community-events/porchfest",
+      "note": "free, town-wide",
+      "emoji": "🎵",
+      "desc": "Wander from porch to porch listening to local musicians all over town, an easy free afternoon that doesn't need advance planning."
+    },
+    {
+      "day": "Sat",
+      "title": "Mercer County Library Book Festival",
+      "time": "10am to 3pm",
+      "place": "Lawrence Headquarters Branch, Lawrence",
+      "drive": 15,
+      "url": "https://mcl.org/events/book-festival/",
+      "note": "free",
+      "emoji": "📚",
+      "desc": "Meet local authors and browse tables full of books at the library's second annual festival, a low-key morning that's easy on the budget."
+    },
+    {
+      "day": "Sat",
+      "title": "Etsch Farms Flashlight Night",
+      "time": "6 to 10pm, last ticket 9pm",
+      "place": "Etsch Farms, Monroe Township",
+      "drive": 25,
+      "url": "https://www.etschfarms.com/events.html",
+      "note": "$15.99 plus fee, ages 3 and up, check site for ticket availability",
+      "emoji": "🔦",
+      "desc": "Run the 8-acre corn maze after dark with flashlights, a fun twist on a fall farm outing for kids who think they've outgrown daytime mazes."
     }
   ],
   "extraPlaces": []
