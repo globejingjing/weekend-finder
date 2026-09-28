@@ -1,30 +1,33 @@
 {
-  "updated": "2026-09-21T09:20:00Z",
+  "updated": "2026-09-28T09:08:43Z",
   "app": 5,
   "notices": [
     {
-      "style": "book",
-      "html": "<b>Terhune Orchards' Fall Family Fun Weekends need timed tickets:</b> book online for $19.95 per person to beat the $24.95 door price. Runs Saturdays and Sundays through November 1."
+      "style": "alert",
+      "html": "<b>Von Thun Farms' Fall Festival is pricier in October:</b> expect about $24.99 per person online or $27.99 at the door for the Oct 3-4 weekend, up from September's rate. Online tickets are recommended to guarantee entry."
     },
     {
       "style": "alert",
-      "html": "<b>Von Thun Farms' Fall Festival price is up now that opening weekend is over:</b> $21.99 per person online ($24.99 at the door) in September, and the one free grandparent per paid admission deal ended after last weekend."
+      "html": "<b>No apple picking at Terhune or Battleview again this year:</b> the April freeze wiped out roughly 78% of NJ's apple crop statewide, so both farms are pumpkins and flowers only. Lee Turkey and Johnson's Corner still have apples."
     },
     {
       "style": "book",
-      "html": "<b>Liberty Science Center's planetarium reopens this Saturday, September 26:</b> new laser projectors after weeks of upgrades, still the biggest planetarium in the hemisphere. Book timed tickets online first."
+      "html": "<b>Polar Express train rides are already booking for late November and December:</b> Whippany and Phillipsburg both have 2026 dates on sale now and popular weekends sell out early."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: Fall Family Fun Weekends continues Saturdays and Sundays through November 1, 10am to 5pm, with wagon rides 10am to noon, a hay bale maze, corn maze, pumpkin patch and flower trails. Apple and peach picking are out for the season again this year after the spring freeze, so it's pumpkins and flowers instead. Tickets run $19.95 per person in advance online or $24.95 at the door, kids under 3 free. Call 609-924-2310 to confirm before you go.",
-    "leeturkey": "This weekend: apples are still ready to pick, Cortland, Empire, Fuji, Gala, Golden Delicious, Jonagold, Red Delicious and Stayman, plus tomatoes are still coming in. This is a simple, no-frills PYO farm with no festival extras, and the fields close for entry at 5:15pm. Call 609-448-0629 to confirm before you head over.",
-    "vonthun": "This weekend: the Fall Festival is in full swing with the Dogs and Dinos corn maze, hayrides, pedal karts, duck races and a pumpkin patch, Saturdays and Sundays 10am to 5pm through November 8, last ticket sold at 4pm. Now that opening weekend is over, admission is $21.99 per person online or $24.99 at the door, kids free until age 3, and the free-grandparent promo has ended. Call 732-329-8656 to confirm before you go.",
-    "emerys": "This weekend: the 2-acre Treasure Hunt corn maze, a straw-bale maze and the pumpkin display open for the season on Saturday, running daily 10am to 5pm through October 30, with hayrides on weekends. U-pick blueberry season is long over, but fresh and frozen berries are still sold in the farm market. Call 609-758-8514 to confirm before you go.",
-    "battleview": "This weekend: still no pick-your-own tree fruit after the spring freeze wiped out apples, cherries, peaches and nectarines, but pumpkin picking and weekend hayrides have started, along with a sunflower field for cutting your own. Call 732-462-0756 to confirm current hours and crop before you go.",
-    "johnsons": "This weekend: the Fall Harvest Festival continues through October 31 (plus Columbus Day) with apple and pumpkin picking, a family corn maze, gem mining, duck races and live music from noon to 4pm on weekends. Hayride tickets run $10 online or $12 at the door on weekends. Call the Pick Your Own Hotline 609-654-5894 to confirm before you go.",
+    "terhune": "This weekend: Fall Family Fun Weekends continues both days, 10am to 5pm, with the pumpkin patch, corn maze, hay-bale maze, late-morning wagon rides and the animal barnyard. Apple picking is still out for the season after the spring freeze, so it's pumpkins, gourds and flowers instead. Tickets run $19.95 per person online or $24.95 at the door, kids under 3 free. Call 609-924-2310 to confirm before you go.",
+    "leeturkey": "This weekend: apples are still coming in along with the last of the PYO vegetables. We found conflicting picking hours this week, some sources say fields close around 5:15pm and others say 6pm, so call 609-448-0629 to confirm hours and what's ripe before you head over. Still a simple, no-frills farm with no festival extras.",
+    "vonthun": "This weekend: the Fall Festival is in full swing with the corn maze, hayrides, pedal karts, duck races and pumpkin patch, both days 10am to 5pm, last ticket sold at 4pm. October pricing is higher than September's, plan on roughly $24.99 per person online or $27.99 at the door, and book online since fall weekends can sell out. Call 732-329-8656 to confirm before you go.",
+    "emerys": "This weekend: two corn mazes are running, the 2-acre Treasure Hunt maze for younger kids and a bigger 5-acre maze with a clue game for older ones, plus a straw-bale maze and pumpkin display, daily 10am to 5pm with hayrides on weekends. U-pick blueberry season is long over, but fresh berries and their pies are still in the farm market. Call 609-758-8514 to confirm before you go.",
+    "battleview": "This weekend: still no pick-your-own tree fruit after the spring freeze wiped out apples, cherries, peaches and nectarines, but pumpkin picking and weekend hayrides continue and there's a sunflower field for cutting your own. We found conflicting hours this week, so call 732-462-0756 to confirm current hours and crop before you go.",
+    "johnsons": "This weekend: the Fall Harvest Festival continues through October 31 (plus Columbus Day) with apple and pumpkin picking (pumpkins run about $0.99 a pound), a family corn maze on weekends, gem mining, duck races and live music from noon to 4pm on weekends. We couldn't confirm this week's hayride ticket price, last known was $10 online or $12 at the door, so call the Pick Your Own Hotline 609-654-5894 to confirm before you go.",
     "dinosafari": "This weekend: still closed for the season, since it only ran July 1 through August 16. It's expected to return next summer, so there's no need for a special trip until then.",
-    "gfs": "This weekend: a new indoor mural exhibit by artist Shantell Martin just opened on September 20 alongside the usual roaming peacocks and sculpture grounds, added reason for a visit if you haven't been in a while.",
-    "lsc": "This weekend: the Jennifer Chalsty Planetarium reopens Saturday, September 26, with new laser projectors after being closed for upgrades, still the biggest planetarium in the hemisphere. Book timed tickets online first."
+    "gfs": "This weekend: don't miss Family Open Studios: Dino Design on Saturday, 11am to 3pm, a free hands-on dinosaur art workshop included with admission, alongside the Shantell Martin mural exhibit and the usual roaming peacocks and sculpture grounds.",
+    "lsc": "This weekend: the reopened Jennifer Chalsty Planetarium with new laser projectors is running regular weekend hours, 10am to 5pm, still the biggest planetarium in the hemisphere. Book timed tickets online first.",
+    "sixflags": "This weekend: Fright Fest is running, daytime rides are fine for kids 9 to 10, but evening haunted mazes and scare zones start around 6pm and lean older. Plan an earlier visit and head out before dark if that's a concern.",
+    "diggerland": "This weekend: the Diggerfest fall festival is included with general admission, along with Dig or Treat weekend-morning trick-or-treating and a costume parade, both continuing through early November.",
+    "sesame": "This weekend: The Count's Halloween Spooktacular is running with trick-or-treating, a parade, dance parties and a scarecrow scavenger hunt on select dates through November 1. Hours vary by day, so check before you go."
   },
   "deals": {
     "sixflags": [
@@ -52,51 +55,51 @@
       {"label": "2026 Season Pass Tier 2 on their own site, $89.99", "url": "https://store.diggerlandusa.com/retail/passes/11019"}
     ]
   },
-  "dealsChecked": "Sep 21, 2026",
+  "dealsChecked": "Sep 28, 2026",
   "events": [
     {
-      "day": "Sat & Sun",
-      "title": "Hopewell Tour Des Arts",
-      "time": "11am to 5pm",
-      "place": "Hopewell Borough",
-      "drive": 20,
-      "url": "https://hopewelltourdesarts.org/",
-      "note": "free, donations welcome",
-      "emoji": "🎨",
-      "desc": "Stroll a small town full of open art studios and live bands at four stages, with the Sourland Mountains as a backdrop, a relaxed way to spend an afternoon outdoors."
-    },
-    {
       "day": "Sat",
-      "title": "Princeton Porchfest",
-      "time": "noon to 6pm",
-      "place": "Porches around downtown Princeton",
-      "drive": 15,
-      "url": "https://community.princeton.edu/news-events/annual-community-events/porchfest",
-      "note": "free, town-wide",
-      "emoji": "🎵",
-      "desc": "Wander from porch to porch listening to local musicians all over town, an easy free afternoon that doesn't need advance planning."
-    },
-    {
-      "day": "Sat",
-      "title": "Mercer County Library Book Festival",
-      "time": "10am to 3pm",
-      "place": "Lawrence Headquarters Branch, Lawrence",
-      "drive": 15,
-      "url": "https://mcl.org/events/book-festival/",
+      "title": "Hightstown Harvest Festival",
+      "time": "11am to 4pm",
+      "place": "Bank Street, Hightstown",
+      "drive": 10,
+      "url": "https://hightstownborough.com/events/hightstown-harvest-festival/",
       "note": "free",
-      "emoji": "📚",
-      "desc": "Meet local authors and browse tables full of books at the library's second annual festival, a low-key morning that's easy on the budget."
+      "emoji": "🌽",
+      "desc": "A free small-town harvest street fair a few minutes from home, with local vendors, food and family activities right on Bank Street."
     },
     {
       "day": "Sat",
-      "title": "Etsch Farms Flashlight Night",
-      "time": "6 to 10pm, last ticket 9pm",
-      "place": "Etsch Farms, Monroe Township",
-      "drive": 25,
-      "url": "https://www.etschfarms.com/events.html",
-      "note": "$15.99 plus fee, ages 3 and up, check site for ticket availability",
-      "emoji": "🔦",
-      "desc": "Run the 8-acre corn maze after dark with flashlights, a fun twist on a fall farm outing for kids who think they've outgrown daytime mazes."
+      "title": "Family Open Studios: Dino Design",
+      "time": "11am to 3pm",
+      "place": "Grounds For Sculpture, Hamilton",
+      "drive": 20,
+      "url": "https://groundsforsculpture.org/events/family-open-studios-dino-designs/",
+      "note": "free with admission",
+      "emoji": "🦕",
+      "desc": "A dinosaur-themed hands-on art workshop for kids, included with admission to the 42-acre sculpture park."
+    },
+    {
+      "day": "Sat & Sun",
+      "title": "Shady Brook Farm FallFest",
+      "time": "check site for hours",
+      "place": "Shady Brook Farm, Yardley PA",
+      "drive": 35,
+      "url": "https://shadybrookfarm.com/pages/fallfest",
+      "note": "$30 per person",
+      "emoji": "🎡",
+      "desc": "A bigger, ticketed Bucks County fall festival with obstacle courses, go-karts, an orchard and a pumpkin patch, a step up in scale from a local farm outing."
+    },
+    {
+      "day": "Sat & Sun",
+      "title": "Corn Maze at Howell Living History Farm",
+      "time": "hours vary, call to confirm",
+      "place": "Howell Living History Farm, Lambertville area",
+      "drive": 30,
+      "url": "https://howellfarm.org/corn-maze",
+      "note": "$12 ages 13+, $10 ages 5-12",
+      "emoji": "🌽",
+      "desc": "Run the corn maze, then wander a working 1900s living-history farm with animals and demonstrations, a low-key outdoor day. Sources disagreed on exact hours this week, so call ahead."
     }
   ],
   "extraPlaces": []
