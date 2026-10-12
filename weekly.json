@@ -1,27 +1,23 @@
 {
-  "updated": "2026-10-05T09:21:41Z",
+  "updated": "2026-10-12T09:30:00Z",
   "app": 5,
   "notices": [
     {
       "style": "alert",
-      "html": "<b>Apple picking is still spotty after the spring freeze:</b> Battleview has no apples at all this year, and Johnson's Corner Farm says it lost about 80% of its crop. Terhune's apple status is unclear this week, so call ahead if apples are the main reason for your trip."
+      "html": "<b>Apple picking is still spotty after the spring freeze:</b> Battleview has no apples at all this year, and Johnson's Corner Farm lost about 80% of its crop. Terhune's apple status remains unclear, so call ahead if apples are the main reason for your trip."
     },
     {
       "style": "book",
-      "html": "<b>Last full weekend for Holland Ridge Farms' sunflower and wildflower fields</b> in Cream Ridge: the festival closes for the season Oct 13."
-    },
-    {
-      "style": "book",
-      "html": "<b>Polar Express train rides are already booking for late November and December:</b> Whippany and Phillipsburg both have 2026 dates on sale now and popular weekends sell out early."
+      "html": "<b>Polar Express train rides are filling up for late November and December:</b> Whippany and Phillipsburg both have 2026 dates on sale now, and popular weekends sell out early."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: Fall Family Fun Weekends continues both days, 10am to 5pm, with the pumpkin patch, the corn maze, hay-bale maze, late-morning wagon rides and the barnyard. Admission reports ranged anywhere from about $12 to $20 per person this week and apple picking status was unclear too, so call 609-924-2310 to confirm both before you go.",
-    "leeturkey": "This weekend: pick-your-own pumpkins and fall flowers should still be going, open Mon to Sat 9am to 6pm and Sun 2 to 6pm, with a corn maze and hayrides. Apple supply is uncertain after this spring's regionwide freeze, so call 609-448-0629 to check what's actually ripe before you drive over.",
-    "vonthun": "This weekend falls in Von Thun's Fall Festival Weekends, both days roughly 10am to 5pm, with one admission price covering the hayride, corn maze and farm animals, while the pumpkin fields and apple orchard cost extra. We couldn't pin down this week's exact ticket price or apple availability, so call 732-329-8656 to confirm before you go.",
-    "emerys": "This weekend: the farm should be open 10am to 5pm both days with the Treasure Hunt and bigger corn mazes, hayrides, farm animals and pick-your-own pumpkins. Emery's is mainly a berry farm so the spring apple freeze shouldn't affect your visit here, but call 609-758-8514 to confirm hours since weather can shift their schedule.",
-    "battleview": "This weekend: still no apple picking, the April freeze wiped out Battleview's entire apple crop this year, but pumpkin picking (priced by weight) and weekend hayrides continue along with the sunflower field and their cider doughnuts. Call 732-462-0756 to confirm current hours before you go.",
-    "johnsons": "This weekend: the Harvest Festival continues with the corn maze, hayrides, gem mining, duck races, a petting zoo and pick-your-own pumpkins and gourds. The farm has said the spring freeze wiped out about 80% of its apple crop, so expect apples to be very limited if available at all, call 609-654-5894 to check before planning on apples specifically.",
+    "terhune": "This weekend: Fall Family Fun Weekends continues both days, with free wagon rides 11am to 3pm and live music 12 to 4pm, plus the corn maze, hay-bale maze, barnyard and pumpkin picking. Advance tickets are required for festival entry, reported anywhere from about $10 to $14 per person online. Apple status is still unclear this fall, the orchard manager said in spring that most of the crop was likely lost, so call 609-924-2310 to check both before you go.",
+    "leeturkey": "This weekend: pick-your-own pumpkins should still be going, open Mon to Sat 9am to 6pm and Sun 2 to 6pm, with a corn maze and hayrides. Apple supply is still uncertain after this spring's regionwide freeze, so call 609-448-0629 to check what's actually ripe before you drive over.",
+    "vonthun": "This weekend likely falls in Von Thun's Fall Festival Weekends, with one admission price covering the hayride, corn maze and farm animals, while pumpkin and apple picking cost extra. We couldn't confirm this week's exact hours, ticket price or apple availability, so call 732-329-8656 to check before you go.",
+    "emerys": "This weekend: the farm should be open with pick-your-own pumpkins, a corn maze, hayrides and farm animals, plus the pie counter that's the real reason to go. Emery's is mainly a berry farm so the spring apple freeze shouldn't affect your visit here, but call 609-758-8514 to confirm hours since we couldn't verify them this week.",
+    "battleview": "This weekend: still no apple picking, the April freeze wiped out Battleview's entire crop this year, but pumpkin picking (priced by weight, cash only) and the sunflower field continue. The country store is open 9am to 5pm daily except Tuesdays. Call 732-462-0756 or check their Facebook page to confirm picking hours before you go.",
+    "johnsons": "This weekend: the Harvest Festival should continue with the corn maze, hayrides, gem mining, a petting zoo and pick-your-own pumpkins and gourds. The farm lost about 80% of its apple crop to the spring freeze, so expect apples to be very limited if available at all. Call 609-654-8643 to check before planning on apples specifically.",
     "dinosafari": "This weekend: still closed for the season, since it only ran July 1 through August 16. It's expected to return next summer, so there's no need for a special trip until then.",
     "sixflags": "This weekend: Fright Fest is running, daytime rides are fine for kids 9 to 10, but evening haunted mazes and scare zones start around 6pm and lean older. Plan an earlier visit and head out before dark if that's a concern.",
     "diggerland": "This weekend: Diggerfest continues through mid November, included with general admission, with weekend-only rides plus Dig or Treat trick-or-treating and a costume parade on select dates. The park runs weekends only this time of year, so Saturday and Sunday are your options.",
@@ -54,29 +50,40 @@
       {"label": "2026 Season Pass Tier 2 on their own site, $89.99", "url": "https://store.diggerlandusa.com/retail/passes/11019"}
     ]
   },
-  "dealsChecked": "Oct 5, 2026",
+  "dealsChecked": "Oct 12, 2026",
   "events": [
     {
-      "day": "Sat & Sun",
-      "title": "Holland Ridge Farms Sunflower & Wildflower Festival",
-      "time": "timed entry 9am to 4pm, closes 6pm",
-      "place": "Holland Ridge Farms, Cream Ridge",
-      "drive": 30,
-      "url": "https://hollandridgefarms.com/",
-      "note": "about $20 per person weekend, ages 3+",
-      "emoji": "🌻",
-      "desc": "The last full weekend of the season to walk rows of towering sunflowers and wildflowers, pick your own stems, and catch a horse-and-carriage ride."
+      "day": "Sun",
+      "title": "Thompson Park Day",
+      "time": "11am to 5pm",
+      "place": "Thompson Park, Lincroft",
+      "drive": 45,
+      "url": "https://www.monmouthcountyparks.com/page.aspx?ID=2488",
+      "note": "free admission and parking, some activities cost extra",
+      "emoji": "🥧",
+      "desc": "A big free county park day with pumpkin painting, a jack-o'-lantern carving contest, archery, wagon rides and a costume contest for dogs."
     },
     {
-      "day": "Sat",
-      "title": "Children's Tumor Foundation NF Walk",
-      "time": "12pm to 4pm",
-      "place": "Veterans Park, Hamilton Township",
-      "drive": 20,
-      "url": "https://join.ctf.org/event/2026-nf-walk-new-jersey/e773156",
-      "note": "free to attend, donations welcome",
-      "emoji": "🎗️",
-      "desc": "A family-friendly fundraising walk through a big county park, a low-key outdoor outing that also supports kids living with a rare condition called neurofibromatosis."
+      "day": "Sat & Sun",
+      "title": "Boo at the Boardwalk",
+      "time": "typically midday, check site for exact hours",
+      "place": "Jenkinson's Boardwalk, Point Pleasant Beach",
+      "drive": 60,
+      "url": "https://www.jenkinsons.com/",
+      "note": "free admission, kiddie rides cost extra",
+      "emoji": "🎃",
+      "desc": "Free Halloween weekend on the boardwalk with trick-or-treat stops, crafts and a magic show, plus a few kiddie rides running."
+    },
+    {
+      "day": "Sat & Sun",
+      "title": "Memory Maker's Trail of Magic",
+      "time": "self-guided, any time, through Oct 31",
+      "place": "Downtown Lambertville",
+      "drive": 30,
+      "url": "https://www.phillyvoice.com/lambertville-trail-of-magic-halloween-house-downtown-displays-october-2026/",
+      "note": "free",
+      "emoji": "🎨",
+      "desc": "A free, self-guided walk through Lambertville's shops and streets to find whimsical hand-painted Halloween windows, with a free audio tour this year."
     },
     {
       "day": "Sat & Sun",
@@ -85,9 +92,9 @@
       "place": "Shady Brook Farm, Yardley PA",
       "drive": 35,
       "url": "https://shadybrookfarm.com/pages/fallfest",
-      "note": "$30 per person",
-      "emoji": "🎡",
-      "desc": "A bigger, ticketed Bucks County fall festival with obstacle courses, go-karts, an orchard and a pumpkin patch, running weekends through the end of October."
+      "note": "roughly $18 to $30 per person",
+      "emoji": "🌽",
+      "desc": "A bigger, ticketed Bucks County fall festival with a corn maze, pumpkin patch and hayrides, running weekends through the end of October."
     }
   ],
   "extraPlaces": []
