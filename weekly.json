@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-12T09:30:00Z",
+  "updated": "2026-10-19T09:30:00Z",
   "app": 5,
   "notices": [
     {
       "style": "alert",
-      "html": "<b>Apple picking is still spotty after the spring freeze:</b> Battleview has no apples at all this year, and Johnson's Corner Farm lost about 80% of its crop. Terhune's apple status remains unclear, so call ahead if apples are the main reason for your trip."
+      "html": "<b>Apples are essentially off the table at most orchards this fall:</b> after April's regional freeze, Battleview had its first total crop loss in five generations, and Johnson's Corner Farm didn't have enough apples to pick, planting sunflowers and sweet potatoes instead. Terhune and Lee Turkey Farm are still listing some apples, but supply is tight, so call ahead if apples are the main reason for your trip."
     },
     {
       "style": "book",
@@ -12,16 +12,16 @@
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: Fall Family Fun Weekends continues both days, with free wagon rides 11am to 3pm and live music 12 to 4pm, plus the corn maze, hay-bale maze, barnyard and pumpkin picking. Advance tickets are required for festival entry, reported anywhere from about $10 to $14 per person online. Apple status is still unclear this fall, the orchard manager said in spring that most of the crop was likely lost, so call 609-924-2310 to check both before you go.",
-    "leeturkey": "This weekend: pick-your-own pumpkins should still be going, open Mon to Sat 9am to 6pm and Sun 2 to 6pm, with a corn maze and hayrides. Apple supply is still uncertain after this spring's regionwide freeze, so call 609-448-0629 to check what's actually ripe before you drive over.",
-    "vonthun": "This weekend likely falls in Von Thun's Fall Festival Weekends, with one admission price covering the hayride, corn maze and farm animals, while pumpkin and apple picking cost extra. We couldn't confirm this week's exact hours, ticket price or apple availability, so call 732-329-8656 to check before you go.",
-    "emerys": "This weekend: the farm should be open with pick-your-own pumpkins, a corn maze, hayrides and farm animals, plus the pie counter that's the real reason to go. Emery's is mainly a berry farm so the spring apple freeze shouldn't affect your visit here, but call 609-758-8514 to confirm hours since we couldn't verify them this week.",
-    "battleview": "This weekend: still no apple picking, the April freeze wiped out Battleview's entire crop this year, but pumpkin picking (priced by weight, cash only) and the sunflower field continue. The country store is open 9am to 5pm daily except Tuesdays. Call 732-462-0756 or check their Facebook page to confirm picking hours before you go.",
-    "johnsons": "This weekend: the Harvest Festival should continue with the corn maze, hayrides, gem mining, a petting zoo and pick-your-own pumpkins and gourds. The farm lost about 80% of its apple crop to the spring freeze, so expect apples to be very limited if available at all. Call 609-654-8643 to check before planning on apples specifically.",
+    "terhune": "This weekend: Fall Family Fun Weekends keeps going every Saturday and Sunday through Oct 30 and 31, with free wagon rides 11am to 3pm, live music 12 to 4pm, the corn maze, pony rides and pumpkin painting. Apple picking itself has no entrance fee, pay-by-the-bag at roughly $10 to $27, after this year's regionwide spring freeze squeezed the Northeast apple crop. Weekend festival admission is ticketed separately online, so call 609-924-2310 to confirm this weekend's price and hours.",
+    "leeturkey": "This weekend: pick-your-own pumpkins should still be going, with admission around $3 on weekdays and $5 on Sundays for ages 3 and up, open Mon to Sat 9am to 6pm and Sun 2 to 6pm. Several apple varieties are on their list, but supply is uncertain after this spring's regionwide freeze, so call 609-448-0629 to check what's actually ripe before you drive over.",
+    "vonthun": "This weekend likely falls within Von Thun's Fall Festival Weekends, which have run Saturdays and Sundays into late October in past years with one admission covering 20-plus activities, a hayride and the corn maze, while pumpkins and apples cost extra. We couldn't confirm this week's exact 2026 hours or price, so call 732-329-8656 before you go.",
+    "emerys": "This weekend: the farm should still have its corn mazes, pick-your-own pumpkins, hayrides and farm animals running, with past-season weekend hours around 10am to 5pm. Berries are long done for the year, so it's pumpkins and the pie counter now. We couldn't verify this week's exact hours, so call 609-758-8514 or check emerysfarm.com before you go.",
+    "battleview": "This weekend: still no apple picking at all, the farm says it's the first total crop loss they've seen in five generations after April's freeze. Pumpkin picking (priced by weight, cash only) should continue, and the country store stays open daily except Tuesdays with their own cider donuts. We couldn't confirm a sunflower field this year, so call 732-462-0756 or check their Facebook page before you go.",
+    "johnsons": "This weekend: apples are effectively off the table this year, the farm didn't have enough to offer picking and planted sunflowers, sweet potatoes and popcorn instead, which should still be ready to pick. The corn maze, hayrides, gem mining, petting zoo and pumpkin and gourd picking should still be running. Call 609-654-8643 to check hours before you go.",
     "dinosafari": "This weekend: still closed for the season, since it only ran July 1 through August 16. It's expected to return next summer, so there's no need for a special trip until then.",
-    "sixflags": "This weekend: Fright Fest is running, daytime rides are fine for kids 9 to 10, but evening haunted mazes and scare zones start around 6pm and lean older. Plan an earlier visit and head out before dark if that's a concern.",
-    "diggerland": "This weekend: Diggerfest continues through mid November, included with general admission, with weekend-only rides plus Dig or Treat trick-or-treating and a costume parade on select dates. The park runs weekends only this time of year, so Saturday and Sunday are your options.",
-    "sesame": "This weekend: The Count's Halloween Spooktacular continues on select dates through November 1 with trick-or-treating, a parade, dance parties and a scarecrow scavenger hunt. Hours vary by day, so check before you go.",
+    "sixflags": "This weekend: Fright Fest is running through November 1, daytime rides are fine for kids 9 to 10, but evening haunted mazes and scare zones start around 6pm and lean older. Plan an earlier visit and head out before dark if that's a concern.",
+    "diggerland": "This weekend: Diggerfest continues through Nov 15, included with general admission. Dig or Treat trick-or-treating runs weekend mornings through Nov 1 with a costumed Parade of Machines around 1pm, and the petting zoo runs select weekends through Oct 25, so this could be its last weekend this year. The park runs weekends only this time of year.",
+    "sesame": "This weekend: The Count's Halloween Spooktacular continues through Nov 1, with trick-or-treating, a parade and dance parties on most operating days; the costume contest lands on Halloween itself, Oct 31. Hours vary by day, so check the park calendar before you go.",
     "lsc": "This weekend: the Jennifer Chalsty Planetarium is running regular weekend hours, 10am to 5pm, still the biggest planetarium in the hemisphere. Book timed tickets online first."
   },
   "deals": {
@@ -50,29 +50,18 @@
       {"label": "2026 Season Pass Tier 2 on their own site, $89.99", "url": "https://store.diggerlandusa.com/retail/passes/11019"}
     ]
   },
-  "dealsChecked": "Oct 12, 2026",
+  "dealsChecked": "Oct 19, 2026",
   "events": [
     {
       "day": "Sun",
-      "title": "Thompson Park Day",
-      "time": "11am to 5pm",
-      "place": "Thompson Park, Lincroft",
-      "drive": 45,
-      "url": "https://www.monmouthcountyparks.com/page.aspx?ID=2488",
-      "note": "free admission and parking, some activities cost extra",
-      "emoji": "🥧",
-      "desc": "A big free county park day with pumpkin painting, a jack-o'-lantern carving contest, archery, wagon rides and a costume contest for dogs."
-    },
-    {
-      "day": "Sat & Sun",
-      "title": "Boo at the Boardwalk",
-      "time": "typically midday, check site for exact hours",
-      "place": "Jenkinson's Boardwalk, Point Pleasant Beach",
-      "drive": 60,
-      "url": "https://www.jenkinsons.com/",
-      "note": "free admission, kiddie rides cost extra",
-      "emoji": "🎃",
-      "desc": "Free Halloween weekend on the boardwalk with trick-or-treat stops, crafts and a magic show, plus a few kiddie rides running."
+      "title": "HomeFront's Halloween 5K, 1 Mile Walk & Pumpkin Dash",
+      "time": "Pumpkin Dash 9am, 5K and 1 mile walk 10am",
+      "place": "502 Carnegie Center, West Windsor/Princeton",
+      "drive": 8,
+      "url": "https://www.endurancegrid.com/race/homefronts-halloween-5k-run-1-mile-walk-princeton-nj-30448",
+      "note": "paid, roughly $10 to $50 depending on event; online sign-up closes around Oct 20",
+      "emoji": "🏃",
+      "desc": "A costume-friendly charity race for HomeFront with a short Pumpkin Dash for younger kids before the main 5K and 1 mile walk, right at the Carnegie Center five minutes from home."
     },
     {
       "day": "Sat & Sun",
@@ -88,14 +77,19 @@
     {
       "day": "Sat & Sun",
       "title": "Shady Brook Farm FallFest",
-      "time": "check site for hours",
+      "time": "check site for hours, open through Oct 30",
       "place": "Shady Brook Farm, Yardley PA",
       "drive": 35,
       "url": "https://shadybrookfarm.com/pages/fallfest",
       "note": "roughly $18 to $30 per person",
       "emoji": "🌽",
-      "desc": "A bigger, ticketed Bucks County fall festival with a corn maze, pumpkin patch and hayrides, running weekends through the end of October."
+      "desc": "A bigger, ticketed Bucks County fall festival with a corn maze, pumpkin patch and hayrides, running into its final weekends of the season."
     }
   ],
-  "extraPlaces": []
+  "extraPlaces": [
+    {"id":"wwartsgallery", "name":"West Windsor Arts, Princeton Junction", "drive":5, "price":"free", "cats":["local","indoor"], "seasons":["spring","summer","fall","winter"],
+     "blurb":"Free rotating gallery exhibits and family drop-in activities in the old Princeton Junction firehouse, five minutes from home. A drop-in craft runs Oct 24 through 31 tied to the town's own Grovers Mill 'War of the Worlds' history; open Saturday 10am to 4pm, closed Sundays.",
+     "meta":"952 Alexander Road. Mon to Fri 10am to 6pm, Sat 10am to 4pm, closed Sunday.",
+     "url":"https://westwindsorarts.org/"}
+  ]
 }
