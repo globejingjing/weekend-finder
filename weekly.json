@@ -1,32 +1,28 @@
 {
-  "updated": "2026-10-26T09:10:08Z",
+  "updated": "2026-11-02T09:10:14Z",
   "app": 5,
   "notices": [
     {
       "style": "alert",
-      "html": "<b>Apple picking is off almost everywhere this fall:</b> Terhune has now confirmed no pick-your-own apples at all for 2026 after April's regional freeze, matching Battleview's total crop loss and Johnson's Corner Farm skipping apples entirely. Lee Turkey Farm is the one local exception still listing some apples, so call 609-448-0629 to check supply before driving over."
-    },
-    {
-      "style": "alert",
-      "html": "<b>Clocks fall back overnight Saturday into Sunday:</b> daylight saving time ends at 2am, so Sunday gets properly dark well before 5:30pm. Plan outdoor plans, and the drive home, for earlier in the day."
+      "html": "<b>Fall festival season is wrapping up:</b> Terhune's Fall Family Fun season ended last weekend, and Von Thun's and Battleview's pumpkin picking is likely thinning out or already done for the year. Call ahead before driving to any pick-your-own farm this weekend."
     },
     {
       "style": "book",
-      "html": "<b>Polar Express train rides are on sale now for late November and December:</b> both Whippany (Morristown & Erie) and Phillipsburg (Delaware River Railroad) have 2026 dates listed, so it's worth booking the weekend you want ahead of time."
+      "html": "<b>Polar Express train rides have 2026 dates listed</b> for Whippany (Morristown &amp; Erie) and Phillipsburg (Delaware River Railroad), both said to be on sale now, though we couldn't verify the exact dates this week. Check the railroads' own sites or call ahead before booking."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend, Oct 31 and Nov 1, is the last weekend of Fall Family Fun for the season, 10am to 5pm both days. There is no apple picking at all this year, confirmed by the farm itself after this spring's regional freeze. Pumpkins are still available to pick and carve. Festival admission (corn maze, wagon rides 11am to 3pm, live music noon to 4pm) runs $19.95 online in advance or $24.95 at the gate, kids under 3 free. Call 609-924-2310 to confirm before you drive over.",
-    "leeturkey": "This weekend: still the local exception on apples, with some varieties reportedly still on the picking list, though supply is uncertain after the spring freeze, so call 609-448-0629 first. Pumpkins should still be available to pick, admission around $3 on weekdays and $5 on Sundays for ages 3 and up. Open Mon to Sat 9am to 6pm, Sun 2 to 6pm, and you need to be in the fields by 5:15pm.",
-    "vonthun": "Von Thun's ticketed Fall Festival Weekends have wrapped up by late October in past years, so this Halloween weekend may already be past the festival dates, with just the farm market and any remaining pick-your-own open. We couldn't confirm this year's exact closing weekend, so call 732-329-8656 before you drive over.",
-    "emerys": "This weekend: the corn maze, pick-your-own pumpkins, hayrides and farm animals should still be running, with past-season weekend hours around 10am to 5pm. Berries are long done for the year, so it's pumpkins and the pie counter now. Call the picking hotline at 609-758-8514 or check emerysfarm.com first, since weather can change the schedule.",
-    "battleview": "This weekend: still no apple picking at all, the farm's first total crop loss in five generations after April's freeze. Pumpkin picking (priced by weight, cash only) should continue, and the country store stays open daily except Tuesdays with their own cider donuts. Call 732-462-0756 or check their Facebook page before you go.",
-    "johnsons": "This weekend: an October news report confirms the farm didn't have enough apples to offer picking this year, so they planted sunflowers, sweet potatoes and popcorn instead, which should still be ready to pick. The corn maze, hayrides, gem mining, petting zoo and pumpkin and gourd picking should still be running. Call 609-654-8643 to check hours before you go.",
-    "dinosafari": "Still closed for the season: the 2026 Freehold run ended August 16 and no fall return has been announced. No need for a special trip until it's back next summer.",
-    "sixflags": "This weekend is the final weekend for Fright Fest and the daytime Kids Boo Fest, running through Nov 1. Daytime trick-or-treating, games and a costume contest are fine for kids 9 to 10, but evening haunted mazes and scare zones lean older and start after dark. Go earlier in the day if that's a concern.",
-    "diggerland": "This is the last weekend for Dig or Treat trick-or-treating among the machines, running from opening until 12:30pm, with a costumed Parade of Machines around 1pm both days. The wider Diggerfest continues through Nov 15, included with general admission. Weekends only this time of year.",
-    "sesame": "This is the final weekend for The Count's Halloween Spooktacular, with the costume contest landing on Halloween itself, Saturday Oct 31. Trick-or-treating, a parade and dance parties continue on operating days through Sunday Nov 1. Hours vary by day, so check the park calendar first.",
-    "lsc": "Regular weekend hours continue, 10am to 5pm, still the biggest planetarium in the hemisphere. Book timed tickets online first."
+    "terhune": "This weekend: the Fall Family Fun festival wrapped up last weekend (Oct 31 to Nov 1), so wagon rides, the corn maze and festival admission are done for the year. The farm market and bakery stay open daily, and there's still no apple picking this year after the spring freeze. Call 609-924-2310 to check what's left to pick before you drive over.",
+    "leeturkey": "This weekend: no confirmed update from the farm itself this week, so call 609-448-0629 before you go. Pumpkin picking, the corn maze and hayrides have run into November in past seasons, and apples were this fall's local exception, so it's worth asking what's still available.",
+    "vonthun": "This weekend: Von Thun's ticketed Fall Festival Weekends typically wrap up by the first weekend of November, so the festival itself may already be over for the year, leaving just the farm market open. Call 732-329-8656 to confirm before you drive over.",
+    "emerys": "This weekend: no confirmed update this week. The corn maze, pumpkin picking and hayrides have run into fall in past seasons, though berries are long done. Call the picking hotline at 609-758-8514 or check emerysfarm.com before you go.",
+    "battleview": "This weekend: pumpkin season typically wraps up around Halloween here, so picking this late in the fall is uncertain, and there's still no apple picking at all after the spring freeze, the farm's first total crop loss in five generations. Call 732-462-0756 or check their Facebook page before you drive over.",
+    "johnsons": "This weekend: no confirmed November update from the farm this week. In past years sunflowers, sweet potatoes, popcorn, the corn maze and gem mining have stayed open after apples and pumpkins wind down, so it's worth asking what's still open. Call 609-654-8643 before you go.",
+    "dinosafari": "Still closed for the season: the 2026 Freehold run ended August 16 and no fall or winter return has been announced. No need for a special trip until it's back next summer.",
+    "sixflags": "Fright Fest and the daytime Kids Boo Fest wrapped up last weekend. Six Flags typically reopens for Holiday in the Park in late November, but 2026 dates weren't posted as of this week, so check sixflags.com/greatadventure before planning a visit.",
+    "diggerland": "This weekend: Dig or Treat trick-or-treating is over, but Diggerfest continues through Nov 15, included with general admission. Weekends only this time of year, so it's close to the last easy chance before the park winds down for the season.",
+    "whalewatch": "This weekend: the season normally winds down by fall, but current listings suggest Belmar-area whale watching trips are still running into November this year due to cooler water timing. We couldn't confirm Miss Belmar is still the active boat or operator this season, so call before booking a trip this far out from summer.",
+    "buckstubing": "This weekend: tubing season here typically runs mid-May through October, so this outfit may already be closed for the year. Check rivercountry.net before planning a trip."
   },
   "deals": {
     "sixflags": [
@@ -54,40 +50,40 @@
       {"label": "2026 Season Pass Tier 2 on their own site, $89.99", "url": "https://store.diggerlandusa.com/retail/passes/11019"}
     ]
   },
-  "dealsChecked": "Oct 26, 2026",
+  "dealsChecked": "Nov 2, 2026",
   "events": [
     {
-      "day": "Sat",
-      "title": "NJ State Museum Halloween Spooktacular",
-      "time": "10am to 2pm, costume parade and trick-or-treat at 11am",
-      "place": "NJ State Museum, Trenton",
-      "drive": 20,
-      "url": "https://www.njkidsonline.com/articles/guide-to-halloween-not-so-scary-halloween-events-for-kids",
-      "note": "free",
-      "emoji": "🎃",
-      "desc": "A free, low-key Halloween morning at the state museum with a costume parade and trick-or-treating on the front lawn, right in Trenton."
-    },
-    {
       "day": "Sat & Sun",
-      "title": "Memory Maker's Trail of Magic",
-      "time": "self-guided, any time, through Oct 31 (today is the last day)",
-      "place": "Downtown Lambertville",
-      "drive": 30,
-      "url": "https://www.phillyvoice.com/lambertville-trail-of-magic-halloween-house-downtown-displays-october-2026/",
-      "note": "free",
-      "emoji": "🎨",
-      "desc": "A free, self-guided walk through Lambertville's shops and streets to find whimsical hand-painted Halloween windows, with an online map to help plan the route."
+      "title": "Big Beyond Rubik's Cube Weekend",
+      "time": "10am to 5pm both days",
+      "place": "Liberty Science Center, Jersey City",
+      "drive": 60,
+      "url": "https://lsc.org/big-beyond-rubiks-cube-weekend",
+      "note": "included with general admission",
+      "emoji": "🧩",
+      "desc": "An '80s-themed laser show plus a free Rubik's Cube for visitors to the Beyond Rubik's Cube exhibition, while supplies last."
     },
     {
       "day": "Sat",
-      "title": "Lambertville Halloween Parade & Trick-or-Treat",
-      "time": "parade typically mid-afternoon, trick-or-treating on North Union Street in early evening",
-      "place": "Downtown Lambertville",
-      "drive": 30,
-      "url": "https://archive.lambertvillenj.org/Halloween",
-      "note": "free, exact 2026 times unconfirmed, call 609-397-0110 to check",
-      "emoji": "👻",
-      "desc": "Lambertville's long-running Halloween tradition: a costume parade followed by trick-or-treating along North Union Street, which closes to cars for the evening."
+      "title": "Fall Lantern Tours",
+      "time": "6:30pm and 7:30pm tours, the last night of this fall's series",
+      "place": "Washington Crossing Historic Park, PA",
+      "drive": 25,
+      "url": "https://www.washingtoncrossingpark.org/fall-lantern-tours/",
+      "note": "$12 per person, limited seats, call 215-493-4076",
+      "emoji": "🏮",
+      "desc": "A guided evening walk by lantern light through the soldier encampment, boat barn and battle map, the final night this fall's tour series runs."
+    },
+    {
+      "day": "Sat",
+      "title": "Jersey Makes: Fall Arts & Craft Fair",
+      "time": "11am to 4pm",
+      "place": "Central Park of Morris County, Morris Plains",
+      "drive": 65,
+      "url": "https://new.patch.com/new-jersey/parsippany/calendar/event/20261107/e187393c-e3aa-45ce-a53a-5955171cb15a/jersey-makes-fall-arts-craft-fair",
+      "note": "free admission and parking last year, rain or shine, call ahead to confirm this year's pricing",
+      "emoji": "🎨",
+      "desc": "An outdoor arts-and-crafts vendor fair with hot drinks and treats, at the far edge of a 75-minute drive."
     }
   ],
   "extraPlaces": []
