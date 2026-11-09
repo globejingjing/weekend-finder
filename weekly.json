@@ -1,28 +1,29 @@
 {
-  "updated": "2026-11-02T09:10:14Z",
+  "updated": "2026-11-09T09:09:16Z",
   "app": 5,
   "notices": [
     {
       "style": "alert",
-      "html": "<b>Fall festival season is wrapping up:</b> Terhune's Fall Family Fun season ended last weekend, and Von Thun's and Battleview's pumpkin picking is likely thinning out or already done for the year. Call ahead before driving to any pick-your-own farm this weekend."
+      "html": "<b>Most pick-your-own farms have wound down for the season:</b> Terhune's and Von Thun's fall festival weekends have wrapped up, and this spring's freeze means there's no apple picking at all at Terhune or Battleview this year. Call ahead before driving to any PYO farm this weekend."
     },
     {
       "style": "book",
-      "html": "<b>Polar Express train rides have 2026 dates listed</b> for Whippany (Morristown &amp; Erie) and Phillipsburg (Delaware River Railroad), both said to be on sale now, though we couldn't verify the exact dates this week. Check the railroads' own sites or call ahead before booking."
+      "html": "<b>Diggerland's Diggerfest wraps up this weekend</b> (through Nov 15), weekends only and included with general admission, so this is close to the last easy chance before the park's winter break."
+    },
+    {
+      "style": "book",
+      "html": "<b>Polar Express train rides now have confirmed 2026 dates</b> at both Whippany (Morristown &amp; Erie Railway) and Phillipsburg (Delaware River Railroad): Nov 27 to 29, Dec 4 to 6, 11 to 13, and 18 to 20. Tickets are already on sale and these sell out early, so book soon if you want a date."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: the Fall Family Fun festival wrapped up last weekend (Oct 31 to Nov 1), so wagon rides, the corn maze and festival admission are done for the year. The farm market and bakery stay open daily, and there's still no apple picking this year after the spring freeze. Call 609-924-2310 to check what's left to pick before you drive over.",
-    "leeturkey": "This weekend: no confirmed update from the farm itself this week, so call 609-448-0629 before you go. Pumpkin picking, the corn maze and hayrides have run into November in past seasons, and apples were this fall's local exception, so it's worth asking what's still available.",
-    "vonthun": "This weekend: Von Thun's ticketed Fall Festival Weekends typically wrap up by the first weekend of November, so the festival itself may already be over for the year, leaving just the farm market open. Call 732-329-8656 to confirm before you drive over.",
-    "emerys": "This weekend: no confirmed update this week. The corn maze, pumpkin picking and hayrides have run into fall in past seasons, though berries are long done. Call the picking hotline at 609-758-8514 or check emerysfarm.com before you go.",
-    "battleview": "This weekend: pumpkin season typically wraps up around Halloween here, so picking this late in the fall is uncertain, and there's still no apple picking at all after the spring freeze, the farm's first total crop loss in five generations. Call 732-462-0756 or check their Facebook page before you drive over.",
-    "johnsons": "This weekend: no confirmed November update from the farm this week. In past years sunflowers, sweet potatoes, popcorn, the corn maze and gem mining have stayed open after apples and pumpkins wind down, so it's worth asking what's still open. Call 609-654-8643 before you go.",
-    "dinosafari": "Still closed for the season: the 2026 Freehold run ended August 16 and no fall or winter return has been announced. No need for a special trip until it's back next summer.",
-    "sixflags": "Fright Fest and the daytime Kids Boo Fest wrapped up last weekend. Six Flags typically reopens for Holiday in the Park in late November, but 2026 dates weren't posted as of this week, so check sixflags.com/greatadventure before planning a visit.",
-    "diggerland": "This weekend: Dig or Treat trick-or-treating is over, but Diggerfest continues through Nov 15, included with general admission. Weekends only this time of year, so it's close to the last easy chance before the park winds down for the season.",
-    "whalewatch": "This weekend: the season normally winds down by fall, but current listings suggest Belmar-area whale watching trips are still running into November this year due to cooler water timing. We couldn't confirm Miss Belmar is still the active boat or operator this season, so call before booking a trip this far out from summer.",
-    "buckstubing": "This weekend: tubing season here typically runs mid-May through October, so this outfit may already be closed for the year. Check rivercountry.net before planning a trip."
+    "terhune": "This weekend: the Fall Family Fun festival is done for the year, but the Winery Weekend Music Series continues Saturdays and Sundays in November, noon to 5pm with live music 1 to 4pm at the vineyard tasting room. The farm market and bakery stay open daily, and there's still no apple picking this year after the spring freeze. Call 609-924-2310 to check what's left to pick.",
+    "leeturkey": "This weekend: no confirmed update from the farm itself, so call 609-448-0629 before you go. Thanksgiving turkey orders are picking up (the farm fills around 1,000 of them most years), and you can pick fresh vegetables in person while you're there to order yours.",
+    "vonthun": "This weekend: the Monmouth Junction Fall Festival Weekends have typically run through late October to early November, so the ticketed festival and corn maze are likely over for the season, leaving just the farm market open. Call 732-329-8656 to confirm before you drive over.",
+    "emerys": "This weekend: no confirmed update this week. Berries are long done, and the corn maze and pumpkin picking have run into fall in past seasons. Call the picking hotline at 609-758-8514 or check emerysfarm.com before you go.",
+    "battleview": "This weekend: there's still no apple picking at all after the spring freeze wiped out the whole crop, the farm's first total loss in five generations. The year-round country store stays open daily with its own apple cider donuts, made from sourced apples, though fresh-pressed cider is seasonal and may not be running. Call 732-462-0756 before you drive over.",
+    "johnsons": "This weekend: no confirmed November update from the farm. In past years the holiday season, with Santa and lights, kicks off in late November, so gem mining, the corn maze and sunflowers may already be winding down for the year. Call 609-654-8643 before you go.",
+    "diggerland": "This weekend is the last call for Diggerfest this season: weekends only, running through Nov 15, included with general admission. Check the park's own calendar for current hours before you drive down.",
+    "sixflags": "Fright Fest and Kids Boo Fest are done for the year, and it's quiet there this particular weekend. Holiday in the Park returns with a season passholder preview night on Nov 20 and opens to everyone on Nov 21. Check sixflags.com/greatadventure for hours and tickets."
   },
   "deals": {
     "sixflags": [
@@ -50,41 +51,7 @@
       {"label": "2026 Season Pass Tier 2 on their own site, $89.99", "url": "https://store.diggerlandusa.com/retail/passes/11019"}
     ]
   },
-  "dealsChecked": "Nov 2, 2026",
-  "events": [
-    {
-      "day": "Sat & Sun",
-      "title": "Big Beyond Rubik's Cube Weekend",
-      "time": "10am to 5pm both days",
-      "place": "Liberty Science Center, Jersey City",
-      "drive": 60,
-      "url": "https://lsc.org/big-beyond-rubiks-cube-weekend",
-      "note": "included with general admission",
-      "emoji": "🧩",
-      "desc": "An '80s-themed laser show plus a free Rubik's Cube for visitors to the Beyond Rubik's Cube exhibition, while supplies last."
-    },
-    {
-      "day": "Sat",
-      "title": "Fall Lantern Tours",
-      "time": "6:30pm and 7:30pm tours, the last night of this fall's series",
-      "place": "Washington Crossing Historic Park, PA",
-      "drive": 25,
-      "url": "https://www.washingtoncrossingpark.org/fall-lantern-tours/",
-      "note": "$12 per person, limited seats, call 215-493-4076",
-      "emoji": "🏮",
-      "desc": "A guided evening walk by lantern light through the soldier encampment, boat barn and battle map, the final night this fall's tour series runs."
-    },
-    {
-      "day": "Sat",
-      "title": "Jersey Makes: Fall Arts & Craft Fair",
-      "time": "11am to 4pm",
-      "place": "Central Park of Morris County, Morris Plains",
-      "drive": 65,
-      "url": "https://new.patch.com/new-jersey/parsippany/calendar/event/20261107/e187393c-e3aa-45ce-a53a-5955171cb15a/jersey-makes-fall-arts-craft-fair",
-      "note": "free admission and parking last year, rain or shine, call ahead to confirm this year's pricing",
-      "emoji": "🎨",
-      "desc": "An outdoor arts-and-crafts vendor fair with hot drinks and treats, at the far edge of a 75-minute drive."
-    }
-  ],
+  "dealsChecked": "Nov 9, 2026",
+  "events": [],
   "extraPlaces": []
 }
