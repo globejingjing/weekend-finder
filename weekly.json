@@ -1,29 +1,37 @@
 {
-  "updated": "2026-11-09T09:12:15Z",
+  "updated": "2026-11-15T02:50:00Z",
   "app": 5,
   "notices": [
     {
+      "style": "book",
+      "html": "<b>Six Flags' reimagined Holiday in the Park opens to the public this Saturday, Nov 21</b> (passholder preview is Friday the 20th). Public dates run Nov 21 to Jan 3, 1pm to 8pm, included with park admission and with Silver, Gold and Prestige passes. Opening weekend, four new themed lands and a 65-foot tree, so expect a crowd."
+    },
+    {
+      "style": "book",
+      "html": "<b>Polar Express tickets, first dates are now next weekend:</b> Nov 27 to 29 at both Whippany (Morristown &amp; Erie) and Phillipsburg (Delaware River Railroad), then Dec 4 to 6, 11 to 13, and 18 to 20. These sell out, so if you want a date, book this week."
+    },
+    {
+      "style": "book",
+      "html": "<b>Three library programs this weekend open registration the day before, not now:</b> Lawrence Storytime (Sat 11am) and Lawrence 3D Turkey Painting (Sat 2:30pm) both open Friday Nov 20; Lawrence Felted Acorn Garlands (Sun 2pm) opens Saturday Nov 21 at 2pm. Set a reminder, these fill the same day."
+    },
+    {
       "style": "alert",
-      "html": "<b>Most pick-your-own farms have wound down for the season:</b> Terhune's and Von Thun's fall festival weekends have wrapped up, and this spring's freeze means there's no apple picking at all at Terhune or Battleview this year. Call ahead before driving to any PYO farm this weekend."
+      "html": "<b>Already full for Saturday:</b> two of the three South Brunswick planetarium sessions (3pm and 4:30pm, the 1:30pm still had seats), and at Princeton Public Library both Chemistry Saturdays sessions and the Zentangle workshop. Book the planetarium now if you want it."
     },
     {
-      "style": "book",
-      "html": "<b>Diggerland's Diggerfest wraps up this weekend</b> (through Nov 15), weekends only and included with general admission, so this is close to the last easy chance before the park's winter break."
-    },
-    {
-      "style": "book",
-      "html": "<b>Polar Express train rides now have confirmed 2026 dates</b> at both Whippany (Morristown &amp; Erie Railway) and Phillipsburg (Delaware River Railroad): Nov 27 to 29, Dec 4 to 6, 11 to 13, and 18 to 20. Tickets are already on sale and these sell out early, so book soon if you want a date."
+      "style": "alert",
+      "html": "<b>Pick-your-own is finished for the season.</b> Terhune's Winery Weekend Music Series still runs Saturdays and Sundays through November, noon to 5pm with live music 1 to 4pm, and the farm markets and bakeries are open daily for Thanksgiving pies and turkey orders. Call before driving to any farm expecting to pick something."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: the Fall Family Fun festival is done for the year, but the Winery Weekend Music Series continues Saturdays and Sundays in November, noon to 5pm with live music 1 to 4pm at the vineyard tasting room. The farm market and bakery stay open daily, and there's still no apple picking this year after the spring freeze. Call 609-924-2310 to check what's left to pick.",
-    "leeturkey": "This weekend: no confirmed update from the farm itself, so call 609-448-0629 before you go. Thanksgiving turkey orders are picking up (the farm fills around 1,000 of them most years), and you can pick fresh vegetables in person while you're there to order yours.",
-    "vonthun": "This weekend: the Monmouth Junction Fall Festival Weekends have typically run through late October to early November, so the ticketed festival and corn maze are likely over for the season, leaving just the farm market open. Call 732-329-8656 to confirm before you drive over.",
-    "emerys": "This weekend: the only hours we could find for the corn maze and hayrides listed through late October, so that part of the season may already be over. Berries are long done too. Call the picking hotline at 609-758-8514 or check emerysfarm.com before you go.",
-    "battleview": "This weekend: there's still no apple picking at all after the spring freeze wiped out the whole crop, the farm's first total loss in five generations. The year-round country store stays open daily with its own apple cider donuts, made from sourced apples, though fresh-pressed cider is seasonal and may not be running. Call 732-462-0756 before you drive over.",
-    "johnsons": "This weekend: the weekend Harvest Festival, with gem mining and the corn maze, has typically run only through October here, so by now it's likely just the farm store and bakery still open. Call 609-654-8643 to check before you go.",
-    "diggerland": "This weekend is the last call for Diggerfest this season: weekends only, running through Nov 15, included with general admission. Check the park's own calendar for current hours before you drive down.",
-    "sixflags": "Fright Fest and Kids Boo Fest are done for the year, and it's quiet there this particular weekend. Holiday in the Park returns with a season passholder preview night on Nov 20 and opens to everyone on Nov 21. Check sixflags.com/greatadventure for hours and tickets."
+    "terhune": "This weekend: no picking, but the Winery Weekend Music Series runs Saturday and Sunday noon to 5pm with live music 1 to 4pm at the vineyard tasting room. Farm market and bakery open daily, and Thanksgiving is next week, so call 609-924-2310 now about pies and pre-orders rather than showing up Thanksgiving week.",
+    "leeturkey": "This weekend: Thanksgiving is Nov 26, and this is the farm's busiest stretch, they fill around 1,000 turkeys most years. Call 609-448-0629 before you drive over, both to order and to check what vegetables are still pickable.",
+    "vonthun": "This weekend: the Monmouth Junction fall festival and corn maze are over for the season, leaving the farm market. Call 732-329-8656 to confirm hours before you go.",
+    "emerys": "This weekend: corn maze and hayrides listed only through late October, so that part of the season is over, and berries are long done. Call the picking hotline at 609-758-8514 or check emerysfarm.com before you go.",
+    "battleview": "This weekend: still no apple picking after the spring freeze took the whole crop, the farm's first total loss in five generations. The year-round country store is open daily with its own apple cider donuts made from sourced apples. Call 732-462-0756 before you drive over.",
+    "johnsons": "This weekend: the weekend Harvest Festival with gem mining and the corn maze has typically run only through October, so expect just the farm store and bakery. Call 609-654-8643 to check, and ask about Thanksgiving pies while you have them on the phone.",
+    "diggerland": "This weekend: Diggerfest ended Nov 15 and the park is heading into its winter break. Check the park's own calendar before driving down, since off-season weekends are not all open.",
+    "sixflags": "This weekend is opening day for the reimagined Holiday in the Park, Saturday Nov 21, 1pm to 8pm, included with park admission and with Silver, Gold and Prestige passes. Four new themed lands, a 65-foot tree, nightly tree lighting, Santa photos and s'mores fire pits. Runs select dates through Jan 3. Check sixflags.com/greatadventure for the date calendar and tickets."
   },
   "deals": {
     "sixflags": [
@@ -52,6 +60,151 @@
     ]
   },
   "dealsChecked": "Nov 9, 2026",
-  "events": [],
-  "extraPlaces": []
+  "events": [
+    {
+      "title": "Family planetarium, inside an inflatable dome",
+      "day": "Sat Nov 21",
+      "time": "1:30 to 2:30pm",
+      "place": "South Brunswick Community Center",
+      "drive": 12,
+      "emoji": "🔭",
+      "desc": "Step inside a portable planetarium and find the stars, constellations and planets you can actually look for that night. All ages, free, run by the library at the Community Center gym on New Road.",
+      "note": "Only the 1:30 session had seats, 3pm and 4:30pm are full",
+      "url": "https://sbpl.libnet.info/events"
+    },
+    {
+      "title": "Lenni-Lenape crafts and stories",
+      "day": "Sat Nov 21",
+      "time": "10:30am to noon",
+      "place": "West Windsor library",
+      "drive": 5,
+      "emoji": "🪶",
+      "desc": "Native American Heritage Month, run with the West Windsor Historical Society: crafts and stories about the Lenni-Lenape who lived here. Free, 20 seats when checked.",
+      "note": "Our own branch, five minutes away",
+      "url": "https://events.mcl.org/"
+    },
+    {
+      "title": "Art for Families: Repeat It",
+      "day": "Sat Nov 21",
+      "time": "10am to 1pm",
+      "place": "Princeton University Art Museum",
+      "drive": 12,
+      "emoji": "🎨",
+      "desc": "Drop-in family art making in the Creativity Labs, no registration and no admission charge. Open Studio follows 1 to 4:30pm if they want to keep going, and 12 to 4:30pm on Sunday.",
+      "note": "Free, drop in any time in the window",
+      "url": "https://artmuseum.princeton.edu/exhibitions-events/events"
+    },
+    {
+      "title": "Read to JoJo the therapy dog",
+      "day": "Sat Nov 21",
+      "time": "10:30 to 11:30am",
+      "place": "Hightstown library",
+      "drive": 15,
+      "emoji": "🐕",
+      "desc": "Fifteen-minute slots where a child reads out loud to a certified therapy dog. Ages 5 and up, free.",
+      "note": "Arrive a few minutes early to pick your slot",
+      "url": "https://events.mcl.org/"
+    },
+    {
+      "title": "Creative writing workshop, grades 5 and up",
+      "day": "Sat Nov 21",
+      "time": "noon to 2pm",
+      "place": "South Brunswick library",
+      "drive": 12,
+      "emoji": "✏️",
+      "desc": "City Kidz World Magazine runs a hands-on workshop turning a real memory into a written story. Free, registration required.",
+      "note": "Two hours, good fit for the older one",
+      "url": "https://sbpl.libnet.info/events"
+    },
+    {
+      "title": "Holiday in the Park opening day",
+      "day": "Sat Nov 21",
+      "time": "1 to 8pm",
+      "place": "Six Flags Great Adventure",
+      "drive": 35,
+      "emoji": "🎄",
+      "desc": "First public day of the rebuilt Holiday in the Park: four themed lands, a 65-foot tree, nightly tree lighting, Santa photos and s'mores fire pits. Included with park admission and with Silver, Gold and Prestige passes.",
+      "note": "Opening weekend, so expect crowds",
+      "url": "https://www.sixflags.com/greatadventure"
+    },
+    {
+      "title": "Turkey rock painting",
+      "day": "Sat Nov 21",
+      "time": "2:30 to 3pm",
+      "place": "Hickory Corner library, East Windsor",
+      "drive": 12,
+      "emoji": "🦃",
+      "desc": "Paint a turkey onto a rock with acrylic markers, instruction provided. Ages 4 to 12, free, 8 seats when checked.",
+      "note": "Half an hour, dress for mess",
+      "url": "https://events.mcl.org/"
+    },
+    {
+      "title": "Public speaking for grades 5 to 8",
+      "day": "Sat Nov 21",
+      "time": "3 to 3:45pm",
+      "place": "Montgomery library, Skillman",
+      "drive": 25,
+      "emoji": "🎤",
+      "desc": "Speak Spark: games and activities that build up to real public speaking, leadership and collaboration. Free, registration required. A grades 2 to 4 session runs at 2pm.",
+      "note": "Registration required",
+      "url": "https://sclsnj.libnet.info/events"
+    },
+    {
+      "title": "Winter Chalet makers' market",
+      "day": "Sat and Sun",
+      "time": "noon to 6pm",
+      "place": "Hinds Plaza, Princeton",
+      "drive": 12,
+      "emoji": "🎁",
+      "desc": "Four lit chalets on the plaza beside the library, plus about fifteen weekend booths that rotate every week, so it is a different market each time. Free to walk through, runs Thursday to Sunday until Dec 20.",
+      "note": "Week two of five, vendors change weekly",
+      "url": "https://artscouncilofprinceton.org/artists/artists-winter-chalet/"
+    },
+    {
+      "title": "Drop-in board games",
+      "day": "Sun Nov 22",
+      "time": "1 to 3pm",
+      "place": "West Windsor library",
+      "drive": 5,
+      "emoji": "🎲",
+      "desc": "Turn up any time in the window and play, from the library's collection or bring your own. All ages, free, no registration at all.",
+      "note": "No booking, five minutes away, good rainy-Sunday default",
+      "url": "https://events.mcl.org/"
+    },
+    {
+      "title": "Python for beginners, session 3",
+      "day": "Sun Nov 22",
+      "time": "1:30 to 2:30pm",
+      "place": "West Windsor library",
+      "drive": 5,
+      "emoji": "💻",
+      "desc": "Hands-on beginner Python bootcamp for kids, guided practice and small projects. Free, 8 seats when checked. Bring your own laptop.",
+      "note": "Saturday's session was cancelled, this one is running",
+      "url": "https://events.mcl.org/"
+    },
+    {
+      "title": "Thanksgiving storytime and craft",
+      "day": "Sun Nov 22",
+      "time": "2 to 2:45pm",
+      "place": "Ewing library",
+      "drive": 25,
+      "emoji": "🍂",
+      "desc": "Thanksgiving stories with Ms. Teri followed by a themed craft. Ages 5 and under, free, registration required, 8 seats when checked. A Spanish Day of the Dead storytime follows at 3pm.",
+      "note": "Registration required",
+      "url": "https://events.mcl.org/"
+    }
+  ],
+  "extraPlaces": [
+    {
+      "id": "winterchalet",
+      "name": "Winter Chalet Market, Hinds Plaza",
+      "drive": 12,
+      "price": "free",
+      "cats": ["local", "outdoor"],
+      "seasons": ["fall", "winter"],
+      "blurb": "Four lit wooden chalets on the plaza beside Princeton Public Library, plus around fifteen weekend booths selling jewellery, ceramics, candles, prints, woodwork and kids' clothes. The weekend vendors rotate every week, so it is worth more than one visit, and it is the easiest Christmas shopping within fifteen minutes. Free to walk through.",
+      "meta": "Hinds Plaza, 66 Witherspoon Street, Princeton. Thursday to Sunday noon to 6pm, Nov 12 through Dec 20. Walk to Nassau Street for dinner afterwards.",
+      "url": "https://artscouncilofprinceton.org/artists/artists-winter-chalet/"
+    }
+  ]
 }
