@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-15T02:50:00Z",
-  "app": 5,
+  "updated": "2026-11-15T02:58:00Z",
+  "app": 6,
   "notices": [
     {
       "style": "book",
@@ -35,28 +35,55 @@
   },
   "deals": {
     "sixflags": [
-      {"label": "Six Flags' own Bring-A-Friend tickets from $9.99 weekday, $19.99 weekend (passholder-escorted)", "url": "https://www.sixflags.com/greatadventure/special-offers"},
-      {"label": "Military and First Responder discount tickets", "url": "https://www.sixflags.com/greatadventure/special-offers"}
+      {
+        "label": "Six Flags' own Bring-A-Friend tickets from $9.99 weekday, $19.99 weekend (passholder-escorted)",
+        "url": "https://www.sixflags.com/greatadventure/special-offers"
+      },
+      {
+        "label": "Military and First Responder discount tickets",
+        "url": "https://www.sixflags.com/greatadventure/special-offers"
+      }
     ],
     "iplay": [
-      {"label": "Unlimited ride band plus $5 game card, from $27.99, valid Saturday and Sunday", "url": "https://www.groupon.com/deals/iplay-america-2-10"},
-      {"label": "Browse all current iPlay America Groupon offers", "url": "https://www.groupon.com/biz/west-freehold-nj/iplay-america-stonehurst-east"}
+      {
+        "label": "Unlimited ride band plus $5 game card, from $27.99, valid Saturday and Sunday",
+        "url": "https://www.groupon.com/deals/iplay-america-2-10"
+      },
+      {
+        "label": "Browse all current iPlay America Groupon offers",
+        "url": "https://www.groupon.com/biz/west-freehold-nj/iplay-america-stonehurst-east"
+      }
     ],
     "sesame": [
-      {"label": "Groupon tickets from about $51.54, up to 57% off", "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"}
+      {
+        "label": "Groupon tickets from about $51.54, up to 57% off",
+        "url": "https://www.groupon.com/deals/gl-sesame-place-1-1"
+      }
     ],
     "dinosafari": [],
     "whalewatch": [
-      {"label": "Groupon 3-hour trip from about $31.50, includes a complimentary hot dog or beverage", "url": "https://www.groupon.com/deals/miss-belmar-princess-42"}
+      {
+        "label": "Groupon 3-hour trip from about $31.50, includes a complimentary hot dog or beverage",
+        "url": "https://www.groupon.com/deals/miss-belmar-princess-42"
+      }
     ],
     "buckstubing": [
-      {"label": "Groupon tubing rental up to 49% off, from about $25 per person, not valid on holidays", "url": "https://www.groupon.com/deals/bucks-county-river-country-1"}
+      {
+        "label": "Groupon tubing rental up to 49% off, from about $25 per person, not valid on holidays",
+        "url": "https://www.groupon.com/deals/bucks-county-river-country-1"
+      }
     ],
     "lsc": [
-      {"label": "Groupon admission around $26, down from $32 (about 19% off)", "url": "https://www.groupon.com/deals/liberty-science-center-13"}
+      {
+        "label": "Groupon admission around $26, down from $32 (about 19% off)",
+        "url": "https://www.groupon.com/deals/liberty-science-center-13"
+      }
     ],
     "diggerland": [
-      {"label": "2026 Season Pass Tier 2 on their own site, $89.99", "url": "https://store.diggerlandusa.com/retail/passes/11019"}
+      {
+        "label": "2026 Season Pass Tier 2 on their own site, $89.99",
+        "url": "https://store.diggerlandusa.com/retail/passes/11019"
+      }
     ]
   },
   "dealsChecked": "Nov 9, 2026",
@@ -200,8 +227,14 @@
       "name": "Winter Chalet Market, Hinds Plaza",
       "drive": 12,
       "price": "free",
-      "cats": ["local", "outdoor"],
-      "seasons": ["fall", "winter"],
+      "cats": [
+        "local",
+        "outdoor"
+      ],
+      "seasons": [
+        "fall",
+        "winter"
+      ],
       "blurb": "Four lit wooden chalets on the plaza beside Princeton Public Library, plus around fifteen weekend booths selling jewellery, ceramics, candles, prints, woodwork and kids' clothes. The weekend vendors rotate every week, so it is worth more than one visit, and it is the easiest Christmas shopping within fifteen minutes. Free to walk through.",
       "meta": "Hinds Plaza, 66 Witherspoon Street, Princeton. Thursday to Sunday noon to 6pm, Nov 12 through Dec 20. Walk to Nassau Street for dinner afterwards.",
       "url": "https://artscouncilofprinceton.org/artists/artists-winter-chalet/"
