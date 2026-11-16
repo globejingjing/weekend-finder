@@ -1,43 +1,36 @@
 {
-  "updated": "2026-11-15T03:52:00Z",
+  "updated": "2026-11-16T09:07:45Z",
   "app": 8,
   "notices": [
     {
       "style": "book",
-      "html": "<b>Six Flags' reimagined Holiday in the Park opens to the public this Saturday, Nov 21</b> (passholder preview is Friday the 20th). Public dates run Nov 21 to Jan 3, 1pm to 8pm, included with park admission and with Silver, Gold and Prestige passes. Opening weekend, four new themed lands and a 65-foot tree, so expect a crowd."
+      "html": "<b>Six Flags' reimagined Holiday in the Park opens to the public this Saturday, Nov 21</b>, 1pm to 8pm (passholder preview was Friday the 20th, 4 to 8pm). Included with park admission and with Silver, Gold and Prestige passes: four new themed lands, a 65-foot tree, nightly tree lighting and s'mores fire pits. Opening weekend, so expect a crowd."
     },
     {
       "style": "book",
-      "html": "<b>Polar Express tickets, first dates are now next weekend:</b> Nov 27 to 29 at both Whippany (Morristown &amp; Erie) and Phillipsburg (Delaware River Railroad), then Dec 4 to 6, 11 to 13, and 18 to 20. These sell out, so if you want a date, book this week."
-    },
-    {
-      "style": "book",
-      "html": "<b>Three library programs this weekend open registration the day before, not now:</b> Lawrence Storytime (Sat 11am) and Lawrence 3D Turkey Painting (Sat 2:30pm) both open Friday Nov 20; Lawrence Felted Acorn Garlands (Sun 2pm) opens Saturday Nov 21 at 2pm. Set a reminder, these fill the same day."
+      "html": "<b>Polar Express tickets, first dates are next weekend:</b> Nov 27 to 29 at both Whippany (Morristown &amp; Erie) and Phillipsburg (Delaware River Railroad), then Dec 4 to 6, 11 to 13, and 18 to 20. These sell out, so if you want a date, book this week."
     },
     {
       "style": "alert",
-      "html": "<b>Already full for Saturday:</b> two of the three South Brunswick planetarium sessions (3pm and 4:30pm, the 1:30pm still had seats), and at Princeton Public Library both Chemistry Saturdays sessions and the Zentangle workshop. Book the planetarium now if you want it."
-    },
-    {
-      "style": "alert",
-      "html": "<b>Pick-your-own is finished for the season.</b> Terhune's Winery Weekend Music Series still runs Saturdays and Sundays through November, noon to 5pm with live music 1 to 4pm, and the farm markets and bakeries are open daily for Thanksgiving pies and turkey orders. Call before driving to any farm expecting to pick something."
+      "html": "<b>Pick-your-own is finished for the season</b> at all six farms we track. Terhune's Winery Weekend Music Series still runs Saturdays and Sundays through November, noon to 5pm with live music 1 to 4pm, and farm markets and bakeries are open daily for Thanksgiving pies and turkey orders. Call before driving to any farm expecting to pick something."
     }
   ],
   "blurbs": {
-    "terhune": "This weekend: no picking, but the Winery Weekend Music Series runs Saturday and Sunday noon to 5pm with live music 1 to 4pm at the vineyard tasting room. Farm market and bakery open daily, and Thanksgiving is next week, so call 609-924-2310 now about pies and pre-orders rather than showing up Thanksgiving week.",
-    "leeturkey": "This weekend: Thanksgiving is Nov 26, and this is the farm's busiest stretch, they fill around 1,000 turkeys most years. Call 609-448-0629 before you drive over, both to order and to check what vegetables are still pickable.",
-    "vonthun": "This weekend: the Monmouth Junction fall festival and corn maze are over for the season, leaving the farm market. Call 732-329-8656 to confirm hours before you go.",
-    "emerys": "This weekend: corn maze and hayrides listed only through late October, so that part of the season is over, and berries are long done. Call the picking hotline at 609-758-8514 or check emerysfarm.com before you go.",
-    "battleview": "This weekend: still no apple picking after the spring freeze took the whole crop, the farm's first total loss in five generations. The year-round country store is open daily with its own apple cider donuts made from sourced apples. Call 732-462-0756 before you drive over.",
-    "johnsons": "This weekend: the weekend Harvest Festival with gem mining and the corn maze has typically run only through October, so expect just the farm store and bakery. Call 609-654-8643 to check, and ask about Thanksgiving pies while you have them on the phone.",
+    "terhune": "This weekend: no apple picking, the 2026 season is listed unavailable on the farm's own site. The Winery Weekend Music Series keeps running Saturday and Sunday, noon to 5pm with live music 1 to 4pm at the vineyard tasting room, free to attend. Thanksgiving is the 26th, so call 609-924-2310 now about pies and pre-orders rather than showing up Thanksgiving week.",
+    "leeturkey": "This weekend: Thanksgiving is Nov 26, and this is the farm's busiest stretch, they fill around 1,000 turkeys most years. Call 609-448-0629 before you drive over, both to order and to check what's still pickable in the fields.",
+    "vonthun": "This weekend: the fall festival and corn maze season has wrapped, leaving just the farm market. Hours can shrink heading into the holidays, so call 732-329-8656 to confirm before you go.",
+    "emerys": "This weekend: berries are long done, and the corn maze and hayrides were only listed through late October, so that part of the season is over too. Call the picking hotline at 609-758-8514 or check emerysfarm.com before you go.",
+    "battleview": "This weekend: still no apple picking, the spring freeze wiped out the whole crop, the farm's first total loss in five generations. The country store stays open 9am to 5pm daily except Tuesdays, with cider donuts made from sourced apples and a full bakery case. Call 732-462-0756 if you're coming for anything specific.",
+    "johnsons": "This weekend: the weekend Harvest Festival and corn maze have typically run only through October, so expect just the farm store and bakery. They bake thousands of pies for Thanksgiving and now offer drive-through pickup, so call 609-654-8643 or check johnsonsfarm.com to get your order in.",
     "diggerland": "This weekend: Diggerfest ended Nov 15 and the park is heading into its winter break. Check the park's own calendar before driving down, since off-season weekends are not all open.",
-    "sixflags": "This weekend is opening day for the reimagined Holiday in the Park, Saturday Nov 21, 1pm to 8pm, included with park admission and with Silver, Gold and Prestige passes. Four new themed lands, a 65-foot tree, nightly tree lighting, Santa photos and s'mores fire pits. Runs select dates through Jan 3. Check sixflags.com/greatadventure for the date calendar and tickets."
+    "sixflags": "This weekend is opening day for the reimagined Holiday in the Park, Saturday Nov 21, 1pm to 8pm, included with park admission and with Silver, Gold and Prestige passes. Four new themed lands, a 65-foot tree, nightly tree lighting, Santa photos and s'mores fire pits. Runs select dates through Jan 3. A Black Friday deal has a 2027 Silver Pass for $79 through Nov 30 with a free Bring-A-Friend ticket. Check sixflags.com/greatadventure for the date calendar and tickets.",
+    "morven": "This weekend: Festival of Trees just opened Nov 18, decorated trees and mantels fill the historic house's galleries for the holidays through Jan 10. Regular museum admission applies, check morven.org for hours."
   },
   "deals": {
     "sixflags": [
       {
-        "label": "Six Flags' own Bring-A-Friend tickets from $9.99 weekday, $19.99 weekend (passholder-escorted)",
-        "url": "https://www.sixflags.com/greatadventure/special-offers"
+        "label": "Black Friday deal: 2027 Silver Pass for $79 through Nov 30, includes a free Bring-A-Friend ticket usable through Jan 3, 2027",
+        "url": "https://www.sixflags.com/greatadventure/season-passes"
       },
       {
         "label": "Military and First Responder discount tickets",
@@ -86,7 +79,7 @@
       }
     ]
   },
-  "dealsChecked": "Nov 9, 2026",
+  "dealsChecked": "Nov 16, 2026",
   "events": [
     {
       "title": "Family planetarium, inside an inflatable dome",
@@ -96,7 +89,7 @@
       "drive": 12,
       "emoji": "🔭",
       "desc": "Step inside a portable planetarium and find the stars, constellations and planets you can actually look for that night. All ages, free, run by the library at the Community Center gym on New Road.",
-      "note": "Only the 1:30 session had seats, 3pm and 4:30pm are full",
+      "note": "As of last check only the 1:30 session had seats, 3pm and 4:30pm were full",
       "url": "https://sbpl.libnet.info/events"
     },
     {
@@ -107,7 +100,7 @@
       "drive": 5,
       "emoji": "🪶",
       "desc": "Native American Heritage Month, run with the West Windsor Historical Society: crafts and stories about the Lenni-Lenape who lived here. Free, 20 seats when checked.",
-      "note": "Our own branch, five minutes away",
+      "note": "Our own branch, five minutes away, confirmed on the branch's November newsletter",
       "url": "https://events.mcl.org/"
     },
     {
@@ -177,6 +170,17 @@
       "url": "https://sclsnj.libnet.info/events"
     },
     {
+      "title": "Festival of Trees opens",
+      "day": "Sat and Sun",
+      "time": "Regular museum hours",
+      "place": "Morven Museum & Garden, Princeton",
+      "drive": 10,
+      "emoji": "🌲",
+      "desc": "Decorated trees and mantels fill the historic house's galleries for the holidays, new this year. Included with regular admission, check morven.org for current hours and prices.",
+      "note": "Just opened Nov 18, runs through Jan 10",
+      "url": "https://www.morven.org/fy26/festivaloftrees"
+    },
+    {
       "title": "Winter Chalet makers' market",
       "day": "Sat and Sun",
       "time": "noon to 6pm",
@@ -206,7 +210,7 @@
       "drive": 5,
       "emoji": "💻",
       "desc": "Hands-on beginner Python bootcamp for kids, guided practice and small projects. Free, 8 seats when checked. Bring your own laptop.",
-      "note": "Saturday's session was cancelled, this one is running",
+      "note": "Bring your own laptop",
       "url": "https://events.mcl.org/"
     },
     {
